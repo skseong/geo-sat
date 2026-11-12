@@ -23,6 +23,7 @@ from server import Handler
 SAMPLE = ROOT / "demo_sample"
 PDF_PATHS = {p.stem: p for p in SAMPLE.rglob("GKX-*.pdf")}
 SESSION_COOKIE = "gkx_demo_session"
+VERSION_COOKIE = "gkx_demo_version"
 app = FastAPI()
 
 
@@ -87,7 +88,11 @@ async def api_request(request: Request, route: str = ""):
     session_id = request.cookies.get(SESSION_COOKIE, "")
     if not re.fullmatch(r"[0-9a-f]{32}", session_id):
         session_id = uuid.uuid4().hex
-    pathname = f"sessions/{session_id}.sqlite3"
+    version = request.cookies.get(VERSION_COOKIE, "")
+    if re.fullmatch(r"[0-9a-f]{32}", version):
+        pathname = f"sessions/{session_id}/{version}.sqlite3"
+    else:
+        pathname = f"sessions/{session_id}.sqlite3"  # 기존 시연 기록 읽기
     try:
         snapshot = (await blob.get_blob(pathname, access="private")).body
     except blob.BlobNotFoundError:
@@ -104,9 +109,14 @@ async def api_request(request: Request, route: str = ""):
                 db.execute("PRAGMA wal_checkpoint(TRUNCATE)")
             finally:
                 db.close()
-            await blob.put_blob(pathname, db_path.read_bytes(), access="private",
-                                allow_overwrite=True, content_type="application/x-sqlite3",
+            version = uuid.uuid4().hex
+            await blob.put_blob(f"sessions/{session_id}/{version}.sqlite3",
+                                db_path.read_bytes(), access="private",
+                                content_type="application/x-sqlite3",
                                 cache_control_max_age=0)
     response.set_cookie(SESSION_COOKIE, session_id, httponly=True, secure=True,
                         samesite="lax", max_age=60 * 60 * 24 * 30)
+    if re.fullmatch(r"[0-9a-f]{32}", version):
+        response.set_cookie(VERSION_COOKIE, version, httponly=True, secure=True,
+                            samesite="lax", max_age=60 * 60 * 24 * 30)
     return response
