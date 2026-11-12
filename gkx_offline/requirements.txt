@@ -1,3 +1,1 @@
 pypdf>=6.21,<7
-fastapi>=0.115,<1; python_version >= '3.12'
-vercel; python_version >= '3.12'
