@@ -1,0 +1,384 @@
+{
+  "document": {
+    "doc_no": "GKX-SSS-EPS-001",
+    "title": "전력계 요구규격서",
+    "rev": "A",
+    "date": "2026-05-20",
+    "pages": 12,
+    "file": "03_SSS/GKX-SSS-EPS-001.pdf",
+    "item_count": 20
+  },
+  "items": [
+    {
+      "id": "EPS-001",
+      "doc_id": "GKX-SSS-EPS-001",
+      "type": "요구사항",
+      "title": "태양전지판 EOL 출력",
+      "statement": "태양전지판은 EOL 하지 조건에서 5.4 kW 이상의 전력을 공급해야 한다.",
+      "rationale": "시스템 5.0 kW + 분배 손실",
+      "parents": [
+        "SYS-008"
+      ],
+      "methods": [
+        "A",
+        "T"
+      ],
+      "priority": "필수",
+      "status": "확정",
+      "section": "3.1 기능·성능 요구사항",
+      "page": 5
+    },
+    {
+      "id": "EPS-002",
+      "doc_id": "GKX-SSS-EPS-001",
+      "type": "요구사항",
+      "title": "태양전지 셀",
+      "statement": "태양전지판은 BOL 효율 29.5% 이상의 삼중접합 GaAs 셀을 사용해야 한다.",
+      "rationale": "면적 대비 출력 확보",
+      "parents": [
+        "SYS-008"
+      ],
+      "methods": [
+        "T",
+        "I"
+      ],
+      "priority": "필수",
+      "status": "확정",
+      "section": "3.1 기능·성능 요구사항",
+      "page": 5
+    },
+    {
+      "id": "EPS-004",
+      "doc_id": "GKX-SSS-EPS-001",
+      "type": "요구사항",
+      "title": "전개 신뢰도",
+      "statement": "태양전지판은 지상 명령으로 전개되어야 하며 전개 신뢰도는 0.9995 이상이어야 한다.",
+      "rationale": "임무 성공 핵심 사건",
+      "parents": [
+        "SYS-014"
+      ],
+      "methods": [
+        "T",
+        "A"
+      ],
+      "priority": "필수",
+      "status": "확정",
+      "section": "3.1 기능·성능 요구사항",
+      "page": 5
+    },
+    {
+      "id": "EPS-005",
+      "doc_id": "GKX-SSS-EPS-001",
+      "type": "요구사항",
+      "title": "SADA 추적 정확도",
+      "statement": "태양전지판 구동장치(SADA)의 태양 추적 정확도는 ±1° 이내여야 한다.",
+      "rationale": "전력 손실 최소화",
+      "parents": [
+        "SYS-008"
+      ],
+      "methods": [
+        "T"
+      ],
+      "priority": "필수",
+      "status": "확정",
+      "section": "3.1 기능·성능 요구사항",
+      "page": 6
+    },
+    {
+      "id": "EPS-006",
+      "doc_id": "GKX-SSS-EPS-001",
+      "type": "요구사항",
+      "title": "배터리 용량",
+      "statement": "리튬이온 배터리의 EOL 용량은 300 Ah 이상이어야 한다.",
+      "rationale": "식 기간 부하 공급",
+      "parents": [
+        "SYS-009"
+      ],
+      "methods": [
+        "A",
+        "T"
+      ],
+      "priority": "필수",
+      "status": "확정",
+      "section": "3.1 기능·성능 요구사항",
+      "page": 6
+    },
+    {
+      "id": "EPS-007",
+      "doc_id": "GKX-SSS-EPS-001",
+      "type": "요구사항",
+      "title": "방전 심도",
+      "statement": "배터리의 식 기간 최대 방전 심도(DoD)는 70% 이하여야 한다.",
+      "rationale": "15년 사이클 수명",
+      "parents": [
+        "SYS-009",
+        "SYS-002"
+      ],
+      "methods": [
+        "A"
+      ],
+      "priority": "권장",
+      "status": "확정",
+      "section": "3.1 기능·성능 요구사항",
+      "page": 6
+    },
+    {
+      "id": "EPS-008",
+      "doc_id": "GKX-SSS-EPS-001",
+      "type": "요구사항",
+      "title": "셀 전압 균형",
+      "statement": "배터리 관리 기능은 셀 간 전압 편차를 20 mV 이하로 유지해야 한다.",
+      "rationale": "배터리 수명 보장",
+      "parents": [
+        "SYS-002"
+      ],
+      "methods": [
+        "T"
+      ],
+      "priority": "필수",
+      "status": "확정",
+      "section": "3.1 기능·성능 요구사항",
+      "page": 7
+    },
+    {
+      "id": "EPS-009",
+      "doc_id": "GKX-SSS-EPS-001",
+      "type": "요구사항",
+      "title": "버스 전압 조정",
+      "statement": "전력조절장치(PCU)는 주 버스 전압을 100 V ± 1%로 조정해야 한다.",
+      "rationale": "부하 장비 입력 규격",
+      "parents": [
+        "SYS-008"
+      ],
+      "methods": [
+        "T"
+      ],
+      "priority": "필수",
+      "status": "확정",
+      "section": "3.1 기능·성능 요구사항",
+      "page": 7
+    },
+    {
+      "id": "EPS-010",
+      "doc_id": "GKX-SSS-EPS-001",
+      "type": "요구사항",
+      "title": "버스 리플",
+      "statement": "주 버스의 리플 및 잡음은 500 mVpp 이하여야 한다.",
+      "rationale": "EMC 및 장비 보호",
+      "parents": [
+        "SYS-037"
+      ],
+      "methods": [
+        "T"
+      ],
+      "priority": "필수",
+      "status": "확정",
+      "section": "3.1 기능·성능 요구사항",
+      "page": 7
+    },
+    {
+      "id": "EPS-011",
+      "doc_id": "GKX-SSS-EPS-001",
+      "type": "요구사항",
+      "title": "PCU 효율",
+      "statement": "PCU의 전력 변환 효율은 94% 이상이어야 한다.",
+      "rationale": "열 소산 및 전력 손실 저감",
+      "parents": [
+        "SYS-008"
+      ],
+      "methods": [
+        "T"
+      ],
+      "priority": "필수",
+      "status": "확정",
+      "section": "3.1 기능·성능 요구사항",
+      "page": 8
+    },
+    {
+      "id": "EPS-013",
+      "doc_id": "GKX-SSS-EPS-001",
+      "type": "요구사항",
+      "title": "저전압 부하 차단",
+      "statement": "전력계는 버스 저전압 시 단계적 부하 차단(UVT)을 수행해야 하며 차단 임계값은 추후 확정한다.",
+      "rationale": "배터리 과방전 방지",
+      "parents": [
+        "SYS-030"
+      ],
+      "methods": [
+        "T",
+        "A"
+      ],
+      "priority": "필수",
+      "status": "TBD",
+      "section": "3.1 기능·성능 요구사항",
+      "page": 8
+    },
+    {
+      "id": "EPS-014",
+      "doc_id": "GKX-SSS-EPS-001",
+      "type": "요구사항",
+      "title": "전력계 원격측정",
+      "statement": "전력계는 전압, 전류, 온도를 포함한 120개 이상의 원격측정 항목을 제공해야 한다.",
+      "rationale": "지상 상태 감시",
+      "parents": [
+        "SYS-019"
+      ],
+      "methods": [
+        "T",
+        "I"
+      ],
+      "priority": "권장",
+      "status": "확정",
+      "section": "3.1 기능·성능 요구사항",
+      "page": 8
+    },
+    {
+      "id": "EPS-003",
+      "doc_id": "GKX-SSS-EPS-001",
+      "type": "요구사항",
+      "title": "태양전지판 구성",
+      "statement": "태양전지판은 날개당 4개 패널로 구성된 2개 날개 구조를 가져야 한다.",
+      "rationale": "발사체 페어링 수납",
+      "parents": [
+        "SYS-008"
+      ],
+      "methods": [
+        "I"
+      ],
+      "priority": "필수",
+      "status": "확정",
+      "section": "3.2 물리·자원 요구사항",
+      "page": 9
+    },
+    {
+      "id": "EPS-017",
+      "doc_id": "GKX-SSS-EPS-001",
+      "type": "요구사항",
+      "title": "전력계 질량",
+      "statement": "전력계의 총 질량은 210 kg 이하여야 한다.",
+      "rationale": "질량 예산 할당",
+      "parents": [
+        "SYS-004"
+      ],
+      "methods": [
+        "I"
+      ],
+      "priority": "필수",
+      "status": "확정",
+      "section": "3.2 물리·자원 요구사항",
+      "page": 9
+    },
+    {
+      "id": "EPS-016",
+      "doc_id": "GKX-SSS-EPS-001",
+      "type": "요구사항",
+      "title": "배터리 운용 온도",
+      "statement": "배터리는 10°C에서 30°C 사이에서 운용되어야 한다.",
+      "rationale": "리튬이온 셀 특성",
+      "parents": [
+        "SYS-015"
+      ],
+      "methods": [
+        "T"
+      ],
+      "priority": "필수",
+      "status": "확정",
+      "section": "3.3 환경·열 요구사항",
+      "page": 9
+    },
+    {
+      "id": "EPS-020",
+      "doc_id": "GKX-SSS-EPS-001",
+      "type": "요구사항",
+      "title": "전력 전자부품 방사선",
+      "statement": "전력계 전자부품은 TID 100 krad(Si) 이상을 견뎌야 한다.",
+      "rationale": "방사선 요구 할당",
+      "parents": [
+        "SYS-035",
+        "SYS-036"
+      ],
+      "methods": [
+        "A",
+        "T"
+      ],
+      "priority": "필수",
+      "status": "확정",
+      "section": "3.3 환경·열 요구사항",
+      "page": 10
+    },
+    {
+      "id": "EPS-012",
+      "doc_id": "GKX-SSS-EPS-001",
+      "type": "요구사항",
+      "title": "부하 보호",
+      "statement": "전력 분배 출력 채널은 각각 전류제한(LCL) 보호 기능을 가져야 한다.",
+      "rationale": "단락 고장 격리",
+      "parents": [
+        "SYS-032"
+      ],
+      "methods": [
+        "T"
+      ],
+      "priority": "필수",
+      "status": "확정",
+      "section": "3.4 신뢰성·안전 요구사항",
+      "page": 10
+    },
+    {
+      "id": "EPS-015",
+      "doc_id": "GKX-SSS-EPS-001",
+      "type": "요구사항",
+      "title": "배터리 단일고장 허용",
+      "statement": "전력계는 배터리 셀 1개 고장 시에도 요구 성능을 유지해야 한다.",
+      "rationale": "단일고장 허용 설계",
+      "parents": [
+        "SYS-032"
+      ],
+      "methods": [
+        "A"
+      ],
+      "priority": "필수",
+      "status": "확정",
+      "section": "3.4 신뢰성·안전 요구사항",
+      "page": 10
+    },
+    {
+      "id": "EPS-018",
+      "doc_id": "GKX-SSS-EPS-001",
+      "type": "요구사항",
+      "title": "화공품 점화 안전",
+      "statement": "전개용 화공품 점화 회로는 Arm/Fire 이중 안전장치를 가져야 한다.",
+      "rationale": "오점화 방지",
+      "parents": [
+        "SYS-030"
+      ],
+      "methods": [
+        "T",
+        "I"
+      ],
+      "priority": "필수",
+      "status": "확정",
+      "section": "3.4 신뢰성·안전 요구사항",
+      "page": 11
+    },
+    {
+      "id": "EPS-019",
+      "doc_id": "GKX-SSS-EPS-001",
+      "type": "요구사항",
+      "title": "임무 종료 비활성화",
+      "statement": "전력계는 임무 종료 시 배터리 충전 회로를 차단하고 배터리를 방전해야 한다.",
+      "rationale": "우주잔해 경감",
+      "parents": [
+        "SYS-039"
+      ],
+      "methods": [
+        "D",
+        "A"
+      ],
+      "priority": "필수",
+      "status": "확정",
+      "section": "3.4 신뢰성·안전 요구사항",
+      "page": 11
+    }
+  ]
+}

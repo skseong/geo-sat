@@ -1,0 +1,285 @@
+{
+  "document": {
+    "doc_no": "GKX-TR-AOCS-001",
+    "title": "자세·궤도제어계 시험결과서",
+    "rev": "-",
+    "date": "2026-10-16",
+    "pages": 9,
+    "file": "08_TR/GKX-TR-AOCS-001.pdf",
+    "item_count": 8
+  },
+  "items": [
+    {
+      "id": "TR-AOCS-001",
+      "doc_id": "GKX-TR-AOCS-001",
+      "type": "시험결과",
+      "title": "자세 지향 정확도 · 자세 안정도 · 별추적기 시험",
+      "statement": "합격",
+      "parents": [
+        "TC-AOCS-001"
+      ],
+      "test_date": "2026-09-08",
+      "verdict": "합격",
+      "measurements": [
+        {
+          "ver": "VER-AOCS-001",
+          "requirement": "AOCS-001",
+          "measured": "0.0243 ° (요구 0.025 ° 이내)",
+          "verdict": "합격"
+        },
+        {
+          "ver": "VER-AOCS-002",
+          "requirement": "AOCS-002",
+          "measured": "7.7 µrad (요구 8 µrad 이하)",
+          "verdict": "합격"
+        },
+        {
+          "ver": "VER-AOCS-003",
+          "requirement": "AOCS-003",
+          "measured": "2.8 arcsec (요구 3 arcsec 이하)",
+          "verdict": "합격"
+        }
+      ],
+      "section": "4.1 TR-AOCS-001 (TC-AOCS-001)",
+      "page": 6
+    },
+    {
+      "id": "TR-AOCS-002",
+      "doc_id": "GKX-TR-AOCS-001",
+      "type": "시험결과",
+      "title": "관성기준장치 · 조대태양센서 · 반작용휠 시험",
+      "statement": "합격",
+      "parents": [
+        "TC-AOCS-002"
+      ],
+      "test_date": "2026-09-15",
+      "verdict": "합격",
+      "measurements": [
+        {
+          "ver": "VER-AOCS-004",
+          "requirement": "AOCS-004",
+          "measured": "0.0046 °/h (요구 0.005 °/h 이하)",
+          "verdict": "합격"
+        },
+        {
+          "ver": "VER-AOCS-005",
+          "requirement": "AOCS-005",
+          "measured": "요구 충족 확인",
+          "verdict": "합격"
+        },
+        {
+          "ver": "VER-AOCS-006",
+          "requirement": "AOCS-006",
+          "measured": "70 Nms (요구 68 Nms 이상)",
+          "verdict": "합격"
+        }
+      ],
+      "section": "4.2 TR-AOCS-002 (TC-AOCS-002)",
+      "page": 6
+    },
+    {
+      "id": "TR-AOCS-003",
+      "doc_id": "GKX-TR-AOCS-001",
+      "type": "시험결과",
+      "title": "휠 미소진동 · 기동 중 지향 · 기동 후 정착 시험",
+      "statement": "조건부 합격",
+      "parents": [
+        "TC-AOCS-003"
+      ],
+      "test_date": "2026-09-22",
+      "verdict": "조건부 합격",
+      "measurements": [
+        {
+          "ver": "VER-AOCS-007",
+          "requirement": "AOCS-007",
+          "measured": "0.530 N (요구 0.5 N 이하)",
+          "verdict": "부적합(NCR-AOCS-001)"
+        },
+        {
+          "ver": "VER-AOCS-011",
+          "requirement": "AOCS-011",
+          "measured": "0.048 ° (요구 0.05 ° 이하)",
+          "verdict": "합격"
+        },
+        {
+          "ver": "VER-AOCS-012",
+          "requirement": "AOCS-012",
+          "measured": "26.9 분 (요구 30 분 이내)",
+          "verdict": "합격"
+        }
+      ],
+      "section": "4.3 TR-AOCS-003 (TC-AOCS-003)",
+      "page": 7
+    },
+    {
+      "id": "TR-AOCS-004",
+      "doc_id": "GKX-TR-AOCS-001",
+      "type": "시험결과",
+      "title": "안전모드 안정화 · 제어 주기 · 자세자료 제공 시험",
+      "statement": "합격",
+      "parents": [
+        "TC-AOCS-004"
+      ],
+      "test_date": "2026-09-01",
+      "verdict": "합격",
+      "measurements": [
+        {
+          "ver": "VER-AOCS-013",
+          "requirement": "AOCS-013",
+          "measured": "26.8 분 (요구 30 분 이내)",
+          "verdict": "합격"
+        },
+        {
+          "ver": "VER-AOCS-015",
+          "requirement": "AOCS-015",
+          "measured": "11.2 Hz (요구 10 Hz 이상)",
+          "verdict": "합격"
+        },
+        {
+          "ver": "VER-AOCS-016",
+          "requirement": "AOCS-016",
+          "measured": "요구 충족 확인",
+          "verdict": "합격"
+        }
+      ],
+      "section": "4.4 TR-AOCS-004 (TC-AOCS-004)",
+      "page": 7
+    },
+    {
+      "id": "TR-AOCS-005",
+      "doc_id": "GKX-TR-AOCS-001",
+      "type": "시험결과",
+      "title": "아포지 기동 지향 · 센서·구동기 FDIR · 자세·궤도제어계 전력 시험",
+      "statement": "합격",
+      "parents": [
+        "TC-AOCS-005"
+      ],
+      "test_date": "2026-10-08",
+      "verdict": "합격",
+      "measurements": [
+        {
+          "ver": "VER-AOCS-017",
+          "requirement": "AOCS-017",
+          "measured": "0.46 ° (요구 0.5 ° 이하)",
+          "verdict": "합격"
+        },
+        {
+          "ver": "VER-AOCS-018",
+          "requirement": "AOCS-018",
+          "measured": "요구 충족 확인",
+          "verdict": "합격"
+        },
+        {
+          "ver": "VER-AOCS-020",
+          "requirement": "AOCS-020",
+          "measured": "292.6 W (요구 320 W 이하)",
+          "verdict": "합격"
+        }
+      ],
+      "section": "4.5 TR-AOCS-005 (TC-AOCS-005)",
+      "page": 8
+    },
+    {
+      "id": "TR-AOCS-006",
+      "doc_id": "GKX-TR-AOCS-001",
+      "type": "시험결과",
+      "title": "전원 공급 인터페이스 · 돌입 전류 · 데이터 버스 주소 시험",
+      "statement": "합격",
+      "parents": [
+        "TC-AOCS-006"
+      ],
+      "test_date": "2026-10-15",
+      "verdict": "합격",
+      "measurements": [
+        {
+          "ver": "VER-AOCS-023",
+          "requirement": "ICD-AOCS-003",
+          "measured": "요구 충족 확인",
+          "verdict": "합격"
+        },
+        {
+          "ver": "VER-AOCS-024",
+          "requirement": "ICD-AOCS-004",
+          "measured": "9.1 ms (요구 10 ms 이내)",
+          "verdict": "합격"
+        },
+        {
+          "ver": "VER-AOCS-026",
+          "requirement": "ICD-AOCS-006",
+          "measured": "요구 충족 확인",
+          "verdict": "합격"
+        }
+      ],
+      "section": "4.6 TR-AOCS-006 (TC-AOCS-006)",
+      "page": 8
+    },
+    {
+      "id": "TR-AOCS-007",
+      "doc_id": "GKX-TR-AOCS-001",
+      "type": "시험결과",
+      "title": "원격측정 패킷 · 명령 인터페이스 · 시각 동기 시험",
+      "statement": "합격",
+      "parents": [
+        "TC-AOCS-007"
+      ],
+      "test_date": "2026-10-22",
+      "verdict": "합격",
+      "measurements": [
+        {
+          "ver": "VER-AOCS-027",
+          "requirement": "ICD-AOCS-007",
+          "measured": "요구 충족 확인",
+          "verdict": "합격"
+        },
+        {
+          "ver": "VER-AOCS-028",
+          "requirement": "ICD-AOCS-008",
+          "measured": "261 종 (요구 240 종 이상)",
+          "verdict": "합격"
+        },
+        {
+          "ver": "VER-AOCS-029",
+          "requirement": "ICD-AOCS-009",
+          "measured": "91 µs (요구 100 µs 이내)",
+          "verdict": "합격"
+        }
+      ],
+      "section": "4.7 TR-AOCS-007 (TC-AOCS-007)",
+      "page": 9
+    },
+    {
+      "id": "TR-AOCS-008",
+      "doc_id": "GKX-TR-AOCS-001",
+      "type": "시험결과",
+      "title": "열 인터페이스 · 접지 및 본딩 · EMC 방출 한계 시험",
+      "statement": "합격",
+      "parents": [
+        "TC-AOCS-008"
+      ],
+      "test_date": "2026-10-01",
+      "verdict": "합격",
+      "measurements": [
+        {
+          "ver": "VER-AOCS-030",
+          "requirement": "ICD-AOCS-010",
+          "measured": "요구 충족 확인",
+          "verdict": "합격"
+        },
+        {
+          "ver": "VER-AOCS-031",
+          "requirement": "ICD-AOCS-011",
+          "measured": "2.26 mΩ (요구 2.5 mΩ 이하)",
+          "verdict": "합격"
+        },
+        {
+          "ver": "VER-AOCS-032",
+          "requirement": "ICD-AOCS-012",
+          "measured": "요구 충족 확인",
+          "verdict": "합격"
+        }
+      ],
+      "section": "4.8 TR-AOCS-008 (TC-AOCS-008)",
+      "page": 9
+    }
+  ]
+}

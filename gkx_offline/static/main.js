@@ -73,7 +73,7 @@ async function openDocument(docNo) {
   $("currentDoc").textContent = `${doc.document} · ${doc.title}`;
   $("currentMeta").textContent = `Rev ${doc.revision} · ${doc.pages}쪽 · 후보 ${doc.candidates}건 · 저장 ${doc.saved}건`;
   $("pdfButton").disabled = false;
-  $("extractButton").disabled = false;
+  $("extractButton").disabled = !!state.cloudDemo;
   $("saveButton").disabled = false;
   $("selectAll").disabled = false;
   $("clearAll").disabled = false;
@@ -238,7 +238,7 @@ async function showTrace(entry) {
   const config=await api("/api/ai-config");
   const aiReviews=await api(`/api/ai-reviews?document=${encodeURIComponent(entry.document)}&item=${encodeURIComponent(item.id)}`);
   body.append(el("h3","","AI 의견 초안"),el("p","muted",`${config.provider} · ${config.model} · 담당자 확인 전 의견`));
-  const generate=el("button","secondary", "로컬 AI 의견 생성");generate.type="button";
+  const generate=el("button","secondary", "AI 의견 생성");generate.type="button";
   generate.addEventListener("click",()=>perform(async()=>{
     busy(generate,true);
     try{
@@ -356,4 +356,16 @@ $("resizeHandle").addEventListener("pointerdown",event=>{
   handle.addEventListener("pointermove",move);handle.addEventListener("pointerup",end);
 });
 
-perform(async()=>{await refreshSummary();await refreshDocuments();const requested=new URLSearchParams(location.search).get("document");const chosen=state.documents.find(x=>x.document===requested)||state.documents[0];if(chosen)await openDocument(chosen.document);});
+perform(async()=>{
+  const config=await api("/api/ai-config");
+  state.cloudDemo=!!config.cloud_demo;
+  if(state.cloudDemo){
+    document.querySelector(".upload-control")?.remove();
+    $("extractButton").remove();
+    document.querySelector(".intro .eyebrow").textContent="CLOUD DEMO";
+    document.querySelector(".intro p:not(.eyebrow)").textContent="준비된 가상 PDF 37개의 후보를 검토하세요. 선택·수정·검토 기록은 이 브라우저의 시연 세션에 저장됩니다.";
+  }
+  await refreshSummary();await refreshDocuments();
+  const requested=new URLSearchParams(location.search).get("document");
+  const chosen=state.documents.find(x=>x.document===requested)||state.documents[0];if(chosen)await openDocument(chosen.document);
+});

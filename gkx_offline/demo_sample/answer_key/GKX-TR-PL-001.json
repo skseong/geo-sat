@@ -1,0 +1,319 @@
+{
+  "document": {
+    "doc_no": "GKX-TR-PL-001",
+    "title": "탑재체 시험결과서",
+    "rev": "-",
+    "date": "2026-10-16",
+    "pages": 10,
+    "file": "08_TR/GKX-TR-PL-001.pdf",
+    "item_count": 9
+  },
+  "items": [
+    {
+      "id": "TR-PL-001",
+      "doc_id": "GKX-TR-PL-001",
+      "type": "시험결과",
+      "title": "영상기 채널 구성 · 가시 해상도 · 적외 해상도 시험",
+      "statement": "합격",
+      "parents": [
+        "TC-PL-001"
+      ],
+      "test_date": "2026-09-08",
+      "verdict": "합격",
+      "measurements": [
+        {
+          "ver": "VER-PL-001",
+          "requirement": "PL-001",
+          "measured": "요구 충족 확인",
+          "verdict": "합격"
+        },
+        {
+          "ver": "VER-PL-002",
+          "requirement": "PL-002",
+          "measured": "0.45 km (요구 0.5 km 이하)",
+          "verdict": "합격"
+        },
+        {
+          "ver": "VER-PL-003",
+          "requirement": "PL-003",
+          "measured": "1.9 km (요구 2 km 이하)",
+          "verdict": "합격"
+        }
+      ],
+      "section": "4.1 TR-PL-001 (TC-PL-001)",
+      "page": 6
+    },
+    {
+      "id": "TR-PL-002",
+      "doc_id": "GKX-TR-PL-001",
+      "type": "시험결과",
+      "title": "가시 채널 SNR · 적외 채널 NEdT · 기내 복사보정 시험",
+      "statement": "합격",
+      "parents": [
+        "TC-PL-002"
+      ],
+      "test_date": "2026-09-15",
+      "verdict": "합격",
+      "measurements": [
+        {
+          "ver": "VER-PL-004",
+          "requirement": "PL-004",
+          "measured": "317 (요구 300 이상)",
+          "verdict": "합격"
+        },
+        {
+          "ver": "VER-PL-005",
+          "requirement": "PL-005",
+          "measured": "0.09 K (요구 0.1 K 이하)",
+          "verdict": "합격"
+        },
+        {
+          "ver": "VER-PL-006",
+          "requirement": "PL-006",
+          "measured": "0.19 K (요구 0.2 K 이하)",
+          "verdict": "합격"
+        }
+      ],
+      "section": "4.2 TR-PL-002 (TC-PL-002)",
+      "page": 6
+    },
+    {
+      "id": "TR-PL-003",
+      "doc_id": "GKX-TR-PL-001",
+      "type": "시험결과",
+      "title": "주사 거울 지향 · 영상 항법정합 · 태양 침입 보호 시험",
+      "statement": "합격",
+      "parents": [
+        "TC-PL-003"
+      ],
+      "test_date": "2026-09-22",
+      "verdict": "합격",
+      "measurements": [
+        {
+          "ver": "VER-PL-008",
+          "requirement": "PL-008",
+          "measured": "5.4 µrad (요구 6 µrad 이하)",
+          "verdict": "합격"
+        },
+        {
+          "ver": "VER-PL-009",
+          "requirement": "PL-009",
+          "measured": "37.6 µrad (요구 42 µrad 이하)",
+          "verdict": "합격"
+        },
+        {
+          "ver": "VER-PL-010",
+          "requirement": "PL-010",
+          "measured": "요구 충족 확인",
+          "verdict": "합격"
+        }
+      ],
+      "section": "4.3 TR-PL-003 (TC-PL-003)",
+      "page": 7
+    },
+    {
+      "id": "TR-PL-004",
+      "doc_id": "GKX-TR-PL-001",
+      "type": "시험결과",
+      "title": "자료 압축 · Ka 중계기 채널 · Ka 빔 EIRP 시험",
+      "statement": "합격",
+      "parents": [
+        "TC-PL-004"
+      ],
+      "test_date": "2026-09-01",
+      "verdict": "합격",
+      "measurements": [
+        {
+          "ver": "VER-PL-011",
+          "requirement": "PL-011",
+          "measured": "2.13:1 (요구 2:1 이상)",
+          "verdict": "합격"
+        },
+        {
+          "ver": "VER-PL-012",
+          "requirement": "PL-012",
+          "measured": "요구 충족 확인",
+          "verdict": "합격"
+        },
+        {
+          "ver": "VER-PL-013",
+          "requirement": "PL-013",
+          "measured": "61 dBW (요구 58 dBW 이상)",
+          "verdict": "합격"
+        }
+      ],
+      "section": "4.4 TR-PL-004 (TC-PL-004)",
+      "page": 7
+    },
+    {
+      "id": "TR-PL-005",
+      "doc_id": "GKX-TR-PL-001",
+      "type": "시험결과",
+      "title": "수신 G/T · TWTA 이중화 · 수동 상호변조 시험",
+      "statement": "합격",
+      "parents": [
+        "TC-PL-005"
+      ],
+      "test_date": "2026-10-08",
+      "verdict": "합격",
+      "measurements": [
+        {
+          "ver": "VER-PL-014",
+          "requirement": "PL-014",
+          "measured": "15.5 dB/K (요구 14 dB/K 이상)",
+          "verdict": "합격"
+        },
+        {
+          "ver": "VER-PL-015",
+          "requirement": "PL-015",
+          "measured": "요구 충족 확인",
+          "verdict": "합격"
+        },
+        {
+          "ver": "VER-PL-016",
+          "requirement": "PL-016",
+          "measured": "-155 dBc (요구 -140 dBc 이하)",
+          "verdict": "합격"
+        }
+      ],
+      "section": "4.5 TR-PL-005 (TC-PL-005)",
+      "page": 8
+    },
+    {
+      "id": "TR-PL-006",
+      "doc_id": "GKX-TR-PL-001",
+      "type": "시험결과",
+      "title": "주파수 안정도 · 탑재체 열 소산 · 탑재체 전력 시험",
+      "statement": "합격",
+      "parents": [
+        "TC-PL-006"
+      ],
+      "test_date": "2026-10-15",
+      "verdict": "합격",
+      "measurements": [
+        {
+          "ver": "VER-PL-017",
+          "requirement": "PL-017",
+          "measured": "1.0 ppm (요구 1 ppm 이내)",
+          "verdict": "합격"
+        },
+        {
+          "ver": "VER-PL-018",
+          "requirement": "PL-018",
+          "measured": "1,851.7 W (요구 1,900 W 이하)",
+          "verdict": "합격"
+        },
+        {
+          "ver": "VER-PL-020",
+          "requirement": "PL-020",
+          "measured": "2,238.2 W (요구 2,400 W 이하)",
+          "verdict": "합격"
+        }
+      ],
+      "section": "4.6 TR-PL-006 (TC-PL-006)",
+      "page": 8
+    },
+    {
+      "id": "TR-PL-007",
+      "doc_id": "GKX-TR-PL-001",
+      "type": "시험결과",
+      "title": "전원 공급 인터페이스 · 돌입 전류 · 데이터 버스 주소 시험",
+      "statement": "합격",
+      "parents": [
+        "TC-PL-007"
+      ],
+      "test_date": "2026-10-22",
+      "verdict": "합격",
+      "measurements": [
+        {
+          "ver": "VER-PL-023",
+          "requirement": "ICD-PL-003",
+          "measured": "요구 충족 확인",
+          "verdict": "합격"
+        },
+        {
+          "ver": "VER-PL-024",
+          "requirement": "ICD-PL-004",
+          "measured": "8.8 ms (요구 10 ms 이내)",
+          "verdict": "합격"
+        },
+        {
+          "ver": "VER-PL-026",
+          "requirement": "ICD-PL-006",
+          "measured": "요구 충족 확인",
+          "verdict": "합격"
+        }
+      ],
+      "section": "4.7 TR-PL-007 (TC-PL-007)",
+      "page": 9
+    },
+    {
+      "id": "TR-PL-008",
+      "doc_id": "GKX-TR-PL-001",
+      "type": "시험결과",
+      "title": "원격측정 패킷 · 명령 인터페이스 · 시각 동기 시험",
+      "statement": "합격",
+      "parents": [
+        "TC-PL-008"
+      ],
+      "test_date": "2026-10-01",
+      "verdict": "합격",
+      "measurements": [
+        {
+          "ver": "VER-PL-027",
+          "requirement": "ICD-PL-007",
+          "measured": "요구 충족 확인",
+          "verdict": "합격"
+        },
+        {
+          "ver": "VER-PL-028",
+          "requirement": "ICD-PL-008",
+          "measured": "419 종 (요구 410 종 이상)",
+          "verdict": "합격"
+        },
+        {
+          "ver": "VER-PL-029",
+          "requirement": "ICD-PL-009",
+          "measured": "89 µs (요구 100 µs 이내)",
+          "verdict": "합격"
+        }
+      ],
+      "section": "4.8 TR-PL-008 (TC-PL-008)",
+      "page": 9
+    },
+    {
+      "id": "TR-PL-009",
+      "doc_id": "GKX-TR-PL-001",
+      "type": "시험결과",
+      "title": "열 인터페이스 · 접지 및 본딩 · EMC 방출 한계 시험",
+      "statement": "합격",
+      "parents": [
+        "TC-PL-009"
+      ],
+      "test_date": "2026-11-08",
+      "verdict": "합격",
+      "measurements": [
+        {
+          "ver": "VER-PL-030",
+          "requirement": "ICD-PL-010",
+          "measured": "요구 충족 확인",
+          "verdict": "합격"
+        },
+        {
+          "ver": "VER-PL-031",
+          "requirement": "ICD-PL-011",
+          "measured": "2.43 mΩ (요구 2.5 mΩ 이하)",
+          "verdict": "합격"
+        },
+        {
+          "ver": "VER-PL-032",
+          "requirement": "ICD-PL-012",
+          "measured": "요구 충족 확인",
+          "verdict": "합격"
+        }
+      ],
+      "section": "4.9 TR-PL-009 (TC-PL-009)",
+      "page": 10
+    }
+  ]
+}

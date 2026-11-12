@@ -22,6 +22,8 @@ class Handler(BaseHTTPRequestHandler):
     db_path = app.DEFAULT_DB
     ai_model = "qwen3.5:9b-mlx"
     ai_provider = "ollama"
+    ai_token = None
+    cloud_demo = False
 
     def send_bytes(self, payload, status=200, mime="application/json; charset=utf-8"):
         self.send_response(status)
@@ -105,11 +107,12 @@ class Handler(BaseHTTPRequestHandler):
                                    "provider": r["provider"], "opinion": json.loads(r["review_json"]),
                                    "created_at": r["created_at"]} for r in rows]
                     elif path == "/api/ai-config":
-                        result = {"provider": "OpenAI" if self.ai_provider == "openai" else "Ollama",
+                        result = {"provider": {"openai": "OpenAI", "gateway": "Vercel AI Gateway"}.get(self.ai_provider, "Ollama"),
                                   "model": self.ai_model,
-                                  "endpoint": "api.openai.com" if self.ai_provider == "openai" else "127.0.0.1:11434",
-                                  "external_api_enabled": self.ai_provider == "openai",
-                                  "ready": self.ai_provider != "openai" or bool(os.environ.get("OPENAI_API_KEY"))}
+                                  "endpoint": {"openai": "api.openai.com", "gateway": "ai-gateway.vercel.sh"}.get(self.ai_provider, "127.0.0.1:11434"),
+                                  "external_api_enabled": self.ai_provider != "ollama",
+                                  "ready": (bool(self.ai_token or os.environ.get("AI_GATEWAY_API_KEY")) if self.ai_provider == "gateway" else self.ai_provider != "openai" or bool(os.environ.get("OPENAI_API_KEY"))),
+                                  "cloud_demo": self.cloud_demo}
                     elif path == "/api/pdf":
                         doc_no = params.get("document", [""])[0]
                         row = db.execute("SELECT pdf_path FROM documents WHERE doc_no=?", (doc_no,)).fetchone()
@@ -136,7 +139,10 @@ class Handler(BaseHTTPRequestHandler):
     def do_POST(self):
         origin = self.headers.get("Origin")
         host = self.headers.get("Host", "")
-        if origin and origin != f"http://{host}":
+        allowed_origins = {f"http://{host}"}
+        if self.cloud_demo:
+            allowed_origins.add(f"https://{host}")
+        if origin and origin not in allowed_origins:
             self.send_json({"error": "다른 출처의 요청은 허용하지 않습니다."}, 403)
             return
         try:
@@ -206,10 +212,11 @@ class Handler(BaseHTTPRequestHandler):
                     result = app.review(db, doc_no, item_id, data.get("reviewer", ""),
                                         data.get("decision", ""), data.get("comment", ""))
                 elif path == "/api/ai-review":
-                    result = app.ollama_review(db, doc_no, item_id, self.ai_model, provider=self.ai_provider)
+                    result = app.ollama_review(db, doc_no, item_id, self.ai_model,
+                                               provider=self.ai_provider, token=self.ai_token)
                 elif path == "/api/ask":
                     result = app.ollama_answer(db, str(data.get("question", "")), self.ai_model,
-                                               provider=self.ai_provider)
+                                               provider=self.ai_provider, token=self.ai_token)
                 else:
                     self.send_json({"error": "경로를 찾을 수 없습니다."}, 404)
                     return

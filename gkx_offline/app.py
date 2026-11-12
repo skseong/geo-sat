@@ -320,17 +320,18 @@ def review(db, doc_no, item_id, reviewer, decision, comment):
             "reviewer": reviewer.strip(), "decision": decision, "comment": comment.strip()}
 
 
-def ai_json(system, content, model, provider="ollama", opener=None):
-    if provider == "openai":
-        api_key = os.environ.get("OPENAI_API_KEY", "")
+def ai_json(system, content, model, provider="ollama", opener=None, token=None):
+    if provider in ("openai", "gateway"):
+        api_key = (token or os.environ.get("AI_GATEWAY_API_KEY", "")) if provider == "gateway" else os.environ.get("OPENAI_API_KEY", "")
         if not api_key:
-            raise ValueError("OPENAI_API_KEY 환경변수가 필요합니다.")
+            raise ValueError("AI Gateway 인증 토큰이 없습니다." if provider == "gateway" else "OPENAI_API_KEY 환경변수가 필요합니다.")
         payload = {"model": model, "store": False, "instructions": system,
                    "input": [{"role": "user", "content": content}],
                    "text": {"format": {"type": "json_object"}}}
-        if model == "gpt-6-luna":
+        if model in ("gpt-6-luna", "openai/gpt-6-luna"):
             payload["reasoning"] = {"effort": "none"}
-        req = urlrequest.Request("https://api.openai.com/v1/responses",
+        url = "https://ai-gateway.vercel.sh/v1/responses" if provider == "gateway" else "https://api.openai.com/v1/responses"
+        req = urlrequest.Request(url,
                                  data=json.dumps(payload, ensure_ascii=False).encode("utf-8"),
                                  headers={"Content-Type": "application/json", "Authorization": f"Bearer {api_key}"},
                                  method="POST")
@@ -361,7 +362,7 @@ def ai_json(system, content, model, provider="ollama", opener=None):
         raise ValueError(f"{provider} 응답을 JSON으로 읽을 수 없습니다.") from exc
 
 
-def ollama_review(db, doc_no, item_id, model, opener=None, provider="ollama"):
+def ollama_review(db, doc_no, item_id, model, opener=None, provider="ollama", token=None):
     """저장된 한 항목의 최소 문맥만 127.0.0.1 Ollama에 전송한다."""
     if not model or len(model) > 100 or any(c.isspace() for c in model):
         raise ValueError("Ollama 모델 ID가 잘못되었습니다.")
@@ -392,7 +393,7 @@ def ollama_review(db, doc_no, item_id, model, opener=None, provider="ollama"):
               "review_type은 missing_parent|missing_child|unresolved_reference|link_inconsistency|"
               "verification_link|valid_root_or_leaf 중 하나, status는 candidate|no_issue|insufficient_evidence 중 하나입니다. "
               "근거는 제공된 문서 ID, 개정, 절, 쪽수만 사용하세요. 부족하면 evidence는 빈 배열로 두세요.")
-    opinion = ai_json(system, json.dumps(context, ensure_ascii=False), model, provider, opener)
+    opinion = ai_json(system, json.dumps(context, ensure_ascii=False), model, provider, opener, token)
     if not isinstance(opinion, dict):
         raise ValueError("Ollama 응답이 의견 객체가 아닙니다.")
     allowed_type = {"missing_parent", "missing_child", "unresolved_reference", "link_inconsistency",
@@ -423,42 +424,55 @@ def ollama_review(db, doc_no, item_id, model, opener=None, provider="ollama"):
     with db:
         cur = db.execute("""INSERT INTO ai_reviews
           (trace_id, provider, model, review_json, created_at) VALUES (?, ?, ?, ?, ?)""",
-          (row["trace_id"], "OpenAI" if provider == "openai" else "Ollama", model,
+          (row["trace_id"], {"openai": "OpenAI", "gateway": "Vercel AI Gateway"}.get(provider, "Ollama"), model,
            json.dumps(opinion, ensure_ascii=False), now()))
-    return {"review_id": cur.lastrowid, "provider": "OpenAI" if provider == "openai" else "Ollama", "model": model,
+    return {"review_id": cur.lastrowid, "provider": {"openai": "OpenAI", "gateway": "Vercel AI Gateway"}.get(provider, "Ollama"), "model": model,
             "opinion": opinion}
 
 
-def question_evidence(db, question, limit=5):
-    """정확 ID와 어휘 일치로 저장된 항목만 골라낸다."""
-    words = [x.lower() for x in re.findall(r"[A-Z]{2,4}-\d{3}|[가-힣A-Za-z0-9.]+", question)]
-    words = [x for x in words if len(x) >= 2]
+def question_evidence(db, question, limit=8):
+    """문서명을 지정하지 않아도 등록된 전체 후보에서 근거를 찾는다."""
+    words = [x.lower() for x in re.findall(r"[A-Za-z]{2,4}-\d{3}|[가-힣A-Za-z0-9.]+", question)]
+    words = [x for x in words if len(x) >= 2 and x not in
+             {"요구사항", "규격", "문서", "질문", "알려줘", "무엇", "무엇인가", "어떤", "대한", "관련", "전체"}]
     ranked = []
-    for row in db.execute("SELECT * FROM trace_items"):
-        haystack = f"{row['item_id']} {row['title']} {row['statement']}".lower()
-        score = sum((12 if word == row["item_id"].lower() else 1) for word in words if word in haystack)
+    rows = db.execute("""SELECT c.*, d.title AS document_title, d.rev, d.doc_no,
+        EXISTS(SELECT 1 FROM trace_items t WHERE t.candidate_id=c.candidate_id) AS saved
+        FROM candidates c JOIN documents d ON d.doc_no=c.doc_no ORDER BY c.candidate_id""")
+    for row in rows:
+        item = effective(row)
+        item_id = str(item.get("id", ""))
+        title = str(item.get("title", ""))
+        statement = str(item.get("statement") or item.get("result") or "")
+        document = f"{row['doc_no']} {row['document_title']}".lower()
+        score = sum(20 if word == item_id.lower() else
+                    5 if word in title.lower() else
+                    3 if word in statement.lower() else
+                    2 if word in document else 0 for word in words)
         if score:
-            ranked.append((score, row))
-    ranked.sort(key=lambda pair: (-pair[0], pair[1]["trace_id"]))
-    return [{"document_id": row["doc_no"], "revision": row["rev"],
-             "item_id": row["item_id"], "title": row["title"], "statement": row["statement"],
-             "section": row["section"], "page": row["page"]} for _, row in ranked[:limit]]
+            ranked.append((score, row, item, item_id, title, statement))
+    ranked.sort(key=lambda pair: (-pair[0], pair[1]["candidate_id"]))
+    return [{"document_id": row["doc_no"], "document_title": row["document_title"],
+             "revision": row["rev"], "item_id": item_id, "title": title,
+             "statement": statement, "section": item.get("section"),
+             "page": item.get("page"), "source_state": "저장" if row["saved"] else "후보"}
+            for _, row, item, item_id, title, statement in ranked[:limit]]
 
 
-def ollama_answer(db, question, model, opener=None, provider="ollama"):
+def ollama_answer(db, question, model, opener=None, provider="ollama", token=None):
     if not question.strip() or len(question) > 1000:
         raise ValueError("질문은 1~1000자로 입력하세요.")
     if not model or len(model) > 100 or any(c.isspace() for c in model):
         raise ValueError("Ollama 모델 ID가 잘못되었습니다.")
     evidence = question_evidence(db, question)
     if not evidence:
-        return {"answer": "저장된 항목에서 관련 근거를 찾지 못했습니다. 문서함에서 후보를 선택 저장한 뒤 다시 질문하세요.",
+        return {"answer": "등록된 문서와 규격 항목에서 관련 근거를 찾지 못했습니다. 질문의 핵심 용어를 바꿔 다시 검색해 주세요.",
                 "status": "insufficient_evidence", "citations": [], "evidence": [], "model": model}
-    system = ("제공된 저장 항목만으로 한국어로 답하세요. 답을 뒷받침하지 못하면 확인 필요라고 쓰세요. "
+    system = ("제공된 등록 문서의 항목만으로 한국어로 답하세요. 후보 상태의 항목은 검토 전 자료임을 밝혀 주세요. 답을 뒷받침하지 못하면 확인 필요라고 쓰세요. "
               "JSON 객체만 반환하세요: answer(문자열), status(answered|insufficient_evidence), "
               "citations(배열: document_id, revision, item_id, page). 제공되지 않은 인용은 만들지 마세요.")
     result = ai_json(system, json.dumps({"question": question, "evidence": evidence}, ensure_ascii=False),
-                     model, provider, opener)
+                     model, provider, opener, token)
     if not isinstance(result, dict) or result.get("status") not in {"answered", "insufficient_evidence"}:
         raise ValueError("Ollama 답변 형식이 유효하지 않습니다.")
     if not isinstance(result.get("answer"), str) or not result["answer"].strip():

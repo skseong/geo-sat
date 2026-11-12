@@ -1,0 +1,770 @@
+{
+  "document": {
+    "doc_no": "GKX-SRS-001",
+    "title": "시스템요구규격서",
+    "rev": "B",
+    "date": "2026-03-10",
+    "pages": 19,
+    "file": "02_SRS/GKX-SRS-001.pdf",
+    "item_count": 40
+  },
+  "items": [
+    {
+      "id": "SYS-001",
+      "doc_id": "GKX-SRS-001",
+      "type": "요구사항",
+      "title": "위치유지 정밀도",
+      "statement": "위성은 남북 및 동서 방향 위치유지 정밀도를 ±0.05° 이내로 유지해야 한다.",
+      "rationale": "MRD 궤도 위치 요구 할당",
+      "parents": [
+        "MRD-001"
+      ],
+      "methods": [
+        "A",
+        "T"
+      ],
+      "priority": "필수",
+      "status": "확정",
+      "section": "3.1 기능·성능 요구사항",
+      "page": 5
+    },
+    {
+      "id": "SYS-002",
+      "doc_id": "GKX-SRS-001",
+      "type": "요구사항",
+      "title": "설계수명 신뢰도",
+      "statement": "위성 시스템은 설계수명 15년 시점에서 신뢰도 0.75 이상을 만족해야 한다.",
+      "rationale": "임무 수명 보장",
+      "parents": [
+        "MRD-002"
+      ],
+      "methods": [
+        "A"
+      ],
+      "priority": "필수",
+      "status": "확정",
+      "section": "3.1 기능·성능 요구사항",
+      "page": 5
+    },
+    {
+      "id": "SYS-005",
+      "doc_id": "GKX-SRS-001",
+      "type": "요구사항",
+      "title": "무게중심",
+      "statement": "위성의 무게중심 높이는 발사체 어댑터 분리면 기준 1.8 m 이하여야 한다.",
+      "rationale": "발사체 사용자 설명서 제약",
+      "parents": [
+        "MRD-009"
+      ],
+      "methods": [
+        "A",
+        "T"
+      ],
+      "priority": "필수",
+      "status": "확정",
+      "section": "3.1 기능·성능 요구사항",
+      "page": 5
+    },
+    {
+      "id": "SYS-009",
+      "doc_id": "GKX-SRS-001",
+      "type": "요구사항",
+      "title": "식 기간 운용",
+      "statement": "위성은 최대 72분의 식(Eclipse) 기간 동안 전 탑재체 운용을 유지해야 한다.",
+      "rationale": "관측 연속성 확보",
+      "parents": [
+        "MRD-004",
+        "MRD-007"
+      ],
+      "methods": [
+        "A",
+        "T"
+      ],
+      "priority": "필수",
+      "status": "확정",
+      "section": "3.1 기능·성능 요구사항",
+      "page": 6
+    },
+    {
+      "id": "SYS-010",
+      "doc_id": "GKX-SRS-001",
+      "type": "요구사항",
+      "title": "지향 정확도",
+      "statement": "위성의 탑재체 지향 정확도는 3σ 기준 롤·피치 0.01°, 요 0.03° 이내여야 한다.",
+      "rationale": "영상 위치 정확도",
+      "parents": [
+        "MRD-006"
+      ],
+      "methods": [
+        "A",
+        "T"
+      ],
+      "priority": "필수",
+      "status": "확정",
+      "section": "3.1 기능·성능 요구사항",
+      "page": 6
+    },
+    {
+      "id": "SYS-011",
+      "doc_id": "GKX-SRS-001",
+      "type": "요구사항",
+      "title": "지향 안정도",
+      "statement": "위성의 관측 중 지향 안정도는 1초 구간에서 10 µrad 이하여야 한다.",
+      "rationale": "영상 품질(MTF) 확보",
+      "parents": [
+        "MRD-006"
+      ],
+      "methods": [
+        "A",
+        "T"
+      ],
+      "priority": "필수",
+      "status": "확정",
+      "section": "3.1 기능·성능 요구사항",
+      "page": 6
+    },
+    {
+      "id": "SYS-012",
+      "doc_id": "GKX-SRS-001",
+      "type": "요구사항",
+      "title": "자세 결정 정확도",
+      "statement": "위성의 자세 결정 정확도는 3σ 기준 5 arcsec 이하여야 한다.",
+      "rationale": "영상 항법정합 정확도",
+      "parents": [
+        "MRD-006"
+      ],
+      "methods": [
+        "A",
+        "T"
+      ],
+      "priority": "필수",
+      "status": "확정",
+      "section": "3.1 기능·성능 요구사항",
+      "page": 7
+    },
+    {
+      "id": "SYS-013",
+      "doc_id": "GKX-SRS-001",
+      "type": "요구사항",
+      "title": "추진제 수명",
+      "statement": "위성은 15년 위치유지 및 폐기 기동에 필요한 추진제를 10% 마진과 함께 탑재해야 한다.",
+      "rationale": "임무 수명 및 폐기 보장",
+      "parents": [
+        "MRD-002",
+        "MRD-013"
+      ],
+      "methods": [
+        "A"
+      ],
+      "priority": "필수",
+      "status": "확정",
+      "section": "3.1 기능·성능 요구사항",
+      "page": 7
+    },
+    {
+      "id": "SYS-014",
+      "doc_id": "GKX-SRS-001",
+      "type": "요구사항",
+      "title": "궤도 전이",
+      "statement": "위성은 천이궤도(GTO)에서 정지궤도로의 궤도 상승을 자체 추진으로 수행해야 한다.",
+      "rationale": "발사체 GTO 투입 방식",
+      "parents": [
+        "MRD-001"
+      ],
+      "methods": [
+        "A",
+        "D"
+      ],
+      "priority": "권장",
+      "status": "확정",
+      "section": "3.1 기능·성능 요구사항",
+      "page": 7
+    },
+    {
+      "id": "SYS-017",
+      "doc_id": "GKX-SRS-001",
+      "type": "요구사항",
+      "title": "TT&C 주파수",
+      "statement": "위성은 S 대역에서 원격측정·명령 링크를 제공해야 하며 세부 주파수는 전파 할당 결과에 따른다.",
+      "rationale": "주파수 조정 진행 중",
+      "parents": [
+        "MRD-010"
+      ],
+      "methods": [
+        "T"
+      ],
+      "priority": "필수",
+      "status": "TBD",
+      "section": "3.1 기능·성능 요구사항",
+      "page": 8
+    },
+    {
+      "id": "SYS-018",
+      "doc_id": "GKX-SRS-001",
+      "type": "요구사항",
+      "title": "명령 링크 품질",
+      "statement": "위성의 명령 링크 비트오류율(BER)은 1×10⁻⁶ 이하여야 한다.",
+      "rationale": "명령 신뢰성",
+      "parents": [
+        "MRD-010"
+      ],
+      "methods": [
+        "A",
+        "T"
+      ],
+      "priority": "필수",
+      "status": "확정",
+      "section": "3.1 기능·성능 요구사항",
+      "page": 8
+    },
+    {
+      "id": "SYS-019",
+      "doc_id": "GKX-SRS-001",
+      "type": "요구사항",
+      "title": "원격측정 전송률",
+      "statement": "위성은 정상 모드 4 kbps, 비상 모드 1 kbps의 원격측정 전송률을 제공해야 한다.",
+      "rationale": "지상 운용 요구",
+      "parents": [
+        "MRD-010"
+      ],
+      "methods": [
+        "T"
+      ],
+      "priority": "필수",
+      "status": "확정",
+      "section": "3.1 기능·성능 요구사항",
+      "page": 8
+    },
+    {
+      "id": "SYS-020",
+      "doc_id": "GKX-SRS-001",
+      "type": "요구사항",
+      "title": "거리측정 정확도",
+      "statement": "위성은 지상국 거리측정 정확도 10 m 이하를 지원해야 한다.",
+      "rationale": "궤도결정 정확도",
+      "parents": [
+        "MRD-001",
+        "MRD-010"
+      ],
+      "methods": [
+        "A",
+        "T"
+      ],
+      "priority": "필수",
+      "status": "확정",
+      "section": "3.1 기능·성능 요구사항",
+      "page": 9
+    },
+    {
+      "id": "SYS-022",
+      "doc_id": "GKX-SRS-001",
+      "type": "요구사항",
+      "title": "관측자료 다운링크",
+      "statement": "위성은 X 대역으로 120 Mbps 이상의 관측 원시자료 전송률을 제공해야 한다.",
+      "rationale": "관측 자료량 산정 결과",
+      "parents": [
+        "MRD-012"
+      ],
+      "methods": [
+        "T"
+      ],
+      "priority": "필수",
+      "status": "TBR",
+      "section": "3.1 기능·성능 요구사항",
+      "page": 9
+    },
+    {
+      "id": "SYS-023",
+      "doc_id": "GKX-SRS-001",
+      "type": "요구사항",
+      "title": "관측 운용 주기",
+      "statement": "위성은 전구 디스크 10분, 한반도 영역 2분 주기의 관측을 동시에 수행해야 한다.",
+      "rationale": "MRD 관측 주기 할당",
+      "parents": [
+        "MRD-004",
+        "MRD-003"
+      ],
+      "methods": [
+        "A",
+        "T"
+      ],
+      "priority": "필수",
+      "status": "확정",
+      "section": "3.1 기능·성능 요구사항",
+      "page": 9
+    },
+    {
+      "id": "SYS-025",
+      "doc_id": "GKX-SRS-001",
+      "type": "요구사항",
+      "title": "채널별 공간해상도",
+      "statement": "위성의 공간해상도는 직하점 기준 가시 0.5 km, 적외 2 km 이하여야 한다.",
+      "rationale": "MRD 해상도 할당",
+      "parents": [
+        "MRD-006"
+      ],
+      "methods": [
+        "T"
+      ],
+      "priority": "필수",
+      "status": "확정",
+      "section": "3.1 기능·성능 요구사항",
+      "page": 10
+    },
+    {
+      "id": "SYS-026",
+      "doc_id": "GKX-SRS-001",
+      "type": "요구사항",
+      "title": "복사보정 정확도",
+      "statement": "위성의 적외 채널 복사보정 정확도는 0.2 K 이하여야 한다.",
+      "rationale": "기후 자료 품질",
+      "parents": [
+        "MRD-005"
+      ],
+      "methods": [
+        "T"
+      ],
+      "priority": "필수",
+      "status": "확정",
+      "section": "3.1 기능·성능 요구사항",
+      "page": 10
+    },
+    {
+      "id": "SYS-027",
+      "doc_id": "GKX-SRS-001",
+      "type": "요구사항",
+      "title": "통신 커버리지",
+      "statement": "위성은 한반도 전역에 Ka 대역 EIRP 58 dBW 이상을 제공해야 한다.",
+      "rationale": "지상 단말 링크 예산",
+      "parents": [
+        "MRD-007"
+      ],
+      "methods": [
+        "A",
+        "T"
+      ],
+      "priority": "필수",
+      "status": "확정",
+      "section": "3.1 기능·성능 요구사항",
+      "page": 10
+    },
+    {
+      "id": "SYS-033",
+      "doc_id": "GKX-SRS-001",
+      "type": "요구사항",
+      "title": "시각 동기",
+      "statement": "위성의 온보드 시각은 UTC 대비 1 ms 이내로 동기되어야 한다.",
+      "rationale": "관측자료 시각 태깅",
+      "parents": [
+        "MRD-012"
+      ],
+      "methods": [
+        "T"
+      ],
+      "priority": "필수",
+      "status": "확정",
+      "section": "3.1 기능·성능 요구사항",
+      "page": 11
+    },
+    {
+      "id": "SYS-034",
+      "doc_id": "GKX-SRS-001",
+      "type": "요구사항",
+      "title": "탑재 처리 지연",
+      "statement": "위성의 탑재 데이터 처리 지연은 30초 이하여야 한다.",
+      "rationale": "MRD 전송 지연 할당",
+      "parents": [
+        "MRD-012"
+      ],
+      "methods": [
+        "A",
+        "T"
+      ],
+      "priority": "필수",
+      "status": "확정",
+      "section": "3.1 기능·성능 요구사항",
+      "page": 11
+    },
+    {
+      "id": "SYS-037",
+      "doc_id": "GKX-SRS-001",
+      "type": "요구사항",
+      "title": "전자기 적합성",
+      "statement": "위성은 MIL-STD-461 기반 전자기 적합성(EMC) 요구를 충족해야 한다.",
+      "rationale": "탑재체 간 간섭 방지",
+      "parents": [
+        "MRD-014"
+      ],
+      "methods": [
+        "T"
+      ],
+      "priority": "필수",
+      "status": "확정",
+      "section": "3.1 기능·성능 요구사항",
+      "page": 11
+    },
+    {
+      "id": "SYS-003",
+      "doc_id": "GKX-SRS-001",
+      "type": "요구사항",
+      "title": "발사 질량",
+      "statement": "위성의 발사 습윤 질량은 3,600 kg 이하여야 한다.",
+      "rationale": "발사체 투입 능력",
+      "parents": [
+        "MRD-009"
+      ],
+      "methods": [
+        "A",
+        "I"
+      ],
+      "priority": "필수",
+      "status": "확정",
+      "section": "3.2 물리·자원 요구사항",
+      "page": 12
+    },
+    {
+      "id": "SYS-004",
+      "doc_id": "GKX-SRS-001",
+      "type": "요구사항",
+      "title": "건조 질량",
+      "statement": "위성의 건조 질량은 시스템 마진을 포함하여 1,550 kg 이하여야 한다.",
+      "rationale": "추진제 탑재량 확보",
+      "parents": [
+        "MRD-009"
+      ],
+      "methods": [
+        "A",
+        "I"
+      ],
+      "priority": "필수",
+      "status": "확정",
+      "section": "3.2 물리·자원 요구사항",
+      "page": 12
+    },
+    {
+      "id": "SYS-008",
+      "doc_id": "GKX-SRS-001",
+      "type": "요구사항",
+      "title": "EOL 가용 전력",
+      "statement": "위성은 수명 말기(EOL) 하지 조건에서 5.0 kW 이상의 가용 전력을 확보해야 한다.",
+      "rationale": "탑재체 및 본체 전력 수요",
+      "parents": [
+        "MRD-002",
+        "MRD-005",
+        "MRD-007"
+      ],
+      "methods": [
+        "A",
+        "T"
+      ],
+      "priority": "필수",
+      "status": "확정",
+      "section": "3.2 물리·자원 요구사항",
+      "page": 12
+    },
+    {
+      "id": "SYS-024",
+      "doc_id": "GKX-SRS-001",
+      "type": "요구사항",
+      "title": "관측 채널 구성",
+      "statement": "위성은 가시 4, 근적외 2, 적외 10의 16개 채널을 제공해야 한다.",
+      "rationale": "MRD 관측 채널 할당",
+      "parents": [
+        "MRD-005"
+      ],
+      "methods": [
+        "T",
+        "I"
+      ],
+      "priority": "필수",
+      "status": "확정",
+      "section": "3.2 물리·자원 요구사항",
+      "page": 13
+    },
+    {
+      "id": "SYS-028",
+      "doc_id": "GKX-SRS-001",
+      "type": "요구사항",
+      "title": "통신 채널 구성",
+      "statement": "위성은 대역폭 250 MHz의 Ka 대역 중계 채널 8개를 제공해야 한다.",
+      "rationale": "서비스 용량 산정",
+      "parents": [
+        "MRD-007"
+      ],
+      "methods": [
+        "T",
+        "I"
+      ],
+      "priority": "권장",
+      "status": "확정",
+      "section": "3.2 물리·자원 요구사항",
+      "page": 13
+    },
+    {
+      "id": "SYS-006",
+      "doc_id": "GKX-SRS-001",
+      "type": "요구사항",
+      "title": "고유진동수",
+      "statement": "위성의 1차 고유진동수는 축방향 30 Hz 이상, 횡방향 10 Hz 이상이어야 한다.",
+      "rationale": "발사체 동적 연성 회피",
+      "parents": [
+        "MRD-009"
+      ],
+      "methods": [
+        "A",
+        "T"
+      ],
+      "priority": "필수",
+      "status": "확정",
+      "section": "3.3 환경·열 요구사항",
+      "page": 13
+    },
+    {
+      "id": "SYS-007",
+      "doc_id": "GKX-SRS-001",
+      "type": "요구사항",
+      "title": "발사 환경",
+      "statement": "위성은 발사체 사용자 설명서에 규정된 준정적 하중, 정현파 진동, 음향, 충격 환경을 견뎌야 한다.",
+      "rationale": "발사 중 구조 건전성",
+      "parents": [
+        "MRD-009"
+      ],
+      "methods": [
+        "A",
+        "T"
+      ],
+      "priority": "권장",
+      "status": "확정",
+      "section": "3.3 환경·열 요구사항",
+      "page": 14
+    },
+    {
+      "id": "SYS-015",
+      "doc_id": "GKX-SRS-001",
+      "type": "요구사항",
+      "title": "장비 열환경",
+      "statement": "위성의 모든 장비는 운용 온도 범위 내로 유지되어야 하며 인증 마진 10°C를 확보해야 한다.",
+      "rationale": "장비 신뢰성 확보",
+      "parents": [
+        "MRD-014"
+      ],
+      "methods": [
+        "A",
+        "T"
+      ],
+      "priority": "필수",
+      "status": "확정",
+      "section": "3.3 환경·열 요구사항",
+      "page": 14
+    },
+    {
+      "id": "SYS-016",
+      "doc_id": "GKX-SRS-001",
+      "type": "요구사항",
+      "title": "적외 검출기 냉각",
+      "statement": "위성은 영상기 적외 검출기 온도를 60 K ± 0.1 K로 유지해야 한다.",
+      "rationale": "적외 채널 잡음 성능",
+      "parents": [
+        "MRD-005"
+      ],
+      "methods": [
+        "T"
+      ],
+      "priority": "필수",
+      "status": "확정",
+      "section": "3.3 환경·열 요구사항",
+      "page": 14
+    },
+    {
+      "id": "SYS-035",
+      "doc_id": "GKX-SRS-001",
+      "type": "요구사항",
+      "title": "총이온화선량",
+      "statement": "위성 장비는 차폐를 고려하여 15년 총이온화선량(TID) 100 krad(Si) 이상을 견뎌야 한다.",
+      "rationale": "정지궤도 방사선 환경 해석",
+      "parents": [
+        "MRD-014"
+      ],
+      "methods": [
+        "A",
+        "T"
+      ],
+      "priority": "권장",
+      "status": "확정",
+      "section": "3.3 환경·열 요구사항",
+      "page": 15
+    },
+    {
+      "id": "SYS-036",
+      "doc_id": "GKX-SRS-001",
+      "type": "요구사항",
+      "title": "단일사건효과",
+      "statement": "위성 장비는 LET 60 MeV·cm²/mg 이하에서 단일사건래치업(SEL)에 면역이어야 한다.",
+      "rationale": "고에너지 입자 환경",
+      "parents": [
+        "MRD-014"
+      ],
+      "methods": [
+        "A",
+        "T"
+      ],
+      "priority": "필수",
+      "status": "확정",
+      "section": "3.3 환경·열 요구사항",
+      "page": 15
+    },
+    {
+      "id": "SYS-038",
+      "doc_id": "GKX-SRS-001",
+      "type": "요구사항",
+      "title": "표면 대전",
+      "statement": "위성은 표면 전위차를 1 kV 이하로 유지하도록 접지 및 도전성 표면 설계를 적용해야 한다.",
+      "rationale": "정전기 방전 방지",
+      "parents": [
+        "MRD-014"
+      ],
+      "methods": [
+        "A",
+        "I"
+      ],
+      "priority": "필수",
+      "status": "확정",
+      "section": "3.3 환경·열 요구사항",
+      "page": 15
+    },
+    {
+      "id": "SYS-040",
+      "doc_id": "GKX-SRS-001",
+      "type": "요구사항",
+      "title": "시험 지원성",
+      "statement": "위성은 지상 시험을 위한 시험 포트와 EGSE 인터페이스를 제공해야 한다.",
+      "rationale": "조립·시험 효율",
+      "parents": [
+        "MRD-010"
+      ],
+      "methods": [
+        "I",
+        "D"
+      ],
+      "priority": "필수",
+      "status": "확정",
+      "section": "3.3 환경·열 요구사항",
+      "page": 16
+    },
+    {
+      "id": "SYS-021",
+      "doc_id": "GKX-SRS-001",
+      "type": "요구사항",
+      "title": "명령 보안 적용",
+      "statement": "위성의 명령 링크는 AES-256 암호화와 메시지 인증을 적용해야 한다.",
+      "rationale": "국가 위성 보안 지침",
+      "parents": [
+        "MRD-015"
+      ],
+      "methods": [
+        "T",
+        "I"
+      ],
+      "priority": "권장",
+      "status": "확정",
+      "section": "3.4 신뢰성·안전 요구사항",
+      "page": 16
+    },
+    {
+      "id": "SYS-029",
+      "doc_id": "GKX-SRS-001",
+      "type": "요구사항",
+      "title": "통신 이중화",
+      "statement": "위성은 통신 탑재체 이중화를 통해 가용도 99.5%를 확보해야 한다.",
+      "rationale": "MRD 통신 가용도 할당",
+      "parents": [
+        "MRD-008"
+      ],
+      "methods": [
+        "A"
+      ],
+      "priority": "필수",
+      "status": "확정",
+      "section": "3.4 신뢰성·안전 요구사항",
+      "page": 16
+    },
+    {
+      "id": "SYS-030",
+      "doc_id": "GKX-SRS-001",
+      "type": "요구사항",
+      "title": "안전모드",
+      "statement": "위성은 시스템 고장 탐지 시 자동으로 태양지향 안전모드에 진입해야 한다.",
+      "rationale": "위성 생존성 확보",
+      "parents": [
+        "MRD-011"
+      ],
+      "methods": [
+        "A",
+        "T",
+        "D"
+      ],
+      "priority": "필수",
+      "status": "확정",
+      "section": "3.4 신뢰성·안전 요구사항",
+      "page": 17
+    },
+    {
+      "id": "SYS-031",
+      "doc_id": "GKX-SRS-001",
+      "type": "요구사항",
+      "title": "자율 유지",
+      "statement": "위성은 72시간 동안 지상 개입 없이 위치, 자세, 전력을 자율 유지해야 한다.",
+      "rationale": "MRD 자율 운용 할당",
+      "parents": [
+        "MRD-011"
+      ],
+      "methods": [
+        "A",
+        "D"
+      ],
+      "priority": "필수",
+      "status": "확정",
+      "section": "3.4 신뢰성·안전 요구사항",
+      "page": 17
+    },
+    {
+      "id": "SYS-032",
+      "doc_id": "GKX-SRS-001",
+      "type": "요구사항",
+      "title": "FDIR",
+      "statement": "위성은 단일 고장이 임무 상실로 이어지지 않도록 고장 탐지·격리·복구(FDIR) 기능을 제공해야 한다.",
+      "rationale": "단일고장 허용 설계",
+      "parents": [
+        "MRD-011",
+        "MRD-002"
+      ],
+      "methods": [
+        "A",
+        "T"
+      ],
+      "priority": "필수",
+      "status": "확정",
+      "section": "3.4 신뢰성·안전 요구사항",
+      "page": 17
+    },
+    {
+      "id": "SYS-039",
+      "doc_id": "GKX-SRS-001",
+      "type": "요구사항",
+      "title": "임무 종료 처리",
+      "statement": "위성은 임무 종료 시 폐기궤도 상승, 추진제 배출, 배터리 비활성화를 수행해야 한다.",
+      "rationale": "우주잔해 경감",
+      "parents": [
+        "MRD-013"
+      ],
+      "methods": [
+        "A",
+        "D"
+      ],
+      "priority": "필수",
+      "status": "확정",
+      "section": "3.4 신뢰성·안전 요구사항",
+      "page": 18
+    }
+  ]
+}

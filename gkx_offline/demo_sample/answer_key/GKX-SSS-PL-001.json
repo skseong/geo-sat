@@ -1,0 +1,383 @@
+{
+  "document": {
+    "doc_no": "GKX-SSS-PL-001",
+    "title": "탑재체 요구규격서",
+    "rev": "A",
+    "date": "2026-05-20",
+    "pages": 12,
+    "file": "03_SSS/GKX-SSS-PL-001.pdf",
+    "item_count": 20
+  },
+  "items": [
+    {
+      "id": "PL-002",
+      "doc_id": "GKX-SSS-PL-001",
+      "type": "요구사항",
+      "title": "가시 해상도",
+      "statement": "MCI 가시 채널 공간해상도는 직하점 기준 0.5 km 이하여야 한다.",
+      "rationale": "해상도 요구 할당",
+      "parents": [
+        "SYS-025"
+      ],
+      "methods": [
+        "T"
+      ],
+      "priority": "필수",
+      "status": "확정",
+      "section": "3.1 기능·성능 요구사항",
+      "page": 5
+    },
+    {
+      "id": "PL-003",
+      "doc_id": "GKX-SSS-PL-001",
+      "type": "요구사항",
+      "title": "적외 해상도",
+      "statement": "MCI 적외 채널 공간해상도는 직하점 기준 2 km 이하여야 한다.",
+      "rationale": "해상도 요구 할당",
+      "parents": [
+        "SYS-025"
+      ],
+      "methods": [
+        "T"
+      ],
+      "priority": "필수",
+      "status": "확정",
+      "section": "3.1 기능·성능 요구사항",
+      "page": 5
+    },
+    {
+      "id": "PL-004",
+      "doc_id": "GKX-SSS-PL-001",
+      "type": "요구사항",
+      "title": "가시 채널 SNR",
+      "statement": "MCI 가시 채널의 신호대잡음비는 반사율 100% 조건에서 300 이상이어야 한다.",
+      "rationale": "영상 품질",
+      "parents": [
+        "SYS-024"
+      ],
+      "methods": [
+        "T"
+      ],
+      "priority": "필수",
+      "status": "확정",
+      "section": "3.1 기능·성능 요구사항",
+      "page": 5
+    },
+    {
+      "id": "PL-005",
+      "doc_id": "GKX-SSS-PL-001",
+      "type": "요구사항",
+      "title": "적외 채널 NEdT",
+      "statement": "MCI 적외 채널의 잡음등가온도차(NEdT)는 300 K에서 0.1 K 이하여야 한다.",
+      "rationale": "복사 분해능",
+      "parents": [
+        "SYS-026"
+      ],
+      "methods": [
+        "T"
+      ],
+      "priority": "필수",
+      "status": "확정",
+      "section": "3.1 기능·성능 요구사항",
+      "page": 6
+    },
+    {
+      "id": "PL-006",
+      "doc_id": "GKX-SSS-PL-001",
+      "type": "요구사항",
+      "title": "기내 복사보정",
+      "statement": "MCI는 내부 흑체를 이용하여 15분마다 적외 채널을 보정해야 하며 보정 정확도는 0.2 K 이하여야 한다.",
+      "rationale": "복사보정 정확도 할당",
+      "parents": [
+        "SYS-026"
+      ],
+      "methods": [
+        "T"
+      ],
+      "priority": "필수",
+      "status": "확정",
+      "section": "3.1 기능·성능 요구사항",
+      "page": 6
+    },
+    {
+      "id": "PL-007",
+      "doc_id": "GKX-SSS-PL-001",
+      "type": "요구사항",
+      "title": "관측 시나리오",
+      "statement": "MCI는 전구 디스크 10분 관측과 한반도 영역 2분 관측을 동시에 수행해야 한다.",
+      "rationale": "관측 운용 주기 할당",
+      "parents": [
+        "SYS-023"
+      ],
+      "methods": [
+        "A",
+        "D"
+      ],
+      "priority": "권장",
+      "status": "확정",
+      "section": "3.1 기능·성능 요구사항",
+      "page": 6
+    },
+    {
+      "id": "PL-008",
+      "doc_id": "GKX-SSS-PL-001",
+      "type": "요구사항",
+      "title": "주사 거울 지향",
+      "statement": "MCI 주사 거울의 지향 정확도는 6 µrad 이하여야 한다.",
+      "rationale": "영상 위치 정확도",
+      "parents": [
+        "SYS-010"
+      ],
+      "methods": [
+        "T"
+      ],
+      "priority": "필수",
+      "status": "확정",
+      "section": "3.1 기능·성능 요구사항",
+      "page": 7
+    },
+    {
+      "id": "PL-009",
+      "doc_id": "GKX-SSS-PL-001",
+      "type": "요구사항",
+      "title": "영상 항법정합",
+      "statement": "MCI 영상의 항법정합 정확도는 3σ 기준 42 µrad 이하여야 한다.",
+      "rationale": "영상 위치 정확도",
+      "parents": [
+        "SYS-010",
+        "SYS-025"
+      ],
+      "methods": [
+        "A",
+        "T"
+      ],
+      "priority": "필수",
+      "status": "확정",
+      "section": "3.1 기능·성능 요구사항",
+      "page": 7
+    },
+    {
+      "id": "PL-011",
+      "doc_id": "GKX-SSS-PL-001",
+      "type": "요구사항",
+      "title": "자료 압축",
+      "statement": "MCI 자료는 2:1 이상의 압축률로 무손실 압축되어야 한다.",
+      "rationale": "다운링크 대역폭 절감",
+      "parents": [
+        "SYS-022"
+      ],
+      "methods": [
+        "T"
+      ],
+      "priority": "필수",
+      "status": "확정",
+      "section": "3.1 기능·성능 요구사항",
+      "page": 7
+    },
+    {
+      "id": "PL-012",
+      "doc_id": "GKX-SSS-PL-001",
+      "type": "요구사항",
+      "title": "Ka 중계기 채널",
+      "statement": "Ka 대역 통신 중계기는 대역폭 250 MHz의 채널 8개를 제공해야 한다.",
+      "rationale": "통신 채널 할당",
+      "parents": [
+        "SYS-028"
+      ],
+      "methods": [
+        "T",
+        "I"
+      ],
+      "priority": "필수",
+      "status": "확정",
+      "section": "3.1 기능·성능 요구사항",
+      "page": 8
+    },
+    {
+      "id": "PL-013",
+      "doc_id": "GKX-SSS-PL-001",
+      "type": "요구사항",
+      "title": "Ka 빔 EIRP",
+      "statement": "Ka 대역 빔의 EIRP는 빔 가장자리에서 58 dBW 이상이어야 한다.",
+      "rationale": "통신 커버리지 할당",
+      "parents": [
+        "SYS-027"
+      ],
+      "methods": [
+        "T",
+        "A"
+      ],
+      "priority": "필수",
+      "status": "확정",
+      "section": "3.1 기능·성능 요구사항",
+      "page": 8
+    },
+    {
+      "id": "PL-014",
+      "doc_id": "GKX-SSS-PL-001",
+      "type": "요구사항",
+      "title": "수신 G/T",
+      "statement": "Ka 대역 통신 중계기의 수신 G/T는 14 dB/K 이상이어야 한다.",
+      "rationale": "상향 링크 예산",
+      "parents": [
+        "SYS-027"
+      ],
+      "methods": [
+        "T"
+      ],
+      "priority": "권장",
+      "status": "확정",
+      "section": "3.1 기능·성능 요구사항",
+      "page": 8
+    },
+    {
+      "id": "PL-016",
+      "doc_id": "GKX-SSS-PL-001",
+      "type": "요구사항",
+      "title": "수동 상호변조",
+      "statement": "Ka 대역 안테나 계통의 3차 수동 상호변조(PIM)는 -140 dBc 이하여야 한다.",
+      "rationale": "수신 대역 간섭 방지",
+      "parents": [
+        "SYS-037"
+      ],
+      "methods": [
+        "T"
+      ],
+      "priority": "필수",
+      "status": "TBR",
+      "section": "3.1 기능·성능 요구사항",
+      "page": 9
+    },
+    {
+      "id": "PL-017",
+      "doc_id": "GKX-SSS-PL-001",
+      "type": "요구사항",
+      "title": "주파수 안정도",
+      "statement": "통신 중계기 국부발진기의 주파수 안정도는 15년간 ±1 ppm 이내여야 한다.",
+      "rationale": "채널 주파수 유지",
+      "parents": [
+        "SYS-002"
+      ],
+      "methods": [
+        "T",
+        "A"
+      ],
+      "priority": "필수",
+      "status": "확정",
+      "section": "3.1 기능·성능 요구사항",
+      "page": 9
+    },
+    {
+      "id": "PL-001",
+      "doc_id": "GKX-SSS-PL-001",
+      "type": "요구사항",
+      "title": "영상기 채널 구성",
+      "statement": "다채널 기상영상기(MCI)는 가시 4, 근적외 2, 적외 10의 16개 채널을 제공해야 한다.",
+      "rationale": "관측 채널 할당",
+      "parents": [
+        "SYS-024"
+      ],
+      "methods": [
+        "T",
+        "I"
+      ],
+      "priority": "필수",
+      "status": "확정",
+      "section": "3.2 물리·자원 요구사항",
+      "page": 9
+    },
+    {
+      "id": "PL-019",
+      "doc_id": "GKX-SSS-PL-001",
+      "type": "요구사항",
+      "title": "탑재체 질량",
+      "statement": "탑재체 질량은 영상기 320 kg, 통신 중계기 280 kg 이하여야 한다.",
+      "rationale": "질량 예산 할당",
+      "parents": [
+        "SYS-004"
+      ],
+      "methods": [
+        "I"
+      ],
+      "priority": "필수",
+      "status": "확정",
+      "section": "3.2 물리·자원 요구사항",
+      "page": 10
+    },
+    {
+      "id": "PL-020",
+      "doc_id": "GKX-SSS-PL-001",
+      "type": "요구사항",
+      "title": "탑재체 전력",
+      "statement": "탑재체의 총 소모 전력은 2,400 W 이하여야 한다.",
+      "rationale": "전력 예산 할당",
+      "parents": [
+        "SYS-008"
+      ],
+      "methods": [
+        "T"
+      ],
+      "priority": "필수",
+      "status": "확정",
+      "section": "3.2 물리·자원 요구사항",
+      "page": 10
+    },
+    {
+      "id": "PL-018",
+      "doc_id": "GKX-SSS-PL-001",
+      "type": "요구사항",
+      "title": "탑재체 열 소산",
+      "statement": "탑재체의 총 열 소산량은 1,900 W 이하여야 한다.",
+      "rationale": "방열판 용량",
+      "parents": [
+        "SYS-015"
+      ],
+      "methods": [
+        "A",
+        "T"
+      ],
+      "priority": "필수",
+      "status": "확정",
+      "section": "3.3 환경·열 요구사항",
+      "page": 10
+    },
+    {
+      "id": "PL-010",
+      "doc_id": "GKX-SSS-PL-001",
+      "type": "요구사항",
+      "title": "태양 침입 보호",
+      "statement": "MCI는 태양이 시야에 들어올 때 자동으로 셔터를 닫아야 한다.",
+      "rationale": "검출기 손상 방지",
+      "parents": [
+        "SYS-030"
+      ],
+      "methods": [
+        "T",
+        "D"
+      ],
+      "priority": "필수",
+      "status": "확정",
+      "section": "3.4 신뢰성·안전 요구사항",
+      "page": 11
+    },
+    {
+      "id": "PL-015",
+      "doc_id": "GKX-SSS-PL-001",
+      "type": "요구사항",
+      "title": "TWTA 이중화",
+      "statement": "Ka 대역 진행파관증폭기(TWTA)는 10:8 링 리던던시로 구성되어야 한다.",
+      "rationale": "통신 가용도 확보",
+      "parents": [
+        "SYS-029"
+      ],
+      "methods": [
+        "I",
+        "T"
+      ],
+      "priority": "필수",
+      "status": "확정",
+      "section": "3.4 신뢰성·안전 요구사항",
+      "page": 11
+    }
+  ]
+}

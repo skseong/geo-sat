@@ -1,0 +1,386 @@
+{
+  "document": {
+    "doc_no": "GKX-SSS-TTC-001",
+    "title": "원격측정·추적·명령계 요구규격서",
+    "rev": "A",
+    "date": "2026-05-20",
+    "pages": 12,
+    "file": "03_SSS/GKX-SSS-TTC-001.pdf",
+    "item_count": 20
+  },
+  "items": [
+    {
+      "id": "TTC-001",
+      "doc_id": "GKX-SSS-TTC-001",
+      "type": "요구사항",
+      "title": "S 대역 주파수",
+      "statement": "원격측정·추적·명령계는 S 대역 상향 2025~2110 MHz, 하향 2200~2290 MHz 범위에서 운용되어야 하며 세부 채널은 할당 후 확정한다.",
+      "rationale": "ITU 주파수 조정 진행 중",
+      "parents": [
+        "SYS-017"
+      ],
+      "methods": [
+        "T"
+      ],
+      "priority": "필수",
+      "status": "TBD",
+      "section": "3.1 기능·성능 요구사항",
+      "page": 5
+    },
+    {
+      "id": "TTC-002",
+      "doc_id": "GKX-SSS-TTC-001",
+      "type": "요구사항",
+      "title": "TT&C 안테나",
+      "statement": "원격측정·추적·명령계는 전방향 커버리지를 위해 +Z, -Z 방향의 안테나 2개를 가져야 한다.",
+      "rationale": "모든 자세에서 링크 확보",
+      "parents": [
+        "SYS-017",
+        "SYS-030"
+      ],
+      "methods": [
+        "T",
+        "A"
+      ],
+      "priority": "필수",
+      "status": "확정",
+      "section": "3.1 기능·성능 요구사항",
+      "page": 5
+    },
+    {
+      "id": "TTC-004",
+      "doc_id": "GKX-SSS-TTC-001",
+      "type": "요구사항",
+      "title": "수신 감도",
+      "statement": "트랜스폰더는 -120 dBm 입력에서 BER 1×10⁻⁶ 이하를 만족해야 한다.",
+      "rationale": "명령 링크 품질 할당",
+      "parents": [
+        "SYS-018"
+      ],
+      "methods": [
+        "T"
+      ],
+      "priority": "필수",
+      "status": "확정",
+      "section": "3.1 기능·성능 요구사항",
+      "page": 6
+    },
+    {
+      "id": "TTC-005",
+      "doc_id": "GKX-SSS-TTC-001",
+      "type": "요구사항",
+      "title": "S 대역 EIRP",
+      "statement": "원격측정 하향 링크 EIRP는 13 dBW 이상이어야 한다.",
+      "rationale": "지상국 링크 예산",
+      "parents": [
+        "SYS-019"
+      ],
+      "methods": [
+        "T",
+        "A"
+      ],
+      "priority": "필수",
+      "status": "확정",
+      "section": "3.1 기능·성능 요구사항",
+      "page": 6
+    },
+    {
+      "id": "TTC-007",
+      "doc_id": "GKX-SSS-TTC-001",
+      "type": "요구사항",
+      "title": "원격측정 전송률 선택",
+      "statement": "원격측정·추적·명령계는 4 kbps와 1 kbps 원격측정 전송률을 명령으로 선택할 수 있어야 한다.",
+      "rationale": "운용 모드별 전송률",
+      "parents": [
+        "SYS-019"
+      ],
+      "methods": [
+        "T"
+      ],
+      "priority": "권장",
+      "status": "확정",
+      "section": "3.1 기능·성능 요구사항",
+      "page": 6
+    },
+    {
+      "id": "TTC-008",
+      "doc_id": "GKX-SSS-TTC-001",
+      "type": "요구사항",
+      "title": "명령 전송률",
+      "statement": "명령 링크 전송률은 2 kbps여야 한다.",
+      "rationale": "지상국 표준",
+      "parents": [
+        "SYS-018"
+      ],
+      "methods": [
+        "T"
+      ],
+      "priority": "필수",
+      "status": "확정",
+      "section": "3.1 기능·성능 요구사항",
+      "page": 7
+    },
+    {
+      "id": "TTC-009",
+      "doc_id": "GKX-SSS-TTC-001",
+      "type": "요구사항",
+      "title": "톤 거리측정",
+      "statement": "원격측정·추적·명령계는 거리측정 정확도 10 m 이하의 톤 거리측정을 지원해야 한다.",
+      "rationale": "궤도결정 지원",
+      "parents": [
+        "SYS-020"
+      ],
+      "methods": [
+        "T",
+        "A"
+      ],
+      "priority": "필수",
+      "status": "확정",
+      "section": "3.1 기능·성능 요구사항",
+      "page": 7
+    },
+    {
+      "id": "TTC-010",
+      "doc_id": "GKX-SSS-TTC-001",
+      "type": "요구사항",
+      "title": "CCSDS 프레임",
+      "statement": "원격측정 및 명령은 CCSDS TM/TC 표준 프레임 형식을 따라야 한다.",
+      "rationale": "지상 시스템 호환성",
+      "parents": [
+        "SYS-018",
+        "SYS-019"
+      ],
+      "methods": [
+        "T",
+        "I"
+      ],
+      "priority": "필수",
+      "status": "확정",
+      "section": "3.1 기능·성능 요구사항",
+      "page": 7
+    },
+    {
+      "id": "TTC-012",
+      "doc_id": "GKX-SSS-TTC-001",
+      "type": "요구사항",
+      "title": "키 갱신",
+      "statement": "원격측정·추적·명령계는 궤도상에서 암호 키를 갱신할 수 있어야 한다.",
+      "rationale": "장기 보안 유지",
+      "parents": [
+        "SYS-021"
+      ],
+      "methods": [
+        "D",
+        "T"
+      ],
+      "priority": "필수",
+      "status": "확정",
+      "section": "3.1 기능·성능 요구사항",
+      "page": 8
+    },
+    {
+      "id": "TTC-014",
+      "doc_id": "GKX-SSS-TTC-001",
+      "type": "요구사항",
+      "title": "X 대역 자료 송신기",
+      "statement": "X 대역 관측자료 송신기는 8PSK 변조로 120 Mbps 이상을 전송해야 한다.",
+      "rationale": "관측자료 다운링크 할당",
+      "parents": [
+        "SYS-022"
+      ],
+      "methods": [
+        "T"
+      ],
+      "priority": "필수",
+      "status": "TBR",
+      "section": "3.1 기능·성능 요구사항",
+      "page": 8
+    },
+    {
+      "id": "TTC-015",
+      "doc_id": "GKX-SSS-TTC-001",
+      "type": "요구사항",
+      "title": "X 대역 EIRP",
+      "statement": "X 대역 관측자료 링크 EIRP는 한반도 전역에서 40 dBW 이상이어야 한다.",
+      "rationale": "지상 수신 링크 예산",
+      "parents": [
+        "SYS-022"
+      ],
+      "methods": [
+        "A",
+        "T"
+      ],
+      "priority": "필수",
+      "status": "확정",
+      "section": "3.1 기능·성능 요구사항",
+      "page": 8
+    },
+    {
+      "id": "TTC-016",
+      "doc_id": "GKX-SSS-TTC-001",
+      "type": "요구사항",
+      "title": "자료 전송 지연",
+      "statement": "관측자료의 탑재 수신부터 X 대역 송신까지의 지연은 30초 이하여야 한다.",
+      "rationale": "처리 지연 할당",
+      "parents": [
+        "SYS-034"
+      ],
+      "methods": [
+        "A",
+        "T"
+      ],
+      "priority": "필수",
+      "status": "확정",
+      "section": "3.1 기능·성능 요구사항",
+      "page": 9
+    },
+    {
+      "id": "TTC-017",
+      "doc_id": "GKX-SSS-TTC-001",
+      "type": "요구사항",
+      "title": "링크 마진",
+      "statement": "모든 RF 링크는 3 dB 이상의 링크 마진을 확보해야 한다.",
+      "rationale": "강우 감쇠 등 불확도",
+      "parents": [
+        "SYS-018",
+        "SYS-022"
+      ],
+      "methods": [
+        "A"
+      ],
+      "priority": "필수",
+      "status": "확정",
+      "section": "3.1 기능·성능 요구사항",
+      "page": 9
+    },
+    {
+      "id": "TTC-006",
+      "doc_id": "GKX-SSS-TTC-001",
+      "type": "요구사항",
+      "title": "변조 방식",
+      "statement": "상향 및 하향 링크는 PCM/PSK/PM 변조 방식을 사용해야 한다.",
+      "rationale": "지상국 호환성",
+      "parents": [
+        "SYS-017"
+      ],
+      "methods": [
+        "T",
+        "I"
+      ],
+      "priority": "필수",
+      "status": "확정",
+      "section": "3.2 물리·자원 요구사항",
+      "page": 9
+    },
+    {
+      "id": "TTC-019",
+      "doc_id": "GKX-SSS-TTC-001",
+      "type": "요구사항",
+      "title": "TT&C 질량",
+      "statement": "원격측정·추적·명령계의 총 질량은 45 kg 이하여야 한다.",
+      "rationale": "질량 예산 할당",
+      "parents": [
+        "SYS-004"
+      ],
+      "methods": [
+        "I"
+      ],
+      "priority": "필수",
+      "status": "확정",
+      "section": "3.2 물리·자원 요구사항",
+      "page": 10
+    },
+    {
+      "id": "TTC-020",
+      "doc_id": "GKX-SSS-TTC-001",
+      "type": "요구사항",
+      "title": "TT&C 전력",
+      "statement": "원격측정·추적·명령계의 소모 전력은 85 W 이하여야 한다.",
+      "rationale": "전력 예산 할당",
+      "parents": [
+        "SYS-008"
+      ],
+      "methods": [
+        "T"
+      ],
+      "priority": "필수",
+      "status": "확정",
+      "section": "3.2 물리·자원 요구사항",
+      "page": 10
+    },
+    {
+      "id": "TTC-018",
+      "doc_id": "GKX-SSS-TTC-001",
+      "type": "요구사항",
+      "title": "RF 자기간섭",
+      "statement": "원격측정·추적·명령계 수신 대역 내에 위성 자체 간섭 신호가 없어야 한다.",
+      "rationale": "수신 감도 보장",
+      "parents": [
+        "SYS-037"
+      ],
+      "methods": [
+        "T"
+      ],
+      "priority": "필수",
+      "status": "확정",
+      "section": "3.3 환경·열 요구사항",
+      "page": 10
+    },
+    {
+      "id": "TTC-003",
+      "doc_id": "GKX-SSS-TTC-001",
+      "type": "요구사항",
+      "title": "트랜스폰더 이중화",
+      "statement": "원격측정·추적·명령계는 상시 수신이 가능한 트랜스폰더 2대를 탑재해야 한다.",
+      "rationale": "명령 수신 단일고장 허용",
+      "parents": [
+        "SYS-032"
+      ],
+      "methods": [
+        "T",
+        "I"
+      ],
+      "priority": "필수",
+      "status": "확정",
+      "section": "3.4 신뢰성·안전 요구사항",
+      "page": 11
+    },
+    {
+      "id": "TTC-011",
+      "doc_id": "GKX-SSS-TTC-001",
+      "type": "요구사항",
+      "title": "명령 인증",
+      "statement": "원격측정·추적·명령계는 AES-256 기반 명령 인증과 명령 카운터 기반 재전송 공격 방지를 적용해야 한다.",
+      "rationale": "명령 보안 할당",
+      "parents": [
+        "SYS-021"
+      ],
+      "methods": [
+        "T"
+      ],
+      "priority": "필수",
+      "status": "확정",
+      "section": "3.4 신뢰성·안전 요구사항",
+      "page": 11
+    },
+    {
+      "id": "TTC-013",
+      "doc_id": "GKX-SSS-TTC-001",
+      "type": "요구사항",
+      "title": "하드웨어 비상 명령",
+      "statement": "원격측정·추적·명령계는 OBC를 거치지 않는 하드웨어 디코딩 비상 명령을 16개 이상 제공해야 한다.",
+      "rationale": "OBC 고장 시 복구",
+      "parents": [
+        "SYS-030",
+        "SYS-031"
+      ],
+      "methods": [
+        "T"
+      ],
+      "priority": "필수",
+      "status": "확정",
+      "section": "3.4 신뢰성·안전 요구사항",
+      "page": 11
+    }
+  ]
+}

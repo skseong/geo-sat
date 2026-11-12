@@ -1,0 +1,601 @@
+{
+  "document": {
+    "doc_no": "GKX-VP-PL-001",
+    "title": "탑재체 검증계획서",
+    "rev": "A",
+    "date": "2026-07-22",
+    "pages": 17,
+    "file": "05_VP/GKX-VP-PL-001.pdf",
+    "item_count": 32
+  },
+  "items": [
+    {
+      "id": "VER-PL-001",
+      "doc_id": "GKX-VP-PL-001",
+      "type": "검증항목",
+      "title": "영상기 채널 구성 검증",
+      "statement": "부체계 수준 시험에서 '영상기 채널 구성' 항목을 계측 장비로 측정하여 요구값 충족 여부를 확인한다. 설계 도면, 부품 목록 및 실물 검사를 통해 요구 반영 여부를 확인한다.",
+      "criteria": "다채널 기상영상기(MCI)는 가시 4, 근적외 2, 적외 10의 16개 채널을 제공해야 한다.",
+      "parents": [
+        "PL-001"
+      ],
+      "methods": [
+        "T",
+        "I"
+      ],
+      "level": "부체계",
+      "test_case": "TC-PL-001",
+      "section": "4.1 검증 항목 목록",
+      "page": 6
+    },
+    {
+      "id": "VER-PL-002",
+      "doc_id": "GKX-VP-PL-001",
+      "type": "검증항목",
+      "title": "가시 해상도 검증",
+      "statement": "부체계 수준 시험에서 '가시 해상도' 항목을 계측 장비로 측정하여 요구값 충족 여부를 확인한다.",
+      "criteria": "MCI 가시 채널 공간해상도는 직하점 기준 0.5 km 이하여야 한다.",
+      "parents": [
+        "PL-002"
+      ],
+      "methods": [
+        "T"
+      ],
+      "level": "부체계",
+      "test_case": "TC-PL-001",
+      "section": "4.1 검증 항목 목록",
+      "page": 6
+    },
+    {
+      "id": "VER-PL-003",
+      "doc_id": "GKX-VP-PL-001",
+      "type": "검증항목",
+      "title": "적외 해상도 검증",
+      "statement": "부체계 수준 시험에서 '적외 해상도' 항목을 계측 장비로 측정하여 요구값 충족 여부를 확인한다.",
+      "criteria": "MCI 적외 채널 공간해상도는 직하점 기준 2 km 이하여야 한다.",
+      "parents": [
+        "PL-003"
+      ],
+      "methods": [
+        "T"
+      ],
+      "level": "부체계",
+      "test_case": "TC-PL-001",
+      "section": "4.1 검증 항목 목록",
+      "page": 7
+    },
+    {
+      "id": "VER-PL-004",
+      "doc_id": "GKX-VP-PL-001",
+      "type": "검증항목",
+      "title": "가시 채널 SNR 검증",
+      "statement": "부체계 수준 시험에서 '가시 채널 SNR' 항목을 계측 장비로 측정하여 요구값 충족 여부를 확인한다.",
+      "criteria": "MCI 가시 채널의 신호대잡음비는 반사율 100% 조건에서 300 이상이어야 한다.",
+      "parents": [
+        "PL-004"
+      ],
+      "methods": [
+        "T"
+      ],
+      "level": "부체계",
+      "test_case": "TC-PL-002",
+      "section": "4.1 검증 항목 목록",
+      "page": 7
+    },
+    {
+      "id": "VER-PL-005",
+      "doc_id": "GKX-VP-PL-001",
+      "type": "검증항목",
+      "title": "적외 채널 NEdT 검증",
+      "statement": "부체계 수준 시험에서 '적외 채널 NEdT' 항목을 계측 장비로 측정하여 요구값 충족 여부를 확인한다.",
+      "criteria": "MCI 적외 채널의 잡음등가온도차(NEdT)는 300 K에서 0.1 K 이하여야 한다.",
+      "parents": [
+        "PL-005"
+      ],
+      "methods": [
+        "T"
+      ],
+      "level": "부체계",
+      "test_case": "TC-PL-002",
+      "section": "4.1 검증 항목 목록",
+      "page": 7
+    },
+    {
+      "id": "VER-PL-006",
+      "doc_id": "GKX-VP-PL-001",
+      "type": "검증항목",
+      "title": "기내 복사보정 검증",
+      "statement": "부체계 수준 시험에서 '기내 복사보정' 항목을 계측 장비로 측정하여 요구값 충족 여부를 확인한다.",
+      "criteria": "MCI는 내부 흑체를 이용하여 15분마다 적외 채널을 보정해야 하며 보정 정확도는 0.2 K 이하여야 한다.",
+      "parents": [
+        "PL-006"
+      ],
+      "methods": [
+        "T"
+      ],
+      "level": "부체계",
+      "test_case": "TC-PL-002",
+      "section": "4.1 검증 항목 목록",
+      "page": 8
+    },
+    {
+      "id": "VER-PL-007",
+      "doc_id": "GKX-VP-PL-001",
+      "type": "검증항목",
+      "title": "관측 시나리오 검증",
+      "statement": "해석 모델 및 계산을 통해 '관측 시나리오' 요구 충족을 분석하고 해석 보고서로 확인한다. 운용 시나리오에 따른 기능 시연으로 동작을 확인한다.",
+      "criteria": "MCI는 전구 디스크 10분 관측과 한반도 영역 2분 관측을 동시에 수행해야 한다.",
+      "parents": [
+        "PL-007"
+      ],
+      "methods": [
+        "A",
+        "D"
+      ],
+      "level": "부체계",
+      "test_case": null,
+      "section": "4.1 검증 항목 목록",
+      "page": 8
+    },
+    {
+      "id": "VER-PL-008",
+      "doc_id": "GKX-VP-PL-001",
+      "type": "검증항목",
+      "title": "주사 거울 지향 검증",
+      "statement": "부체계 수준 시험에서 '주사 거울 지향' 항목을 계측 장비로 측정하여 요구값 충족 여부를 확인한다.",
+      "criteria": "MCI 주사 거울의 지향 정확도는 6 µrad 이하여야 한다.",
+      "parents": [
+        "PL-008"
+      ],
+      "methods": [
+        "T"
+      ],
+      "level": "부체계",
+      "test_case": "TC-PL-003",
+      "section": "4.1 검증 항목 목록",
+      "page": 8
+    },
+    {
+      "id": "VER-PL-009",
+      "doc_id": "GKX-VP-PL-001",
+      "type": "검증항목",
+      "title": "영상 항법정합 검증",
+      "statement": "해석 모델 및 계산을 통해 '영상 항법정합' 요구 충족을 분석하고 해석 보고서로 확인한다. 부체계 수준 시험에서 '영상 항법정합' 항목을 계측 장비로 측정하여 요구값 충족 여부를 확인한다.",
+      "criteria": "MCI 영상의 항법정합 정확도는 3σ 기준 42 µrad 이하여야 한다.",
+      "parents": [
+        "PL-009"
+      ],
+      "methods": [
+        "A",
+        "T"
+      ],
+      "level": "부체계",
+      "test_case": "TC-PL-003",
+      "section": "4.1 검증 항목 목록",
+      "page": 9
+    },
+    {
+      "id": "VER-PL-010",
+      "doc_id": "GKX-VP-PL-001",
+      "type": "검증항목",
+      "title": "태양 침입 보호 검증",
+      "statement": "부체계 수준 시험에서 '태양 침입 보호' 항목을 계측 장비로 측정하여 요구값 충족 여부를 확인한다. 운용 시나리오에 따른 기능 시연으로 동작을 확인한다.",
+      "criteria": "MCI는 태양이 시야에 들어올 때 자동으로 셔터를 닫아야 한다.",
+      "parents": [
+        "PL-010"
+      ],
+      "methods": [
+        "T",
+        "D"
+      ],
+      "level": "부체계",
+      "test_case": "TC-PL-003",
+      "section": "4.1 검증 항목 목록",
+      "page": 9
+    },
+    {
+      "id": "VER-PL-011",
+      "doc_id": "GKX-VP-PL-001",
+      "type": "검증항목",
+      "title": "자료 압축 검증",
+      "statement": "부체계 수준 시험에서 '자료 압축' 항목을 계측 장비로 측정하여 요구값 충족 여부를 확인한다.",
+      "criteria": "MCI 자료는 2:1 이상의 압축률로 무손실 압축되어야 한다.",
+      "parents": [
+        "PL-011"
+      ],
+      "methods": [
+        "T"
+      ],
+      "level": "부체계",
+      "test_case": "TC-PL-004",
+      "section": "4.1 검증 항목 목록",
+      "page": 9
+    },
+    {
+      "id": "VER-PL-012",
+      "doc_id": "GKX-VP-PL-001",
+      "type": "검증항목",
+      "title": "Ka 중계기 채널 검증",
+      "statement": "부체계 수준 시험에서 'Ka 중계기 채널' 항목을 계측 장비로 측정하여 요구값 충족 여부를 확인한다. 설계 도면, 부품 목록 및 실물 검사를 통해 요구 반영 여부를 확인한다.",
+      "criteria": "Ka 대역 통신 중계기는 대역폭 250 MHz의 채널 8개를 제공해야 한다.",
+      "parents": [
+        "PL-012"
+      ],
+      "methods": [
+        "T",
+        "I"
+      ],
+      "level": "부체계",
+      "test_case": "TC-PL-004",
+      "section": "4.1 검증 항목 목록",
+      "page": 10
+    },
+    {
+      "id": "VER-PL-013",
+      "doc_id": "GKX-VP-PL-001",
+      "type": "검증항목",
+      "title": "Ka 빔 EIRP 검증",
+      "statement": "부체계 수준 시험에서 'Ka 빔 EIRP' 항목을 계측 장비로 측정하여 요구값 충족 여부를 확인한다. 해석 모델 및 계산을 통해 'Ka 빔 EIRP' 요구 충족을 분석하고 해석 보고서로 확인한다.",
+      "criteria": "Ka 대역 빔의 EIRP는 빔 가장자리에서 58 dBW 이상이어야 한다.",
+      "parents": [
+        "PL-013"
+      ],
+      "methods": [
+        "T",
+        "A"
+      ],
+      "level": "부체계",
+      "test_case": "TC-PL-004",
+      "section": "4.1 검증 항목 목록",
+      "page": 10
+    },
+    {
+      "id": "VER-PL-014",
+      "doc_id": "GKX-VP-PL-001",
+      "type": "검증항목",
+      "title": "수신 G/T 검증",
+      "statement": "부체계 수준 시험에서 '수신 G/T' 항목을 계측 장비로 측정하여 요구값 충족 여부를 확인한다.",
+      "criteria": "Ka 대역 통신 중계기의 수신 G/T는 14 dB/K 이상이어야 한다.",
+      "parents": [
+        "PL-014"
+      ],
+      "methods": [
+        "T"
+      ],
+      "level": "부체계",
+      "test_case": "TC-PL-005",
+      "section": "4.1 검증 항목 목록",
+      "page": 10
+    },
+    {
+      "id": "VER-PL-015",
+      "doc_id": "GKX-VP-PL-001",
+      "type": "검증항목",
+      "title": "TWTA 이중화 검증",
+      "statement": "설계 도면, 부품 목록 및 실물 검사를 통해 요구 반영 여부를 확인한다. 부체계 수준 시험에서 'TWTA 이중화' 항목을 계측 장비로 측정하여 요구값 충족 여부를 확인한다.",
+      "criteria": "Ka 대역 진행파관증폭기(TWTA)는 10:8 링 리던던시로 구성되어야 한다.",
+      "parents": [
+        "PL-015"
+      ],
+      "methods": [
+        "I",
+        "T"
+      ],
+      "level": "부체계",
+      "test_case": "TC-PL-005",
+      "section": "4.1 검증 항목 목록",
+      "page": 11
+    },
+    {
+      "id": "VER-PL-016",
+      "doc_id": "GKX-VP-PL-001",
+      "type": "검증항목",
+      "title": "수동 상호변조 검증",
+      "statement": "부체계 수준 시험에서 '수동 상호변조' 항목을 계측 장비로 측정하여 요구값 충족 여부를 확인한다.",
+      "criteria": "Ka 대역 안테나 계통의 3차 수동 상호변조(PIM)는 -140 dBc 이하여야 한다.",
+      "parents": [
+        "PL-016"
+      ],
+      "methods": [
+        "T"
+      ],
+      "level": "부체계",
+      "test_case": "TC-PL-005",
+      "section": "4.1 검증 항목 목록",
+      "page": 11
+    },
+    {
+      "id": "VER-PL-017",
+      "doc_id": "GKX-VP-PL-001",
+      "type": "검증항목",
+      "title": "주파수 안정도 검증",
+      "statement": "부체계 수준 시험에서 '주파수 안정도' 항목을 계측 장비로 측정하여 요구값 충족 여부를 확인한다. 해석 모델 및 계산을 통해 '주파수 안정도' 요구 충족을 분석하고 해석 보고서로 확인한다.",
+      "criteria": "통신 중계기 국부발진기의 주파수 안정도는 15년간 ±1 ppm 이내여야 한다.",
+      "parents": [
+        "PL-017"
+      ],
+      "methods": [
+        "T",
+        "A"
+      ],
+      "level": "부체계",
+      "test_case": "TC-PL-006",
+      "section": "4.1 검증 항목 목록",
+      "page": 11
+    },
+    {
+      "id": "VER-PL-018",
+      "doc_id": "GKX-VP-PL-001",
+      "type": "검증항목",
+      "title": "탑재체 열 소산 검증",
+      "statement": "해석 모델 및 계산을 통해 '탑재체 열 소산' 요구 충족을 분석하고 해석 보고서로 확인한다. 부체계 수준 시험에서 '탑재체 열 소산' 항목을 계측 장비로 측정하여 요구값 충족 여부를 확인한다.",
+      "criteria": "탑재체의 총 열 소산량은 1,900 W 이하여야 한다.",
+      "parents": [
+        "PL-018"
+      ],
+      "methods": [
+        "A",
+        "T"
+      ],
+      "level": "부체계",
+      "test_case": "TC-PL-006",
+      "section": "4.1 검증 항목 목록",
+      "page": 12
+    },
+    {
+      "id": "VER-PL-019",
+      "doc_id": "GKX-VP-PL-001",
+      "type": "검증항목",
+      "title": "탑재체 질량 검증",
+      "statement": "설계 도면, 부품 목록 및 실물 검사를 통해 요구 반영 여부를 확인한다.",
+      "criteria": "탑재체 질량은 영상기 320 kg, 통신 중계기 280 kg 이하여야 한다.",
+      "parents": [
+        "PL-019"
+      ],
+      "methods": [
+        "I"
+      ],
+      "level": "부체계",
+      "test_case": null,
+      "section": "4.1 검증 항목 목록",
+      "page": 12
+    },
+    {
+      "id": "VER-PL-020",
+      "doc_id": "GKX-VP-PL-001",
+      "type": "검증항목",
+      "title": "탑재체 전력 검증",
+      "statement": "부체계 수준 시험에서 '탑재체 전력' 항목을 계측 장비로 측정하여 요구값 충족 여부를 확인한다.",
+      "criteria": "탑재체의 총 소모 전력은 2,400 W 이하여야 한다.",
+      "parents": [
+        "PL-020"
+      ],
+      "methods": [
+        "T"
+      ],
+      "level": "부체계",
+      "test_case": "TC-PL-006",
+      "section": "4.1 검증 항목 목록",
+      "page": 12
+    },
+    {
+      "id": "VER-PL-021",
+      "doc_id": "GKX-VP-PL-001",
+      "type": "검증항목",
+      "title": "기계적 장착 검증",
+      "statement": "설계 도면, 부품 목록 및 실물 검사를 통해 요구 반영 여부를 확인한다.",
+      "criteria": "탑재체 기상영상기(MCI) 및 Ka 대역 중계기는 본체 지구지향(+Z) 패널 외면 및 남북 패널에 M5 인서트로 장착되어야 하며 장착면 평탄도는 100 mm당 0.1 mm 이하여야 한다.",
+      "parents": [
+        "ICD-PL-001"
+      ],
+      "methods": [
+        "I"
+      ],
+      "level": "통합",
+      "test_case": null,
+      "section": "4.1 검증 항목 목록",
+      "page": 13
+    },
+    {
+      "id": "VER-PL-022",
+      "doc_id": "GKX-VP-PL-001",
+      "type": "검증항목",
+      "title": "질량 특성 자료 검증",
+      "statement": "설계 도면, 부품 목록 및 실물 검사를 통해 요구 반영 여부를 확인한다. 해석 모델 및 계산을 통해 '질량 특성 자료' 요구 충족을 분석하고 해석 보고서로 확인한다.",
+      "criteria": "탑재체는 장비별 질량, 무게중심, 관성모멘트 자료를 본체에 제공해야 하며 실측 질량은 제공값 대비 ±2% 이내여야 한다.",
+      "parents": [
+        "ICD-PL-002"
+      ],
+      "methods": [
+        "I",
+        "A"
+      ],
+      "level": "통합",
+      "test_case": null,
+      "section": "4.1 검증 항목 목록",
+      "page": 13
+    },
+    {
+      "id": "VER-PL-023",
+      "doc_id": "GKX-VP-PL-001",
+      "type": "검증항목",
+      "title": "전원 공급 인터페이스 검증",
+      "statement": "통합 수준 시험에서 '전원 공급 인터페이스' 항목을 계측 장비로 측정하여 요구값 충족 여부를 확인한다.",
+      "criteria": "본체 전력분배장치(PDU)는 탑재체 기상영상기(MCI) 및 Ka 대역 중계기에 정격 15 A의 LCL 보호 채널 12개를 통해 100 V 조정 전원을 공급해야 한다.",
+      "parents": [
+        "ICD-PL-003"
+      ],
+      "methods": [
+        "T"
+      ],
+      "level": "통합",
+      "test_case": "TC-PL-007",
+      "section": "4.1 검증 항목 목록",
+      "page": 13
+    },
+    {
+      "id": "VER-PL-024",
+      "doc_id": "GKX-VP-PL-001",
+      "type": "검증항목",
+      "title": "돌입 전류 검증",
+      "statement": "통합 수준 시험에서 '돌입 전류' 항목을 계측 장비로 측정하여 요구값 충족 여부를 확인한다.",
+      "criteria": "탑재체 장비의 전원 인가 시 돌입 전류는 정격 전류의 1.5배, 10 ms 이내로 제한되어야 한다.",
+      "parents": [
+        "ICD-PL-004"
+      ],
+      "methods": [
+        "T"
+      ],
+      "level": "통합",
+      "test_case": "TC-PL-007",
+      "section": "4.1 검증 항목 목록",
+      "page": 14
+    },
+    {
+      "id": "VER-PL-025",
+      "doc_id": "GKX-VP-PL-001",
+      "type": "검증항목",
+      "title": "전원 커넥터 검증",
+      "statement": "설계 도면, 부품 목록 및 실물 검사를 통해 요구 반영 여부를 확인한다.",
+      "criteria": "탑재체 전원 커넥터는 MIL-DTL-38999 시리즈 III를 사용해야 하며 핀 배열은 부록 B에 따른다.",
+      "parents": [
+        "ICD-PL-005"
+      ],
+      "methods": [
+        "I"
+      ],
+      "level": "통합",
+      "test_case": null,
+      "section": "4.1 검증 항목 목록",
+      "page": 14
+    },
+    {
+      "id": "VER-PL-026",
+      "doc_id": "GKX-VP-PL-001",
+      "type": "검증항목",
+      "title": "데이터 버스 주소 검증",
+      "statement": "통합 수준 시험에서 '데이터 버스 주소' 항목을 계측 장비로 측정하여 요구값 충족 여부를 확인한다. 설계 도면, 부품 목록 및 실물 검사를 통해 요구 반영 여부를 확인한다.",
+      "criteria": "탑재체 기상영상기(MCI) 및 Ka 대역 중계기는 MIL-STD-1553B 원격단말(RT) 주소 13번으로 본체 OBC와 통신해야 한다.",
+      "parents": [
+        "ICD-PL-006"
+      ],
+      "methods": [
+        "T",
+        "I"
+      ],
+      "level": "통합",
+      "test_case": "TC-PL-007",
+      "section": "4.1 검증 항목 목록",
+      "page": 14
+    },
+    {
+      "id": "VER-PL-027",
+      "doc_id": "GKX-VP-PL-001",
+      "type": "검증항목",
+      "title": "원격측정 패킷 검증",
+      "statement": "통합 수준 시험에서 '원격측정 패킷' 항목을 계측 장비로 측정하여 요구값 충족 여부를 확인한다.",
+      "criteria": "탑재체는 APID 0x160의 원격측정 패킷을 5 Hz 주기로 본체 OBC에 제공해야 한다.",
+      "parents": [
+        "ICD-PL-007"
+      ],
+      "methods": [
+        "T"
+      ],
+      "level": "통합",
+      "test_case": "TC-PL-008",
+      "section": "4.1 검증 항목 목록",
+      "page": 15
+    },
+    {
+      "id": "VER-PL-028",
+      "doc_id": "GKX-VP-PL-001",
+      "type": "검증항목",
+      "title": "명령 인터페이스 검증",
+      "statement": "통합 수준 시험에서 '명령 인터페이스' 항목을 계측 장비로 측정하여 요구값 충족 여부를 확인한다.",
+      "criteria": "탑재체는 본체 OBC로부터 410종 이상의 명령을 수신해야 하며 명령 응답 시간은 50 ms 이하여야 한다.",
+      "parents": [
+        "ICD-PL-008"
+      ],
+      "methods": [
+        "T"
+      ],
+      "level": "통합",
+      "test_case": "TC-PL-008",
+      "section": "4.1 검증 항목 목록",
+      "page": 15
+    },
+    {
+      "id": "VER-PL-029",
+      "doc_id": "GKX-VP-PL-001",
+      "type": "검증항목",
+      "title": "시각 동기 검증",
+      "statement": "통합 수준 시험에서 '시각 동기' 항목을 계측 장비로 측정하여 요구값 충족 여부를 확인한다.",
+      "criteria": "탑재체는 본체 OBC의 1PPS 신호를 수신하여 100 µs 이내로 시각을 동기해야 한다.",
+      "parents": [
+        "ICD-PL-009"
+      ],
+      "methods": [
+        "T"
+      ],
+      "level": "통합",
+      "test_case": "TC-PL-008",
+      "section": "4.1 검증 항목 목록",
+      "page": 15
+    },
+    {
+      "id": "VER-PL-030",
+      "doc_id": "GKX-VP-PL-001",
+      "type": "검증항목",
+      "title": "열 인터페이스 검증",
+      "statement": "해석 모델 및 계산을 통해 '열 인터페이스' 요구 충족을 분석하고 해석 보고서로 확인한다. 통합 수준 시험에서 '열 인터페이스' 항목을 계측 장비로 측정하여 요구값 충족 여부를 확인한다.",
+      "criteria": "본체는 탑재체 장비 장착면 온도를 -10°C ~ +40°C 범위로 유지해야 하며 장착면 열유속은 2,000 W/m² 이하여야 한다.",
+      "parents": [
+        "ICD-PL-010"
+      ],
+      "methods": [
+        "A",
+        "T"
+      ],
+      "level": "통합",
+      "test_case": "TC-PL-009",
+      "section": "4.1 검증 항목 목록",
+      "page": 16
+    },
+    {
+      "id": "VER-PL-031",
+      "doc_id": "GKX-VP-PL-001",
+      "type": "검증항목",
+      "title": "접지 및 본딩 검증",
+      "statement": "통합 수준 시험에서 '접지 및 본딩' 항목을 계측 장비로 측정하여 요구값 충족 여부를 확인한다.",
+      "criteria": "탑재체 장비 케이스와 본체 구조 간 본딩 저항은 2.5 mΩ 이하여야 한다.",
+      "parents": [
+        "ICD-PL-011"
+      ],
+      "methods": [
+        "T"
+      ],
+      "level": "통합",
+      "test_case": "TC-PL-009",
+      "section": "4.1 검증 항목 목록",
+      "page": 16
+    },
+    {
+      "id": "VER-PL-032",
+      "doc_id": "GKX-VP-PL-001",
+      "type": "검증항목",
+      "title": "EMC 방출 한계 검증",
+      "statement": "통합 수준 시험에서 'EMC 방출 한계' 항목을 계측 장비로 측정하여 요구값 충족 여부를 확인한다.",
+      "criteria": "탑재체 장비는 본체 EMC 한계(CE102, RE102)를 만족해야 한다.",
+      "parents": [
+        "ICD-PL-012"
+      ],
+      "methods": [
+        "T"
+      ],
+      "level": "통합",
+      "test_case": "TC-PL-009",
+      "section": "4.1 검증 항목 목록",
+      "page": 16
+    }
+  ]
+}

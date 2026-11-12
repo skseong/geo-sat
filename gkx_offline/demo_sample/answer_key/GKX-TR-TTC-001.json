@@ -1,0 +1,319 @@
+{
+  "document": {
+    "doc_no": "GKX-TR-TTC-001",
+    "title": "원격측정·추적·명령계 시험결과서",
+    "rev": "-",
+    "date": "2026-10-16",
+    "pages": 10,
+    "file": "08_TR/GKX-TR-TTC-001.pdf",
+    "item_count": 9
+  },
+  "items": [
+    {
+      "id": "TR-TTC-001",
+      "doc_id": "GKX-TR-TTC-001",
+      "type": "시험결과",
+      "title": "S 대역 주파수 · TT&C 안테나 · 트랜스폰더 이중화 시험",
+      "statement": "합격",
+      "parents": [
+        "TC-TTC-001"
+      ],
+      "test_date": "2026-09-08",
+      "verdict": "합격",
+      "measurements": [
+        {
+          "ver": "VER-TTC-001",
+          "requirement": "TTC-001",
+          "measured": "요구 충족 확인",
+          "verdict": "합격"
+        },
+        {
+          "ver": "VER-TTC-002",
+          "requirement": "TTC-002",
+          "measured": "요구 충족 확인",
+          "verdict": "합격"
+        },
+        {
+          "ver": "VER-TTC-003",
+          "requirement": "TTC-003",
+          "measured": "요구 충족 확인",
+          "verdict": "합격"
+        }
+      ],
+      "section": "4.1 TR-TTC-001 (TC-TTC-001)",
+      "page": 6
+    },
+    {
+      "id": "TR-TTC-002",
+      "doc_id": "GKX-TR-TTC-001",
+      "type": "시험결과",
+      "title": "수신 감도 · S 대역 EIRP · 변조 방식 시험",
+      "statement": "합격",
+      "parents": [
+        "TC-TTC-002"
+      ],
+      "test_date": "2026-09-15",
+      "verdict": "합격",
+      "measurements": [
+        {
+          "ver": "VER-TTC-004",
+          "requirement": "TTC-004",
+          "measured": "요구 충족 확인",
+          "verdict": "합격"
+        },
+        {
+          "ver": "VER-TTC-005",
+          "requirement": "TTC-005",
+          "measured": "13.6 dBW (요구 13 dBW 이상)",
+          "verdict": "합격"
+        },
+        {
+          "ver": "VER-TTC-006",
+          "requirement": "TTC-006",
+          "measured": "요구 충족 확인",
+          "verdict": "합격"
+        }
+      ],
+      "section": "4.2 TR-TTC-002 (TC-TTC-002)",
+      "page": 6
+    },
+    {
+      "id": "TR-TTC-003",
+      "doc_id": "GKX-TR-TTC-001",
+      "type": "시험결과",
+      "title": "원격측정 전송률 선택 · 명령 전송률 · 톤 거리측정 시험",
+      "statement": "합격",
+      "parents": [
+        "TC-TTC-003"
+      ],
+      "test_date": "2026-09-22",
+      "verdict": "합격",
+      "measurements": [
+        {
+          "ver": "VER-TTC-007",
+          "requirement": "TTC-007",
+          "measured": "요구 충족 확인",
+          "verdict": "합격"
+        },
+        {
+          "ver": "VER-TTC-008",
+          "requirement": "TTC-008",
+          "measured": "요구 충족 확인",
+          "verdict": "합격"
+        },
+        {
+          "ver": "VER-TTC-009",
+          "requirement": "TTC-009",
+          "measured": "9.5 m (요구 10 m 이하)",
+          "verdict": "합격"
+        }
+      ],
+      "section": "4.3 TR-TTC-003 (TC-TTC-003)",
+      "page": 7
+    },
+    {
+      "id": "TR-TTC-004",
+      "doc_id": "GKX-TR-TTC-001",
+      "type": "시험결과",
+      "title": "CCSDS 프레임 · 명령 인증 · 키 갱신 시험",
+      "statement": "합격",
+      "parents": [
+        "TC-TTC-004"
+      ],
+      "test_date": "2026-09-01",
+      "verdict": "합격",
+      "measurements": [
+        {
+          "ver": "VER-TTC-010",
+          "requirement": "TTC-010",
+          "measured": "요구 충족 확인",
+          "verdict": "합격"
+        },
+        {
+          "ver": "VER-TTC-011",
+          "requirement": "TTC-011",
+          "measured": "요구 충족 확인",
+          "verdict": "합격"
+        },
+        {
+          "ver": "VER-TTC-012",
+          "requirement": "TTC-012",
+          "measured": "요구 충족 확인",
+          "verdict": "합격"
+        }
+      ],
+      "section": "4.4 TR-TTC-004 (TC-TTC-004)",
+      "page": 7
+    },
+    {
+      "id": "TR-TTC-005",
+      "doc_id": "GKX-TR-TTC-001",
+      "type": "시험결과",
+      "title": "하드웨어 비상 명령 · X 대역 자료 송신기 · X 대역 EIRP 시험",
+      "statement": "합격",
+      "parents": [
+        "TC-TTC-005"
+      ],
+      "test_date": "2026-10-08",
+      "verdict": "합격",
+      "measurements": [
+        {
+          "ver": "VER-TTC-013",
+          "requirement": "TTC-013",
+          "measured": "17 개 (요구 16 개 이상)",
+          "verdict": "합격"
+        },
+        {
+          "ver": "VER-TTC-014",
+          "requirement": "TTC-014",
+          "measured": "130 Mbps (요구 120 Mbps 이상)",
+          "verdict": "합격"
+        },
+        {
+          "ver": "VER-TTC-015",
+          "requirement": "TTC-015",
+          "measured": "44.6 dBW (요구 40 dBW 이상)",
+          "verdict": "합격"
+        }
+      ],
+      "section": "4.5 TR-TTC-005 (TC-TTC-005)",
+      "page": 8
+    },
+    {
+      "id": "TR-TTC-006",
+      "doc_id": "GKX-TR-TTC-001",
+      "type": "시험결과",
+      "title": "자료 전송 지연 · RF 자기간섭 · TT&C 전력 시험",
+      "statement": "합격",
+      "parents": [
+        "TC-TTC-006"
+      ],
+      "test_date": "2026-10-15",
+      "verdict": "합격",
+      "measurements": [
+        {
+          "ver": "VER-TTC-016",
+          "requirement": "TTC-016",
+          "measured": "28.9 초 (요구 30 초 이하)",
+          "verdict": "합격"
+        },
+        {
+          "ver": "VER-TTC-018",
+          "requirement": "TTC-018",
+          "measured": "요구 충족 확인",
+          "verdict": "합격"
+        },
+        {
+          "ver": "VER-TTC-020",
+          "requirement": "TTC-020",
+          "measured": "76.1 W (요구 85 W 이하)",
+          "verdict": "합격"
+        }
+      ],
+      "section": "4.6 TR-TTC-006 (TC-TTC-006)",
+      "page": 8
+    },
+    {
+      "id": "TR-TTC-007",
+      "doc_id": "GKX-TR-TTC-001",
+      "type": "시험결과",
+      "title": "전원 공급 인터페이스 · 돌입 전류 · 데이터 버스 주소 시험",
+      "statement": "합격",
+      "parents": [
+        "TC-TTC-007"
+      ],
+      "test_date": "2026-10-22",
+      "verdict": "합격",
+      "measurements": [
+        {
+          "ver": "VER-TTC-023",
+          "requirement": "ICD-TTC-003",
+          "measured": "요구 충족 확인",
+          "verdict": "합격"
+        },
+        {
+          "ver": "VER-TTC-024",
+          "requirement": "ICD-TTC-004",
+          "measured": "4.7 ms (요구 5 ms 이내)",
+          "verdict": "합격"
+        },
+        {
+          "ver": "VER-TTC-026",
+          "requirement": "ICD-TTC-006",
+          "measured": "요구 충족 확인",
+          "verdict": "합격"
+        }
+      ],
+      "section": "4.7 TR-TTC-007 (TC-TTC-007)",
+      "page": 9
+    },
+    {
+      "id": "TR-TTC-008",
+      "doc_id": "GKX-TR-TTC-001",
+      "type": "시험결과",
+      "title": "원격측정 패킷 · 명령 인터페이스 · 시각 동기 시험",
+      "statement": "합격",
+      "parents": [
+        "TC-TTC-008"
+      ],
+      "test_date": "2026-10-01",
+      "verdict": "합격",
+      "measurements": [
+        {
+          "ver": "VER-TTC-027",
+          "requirement": "ICD-TTC-007",
+          "measured": "요구 충족 확인",
+          "verdict": "합격"
+        },
+        {
+          "ver": "VER-TTC-028",
+          "requirement": "ICD-TTC-008",
+          "measured": "92 종 (요구 90 종 이상)",
+          "verdict": "합격"
+        },
+        {
+          "ver": "VER-TTC-029",
+          "requirement": "ICD-TTC-009",
+          "measured": "91 µs (요구 100 µs 이내)",
+          "verdict": "합격"
+        }
+      ],
+      "section": "4.8 TR-TTC-008 (TC-TTC-008)",
+      "page": 9
+    },
+    {
+      "id": "TR-TTC-009",
+      "doc_id": "GKX-TR-TTC-001",
+      "type": "시험결과",
+      "title": "열 인터페이스 · 접지 및 본딩 · EMC 방출 한계 시험",
+      "statement": "합격",
+      "parents": [
+        "TC-TTC-009"
+      ],
+      "test_date": "2026-11-08",
+      "verdict": "합격",
+      "measurements": [
+        {
+          "ver": "VER-TTC-030",
+          "requirement": "ICD-TTC-010",
+          "measured": "요구 충족 확인",
+          "verdict": "합격"
+        },
+        {
+          "ver": "VER-TTC-031",
+          "requirement": "ICD-TTC-011",
+          "measured": "2.26 mΩ (요구 2.5 mΩ 이하)",
+          "verdict": "합격"
+        },
+        {
+          "ver": "VER-TTC-032",
+          "requirement": "ICD-TTC-012",
+          "measured": "요구 충족 확인",
+          "verdict": "합격"
+        }
+      ],
+      "section": "4.9 TR-TTC-009 (TC-TTC-009)",
+      "page": 10
+    }
+  ]
+}

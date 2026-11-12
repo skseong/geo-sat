@@ -1,0 +1,165 @@
+{
+  "document": {
+    "doc_no": "GKX-TP-AOCS-001",
+    "title": "자세·궤도제어계 시험절차서",
+    "rev": "-",
+    "date": "2026-08-25",
+    "pages": 10,
+    "file": "07_TP/GKX-TP-AOCS-001.pdf",
+    "item_count": 8
+  },
+  "items": [
+    {
+      "id": "TC-AOCS-001",
+      "doc_id": "GKX-TP-AOCS-001",
+      "type": "시험케이스",
+      "title": "자세 지향 정확도 · 자세 안정도 · 별추적기 시험",
+      "statement": "시험 구성 확인 및 EGSE 연결; 전원 인가 및 초기 원격측정 확인; [VER-AOCS-001] 자세 지향 정확도 측정; [VER-AOCS-002] 자세 안정도 측정; [VER-AOCS-003] 별추적기 측정; 전원 차단 및 시험 자료 저장",
+      "parents": [
+        "VER-AOCS-001",
+        "VER-AOCS-002",
+        "VER-AOCS-003"
+      ],
+      "requirements": [
+        "AOCS-001",
+        "AOCS-002",
+        "AOCS-003"
+      ],
+      "section": "4.1 TC-AOCS-001 자세 지향 정확도 · 자세 안정도 · 별추적기 시험",
+      "page": 6
+    },
+    {
+      "id": "TC-AOCS-002",
+      "doc_id": "GKX-TP-AOCS-001",
+      "type": "시험케이스",
+      "title": "관성기준장치 · 조대태양센서 · 반작용휠 시험",
+      "statement": "시험 구성 확인 및 EGSE 연결; 전원 인가 및 초기 원격측정 확인; [VER-AOCS-004] 관성기준장치 측정; [VER-AOCS-005] 조대태양센서 측정; [VER-AOCS-006] 반작용휠 측정; 전원 차단 및 시험 자료 저장",
+      "parents": [
+        "VER-AOCS-004",
+        "VER-AOCS-005",
+        "VER-AOCS-006"
+      ],
+      "requirements": [
+        "AOCS-004",
+        "AOCS-005",
+        "AOCS-006"
+      ],
+      "section": "4.2 TC-AOCS-002 관성기준장치 · 조대태양센서 · 반작용휠 시험",
+      "page": 6
+    },
+    {
+      "id": "TC-AOCS-003",
+      "doc_id": "GKX-TP-AOCS-001",
+      "type": "시험케이스",
+      "title": "휠 미소진동 · 기동 중 지향 · 기동 후 정착 시험",
+      "statement": "시험 구성 확인 및 EGSE 연결; 전원 인가 및 초기 원격측정 확인; [VER-AOCS-007] 휠 미소진동 측정; [VER-AOCS-011] 기동 중 지향 측정; [VER-AOCS-012] 기동 후 정착 측정; 전원 차단 및 시험 자료 저장",
+      "parents": [
+        "VER-AOCS-007",
+        "VER-AOCS-011",
+        "VER-AOCS-012"
+      ],
+      "requirements": [
+        "AOCS-007",
+        "AOCS-011",
+        "AOCS-012"
+      ],
+      "section": "4.3 TC-AOCS-003 휠 미소진동 · 기동 중 지향 · 기동 후 정착 시험",
+      "page": 7
+    },
+    {
+      "id": "TC-AOCS-004",
+      "doc_id": "GKX-TP-AOCS-001",
+      "type": "시험케이스",
+      "title": "안전모드 안정화 · 제어 주기 · 자세자료 제공 시험",
+      "statement": "시험 구성 확인 및 EGSE 연결; 전원 인가 및 초기 원격측정 확인; [VER-AOCS-013] 안전모드 안정화 측정; [VER-AOCS-015] 제어 주기 측정; [VER-AOCS-016] 자세자료 제공 측정; 전원 차단 및 시험 자료 저장",
+      "parents": [
+        "VER-AOCS-013",
+        "VER-AOCS-015",
+        "VER-AOCS-016"
+      ],
+      "requirements": [
+        "AOCS-013",
+        "AOCS-015",
+        "AOCS-016"
+      ],
+      "section": "4.4 TC-AOCS-004 안전모드 안정화 · 제어 주기 · 자세자료 제공 시험",
+      "page": 7
+    },
+    {
+      "id": "TC-AOCS-005",
+      "doc_id": "GKX-TP-AOCS-001",
+      "type": "시험케이스",
+      "title": "아포지 기동 지향 · 센서·구동기 FDIR · 자세·궤도제어계 전력 시험",
+      "statement": "시험 구성 확인 및 EGSE 연결; 전원 인가 및 초기 원격측정 확인; [VER-AOCS-017] 아포지 기동 지향 측정; [VER-AOCS-018] 센서·구동기 FDIR 측정; [VER-AOCS-020] 자세·궤도제어계 전력 측정; 전원 차단 및 시험 자료 저장",
+      "parents": [
+        "VER-AOCS-017",
+        "VER-AOCS-018",
+        "VER-AOCS-020"
+      ],
+      "requirements": [
+        "AOCS-017",
+        "AOCS-018",
+        "AOCS-020"
+      ],
+      "section": "4.5 TC-AOCS-005 아포지 기동 지향 · 센서·구동기 FDIR · 자세·궤도제어계 전력 시험",
+      "page": 8
+    },
+    {
+      "id": "TC-AOCS-006",
+      "doc_id": "GKX-TP-AOCS-001",
+      "type": "시험케이스",
+      "title": "전원 공급 인터페이스 · 돌입 전류 · 데이터 버스 주소 시험",
+      "statement": "시험 구성 확인 및 EGSE 연결; 전원 인가 및 초기 원격측정 확인; [VER-AOCS-023] 전원 공급 인터페이스 측정; [VER-AOCS-024] 돌입 전류 측정; [VER-AOCS-026] 데이터 버스 주소 측정; 전원 차단 및 시험 자료 저장",
+      "parents": [
+        "VER-AOCS-023",
+        "VER-AOCS-024",
+        "VER-AOCS-026"
+      ],
+      "requirements": [
+        "ICD-AOCS-003",
+        "ICD-AOCS-004",
+        "ICD-AOCS-006"
+      ],
+      "section": "4.6 TC-AOCS-006 전원 공급 인터페이스 · 돌입 전류 · 데이터 버스 주소 시험",
+      "page": 8
+    },
+    {
+      "id": "TC-AOCS-007",
+      "doc_id": "GKX-TP-AOCS-001",
+      "type": "시험케이스",
+      "title": "원격측정 패킷 · 명령 인터페이스 · 시각 동기 시험",
+      "statement": "시험 구성 확인 및 EGSE 연결; 전원 인가 및 초기 원격측정 확인; [VER-AOCS-027] 원격측정 패킷 측정; [VER-AOCS-028] 명령 인터페이스 측정; [VER-AOCS-029] 시각 동기 측정; 전원 차단 및 시험 자료 저장",
+      "parents": [
+        "VER-AOCS-027",
+        "VER-AOCS-028",
+        "VER-AOCS-029"
+      ],
+      "requirements": [
+        "ICD-AOCS-007",
+        "ICD-AOCS-008",
+        "ICD-AOCS-009"
+      ],
+      "section": "4.7 TC-AOCS-007 원격측정 패킷 · 명령 인터페이스 · 시각 동기 시험",
+      "page": 9
+    },
+    {
+      "id": "TC-AOCS-008",
+      "doc_id": "GKX-TP-AOCS-001",
+      "type": "시험케이스",
+      "title": "열 인터페이스 · 접지 및 본딩 · EMC 방출 한계 시험",
+      "statement": "시험 구성 확인 및 EGSE 연결; 전원 인가 및 초기 원격측정 확인; [VER-AOCS-030] 열 인터페이스 측정; [VER-AOCS-031] 접지 및 본딩 측정; [VER-AOCS-032] EMC 방출 한계 측정; 전원 차단 및 시험 자료 저장",
+      "parents": [
+        "VER-AOCS-030",
+        "VER-AOCS-031",
+        "VER-AOCS-032"
+      ],
+      "requirements": [
+        "ICD-AOCS-010",
+        "ICD-AOCS-011",
+        "ICD-AOCS-012"
+      ],
+      "section": "4.8 TC-AOCS-008 열 인터페이스 · 접지 및 본딩 · EMC 방출 한계 시험",
+      "page": 10
+    }
+  ]
+}

@@ -1,0 +1,238 @@
+{
+  "document": {
+    "doc_no": "GKX-ICD-EPS-001",
+    "title": "본체-전력계 인터페이스 통제문서",
+    "rev": "A",
+    "date": "2026-06-18",
+    "pages": 10,
+    "file": "04_ICD/GKX-ICD-EPS-001.pdf",
+    "item_count": 12
+  },
+  "items": [
+    {
+      "id": "ICD-EPS-001",
+      "doc_id": "GKX-ICD-EPS-001",
+      "type": "인터페이스요구사항",
+      "title": "기계적 장착",
+      "statement": "전력계 전력조절장치(PCU) 및 배터리는 본체 남측 패널 내면에 M5 인서트로 장착되어야 하며 장착면 평탄도는 100 mm당 0.1 mm 이하여야 한다.",
+      "rationale": "장착 하중 전달 및 열 접촉 확보",
+      "parents": [
+        "BUS-001",
+        "EPS-017"
+      ],
+      "methods": [
+        "I"
+      ],
+      "priority": "필수",
+      "status": "확정",
+      "section": "3.1 기계적 인터페이스",
+      "page": 5
+    },
+    {
+      "id": "ICD-EPS-002",
+      "doc_id": "GKX-ICD-EPS-001",
+      "type": "인터페이스요구사항",
+      "title": "질량 특성 자료",
+      "statement": "전력계는 장비별 질량, 무게중심, 관성모멘트 자료를 본체에 제공해야 하며 실측 질량은 제공값 대비 ±2% 이내여야 한다.",
+      "rationale": "본체 질량 예산 관리",
+      "parents": [
+        "BUS-002",
+        "EPS-017"
+      ],
+      "methods": [
+        "I",
+        "A"
+      ],
+      "priority": "필수",
+      "status": "확정",
+      "section": "3.1 기계적 인터페이스",
+      "page": 5
+    },
+    {
+      "id": "ICD-EPS-003",
+      "doc_id": "GKX-ICD-EPS-001",
+      "type": "인터페이스요구사항",
+      "title": "전력 공급 인터페이스",
+      "statement": "전력계 PCU는 본체 전력분배장치(PDU)에 100 V 조정 전원을 2개의 독립 급전선으로 공급해야 하며 급전선당 정격 전류는 40 A여야 한다.",
+      "rationale": "전력 분배 및 고장 격리",
+      "parents": [
+        "BUS-007",
+        "EPS-009"
+      ],
+      "methods": [
+        "T"
+      ],
+      "priority": "필수",
+      "status": "확정",
+      "section": "3.2 전기적 인터페이스",
+      "page": 6
+    },
+    {
+      "id": "ICD-EPS-004",
+      "doc_id": "GKX-ICD-EPS-001",
+      "type": "인터페이스요구사항",
+      "title": "돌입 전류",
+      "statement": "전력계 장비의 전원 인가 시 돌입 전류는 정격 전류의 1.5배, 5 ms 이내로 제한되어야 한다.",
+      "rationale": "LCL 오동작 방지",
+      "parents": [
+        "BUS-007"
+      ],
+      "methods": [
+        "T"
+      ],
+      "priority": "필수",
+      "status": "확정",
+      "section": "3.2 전기적 인터페이스",
+      "page": 6
+    },
+    {
+      "id": "ICD-EPS-005",
+      "doc_id": "GKX-ICD-EPS-001",
+      "type": "인터페이스요구사항",
+      "title": "전원 커넥터",
+      "statement": "전력계 전원 커넥터는 MIL-DTL-38999 시리즈 III를 사용해야 하며 핀 배열은 부록 B에 따른다.",
+      "rationale": "하네스 표준화",
+      "parents": [
+        "BUS-008"
+      ],
+      "methods": [
+        "I"
+      ],
+      "priority": "필수",
+      "status": "확정",
+      "section": "3.2 전기적 인터페이스",
+      "page": 6
+    },
+    {
+      "id": "ICD-EPS-006",
+      "doc_id": "GKX-ICD-EPS-001",
+      "type": "인터페이스요구사항",
+      "title": "데이터 버스 주소",
+      "statement": "전력계 전력조절장치(PCU) 및 배터리는 MIL-STD-1553B 원격단말(RT) 주소 3번으로 본체 OBC와 통신해야 한다.",
+      "rationale": "데이터 버스 주소 할당",
+      "parents": [
+        "BUS-010"
+      ],
+      "methods": [
+        "T",
+        "I"
+      ],
+      "priority": "필수",
+      "status": "확정",
+      "section": "3.3 데이터 인터페이스",
+      "page": 7
+    },
+    {
+      "id": "ICD-EPS-007",
+      "doc_id": "GKX-ICD-EPS-001",
+      "type": "인터페이스요구사항",
+      "title": "원격측정 패킷",
+      "statement": "전력계는 APID 0x110의 원격측정 패킷을 1 Hz 주기로 본체 OBC에 제공해야 한다.",
+      "rationale": "지상 상태 감시",
+      "parents": [
+        "BUS-010",
+        "EPS-014"
+      ],
+      "methods": [
+        "T"
+      ],
+      "priority": "권장",
+      "status": "확정",
+      "section": "3.3 데이터 인터페이스",
+      "page": 7
+    },
+    {
+      "id": "ICD-EPS-008",
+      "doc_id": "GKX-ICD-EPS-001",
+      "type": "인터페이스요구사항",
+      "title": "명령 인터페이스",
+      "statement": "전력계는 본체 OBC로부터 180종 이상의 명령을 수신해야 하며 명령 응답 시간은 50 ms 이하여야 한다.",
+      "rationale": "운용 명령 체계",
+      "parents": [
+        "BUS-010",
+        "BUS-011"
+      ],
+      "methods": [
+        "T"
+      ],
+      "priority": "필수",
+      "status": "확정",
+      "section": "3.3 데이터 인터페이스",
+      "page": 7
+    },
+    {
+      "id": "ICD-EPS-009",
+      "doc_id": "GKX-ICD-EPS-001",
+      "type": "인터페이스요구사항",
+      "title": "시각 동기",
+      "statement": "전력계는 본체 OBC의 1PPS 신호를 수신하여 100 µs 이내로 시각을 동기해야 한다.",
+      "rationale": "시각 태깅 정확도",
+      "parents": [
+        "BUS-012"
+      ],
+      "methods": [
+        "T"
+      ],
+      "priority": "필수",
+      "status": "확정",
+      "section": "3.3 데이터 인터페이스",
+      "page": 8
+    },
+    {
+      "id": "ICD-EPS-010",
+      "doc_id": "GKX-ICD-EPS-001",
+      "type": "인터페이스요구사항",
+      "title": "열 인터페이스",
+      "statement": "본체는 전력계 장비 장착면 온도를 -10°C ~ +45°C 범위로 유지해야 하며 장착면 열유속은 1,500 W/m² 이하여야 한다.",
+      "rationale": "장비 열환경 보장",
+      "parents": [
+        "BUS-014",
+        "EPS-016"
+      ],
+      "methods": [
+        "A",
+        "T"
+      ],
+      "priority": "필수",
+      "status": "확정",
+      "section": "3.4 열 인터페이스",
+      "page": 8
+    },
+    {
+      "id": "ICD-EPS-011",
+      "doc_id": "GKX-ICD-EPS-001",
+      "type": "인터페이스요구사항",
+      "title": "접지 및 본딩",
+      "statement": "전력계 장비 케이스와 본체 구조 간 본딩 저항은 2.5 mΩ 이하여야 한다.",
+      "rationale": "단일점 접지 체계",
+      "parents": [
+        "BUS-009"
+      ],
+      "methods": [
+        "T"
+      ],
+      "priority": "필수",
+      "status": "확정",
+      "section": "3.5 접지 및 EMC 인터페이스",
+      "page": 8
+    },
+    {
+      "id": "ICD-EPS-012",
+      "doc_id": "GKX-ICD-EPS-001",
+      "type": "인터페이스요구사항",
+      "title": "EMC 방출 한계",
+      "statement": "전력계 장비는 본체 EMC 한계(CE102, RE102)를 만족해야 한다.",
+      "rationale": "시스템 EMC 할당",
+      "parents": [
+        "BUS-017"
+      ],
+      "methods": [
+        "T"
+      ],
+      "priority": "필수",
+      "status": "확정",
+      "section": "3.5 접지 및 EMC 인터페이스",
+      "page": 9
+    }
+  ]
+}

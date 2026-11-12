@@ -1,0 +1,285 @@
+{
+  "document": {
+    "doc_no": "GKX-TR-TCS-001",
+    "title": "열제어계 시험결과서",
+    "rev": "-",
+    "date": "2026-10-16",
+    "pages": 9,
+    "file": "08_TR/GKX-TR-TCS-001.pdf",
+    "item_count": 8
+  },
+  "items": [
+    {
+      "id": "TR-TCS-001",
+      "doc_id": "GKX-TR-TCS-001",
+      "type": "시험결과",
+      "title": "온도 마진 · 히트파이프 · 히터 회로 시험",
+      "statement": "합격",
+      "parents": [
+        "TC-TCS-001"
+      ],
+      "test_date": "2026-09-08",
+      "verdict": "합격",
+      "measurements": [
+        {
+          "ver": "VER-TCS-002",
+          "requirement": "TCS-002",
+          "measured": "요구 충족 확인",
+          "verdict": "합격"
+        },
+        {
+          "ver": "VER-TCS-004",
+          "requirement": "TCS-004",
+          "measured": "요구 충족 확인",
+          "verdict": "합격"
+        },
+        {
+          "ver": "VER-TCS-005",
+          "requirement": "TCS-005",
+          "measured": "68 개 (요구 64 개 이상)",
+          "verdict": "합격"
+        }
+      ],
+      "section": "4.1 TR-TCS-001 (TC-TCS-001)",
+      "page": 6
+    },
+    {
+      "id": "TR-TCS-002",
+      "doc_id": "GKX-TR-TCS-001",
+      "type": "시험결과",
+      "title": "히터 전력 · 다층단열재 · 영상기 냉각기 시험",
+      "statement": "합격",
+      "parents": [
+        "TC-TCS-002"
+      ],
+      "test_date": "2026-09-15",
+      "verdict": "합격",
+      "measurements": [
+        {
+          "ver": "VER-TCS-006",
+          "requirement": "TCS-006",
+          "measured": "437.9 W (요구 450 W 이하)",
+          "verdict": "합격"
+        },
+        {
+          "ver": "VER-TCS-007",
+          "requirement": "TCS-007",
+          "measured": "0.019 (요구 0.02 이하)",
+          "verdict": "합격"
+        },
+        {
+          "ver": "VER-TCS-008",
+          "requirement": "TCS-008",
+          "measured": "요구 충족 확인",
+          "verdict": "합격"
+        }
+      ],
+      "section": "4.2 TR-TCS-002 (TC-TCS-002)",
+      "page": 6
+    },
+    {
+      "id": "TR-TCS-003",
+      "doc_id": "GKX-TR-TCS-001",
+      "type": "시험결과",
+      "title": "냉각 안정도 · 광학부 온도 · 배터리 온도 제어 시험",
+      "statement": "합격",
+      "parents": [
+        "TC-TCS-003"
+      ],
+      "test_date": "2026-09-22",
+      "verdict": "합격",
+      "measurements": [
+        {
+          "ver": "VER-TCS-009",
+          "requirement": "TCS-009",
+          "measured": "0.10 K (요구 0.1 K 이내)",
+          "verdict": "합격"
+        },
+        {
+          "ver": "VER-TCS-010",
+          "requirement": "TCS-010",
+          "measured": "요구 충족 확인",
+          "verdict": "합격"
+        },
+        {
+          "ver": "VER-TCS-011",
+          "requirement": "TCS-011",
+          "measured": "요구 충족 확인",
+          "verdict": "합격"
+        }
+      ],
+      "section": "4.3 TR-TCS-003 (TC-TCS-003)",
+      "page": 7
+    },
+    {
+      "id": "TR-TCS-004",
+      "doc_id": "GKX-TR-TCS-001",
+      "type": "시험결과",
+      "title": "추진계 온도 제어 · 온도 센서 · 열진공 시험 시험",
+      "statement": "합격",
+      "parents": [
+        "TC-TCS-004"
+      ],
+      "test_date": "2026-09-01",
+      "verdict": "합격",
+      "measurements": [
+        {
+          "ver": "VER-TCS-012",
+          "requirement": "TCS-012",
+          "measured": "요구 충족 확인",
+          "verdict": "합격"
+        },
+        {
+          "ver": "VER-TCS-013",
+          "requirement": "TCS-013",
+          "measured": "1.0 °C (요구 1 °C 이하)",
+          "verdict": "합격"
+        },
+        {
+          "ver": "VER-TCS-014",
+          "requirement": "TCS-014",
+          "measured": "8.8 (요구 8 이상)",
+          "verdict": "합격"
+        }
+      ],
+      "section": "4.4 TR-TCS-004 (TC-TCS-004)",
+      "page": 7
+    },
+    {
+      "id": "TR-TCS-005",
+      "doc_id": "GKX-TR-TCS-001",
+      "type": "시험결과",
+      "title": "열 모델 상관 · 안전모드 생존 온도 · 열제어계 전력 시험",
+      "statement": "합격",
+      "parents": [
+        "TC-TCS-005"
+      ],
+      "test_date": "2026-10-08",
+      "verdict": "합격",
+      "measurements": [
+        {
+          "ver": "VER-TCS-015",
+          "requirement": "TCS-015",
+          "measured": "4.7 °C (요구 5 °C 이내)",
+          "verdict": "합격"
+        },
+        {
+          "ver": "VER-TCS-017",
+          "requirement": "TCS-017",
+          "measured": "요구 충족 확인",
+          "verdict": "합격"
+        },
+        {
+          "ver": "VER-TCS-020",
+          "requirement": "TCS-020",
+          "measured": "358.7 W (요구 380 W 이하)",
+          "verdict": "합격"
+        }
+      ],
+      "section": "4.5 TR-TCS-005 (TC-TCS-005)",
+      "page": 8
+    },
+    {
+      "id": "TR-TCS-006",
+      "doc_id": "GKX-TR-TCS-001",
+      "type": "시험결과",
+      "title": "전원 공급 인터페이스 · 돌입 전류 · 데이터 버스 주소 시험",
+      "statement": "합격",
+      "parents": [
+        "TC-TCS-006"
+      ],
+      "test_date": "2026-10-15",
+      "verdict": "합격",
+      "measurements": [
+        {
+          "ver": "VER-TCS-023",
+          "requirement": "ICD-TCS-003",
+          "measured": "요구 충족 확인",
+          "verdict": "합격"
+        },
+        {
+          "ver": "VER-TCS-024",
+          "requirement": "ICD-TCS-004",
+          "measured": "1.8 ms (요구 2 ms 이내)",
+          "verdict": "합격"
+        },
+        {
+          "ver": "VER-TCS-026",
+          "requirement": "ICD-TCS-006",
+          "measured": "요구 충족 확인",
+          "verdict": "합격"
+        }
+      ],
+      "section": "4.6 TR-TCS-006 (TC-TCS-006)",
+      "page": 8
+    },
+    {
+      "id": "TR-TCS-007",
+      "doc_id": "GKX-TR-TCS-001",
+      "type": "시험결과",
+      "title": "원격측정 패킷 · 명령 인터페이스 · 시각 동기 시험",
+      "statement": "합격",
+      "parents": [
+        "TC-TCS-007"
+      ],
+      "test_date": "2026-10-22",
+      "verdict": "합격",
+      "measurements": [
+        {
+          "ver": "VER-TCS-027",
+          "requirement": "ICD-TCS-007",
+          "measured": "요구 충족 확인",
+          "verdict": "합격"
+        },
+        {
+          "ver": "VER-TCS-028",
+          "requirement": "ICD-TCS-008",
+          "measured": "347 종 (요구 320 종 이상)",
+          "verdict": "합격"
+        },
+        {
+          "ver": "VER-TCS-029",
+          "requirement": "ICD-TCS-009",
+          "measured": "90 µs (요구 100 µs 이내)",
+          "verdict": "합격"
+        }
+      ],
+      "section": "4.7 TR-TCS-007 (TC-TCS-007)",
+      "page": 9
+    },
+    {
+      "id": "TR-TCS-008",
+      "doc_id": "GKX-TR-TCS-001",
+      "type": "시험결과",
+      "title": "열 인터페이스 · 접지 및 본딩 · EMC 방출 한계 시험",
+      "statement": "합격",
+      "parents": [
+        "TC-TCS-008"
+      ],
+      "test_date": "2026-10-01",
+      "verdict": "합격",
+      "measurements": [
+        {
+          "ver": "VER-TCS-030",
+          "requirement": "ICD-TCS-010",
+          "measured": "요구 충족 확인",
+          "verdict": "합격"
+        },
+        {
+          "ver": "VER-TCS-031",
+          "requirement": "ICD-TCS-011",
+          "measured": "2.23 mΩ (요구 2.5 mΩ 이하)",
+          "verdict": "합격"
+        },
+        {
+          "ver": "VER-TCS-032",
+          "requirement": "ICD-TCS-012",
+          "measured": "요구 충족 확인",
+          "verdict": "합격"
+        }
+      ],
+      "section": "4.8 TR-TCS-008 (TC-TCS-008)",
+      "page": 9
+    }
+  ]
+}

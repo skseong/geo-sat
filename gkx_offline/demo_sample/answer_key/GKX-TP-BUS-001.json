@@ -1,0 +1,296 @@
+{
+  "document": {
+    "doc_no": "GKX-TP-BUS-001",
+    "title": "위성체 시험절차서",
+    "rev": "-",
+    "date": "2026-08-25",
+    "pages": 14,
+    "file": "07_TP/GKX-TP-BUS-001.pdf",
+    "item_count": 15
+  },
+  "items": [
+    {
+      "id": "TC-BUS-001",
+      "doc_id": "GKX-TP-BUS-001",
+      "type": "시험케이스",
+      "title": "위치유지 정밀도 · 무게중심 · 고유진동수 시험",
+      "statement": "시험 구성 확인 및 EGSE 연결; 전원 인가 및 초기 원격측정 확인; [VER-BUS-001] 위치유지 정밀도 측정; [VER-BUS-005] 무게중심 측정; [VER-BUS-006] 고유진동수 측정; 전원 차단 및 시험 자료 저장",
+      "parents": [
+        "VER-BUS-001",
+        "VER-BUS-005",
+        "VER-BUS-006"
+      ],
+      "requirements": [
+        "SYS-001",
+        "SYS-005",
+        "SYS-006"
+      ],
+      "section": "4.1 TC-BUS-001 위치유지 정밀도 · 무게중심 · 고유진동수 시험",
+      "page": 6
+    },
+    {
+      "id": "TC-BUS-002",
+      "doc_id": "GKX-TP-BUS-001",
+      "type": "시험케이스",
+      "title": "발사 환경 · EOL 가용 전력 · 식 기간 운용 시험",
+      "statement": "시험 구성 확인 및 EGSE 연결; 전원 인가 및 초기 원격측정 확인; [VER-BUS-007] 발사 환경 측정; [VER-BUS-008] EOL 가용 전력 측정; [VER-BUS-009] 식 기간 운용 측정; 전원 차단 및 시험 자료 저장",
+      "parents": [
+        "VER-BUS-007",
+        "VER-BUS-008",
+        "VER-BUS-009"
+      ],
+      "requirements": [
+        "SYS-007",
+        "SYS-008",
+        "SYS-009"
+      ],
+      "section": "4.2 TC-BUS-002 발사 환경 · EOL 가용 전력 · 식 기간 운용 시험",
+      "page": 6
+    },
+    {
+      "id": "TC-BUS-003",
+      "doc_id": "GKX-TP-BUS-001",
+      "type": "시험케이스",
+      "title": "지향 정확도 · 지향 안정도 · 자세 결정 정확도 시험",
+      "statement": "시험 구성 확인 및 EGSE 연결; 전원 인가 및 초기 원격측정 확인; [VER-BUS-010] 지향 정확도 측정; [VER-BUS-011] 지향 안정도 측정; [VER-BUS-012] 자세 결정 정확도 측정; 전원 차단 및 시험 자료 저장",
+      "parents": [
+        "VER-BUS-010",
+        "VER-BUS-011",
+        "VER-BUS-012"
+      ],
+      "requirements": [
+        "SYS-010",
+        "SYS-011",
+        "SYS-012"
+      ],
+      "section": "4.3 TC-BUS-003 지향 정확도 · 지향 안정도 · 자세 결정 정확도 시험",
+      "page": 7
+    },
+    {
+      "id": "TC-BUS-004",
+      "doc_id": "GKX-TP-BUS-001",
+      "type": "시험케이스",
+      "title": "장비 열환경 · 적외 검출기 냉각 · TT&C 주파수 시험",
+      "statement": "시험 구성 확인 및 EGSE 연결; 전원 인가 및 초기 원격측정 확인; [VER-BUS-015] 장비 열환경 측정; [VER-BUS-016] 적외 검출기 냉각 측정; [VER-BUS-017] TT&C 주파수 측정; 전원 차단 및 시험 자료 저장",
+      "parents": [
+        "VER-BUS-015",
+        "VER-BUS-016",
+        "VER-BUS-017"
+      ],
+      "requirements": [
+        "SYS-015",
+        "SYS-016",
+        "SYS-017"
+      ],
+      "section": "4.4 TC-BUS-004 장비 열환경 · 적외 검출기 냉각 · TT&C 주파수 시험",
+      "page": 7
+    },
+    {
+      "id": "TC-BUS-005",
+      "doc_id": "GKX-TP-BUS-001",
+      "type": "시험케이스",
+      "title": "명령 링크 품질 · 원격측정 전송률 · 거리측정 정확도 시험",
+      "statement": "시험 구성 확인 및 EGSE 연결; 전원 인가 및 초기 원격측정 확인; [VER-BUS-018] 명령 링크 품질 측정; [VER-BUS-019] 원격측정 전송률 측정; [VER-BUS-020] 거리측정 정확도 측정; 전원 차단 및 시험 자료 저장",
+      "parents": [
+        "VER-BUS-018",
+        "VER-BUS-019",
+        "VER-BUS-020"
+      ],
+      "requirements": [
+        "SYS-018",
+        "SYS-019",
+        "SYS-020"
+      ],
+      "section": "4.5 TC-BUS-005 명령 링크 품질 · 원격측정 전송률 · 거리측정 정확도 시험",
+      "page": 8
+    },
+    {
+      "id": "TC-BUS-006",
+      "doc_id": "GKX-TP-BUS-001",
+      "type": "시험케이스",
+      "title": "명령 보안 적용 · 관측자료 다운링크 · 관측 운용 주기 시험",
+      "statement": "시험 구성 확인 및 EGSE 연결; 전원 인가 및 초기 원격측정 확인; [VER-BUS-021] 명령 보안 적용 측정; [VER-BUS-022] 관측자료 다운링크 측정; [VER-BUS-023] 관측 운용 주기 측정; 전원 차단 및 시험 자료 저장",
+      "parents": [
+        "VER-BUS-021",
+        "VER-BUS-022",
+        "VER-BUS-023"
+      ],
+      "requirements": [
+        "SYS-021",
+        "SYS-022",
+        "SYS-023"
+      ],
+      "section": "4.6 TC-BUS-006 명령 보안 적용 · 관측자료 다운링크 · 관측 운용 주기 시험",
+      "page": 8
+    },
+    {
+      "id": "TC-BUS-007",
+      "doc_id": "GKX-TP-BUS-001",
+      "type": "시험케이스",
+      "title": "관측 채널 구성 · 채널별 공간해상도 · 복사보정 정확도 시험",
+      "statement": "시험 구성 확인 및 EGSE 연결; 전원 인가 및 초기 원격측정 확인; [VER-BUS-024] 관측 채널 구성 측정; [VER-BUS-025] 채널별 공간해상도 측정; [VER-BUS-026] 복사보정 정확도 측정; 전원 차단 및 시험 자료 저장",
+      "parents": [
+        "VER-BUS-024",
+        "VER-BUS-025",
+        "VER-BUS-026"
+      ],
+      "requirements": [
+        "SYS-024",
+        "SYS-025",
+        "SYS-026"
+      ],
+      "section": "4.7 TC-BUS-007 관측 채널 구성 · 채널별 공간해상도 · 복사보정 정확도 시험",
+      "page": 9
+    },
+    {
+      "id": "TC-BUS-008",
+      "doc_id": "GKX-TP-BUS-001",
+      "type": "시험케이스",
+      "title": "통신 커버리지 · 통신 채널 구성 · 안전모드 시험",
+      "statement": "시험 구성 확인 및 EGSE 연결; 전원 인가 및 초기 원격측정 확인; [VER-BUS-027] 통신 커버리지 측정; [VER-BUS-028] 통신 채널 구성 측정; [VER-BUS-030] 안전모드 측정; 전원 차단 및 시험 자료 저장",
+      "parents": [
+        "VER-BUS-027",
+        "VER-BUS-028",
+        "VER-BUS-030"
+      ],
+      "requirements": [
+        "SYS-027",
+        "SYS-028",
+        "SYS-030"
+      ],
+      "section": "4.8 TC-BUS-008 통신 커버리지 · 통신 채널 구성 · 안전모드 시험",
+      "page": 10
+    },
+    {
+      "id": "TC-BUS-009",
+      "doc_id": "GKX-TP-BUS-001",
+      "type": "시험케이스",
+      "title": "FDIR · 시각 동기 · 탑재 처리 지연 시험",
+      "statement": "시험 구성 확인 및 EGSE 연결; 전원 인가 및 초기 원격측정 확인; [VER-BUS-032] FDIR 측정; [VER-BUS-033] 시각 동기 측정; [VER-BUS-034] 탑재 처리 지연 측정; 전원 차단 및 시험 자료 저장",
+      "parents": [
+        "VER-BUS-032",
+        "VER-BUS-033",
+        "VER-BUS-034"
+      ],
+      "requirements": [
+        "SYS-032",
+        "SYS-033",
+        "SYS-034"
+      ],
+      "section": "4.9 TC-BUS-009 FDIR · 시각 동기 · 탑재 처리 지연 시험",
+      "page": 10
+    },
+    {
+      "id": "TC-BUS-010",
+      "doc_id": "GKX-TP-BUS-001",
+      "type": "시험케이스",
+      "title": "총이온화선량 · 단일사건효과 · 전자기 적합성 시험",
+      "statement": "시험 구성 확인 및 EGSE 연결; 전원 인가 및 초기 원격측정 확인; [VER-BUS-035] 총이온화선량 측정; [VER-BUS-036] 단일사건효과 측정; [VER-BUS-037] 전자기 적합성 측정; 전원 차단 및 시험 자료 저장",
+      "parents": [
+        "VER-BUS-035",
+        "VER-BUS-036",
+        "VER-BUS-037"
+      ],
+      "requirements": [
+        "SYS-035",
+        "SYS-036",
+        "SYS-037"
+      ],
+      "section": "4.10 TC-BUS-010 총이온화선량 · 단일사건효과 · 전자기 적합성 시험",
+      "page": 11
+    },
+    {
+      "id": "TC-BUS-011",
+      "doc_id": "GKX-TP-BUS-001",
+      "type": "시험케이스",
+      "title": "구조 고유진동수 · 준정적 하중 · 탑재체 정렬 시험",
+      "statement": "시험 구성 확인 및 EGSE 연결; 전원 인가 및 초기 원격측정 확인; [VER-BUS-043] 구조 고유진동수 측정; [VER-BUS-044] 준정적 하중 측정; [VER-BUS-045] 탑재체 정렬 측정; 전원 차단 및 시험 자료 저장",
+      "parents": [
+        "VER-BUS-043",
+        "VER-BUS-044",
+        "VER-BUS-045"
+      ],
+      "requirements": [
+        "BUS-003",
+        "BUS-004",
+        "BUS-005"
+      ],
+      "section": "4.11 TC-BUS-011 구조 고유진동수 · 준정적 하중 · 탑재체 정렬 시험",
+      "page": 11
+    },
+    {
+      "id": "TC-BUS-012",
+      "doc_id": "GKX-TP-BUS-001",
+      "type": "시험케이스",
+      "title": "1차 전원 버스 · 접지 체계 · 데이터 버스 시험",
+      "statement": "시험 구성 확인 및 EGSE 연결; 전원 인가 및 초기 원격측정 확인; [VER-BUS-047] 1차 전원 버스 측정; [VER-BUS-049] 접지 체계 측정; [VER-BUS-050] 데이터 버스 측정; 전원 차단 및 시험 자료 저장",
+      "parents": [
+        "VER-BUS-047",
+        "VER-BUS-049",
+        "VER-BUS-050"
+      ],
+      "requirements": [
+        "BUS-007",
+        "BUS-009",
+        "BUS-010"
+      ],
+      "section": "4.12 TC-BUS-012 1차 전원 버스 · 접지 체계 · 데이터 버스 시험",
+      "page": 12
+    },
+    {
+      "id": "TC-BUS-013",
+      "doc_id": "GKX-TP-BUS-001",
+      "type": "시험케이스",
+      "title": "탑재컴퓨터 · 시각 배분 · 온보드 저장 시험",
+      "statement": "시험 구성 확인 및 EGSE 연결; 전원 인가 및 초기 원격측정 확인; [VER-BUS-051] 탑재컴퓨터 측정; [VER-BUS-052] 시각 배분 측정; [VER-BUS-053] 온보드 저장 측정; 전원 차단 및 시험 자료 저장",
+      "parents": [
+        "VER-BUS-051",
+        "VER-BUS-052",
+        "VER-BUS-053"
+      ],
+      "requirements": [
+        "BUS-011",
+        "BUS-012",
+        "BUS-013"
+      ],
+      "section": "4.13 TC-BUS-013 탑재컴퓨터 · 시각 배분 · 온보드 저장 시험",
+      "page": 12
+    },
+    {
+      "id": "TC-BUS-014",
+      "doc_id": "GKX-TP-BUS-001",
+      "type": "시험케이스",
+      "title": "열 인터페이스 기준 · FDIR 계층 · 안전모드 부하 관리 시험",
+      "statement": "시험 구성 확인 및 EGSE 연결; 전원 인가 및 초기 원격측정 확인; [VER-BUS-054] 열 인터페이스 기준 측정; [VER-BUS-055] FDIR 계층 측정; [VER-BUS-056] 안전모드 부하 관리 측정; 전원 차단 및 시험 자료 저장",
+      "parents": [
+        "VER-BUS-054",
+        "VER-BUS-055",
+        "VER-BUS-056"
+      ],
+      "requirements": [
+        "BUS-014",
+        "BUS-015",
+        "BUS-016"
+      ],
+      "section": "4.14 TC-BUS-014 열 인터페이스 기준 · FDIR 계층 · 안전모드 부하 관리 시험",
+      "page": 13
+    },
+    {
+      "id": "TC-BUS-015",
+      "doc_id": "GKX-TP-BUS-001",
+      "type": "시험케이스",
+      "title": "장비 EMC 한계 · 비행 소프트웨어 갱신 시험",
+      "statement": "시험 구성 확인 및 EGSE 연결; 전원 인가 및 초기 원격측정 확인; [VER-BUS-057] 장비 EMC 한계 측정; [VER-BUS-059] 비행 소프트웨어 갱신 측정; 전원 차단 및 시험 자료 저장",
+      "parents": [
+        "VER-BUS-057",
+        "VER-BUS-059"
+      ],
+      "requirements": [
+        "BUS-017",
+        "BUS-019"
+      ],
+      "section": "4.15 TC-BUS-015 장비 EMC 한계 · 비행 소프트웨어 갱신 시험",
+      "page": 13
+    }
+  ]
+}

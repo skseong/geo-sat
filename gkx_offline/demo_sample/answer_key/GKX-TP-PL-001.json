@@ -1,0 +1,184 @@
+{
+  "document": {
+    "doc_no": "GKX-TP-PL-001",
+    "title": "탑재체 시험절차서",
+    "rev": "-",
+    "date": "2026-08-25",
+    "pages": 11,
+    "file": "07_TP/GKX-TP-PL-001.pdf",
+    "item_count": 9
+  },
+  "items": [
+    {
+      "id": "TC-PL-001",
+      "doc_id": "GKX-TP-PL-001",
+      "type": "시험케이스",
+      "title": "영상기 채널 구성 · 가시 해상도 · 적외 해상도 시험",
+      "statement": "시험 구성 확인 및 EGSE 연결; 전원 인가 및 초기 원격측정 확인; [VER-PL-001] 영상기 채널 구성 측정; [VER-PL-002] 가시 해상도 측정; [VER-PL-003] 적외 해상도 측정; 전원 차단 및 시험 자료 저장",
+      "parents": [
+        "VER-PL-001",
+        "VER-PL-002",
+        "VER-PL-003"
+      ],
+      "requirements": [
+        "PL-001",
+        "PL-002",
+        "PL-003"
+      ],
+      "section": "4.1 TC-PL-001 영상기 채널 구성 · 가시 해상도 · 적외 해상도 시험",
+      "page": 6
+    },
+    {
+      "id": "TC-PL-002",
+      "doc_id": "GKX-TP-PL-001",
+      "type": "시험케이스",
+      "title": "가시 채널 SNR · 적외 채널 NEdT · 기내 복사보정 시험",
+      "statement": "시험 구성 확인 및 EGSE 연결; 전원 인가 및 초기 원격측정 확인; [VER-PL-004] 가시 채널 SNR 측정; [VER-PL-005] 적외 채널 NEdT 측정; [VER-PL-006] 기내 복사보정 측정; 전원 차단 및 시험 자료 저장",
+      "parents": [
+        "VER-PL-004",
+        "VER-PL-005",
+        "VER-PL-006"
+      ],
+      "requirements": [
+        "PL-004",
+        "PL-005",
+        "PL-006"
+      ],
+      "section": "4.2 TC-PL-002 가시 채널 SNR · 적외 채널 NEdT · 기내 복사보정 시험",
+      "page": 6
+    },
+    {
+      "id": "TC-PL-003",
+      "doc_id": "GKX-TP-PL-001",
+      "type": "시험케이스",
+      "title": "주사 거울 지향 · 영상 항법정합 · 태양 침입 보호 시험",
+      "statement": "시험 구성 확인 및 EGSE 연결; 전원 인가 및 초기 원격측정 확인; [VER-PL-008] 주사 거울 지향 측정; [VER-PL-009] 영상 항법정합 측정; [VER-PL-010] 태양 침입 보호 측정; 전원 차단 및 시험 자료 저장",
+      "parents": [
+        "VER-PL-008",
+        "VER-PL-009",
+        "VER-PL-010"
+      ],
+      "requirements": [
+        "PL-008",
+        "PL-009",
+        "PL-010"
+      ],
+      "section": "4.3 TC-PL-003 주사 거울 지향 · 영상 항법정합 · 태양 침입 보호 시험",
+      "page": 7
+    },
+    {
+      "id": "TC-PL-004",
+      "doc_id": "GKX-TP-PL-001",
+      "type": "시험케이스",
+      "title": "자료 압축 · Ka 중계기 채널 · Ka 빔 EIRP 시험",
+      "statement": "시험 구성 확인 및 EGSE 연결; 전원 인가 및 초기 원격측정 확인; [VER-PL-011] 자료 압축 측정; [VER-PL-012] Ka 중계기 채널 측정; [VER-PL-013] Ka 빔 EIRP 측정; 전원 차단 및 시험 자료 저장",
+      "parents": [
+        "VER-PL-011",
+        "VER-PL-012",
+        "VER-PL-013"
+      ],
+      "requirements": [
+        "PL-011",
+        "PL-012",
+        "PL-013"
+      ],
+      "section": "4.4 TC-PL-004 자료 압축 · Ka 중계기 채널 · Ka 빔 EIRP 시험",
+      "page": 7
+    },
+    {
+      "id": "TC-PL-005",
+      "doc_id": "GKX-TP-PL-001",
+      "type": "시험케이스",
+      "title": "수신 G/T · TWTA 이중화 · 수동 상호변조 시험",
+      "statement": "시험 구성 확인 및 EGSE 연결; 전원 인가 및 초기 원격측정 확인; [VER-PL-014] 수신 G/T 측정; [VER-PL-015] TWTA 이중화 측정; [VER-PL-016] 수동 상호변조 측정; 전원 차단 및 시험 자료 저장",
+      "parents": [
+        "VER-PL-014",
+        "VER-PL-015",
+        "VER-PL-016"
+      ],
+      "requirements": [
+        "PL-014",
+        "PL-015",
+        "PL-016"
+      ],
+      "section": "4.5 TC-PL-005 수신 G/T · TWTA 이중화 · 수동 상호변조 시험",
+      "page": 8
+    },
+    {
+      "id": "TC-PL-006",
+      "doc_id": "GKX-TP-PL-001",
+      "type": "시험케이스",
+      "title": "주파수 안정도 · 탑재체 열 소산 · 탑재체 전력 시험",
+      "statement": "시험 구성 확인 및 EGSE 연결; 전원 인가 및 초기 원격측정 확인; [VER-PL-017] 주파수 안정도 측정; [VER-PL-018] 탑재체 열 소산 측정; [VER-PL-020] 탑재체 전력 측정; 전원 차단 및 시험 자료 저장",
+      "parents": [
+        "VER-PL-017",
+        "VER-PL-018",
+        "VER-PL-020"
+      ],
+      "requirements": [
+        "PL-017",
+        "PL-018",
+        "PL-020"
+      ],
+      "section": "4.6 TC-PL-006 주파수 안정도 · 탑재체 열 소산 · 탑재체 전력 시험",
+      "page": 8
+    },
+    {
+      "id": "TC-PL-007",
+      "doc_id": "GKX-TP-PL-001",
+      "type": "시험케이스",
+      "title": "전원 공급 인터페이스 · 돌입 전류 · 데이터 버스 주소 시험",
+      "statement": "시험 구성 확인 및 EGSE 연결; 전원 인가 및 초기 원격측정 확인; [VER-PL-023] 전원 공급 인터페이스 측정; [VER-PL-024] 돌입 전류 측정; [VER-PL-026] 데이터 버스 주소 측정; 전원 차단 및 시험 자료 저장",
+      "parents": [
+        "VER-PL-023",
+        "VER-PL-024",
+        "VER-PL-026"
+      ],
+      "requirements": [
+        "ICD-PL-003",
+        "ICD-PL-004",
+        "ICD-PL-006"
+      ],
+      "section": "4.7 TC-PL-007 전원 공급 인터페이스 · 돌입 전류 · 데이터 버스 주소 시험",
+      "page": 9
+    },
+    {
+      "id": "TC-PL-008",
+      "doc_id": "GKX-TP-PL-001",
+      "type": "시험케이스",
+      "title": "원격측정 패킷 · 명령 인터페이스 · 시각 동기 시험",
+      "statement": "시험 구성 확인 및 EGSE 연결; 전원 인가 및 초기 원격측정 확인; [VER-PL-027] 원격측정 패킷 측정; [VER-PL-028] 명령 인터페이스 측정; [VER-PL-029] 시각 동기 측정; 전원 차단 및 시험 자료 저장",
+      "parents": [
+        "VER-PL-027",
+        "VER-PL-028",
+        "VER-PL-029"
+      ],
+      "requirements": [
+        "ICD-PL-007",
+        "ICD-PL-008",
+        "ICD-PL-009"
+      ],
+      "section": "4.8 TC-PL-008 원격측정 패킷 · 명령 인터페이스 · 시각 동기 시험",
+      "page": 10
+    },
+    {
+      "id": "TC-PL-009",
+      "doc_id": "GKX-TP-PL-001",
+      "type": "시험케이스",
+      "title": "열 인터페이스 · 접지 및 본딩 · EMC 방출 한계 시험",
+      "statement": "시험 구성 확인 및 EGSE 연결; 전원 인가 및 초기 원격측정 확인; [VER-PL-030] 열 인터페이스 측정; [VER-PL-031] 접지 및 본딩 측정; [VER-PL-032] EMC 방출 한계 측정; 전원 차단 및 시험 자료 저장",
+      "parents": [
+        "VER-PL-030",
+        "VER-PL-031",
+        "VER-PL-032"
+      ],
+      "requirements": [
+        "ICD-PL-010",
+        "ICD-PL-011",
+        "ICD-PL-012"
+      ],
+      "section": "4.9 TC-PL-009 열 인터페이스 · 접지 및 본딩 · EMC 방출 한계 시험",
+      "page": 10
+    }
+  ]
+}

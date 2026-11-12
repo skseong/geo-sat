@@ -1,0 +1,601 @@
+{
+  "document": {
+    "doc_no": "GKX-VP-EPS-001",
+    "title": "전력계 검증계획서",
+    "rev": "A",
+    "date": "2026-07-22",
+    "pages": 17,
+    "file": "05_VP/GKX-VP-EPS-001.pdf",
+    "item_count": 32
+  },
+  "items": [
+    {
+      "id": "VER-EPS-001",
+      "doc_id": "GKX-VP-EPS-001",
+      "type": "검증항목",
+      "title": "태양전지판 EOL 출력 검증",
+      "statement": "해석 모델 및 계산을 통해 '태양전지판 EOL 출력' 요구 충족을 분석하고 해석 보고서로 확인한다. 부체계 수준 시험에서 '태양전지판 EOL 출력' 항목을 계측 장비로 측정하여 요구값 충족 여부를 확인한다.",
+      "criteria": "태양전지판은 EOL 하지 조건에서 5.4 kW 이상의 전력을 공급해야 한다.",
+      "parents": [
+        "EPS-001"
+      ],
+      "methods": [
+        "A",
+        "T"
+      ],
+      "level": "부체계",
+      "test_case": "TC-EPS-001",
+      "section": "4.1 검증 항목 목록",
+      "page": 6
+    },
+    {
+      "id": "VER-EPS-002",
+      "doc_id": "GKX-VP-EPS-001",
+      "type": "검증항목",
+      "title": "태양전지 셀 검증",
+      "statement": "부체계 수준 시험에서 '태양전지 셀' 항목을 계측 장비로 측정하여 요구값 충족 여부를 확인한다. 설계 도면, 부품 목록 및 실물 검사를 통해 요구 반영 여부를 확인한다.",
+      "criteria": "태양전지판은 BOL 효율 29.5% 이상의 삼중접합 GaAs 셀을 사용해야 한다.",
+      "parents": [
+        "EPS-002"
+      ],
+      "methods": [
+        "T",
+        "I"
+      ],
+      "level": "부체계",
+      "test_case": "TC-EPS-001",
+      "section": "4.1 검증 항목 목록",
+      "page": 6
+    },
+    {
+      "id": "VER-EPS-003",
+      "doc_id": "GKX-VP-EPS-001",
+      "type": "검증항목",
+      "title": "태양전지판 구성 검증",
+      "statement": "설계 도면, 부품 목록 및 실물 검사를 통해 요구 반영 여부를 확인한다.",
+      "criteria": "태양전지판은 날개당 4개 패널로 구성된 2개 날개 구조를 가져야 한다.",
+      "parents": [
+        "EPS-003"
+      ],
+      "methods": [
+        "I"
+      ],
+      "level": "부체계",
+      "test_case": null,
+      "section": "4.1 검증 항목 목록",
+      "page": 7
+    },
+    {
+      "id": "VER-EPS-004",
+      "doc_id": "GKX-VP-EPS-001",
+      "type": "검증항목",
+      "title": "전개 신뢰도 검증",
+      "statement": "부체계 수준 시험에서 '전개 신뢰도' 항목을 계측 장비로 측정하여 요구값 충족 여부를 확인한다. 해석 모델 및 계산을 통해 '전개 신뢰도' 요구 충족을 분석하고 해석 보고서로 확인한다.",
+      "criteria": "태양전지판은 지상 명령으로 전개되어야 하며 전개 신뢰도는 0.9995 이상이어야 한다.",
+      "parents": [
+        "EPS-004"
+      ],
+      "methods": [
+        "T",
+        "A"
+      ],
+      "level": "부체계",
+      "test_case": "TC-EPS-001",
+      "section": "4.1 검증 항목 목록",
+      "page": 7
+    },
+    {
+      "id": "VER-EPS-005",
+      "doc_id": "GKX-VP-EPS-001",
+      "type": "검증항목",
+      "title": "SADA 추적 정확도 검증",
+      "statement": "부체계 수준 시험에서 'SADA 추적 정확도' 항목을 계측 장비로 측정하여 요구값 충족 여부를 확인한다.",
+      "criteria": "태양전지판 구동장치(SADA)의 태양 추적 정확도는 ±1° 이내여야 한다.",
+      "parents": [
+        "EPS-005"
+      ],
+      "methods": [
+        "T"
+      ],
+      "level": "부체계",
+      "test_case": "TC-EPS-002",
+      "section": "4.1 검증 항목 목록",
+      "page": 7
+    },
+    {
+      "id": "VER-EPS-006",
+      "doc_id": "GKX-VP-EPS-001",
+      "type": "검증항목",
+      "title": "배터리 용량 검증",
+      "statement": "해석 모델 및 계산을 통해 '배터리 용량' 요구 충족을 분석하고 해석 보고서로 확인한다. 부체계 수준 시험에서 '배터리 용량' 항목을 계측 장비로 측정하여 요구값 충족 여부를 확인한다.",
+      "criteria": "리튬이온 배터리의 EOL 용량은 300 Ah 이상이어야 한다.",
+      "parents": [
+        "EPS-006"
+      ],
+      "methods": [
+        "A",
+        "T"
+      ],
+      "level": "부체계",
+      "test_case": "TC-EPS-002",
+      "section": "4.1 검증 항목 목록",
+      "page": 8
+    },
+    {
+      "id": "VER-EPS-007",
+      "doc_id": "GKX-VP-EPS-001",
+      "type": "검증항목",
+      "title": "방전 심도 검증",
+      "statement": "해석 모델 및 계산을 통해 '방전 심도' 요구 충족을 분석하고 해석 보고서로 확인한다.",
+      "criteria": "배터리의 식 기간 최대 방전 심도(DoD)는 70% 이하여야 한다.",
+      "parents": [
+        "EPS-007"
+      ],
+      "methods": [
+        "A"
+      ],
+      "level": "부체계",
+      "test_case": null,
+      "section": "4.1 검증 항목 목록",
+      "page": 8
+    },
+    {
+      "id": "VER-EPS-008",
+      "doc_id": "GKX-VP-EPS-001",
+      "type": "검증항목",
+      "title": "셀 전압 균형 검증",
+      "statement": "부체계 수준 시험에서 '셀 전압 균형' 항목을 계측 장비로 측정하여 요구값 충족 여부를 확인한다.",
+      "criteria": "배터리 관리 기능은 셀 간 전압 편차를 20 mV 이하로 유지해야 한다.",
+      "parents": [
+        "EPS-008"
+      ],
+      "methods": [
+        "T"
+      ],
+      "level": "부체계",
+      "test_case": "TC-EPS-002",
+      "section": "4.1 검증 항목 목록",
+      "page": 8
+    },
+    {
+      "id": "VER-EPS-009",
+      "doc_id": "GKX-VP-EPS-001",
+      "type": "검증항목",
+      "title": "버스 전압 조정 검증",
+      "statement": "부체계 수준 시험에서 '버스 전압 조정' 항목을 계측 장비로 측정하여 요구값 충족 여부를 확인한다.",
+      "criteria": "전력조절장치(PCU)는 주 버스 전압을 100 V ± 1%로 조정해야 한다.",
+      "parents": [
+        "EPS-009"
+      ],
+      "methods": [
+        "T"
+      ],
+      "level": "부체계",
+      "test_case": "TC-EPS-003",
+      "section": "4.1 검증 항목 목록",
+      "page": 9
+    },
+    {
+      "id": "VER-EPS-010",
+      "doc_id": "GKX-VP-EPS-001",
+      "type": "검증항목",
+      "title": "버스 리플 검증",
+      "statement": "부체계 수준 시험에서 '버스 리플' 항목을 계측 장비로 측정하여 요구값 충족 여부를 확인한다.",
+      "criteria": "주 버스의 리플 및 잡음은 500 mVpp 이하여야 한다.",
+      "parents": [
+        "EPS-010"
+      ],
+      "methods": [
+        "T"
+      ],
+      "level": "부체계",
+      "test_case": "TC-EPS-003",
+      "section": "4.1 검증 항목 목록",
+      "page": 9
+    },
+    {
+      "id": "VER-EPS-011",
+      "doc_id": "GKX-VP-EPS-001",
+      "type": "검증항목",
+      "title": "PCU 효율 검증",
+      "statement": "부체계 수준 시험에서 'PCU 효율' 항목을 계측 장비로 측정하여 요구값 충족 여부를 확인한다.",
+      "criteria": "PCU의 전력 변환 효율은 94% 이상이어야 한다.",
+      "parents": [
+        "EPS-011"
+      ],
+      "methods": [
+        "T"
+      ],
+      "level": "부체계",
+      "test_case": "TC-EPS-003",
+      "section": "4.1 검증 항목 목록",
+      "page": 9
+    },
+    {
+      "id": "VER-EPS-012",
+      "doc_id": "GKX-VP-EPS-001",
+      "type": "검증항목",
+      "title": "부하 보호 검증",
+      "statement": "부체계 수준 시험에서 '부하 보호' 항목을 계측 장비로 측정하여 요구값 충족 여부를 확인한다.",
+      "criteria": "전력 분배 출력 채널은 각각 전류제한(LCL) 보호 기능을 가져야 한다.",
+      "parents": [
+        "EPS-012"
+      ],
+      "methods": [
+        "T"
+      ],
+      "level": "부체계",
+      "test_case": "TC-EPS-004",
+      "section": "4.1 검증 항목 목록",
+      "page": 10
+    },
+    {
+      "id": "VER-EPS-013",
+      "doc_id": "GKX-VP-EPS-001",
+      "type": "검증항목",
+      "title": "저전압 부하 차단 검증",
+      "statement": "부체계 수준 시험에서 '저전압 부하 차단' 항목을 계측 장비로 측정하여 요구값 충족 여부를 확인한다. 해석 모델 및 계산을 통해 '저전압 부하 차단' 요구 충족을 분석하고 해석 보고서로 확인한다.",
+      "criteria": "전력계는 버스 저전압 시 단계적 부하 차단(UVT)을 수행해야 하며 차단 임계값은 추후 확정한다.",
+      "parents": [
+        "EPS-013"
+      ],
+      "methods": [
+        "T",
+        "A"
+      ],
+      "level": "부체계",
+      "test_case": "TC-EPS-004",
+      "section": "4.1 검증 항목 목록",
+      "page": 10
+    },
+    {
+      "id": "VER-EPS-014",
+      "doc_id": "GKX-VP-EPS-001",
+      "type": "검증항목",
+      "title": "전력계 원격측정 검증",
+      "statement": "부체계 수준 시험에서 '전력계 원격측정' 항목을 계측 장비로 측정하여 요구값 충족 여부를 확인한다. 설계 도면, 부품 목록 및 실물 검사를 통해 요구 반영 여부를 확인한다.",
+      "criteria": "전력계는 전압, 전류, 온도를 포함한 120개 이상의 원격측정 항목을 제공해야 한다.",
+      "parents": [
+        "EPS-014"
+      ],
+      "methods": [
+        "T",
+        "I"
+      ],
+      "level": "부체계",
+      "test_case": "TC-EPS-004",
+      "section": "4.1 검증 항목 목록",
+      "page": 10
+    },
+    {
+      "id": "VER-EPS-015",
+      "doc_id": "GKX-VP-EPS-001",
+      "type": "검증항목",
+      "title": "배터리 단일고장 허용 검증",
+      "statement": "해석 모델 및 계산을 통해 '배터리 단일고장 허용' 요구 충족을 분석하고 해석 보고서로 확인한다.",
+      "criteria": "전력계는 배터리 셀 1개 고장 시에도 요구 성능을 유지해야 한다.",
+      "parents": [
+        "EPS-015"
+      ],
+      "methods": [
+        "A"
+      ],
+      "level": "부체계",
+      "test_case": null,
+      "section": "4.1 검증 항목 목록",
+      "page": 11
+    },
+    {
+      "id": "VER-EPS-016",
+      "doc_id": "GKX-VP-EPS-001",
+      "type": "검증항목",
+      "title": "배터리 운용 온도 검증",
+      "statement": "부체계 수준 시험에서 '배터리 운용 온도' 항목을 계측 장비로 측정하여 요구값 충족 여부를 확인한다.",
+      "criteria": "배터리는 10°C에서 30°C 사이에서 운용되어야 한다.",
+      "parents": [
+        "EPS-016"
+      ],
+      "methods": [
+        "T"
+      ],
+      "level": "부체계",
+      "test_case": "TC-EPS-005",
+      "section": "4.1 검증 항목 목록",
+      "page": 11
+    },
+    {
+      "id": "VER-EPS-017",
+      "doc_id": "GKX-VP-EPS-001",
+      "type": "검증항목",
+      "title": "전력계 질량 검증",
+      "statement": "설계 도면, 부품 목록 및 실물 검사를 통해 요구 반영 여부를 확인한다.",
+      "criteria": "전력계의 총 질량은 210 kg 이하여야 한다.",
+      "parents": [
+        "EPS-017"
+      ],
+      "methods": [
+        "I"
+      ],
+      "level": "부체계",
+      "test_case": null,
+      "section": "4.1 검증 항목 목록",
+      "page": 11
+    },
+    {
+      "id": "VER-EPS-018",
+      "doc_id": "GKX-VP-EPS-001",
+      "type": "검증항목",
+      "title": "화공품 점화 안전 검증",
+      "statement": "부체계 수준 시험에서 '화공품 점화 안전' 항목을 계측 장비로 측정하여 요구값 충족 여부를 확인한다. 설계 도면, 부품 목록 및 실물 검사를 통해 요구 반영 여부를 확인한다.",
+      "criteria": "전개용 화공품 점화 회로는 Arm/Fire 이중 안전장치를 가져야 한다.",
+      "parents": [
+        "EPS-018"
+      ],
+      "methods": [
+        "T",
+        "I"
+      ],
+      "level": "부체계",
+      "test_case": "TC-EPS-005",
+      "section": "4.1 검증 항목 목록",
+      "page": 12
+    },
+    {
+      "id": "VER-EPS-019",
+      "doc_id": "GKX-VP-EPS-001",
+      "type": "검증항목",
+      "title": "임무 종료 비활성화 검증",
+      "statement": "운용 시나리오에 따른 기능 시연으로 동작을 확인한다. 해석 모델 및 계산을 통해 '임무 종료 비활성화' 요구 충족을 분석하고 해석 보고서로 확인한다.",
+      "criteria": "전력계는 임무 종료 시 배터리 충전 회로를 차단하고 배터리를 방전해야 한다.",
+      "parents": [
+        "EPS-019"
+      ],
+      "methods": [
+        "D",
+        "A"
+      ],
+      "level": "부체계",
+      "test_case": null,
+      "section": "4.1 검증 항목 목록",
+      "page": 12
+    },
+    {
+      "id": "VER-EPS-020",
+      "doc_id": "GKX-VP-EPS-001",
+      "type": "검증항목",
+      "title": "전력 전자부품 방사선 검증",
+      "statement": "해석 모델 및 계산을 통해 '전력 전자부품 방사선' 요구 충족을 분석하고 해석 보고서로 확인한다. 부체계 수준 시험에서 '전력 전자부품 방사선' 항목을 계측 장비로 측정하여 요구값 충족 여부를 확인한다.",
+      "criteria": "전력계 전자부품은 TID 100 krad(Si) 이상을 견뎌야 한다.",
+      "parents": [
+        "EPS-020"
+      ],
+      "methods": [
+        "A",
+        "T"
+      ],
+      "level": "부체계",
+      "test_case": "TC-EPS-005",
+      "section": "4.1 검증 항목 목록",
+      "page": 12
+    },
+    {
+      "id": "VER-EPS-021",
+      "doc_id": "GKX-VP-EPS-001",
+      "type": "검증항목",
+      "title": "기계적 장착 검증",
+      "statement": "설계 도면, 부품 목록 및 실물 검사를 통해 요구 반영 여부를 확인한다.",
+      "criteria": "전력계 전력조절장치(PCU) 및 배터리는 본체 남측 패널 내면에 M5 인서트로 장착되어야 하며 장착면 평탄도는 100 mm당 0.1 mm 이하여야 한다.",
+      "parents": [
+        "ICD-EPS-001"
+      ],
+      "methods": [
+        "I"
+      ],
+      "level": "통합",
+      "test_case": null,
+      "section": "4.1 검증 항목 목록",
+      "page": 13
+    },
+    {
+      "id": "VER-EPS-022",
+      "doc_id": "GKX-VP-EPS-001",
+      "type": "검증항목",
+      "title": "질량 특성 자료 검증",
+      "statement": "설계 도면, 부품 목록 및 실물 검사를 통해 요구 반영 여부를 확인한다. 해석 모델 및 계산을 통해 '질량 특성 자료' 요구 충족을 분석하고 해석 보고서로 확인한다.",
+      "criteria": "전력계는 장비별 질량, 무게중심, 관성모멘트 자료를 본체에 제공해야 하며 실측 질량은 제공값 대비 ±2% 이내여야 한다.",
+      "parents": [
+        "ICD-EPS-002"
+      ],
+      "methods": [
+        "I",
+        "A"
+      ],
+      "level": "통합",
+      "test_case": null,
+      "section": "4.1 검증 항목 목록",
+      "page": 13
+    },
+    {
+      "id": "VER-EPS-023",
+      "doc_id": "GKX-VP-EPS-001",
+      "type": "검증항목",
+      "title": "전력 공급 인터페이스 검증",
+      "statement": "통합 수준 시험에서 '전력 공급 인터페이스' 항목을 계측 장비로 측정하여 요구값 충족 여부를 확인한다.",
+      "criteria": "전력계 PCU는 본체 전력분배장치(PDU)에 100 V 조정 전원을 2개의 독립 급전선으로 공급해야 하며 급전선당 정격 전류는 40 A여야 한다.",
+      "parents": [
+        "ICD-EPS-003"
+      ],
+      "methods": [
+        "T"
+      ],
+      "level": "통합",
+      "test_case": "TC-EPS-006",
+      "section": "4.1 검증 항목 목록",
+      "page": 13
+    },
+    {
+      "id": "VER-EPS-024",
+      "doc_id": "GKX-VP-EPS-001",
+      "type": "검증항목",
+      "title": "돌입 전류 검증",
+      "statement": "통합 수준 시험에서 '돌입 전류' 항목을 계측 장비로 측정하여 요구값 충족 여부를 확인한다.",
+      "criteria": "전력계 장비의 전원 인가 시 돌입 전류는 정격 전류의 1.5배, 5 ms 이내로 제한되어야 한다.",
+      "parents": [
+        "ICD-EPS-004"
+      ],
+      "methods": [
+        "T"
+      ],
+      "level": "통합",
+      "test_case": "TC-EPS-006",
+      "section": "4.1 검증 항목 목록",
+      "page": 14
+    },
+    {
+      "id": "VER-EPS-025",
+      "doc_id": "GKX-VP-EPS-001",
+      "type": "검증항목",
+      "title": "전원 커넥터 검증",
+      "statement": "설계 도면, 부품 목록 및 실물 검사를 통해 요구 반영 여부를 확인한다.",
+      "criteria": "전력계 전원 커넥터는 MIL-DTL-38999 시리즈 III를 사용해야 하며 핀 배열은 부록 B에 따른다.",
+      "parents": [
+        "ICD-EPS-005"
+      ],
+      "methods": [
+        "I"
+      ],
+      "level": "통합",
+      "test_case": null,
+      "section": "4.1 검증 항목 목록",
+      "page": 14
+    },
+    {
+      "id": "VER-EPS-026",
+      "doc_id": "GKX-VP-EPS-001",
+      "type": "검증항목",
+      "title": "데이터 버스 주소 검증",
+      "statement": "통합 수준 시험에서 '데이터 버스 주소' 항목을 계측 장비로 측정하여 요구값 충족 여부를 확인한다. 설계 도면, 부품 목록 및 실물 검사를 통해 요구 반영 여부를 확인한다.",
+      "criteria": "전력계 전력조절장치(PCU) 및 배터리는 MIL-STD-1553B 원격단말(RT) 주소 3번으로 본체 OBC와 통신해야 한다.",
+      "parents": [
+        "ICD-EPS-006"
+      ],
+      "methods": [
+        "T",
+        "I"
+      ],
+      "level": "통합",
+      "test_case": "TC-EPS-006",
+      "section": "4.1 검증 항목 목록",
+      "page": 14
+    },
+    {
+      "id": "VER-EPS-027",
+      "doc_id": "GKX-VP-EPS-001",
+      "type": "검증항목",
+      "title": "원격측정 패킷 검증",
+      "statement": "통합 수준 시험에서 '원격측정 패킷' 항목을 계측 장비로 측정하여 요구값 충족 여부를 확인한다.",
+      "criteria": "전력계는 APID 0x110의 원격측정 패킷을 1 Hz 주기로 본체 OBC에 제공해야 한다.",
+      "parents": [
+        "ICD-EPS-007"
+      ],
+      "methods": [
+        "T"
+      ],
+      "level": "통합",
+      "test_case": "TC-EPS-007",
+      "section": "4.1 검증 항목 목록",
+      "page": 15
+    },
+    {
+      "id": "VER-EPS-028",
+      "doc_id": "GKX-VP-EPS-001",
+      "type": "검증항목",
+      "title": "명령 인터페이스 검증",
+      "statement": "통합 수준 시험에서 '명령 인터페이스' 항목을 계측 장비로 측정하여 요구값 충족 여부를 확인한다.",
+      "criteria": "전력계는 본체 OBC로부터 180종 이상의 명령을 수신해야 하며 명령 응답 시간은 50 ms 이하여야 한다.",
+      "parents": [
+        "ICD-EPS-008"
+      ],
+      "methods": [
+        "T"
+      ],
+      "level": "통합",
+      "test_case": "TC-EPS-007",
+      "section": "4.1 검증 항목 목록",
+      "page": 15
+    },
+    {
+      "id": "VER-EPS-029",
+      "doc_id": "GKX-VP-EPS-001",
+      "type": "검증항목",
+      "title": "시각 동기 검증",
+      "statement": "통합 수준 시험에서 '시각 동기' 항목을 계측 장비로 측정하여 요구값 충족 여부를 확인한다.",
+      "criteria": "전력계는 본체 OBC의 1PPS 신호를 수신하여 100 µs 이내로 시각을 동기해야 한다.",
+      "parents": [
+        "ICD-EPS-009"
+      ],
+      "methods": [
+        "T"
+      ],
+      "level": "통합",
+      "test_case": "TC-EPS-007",
+      "section": "4.1 검증 항목 목록",
+      "page": 15
+    },
+    {
+      "id": "VER-EPS-030",
+      "doc_id": "GKX-VP-EPS-001",
+      "type": "검증항목",
+      "title": "열 인터페이스 검증",
+      "statement": "해석 모델 및 계산을 통해 '열 인터페이스' 요구 충족을 분석하고 해석 보고서로 확인한다. 통합 수준 시험에서 '열 인터페이스' 항목을 계측 장비로 측정하여 요구값 충족 여부를 확인한다.",
+      "criteria": "본체는 전력계 장비 장착면 온도를 -10°C ~ +45°C 범위로 유지해야 하며 장착면 열유속은 1,500 W/m² 이하여야 한다.",
+      "parents": [
+        "ICD-EPS-010"
+      ],
+      "methods": [
+        "A",
+        "T"
+      ],
+      "level": "통합",
+      "test_case": "TC-EPS-008",
+      "section": "4.1 검증 항목 목록",
+      "page": 16
+    },
+    {
+      "id": "VER-EPS-031",
+      "doc_id": "GKX-VP-EPS-001",
+      "type": "검증항목",
+      "title": "접지 및 본딩 검증",
+      "statement": "통합 수준 시험에서 '접지 및 본딩' 항목을 계측 장비로 측정하여 요구값 충족 여부를 확인한다.",
+      "criteria": "전력계 장비 케이스와 본체 구조 간 본딩 저항은 2.5 mΩ 이하여야 한다.",
+      "parents": [
+        "ICD-EPS-011"
+      ],
+      "methods": [
+        "T"
+      ],
+      "level": "통합",
+      "test_case": "TC-EPS-008",
+      "section": "4.1 검증 항목 목록",
+      "page": 16
+    },
+    {
+      "id": "VER-EPS-032",
+      "doc_id": "GKX-VP-EPS-001",
+      "type": "검증항목",
+      "title": "EMC 방출 한계 검증",
+      "statement": "통합 수준 시험에서 'EMC 방출 한계' 항목을 계측 장비로 측정하여 요구값 충족 여부를 확인한다.",
+      "criteria": "전력계 장비는 본체 EMC 한계(CE102, RE102)를 만족해야 한다.",
+      "parents": [
+        "ICD-EPS-012"
+      ],
+      "methods": [
+        "T"
+      ],
+      "level": "통합",
+      "test_case": "TC-EPS-008",
+      "section": "4.1 검증 항목 목록",
+      "page": 16
+    }
+  ]
+}

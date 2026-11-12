@@ -1,0 +1,4145 @@
+{
+  "document": {
+    "doc_no": "GKX-VCRM-001",
+    "title": "검증교차참조표",
+    "rev": "C",
+    "date": "2026-10-30",
+    "pages": 21,
+    "file": "06_VCRM/GKX-VCRM-001.pdf",
+    "item_count": 267
+  },
+  "items": [
+    {
+      "id": "MRD-001",
+      "doc_id": "GKX-VCRM-001",
+      "type": "VCRM행",
+      "title": "궤도 위치",
+      "source_doc": "GKX-MRD-001",
+      "methods": [
+        "A",
+        "D"
+      ],
+      "verification_item": null,
+      "test_case": null,
+      "result": "하위 검증: SYS-001, SYS-014, SYS-020",
+      "section": "3.1 미션 요구사항(MRD)",
+      "page": 7
+    },
+    {
+      "id": "MRD-002",
+      "doc_id": "GKX-VCRM-001",
+      "type": "VCRM행",
+      "title": "임무 수명",
+      "source_doc": "GKX-MRD-001",
+      "methods": [
+        "A"
+      ],
+      "verification_item": null,
+      "test_case": null,
+      "result": "하위 검증: SYS-002, SYS-008, SYS-013, SYS-032",
+      "section": "3.1 미션 요구사항(MRD)",
+      "page": 7
+    },
+    {
+      "id": "MRD-003",
+      "doc_id": "GKX-VCRM-001",
+      "type": "VCRM행",
+      "title": "기상관측 영역",
+      "source_doc": "GKX-MRD-001",
+      "methods": [
+        "A",
+        "D"
+      ],
+      "verification_item": null,
+      "test_case": null,
+      "result": "하위 검증: SYS-023",
+      "section": "3.1 미션 요구사항(MRD)",
+      "page": 7
+    },
+    {
+      "id": "MRD-004",
+      "doc_id": "GKX-VCRM-001",
+      "type": "VCRM행",
+      "title": "관측 주기",
+      "source_doc": "GKX-MRD-001",
+      "methods": [
+        "A",
+        "T"
+      ],
+      "verification_item": null,
+      "test_case": null,
+      "result": "하위 검증: SYS-009, SYS-023",
+      "section": "3.1 미션 요구사항(MRD)",
+      "page": 7
+    },
+    {
+      "id": "MRD-005",
+      "doc_id": "GKX-VCRM-001",
+      "type": "VCRM행",
+      "title": "관측 채널",
+      "source_doc": "GKX-MRD-001",
+      "methods": [
+        "T"
+      ],
+      "verification_item": null,
+      "test_case": null,
+      "result": "하위 검증: SYS-008, SYS-016, SYS-024, SYS-026",
+      "section": "3.1 미션 요구사항(MRD)",
+      "page": 7
+    },
+    {
+      "id": "MRD-006",
+      "doc_id": "GKX-VCRM-001",
+      "type": "VCRM행",
+      "title": "공간해상도",
+      "source_doc": "GKX-MRD-001",
+      "methods": [
+        "T"
+      ],
+      "verification_item": null,
+      "test_case": null,
+      "result": "하위 검증: SYS-010, SYS-011, SYS-012, SYS-025",
+      "section": "3.1 미션 요구사항(MRD)",
+      "page": 7
+    },
+    {
+      "id": "MRD-007",
+      "doc_id": "GKX-VCRM-001",
+      "type": "VCRM행",
+      "title": "통신 서비스",
+      "source_doc": "GKX-MRD-001",
+      "methods": [
+        "A",
+        "T"
+      ],
+      "verification_item": null,
+      "test_case": null,
+      "result": "하위 검증: SYS-008, SYS-009, SYS-027, SYS-028",
+      "section": "3.1 미션 요구사항(MRD)",
+      "page": 7
+    },
+    {
+      "id": "MRD-008",
+      "doc_id": "GKX-VCRM-001",
+      "type": "VCRM행",
+      "title": "통신 가용도",
+      "source_doc": "GKX-MRD-001",
+      "methods": [
+        "A"
+      ],
+      "verification_item": null,
+      "test_case": null,
+      "result": "하위 검증: SYS-029",
+      "section": "3.1 미션 요구사항(MRD)",
+      "page": 7
+    },
+    {
+      "id": "MRD-009",
+      "doc_id": "GKX-VCRM-001",
+      "type": "VCRM행",
+      "title": "발사체 호환",
+      "source_doc": "GKX-MRD-001",
+      "methods": [
+        "A",
+        "I"
+      ],
+      "verification_item": null,
+      "test_case": null,
+      "result": "하위 검증: SYS-003, SYS-004, SYS-005, SYS-006, SYS-007",
+      "section": "3.1 미션 요구사항(MRD)",
+      "page": 7
+    },
+    {
+      "id": "MRD-010",
+      "doc_id": "GKX-VCRM-001",
+      "type": "VCRM행",
+      "title": "지상국 연계",
+      "source_doc": "GKX-MRD-001",
+      "methods": [
+        "T",
+        "D"
+      ],
+      "verification_item": null,
+      "test_case": null,
+      "result": "하위 검증: SYS-017, SYS-018, SYS-019, SYS-020, SYS-040",
+      "section": "3.1 미션 요구사항(MRD)",
+      "page": 7
+    },
+    {
+      "id": "MRD-011",
+      "doc_id": "GKX-VCRM-001",
+      "type": "VCRM행",
+      "title": "자율 운용",
+      "source_doc": "GKX-MRD-001",
+      "methods": [
+        "A",
+        "D"
+      ],
+      "verification_item": null,
+      "test_case": null,
+      "result": "하위 검증: SYS-030, SYS-031, SYS-032",
+      "section": "3.1 미션 요구사항(MRD)",
+      "page": 7
+    },
+    {
+      "id": "MRD-012",
+      "doc_id": "GKX-VCRM-001",
+      "type": "VCRM행",
+      "title": "자료 전송 지연",
+      "source_doc": "GKX-MRD-001",
+      "methods": [
+        "A",
+        "T"
+      ],
+      "verification_item": null,
+      "test_case": null,
+      "result": "하위 검증: SYS-022, SYS-033, SYS-034",
+      "section": "3.1 미션 요구사항(MRD)",
+      "page": 7
+    },
+    {
+      "id": "MRD-013",
+      "doc_id": "GKX-VCRM-001",
+      "type": "VCRM행",
+      "title": "궤도 폐기",
+      "source_doc": "GKX-MRD-001",
+      "methods": [
+        "A"
+      ],
+      "verification_item": null,
+      "test_case": null,
+      "result": "하위 검증: SYS-013, SYS-039",
+      "section": "3.1 미션 요구사항(MRD)",
+      "page": 7
+    },
+    {
+      "id": "MRD-014",
+      "doc_id": "GKX-VCRM-001",
+      "type": "VCRM행",
+      "title": "우주환경 내성",
+      "source_doc": "GKX-MRD-001",
+      "methods": [
+        "A",
+        "T"
+      ],
+      "verification_item": null,
+      "test_case": null,
+      "result": "하위 검증: SYS-015, SYS-035, SYS-036, SYS-037, SYS-038",
+      "section": "3.1 미션 요구사항(MRD)",
+      "page": 8
+    },
+    {
+      "id": "MRD-015",
+      "doc_id": "GKX-VCRM-001",
+      "type": "VCRM행",
+      "title": "명령 보안",
+      "source_doc": "GKX-MRD-001",
+      "methods": [
+        "T",
+        "I"
+      ],
+      "verification_item": null,
+      "test_case": null,
+      "result": "하위 검증: SYS-021",
+      "section": "3.1 미션 요구사항(MRD)",
+      "page": 8
+    },
+    {
+      "id": "SYS-001",
+      "doc_id": "GKX-VCRM-001",
+      "type": "VCRM행",
+      "title": "위치유지 정밀도",
+      "source_doc": "GKX-SRS-001",
+      "methods": [
+        "A",
+        "T"
+      ],
+      "verification_item": "VER-BUS-001",
+      "test_case": "TC-BUS-001",
+      "result": "합격",
+      "section": "3.2 시스템 요구사항(SRS)",
+      "page": 8
+    },
+    {
+      "id": "SYS-002",
+      "doc_id": "GKX-VCRM-001",
+      "type": "VCRM행",
+      "title": "설계수명 신뢰도",
+      "source_doc": "GKX-SRS-001",
+      "methods": [
+        "A"
+      ],
+      "verification_item": "VER-BUS-002",
+      "test_case": null,
+      "result": "해석 완료",
+      "section": "3.2 시스템 요구사항(SRS)",
+      "page": 8
+    },
+    {
+      "id": "SYS-003",
+      "doc_id": "GKX-VCRM-001",
+      "type": "VCRM행",
+      "title": "발사 질량",
+      "source_doc": "GKX-SRS-001",
+      "methods": [
+        "A",
+        "I"
+      ],
+      "verification_item": "VER-BUS-003",
+      "test_case": null,
+      "result": "해석 완료",
+      "section": "3.2 시스템 요구사항(SRS)",
+      "page": 8
+    },
+    {
+      "id": "SYS-004",
+      "doc_id": "GKX-VCRM-001",
+      "type": "VCRM행",
+      "title": "건조 질량",
+      "source_doc": "GKX-SRS-001",
+      "methods": [
+        "A",
+        "I"
+      ],
+      "verification_item": "VER-BUS-004",
+      "test_case": null,
+      "result": "해석 완료",
+      "section": "3.2 시스템 요구사항(SRS)",
+      "page": 8
+    },
+    {
+      "id": "SYS-005",
+      "doc_id": "GKX-VCRM-001",
+      "type": "VCRM행",
+      "title": "무게중심",
+      "source_doc": "GKX-SRS-001",
+      "methods": [
+        "A",
+        "T"
+      ],
+      "verification_item": "VER-BUS-005",
+      "test_case": "TC-BUS-001",
+      "result": "합격",
+      "section": "3.2 시스템 요구사항(SRS)",
+      "page": 8
+    },
+    {
+      "id": "SYS-006",
+      "doc_id": "GKX-VCRM-001",
+      "type": "VCRM행",
+      "title": "고유진동수",
+      "source_doc": "GKX-SRS-001",
+      "methods": [
+        "A",
+        "T"
+      ],
+      "verification_item": "VER-BUS-006",
+      "test_case": "TC-BUS-001",
+      "result": "합격",
+      "section": "3.2 시스템 요구사항(SRS)",
+      "page": 8
+    },
+    {
+      "id": "SYS-007",
+      "doc_id": "GKX-VCRM-001",
+      "type": "VCRM행",
+      "title": "발사 환경",
+      "source_doc": "GKX-SRS-001",
+      "methods": [
+        "A",
+        "T"
+      ],
+      "verification_item": "VER-BUS-007",
+      "test_case": "TC-BUS-002",
+      "result": "합격",
+      "section": "3.2 시스템 요구사항(SRS)",
+      "page": 8
+    },
+    {
+      "id": "SYS-008",
+      "doc_id": "GKX-VCRM-001",
+      "type": "VCRM행",
+      "title": "EOL 가용 전력",
+      "source_doc": "GKX-SRS-001",
+      "methods": [
+        "A",
+        "T"
+      ],
+      "verification_item": "VER-BUS-008",
+      "test_case": "TC-BUS-002",
+      "result": "합격",
+      "section": "3.2 시스템 요구사항(SRS)",
+      "page": 8
+    },
+    {
+      "id": "SYS-009",
+      "doc_id": "GKX-VCRM-001",
+      "type": "VCRM행",
+      "title": "식 기간 운용",
+      "source_doc": "GKX-SRS-001",
+      "methods": [
+        "A",
+        "T"
+      ],
+      "verification_item": "VER-BUS-009",
+      "test_case": "TC-BUS-002",
+      "result": "합격",
+      "section": "3.2 시스템 요구사항(SRS)",
+      "page": 8
+    },
+    {
+      "id": "SYS-010",
+      "doc_id": "GKX-VCRM-001",
+      "type": "VCRM행",
+      "title": "지향 정확도",
+      "source_doc": "GKX-SRS-001",
+      "methods": [
+        "A",
+        "T"
+      ],
+      "verification_item": "VER-BUS-010",
+      "test_case": "TC-BUS-003",
+      "result": "합격",
+      "section": "3.2 시스템 요구사항(SRS)",
+      "page": 8
+    },
+    {
+      "id": "SYS-011",
+      "doc_id": "GKX-VCRM-001",
+      "type": "VCRM행",
+      "title": "지향 안정도",
+      "source_doc": "GKX-SRS-001",
+      "methods": [
+        "A",
+        "T"
+      ],
+      "verification_item": "VER-BUS-011",
+      "test_case": "TC-BUS-003",
+      "result": "합격",
+      "section": "3.2 시스템 요구사항(SRS)",
+      "page": 8
+    },
+    {
+      "id": "SYS-012",
+      "doc_id": "GKX-VCRM-001",
+      "type": "VCRM행",
+      "title": "자세 결정 정확도",
+      "source_doc": "GKX-SRS-001",
+      "methods": [
+        "A",
+        "T"
+      ],
+      "verification_item": "VER-BUS-012",
+      "test_case": "TC-BUS-003",
+      "result": "합격",
+      "section": "3.2 시스템 요구사항(SRS)",
+      "page": 8
+    },
+    {
+      "id": "SYS-013",
+      "doc_id": "GKX-VCRM-001",
+      "type": "VCRM행",
+      "title": "추진제 수명",
+      "source_doc": "GKX-SRS-001",
+      "methods": [
+        "A"
+      ],
+      "verification_item": "VER-BUS-013",
+      "test_case": null,
+      "result": "해석 완료",
+      "section": "3.2 시스템 요구사항(SRS)",
+      "page": 8
+    },
+    {
+      "id": "SYS-014",
+      "doc_id": "GKX-VCRM-001",
+      "type": "VCRM행",
+      "title": "궤도 전이",
+      "source_doc": "GKX-SRS-001",
+      "methods": [
+        "A",
+        "D"
+      ],
+      "verification_item": "VER-BUS-014",
+      "test_case": null,
+      "result": "해석 완료",
+      "section": "3.2 시스템 요구사항(SRS)",
+      "page": 8
+    },
+    {
+      "id": "SYS-015",
+      "doc_id": "GKX-VCRM-001",
+      "type": "VCRM행",
+      "title": "장비 열환경",
+      "source_doc": "GKX-SRS-001",
+      "methods": [
+        "A",
+        "T"
+      ],
+      "verification_item": "VER-BUS-015",
+      "test_case": "TC-BUS-004",
+      "result": "합격",
+      "section": "3.2 시스템 요구사항(SRS)",
+      "page": 8
+    },
+    {
+      "id": "SYS-016",
+      "doc_id": "GKX-VCRM-001",
+      "type": "VCRM행",
+      "title": "적외 검출기 냉각",
+      "source_doc": "GKX-SRS-001",
+      "methods": [
+        "T"
+      ],
+      "verification_item": "VER-BUS-016",
+      "test_case": "TC-BUS-004",
+      "result": "합격",
+      "section": "3.2 시스템 요구사항(SRS)",
+      "page": 8
+    },
+    {
+      "id": "SYS-017",
+      "doc_id": "GKX-VCRM-001",
+      "type": "VCRM행",
+      "title": "TT&C 주파수",
+      "source_doc": "GKX-SRS-001",
+      "methods": [
+        "T"
+      ],
+      "verification_item": "VER-BUS-017",
+      "test_case": "TC-BUS-004",
+      "result": "합격",
+      "section": "3.2 시스템 요구사항(SRS)",
+      "page": 9
+    },
+    {
+      "id": "SYS-018",
+      "doc_id": "GKX-VCRM-001",
+      "type": "VCRM행",
+      "title": "명령 링크 품질",
+      "source_doc": "GKX-SRS-001",
+      "methods": [
+        "A",
+        "T"
+      ],
+      "verification_item": "VER-BUS-018",
+      "test_case": "TC-BUS-005",
+      "result": "합격",
+      "section": "3.2 시스템 요구사항(SRS)",
+      "page": 9
+    },
+    {
+      "id": "SYS-019",
+      "doc_id": "GKX-VCRM-001",
+      "type": "VCRM행",
+      "title": "원격측정 전송률",
+      "source_doc": "GKX-SRS-001",
+      "methods": [
+        "T"
+      ],
+      "verification_item": "VER-BUS-019",
+      "test_case": "TC-BUS-005",
+      "result": "합격",
+      "section": "3.2 시스템 요구사항(SRS)",
+      "page": 9
+    },
+    {
+      "id": "SYS-020",
+      "doc_id": "GKX-VCRM-001",
+      "type": "VCRM행",
+      "title": "거리측정 정확도",
+      "source_doc": "GKX-SRS-001",
+      "methods": [
+        "A",
+        "T"
+      ],
+      "verification_item": "VER-BUS-020",
+      "test_case": "TC-BUS-005",
+      "result": "합격",
+      "section": "3.2 시스템 요구사항(SRS)",
+      "page": 9
+    },
+    {
+      "id": "SYS-021",
+      "doc_id": "GKX-VCRM-001",
+      "type": "VCRM행",
+      "title": "명령 보안 적용",
+      "source_doc": "GKX-SRS-001",
+      "methods": [
+        "T",
+        "I"
+      ],
+      "verification_item": "VER-BUS-021",
+      "test_case": "TC-BUS-006",
+      "result": "합격",
+      "section": "3.2 시스템 요구사항(SRS)",
+      "page": 9
+    },
+    {
+      "id": "SYS-022",
+      "doc_id": "GKX-VCRM-001",
+      "type": "VCRM행",
+      "title": "관측자료 다운링크",
+      "source_doc": "GKX-SRS-001",
+      "methods": [
+        "T"
+      ],
+      "verification_item": "VER-BUS-022",
+      "test_case": "TC-BUS-006",
+      "result": "합격",
+      "section": "3.2 시스템 요구사항(SRS)",
+      "page": 9
+    },
+    {
+      "id": "SYS-023",
+      "doc_id": "GKX-VCRM-001",
+      "type": "VCRM행",
+      "title": "관측 운용 주기",
+      "source_doc": "GKX-SRS-001",
+      "methods": [
+        "A",
+        "T"
+      ],
+      "verification_item": "VER-BUS-023",
+      "test_case": "TC-BUS-006",
+      "result": "합격",
+      "section": "3.2 시스템 요구사항(SRS)",
+      "page": 9
+    },
+    {
+      "id": "SYS-024",
+      "doc_id": "GKX-VCRM-001",
+      "type": "VCRM행",
+      "title": "관측 채널 구성",
+      "source_doc": "GKX-SRS-001",
+      "methods": [
+        "T",
+        "I"
+      ],
+      "verification_item": "VER-BUS-024",
+      "test_case": "TC-BUS-007",
+      "result": "합격",
+      "section": "3.2 시스템 요구사항(SRS)",
+      "page": 9
+    },
+    {
+      "id": "SYS-025",
+      "doc_id": "GKX-VCRM-001",
+      "type": "VCRM행",
+      "title": "채널별 공간해상도",
+      "source_doc": "GKX-SRS-001",
+      "methods": [
+        "T"
+      ],
+      "verification_item": "VER-BUS-025",
+      "test_case": "TC-BUS-007",
+      "result": "합격",
+      "section": "3.2 시스템 요구사항(SRS)",
+      "page": 9
+    },
+    {
+      "id": "SYS-026",
+      "doc_id": "GKX-VCRM-001",
+      "type": "VCRM행",
+      "title": "복사보정 정확도",
+      "source_doc": "GKX-SRS-001",
+      "methods": [
+        "T"
+      ],
+      "verification_item": "VER-BUS-026",
+      "test_case": "TC-BUS-007",
+      "result": "합격",
+      "section": "3.2 시스템 요구사항(SRS)",
+      "page": 9
+    },
+    {
+      "id": "SYS-027",
+      "doc_id": "GKX-VCRM-001",
+      "type": "VCRM행",
+      "title": "통신 커버리지",
+      "source_doc": "GKX-SRS-001",
+      "methods": [
+        "A",
+        "T"
+      ],
+      "verification_item": "VER-BUS-027",
+      "test_case": "TC-BUS-008",
+      "result": "합격",
+      "section": "3.2 시스템 요구사항(SRS)",
+      "page": 9
+    },
+    {
+      "id": "SYS-028",
+      "doc_id": "GKX-VCRM-001",
+      "type": "VCRM행",
+      "title": "통신 채널 구성",
+      "source_doc": "GKX-SRS-001",
+      "methods": [
+        "T",
+        "I"
+      ],
+      "verification_item": "VER-BUS-028",
+      "test_case": "TC-BUS-008",
+      "result": "합격",
+      "section": "3.2 시스템 요구사항(SRS)",
+      "page": 9
+    },
+    {
+      "id": "SYS-029",
+      "doc_id": "GKX-VCRM-001",
+      "type": "VCRM행",
+      "title": "통신 이중화",
+      "source_doc": "GKX-SRS-001",
+      "methods": [
+        "A"
+      ],
+      "verification_item": "VER-BUS-029",
+      "test_case": null,
+      "result": "해석 완료",
+      "section": "3.2 시스템 요구사항(SRS)",
+      "page": 9
+    },
+    {
+      "id": "SYS-030",
+      "doc_id": "GKX-VCRM-001",
+      "type": "VCRM행",
+      "title": "안전모드",
+      "source_doc": "GKX-SRS-001",
+      "methods": [
+        "A",
+        "T",
+        "D"
+      ],
+      "verification_item": "VER-BUS-030",
+      "test_case": "TC-BUS-008",
+      "result": "합격",
+      "section": "3.2 시스템 요구사항(SRS)",
+      "page": 9
+    },
+    {
+      "id": "SYS-031",
+      "doc_id": "GKX-VCRM-001",
+      "type": "VCRM행",
+      "title": "자율 유지",
+      "source_doc": "GKX-SRS-001",
+      "methods": [
+        "A",
+        "D"
+      ],
+      "verification_item": "VER-BUS-031",
+      "test_case": null,
+      "result": "해석 완료",
+      "section": "3.2 시스템 요구사항(SRS)",
+      "page": 9
+    },
+    {
+      "id": "SYS-032",
+      "doc_id": "GKX-VCRM-001",
+      "type": "VCRM행",
+      "title": "FDIR",
+      "source_doc": "GKX-SRS-001",
+      "methods": [
+        "A",
+        "T"
+      ],
+      "verification_item": "VER-BUS-032",
+      "test_case": "TC-BUS-009",
+      "result": "합격",
+      "section": "3.2 시스템 요구사항(SRS)",
+      "page": 9
+    },
+    {
+      "id": "SYS-033",
+      "doc_id": "GKX-VCRM-001",
+      "type": "VCRM행",
+      "title": "시각 동기",
+      "source_doc": "GKX-SRS-001",
+      "methods": [
+        "T"
+      ],
+      "verification_item": "VER-BUS-033",
+      "test_case": "TC-BUS-009",
+      "result": "합격",
+      "section": "3.2 시스템 요구사항(SRS)",
+      "page": 9
+    },
+    {
+      "id": "SYS-034",
+      "doc_id": "GKX-VCRM-001",
+      "type": "VCRM행",
+      "title": "탑재 처리 지연",
+      "source_doc": "GKX-SRS-001",
+      "methods": [
+        "A",
+        "T"
+      ],
+      "verification_item": "VER-BUS-034",
+      "test_case": "TC-BUS-009",
+      "result": "합격",
+      "section": "3.2 시스템 요구사항(SRS)",
+      "page": 9
+    },
+    {
+      "id": "SYS-035",
+      "doc_id": "GKX-VCRM-001",
+      "type": "VCRM행",
+      "title": "총이온화선량",
+      "source_doc": "GKX-SRS-001",
+      "methods": [
+        "A",
+        "T"
+      ],
+      "verification_item": "VER-BUS-035",
+      "test_case": "TC-BUS-010",
+      "result": "합격",
+      "section": "3.2 시스템 요구사항(SRS)",
+      "page": 9
+    },
+    {
+      "id": "SYS-036",
+      "doc_id": "GKX-VCRM-001",
+      "type": "VCRM행",
+      "title": "단일사건효과",
+      "source_doc": "GKX-SRS-001",
+      "methods": [
+        "A",
+        "T"
+      ],
+      "verification_item": "VER-BUS-036",
+      "test_case": "TC-BUS-010",
+      "result": "합격",
+      "section": "3.2 시스템 요구사항(SRS)",
+      "page": 9
+    },
+    {
+      "id": "SYS-037",
+      "doc_id": "GKX-VCRM-001",
+      "type": "VCRM행",
+      "title": "전자기 적합성",
+      "source_doc": "GKX-SRS-001",
+      "methods": [
+        "T"
+      ],
+      "verification_item": "VER-BUS-037",
+      "test_case": "TC-BUS-010",
+      "result": "합격",
+      "section": "3.2 시스템 요구사항(SRS)",
+      "page": 9
+    },
+    {
+      "id": "SYS-038",
+      "doc_id": "GKX-VCRM-001",
+      "type": "VCRM행",
+      "title": "표면 대전",
+      "source_doc": "GKX-SRS-001",
+      "methods": [
+        "A",
+        "I"
+      ],
+      "verification_item": "VER-BUS-038",
+      "test_case": null,
+      "result": "해석 완료",
+      "section": "3.2 시스템 요구사항(SRS)",
+      "page": 9
+    },
+    {
+      "id": "SYS-039",
+      "doc_id": "GKX-VCRM-001",
+      "type": "VCRM행",
+      "title": "임무 종료 처리",
+      "source_doc": "GKX-SRS-001",
+      "methods": [
+        "A",
+        "D"
+      ],
+      "verification_item": "VER-BUS-039",
+      "test_case": null,
+      "result": "해석 완료",
+      "section": "3.2 시스템 요구사항(SRS)",
+      "page": 10
+    },
+    {
+      "id": "SYS-040",
+      "doc_id": "GKX-VCRM-001",
+      "type": "VCRM행",
+      "title": "시험 지원성",
+      "source_doc": "GKX-SRS-001",
+      "methods": [
+        "I",
+        "D"
+      ],
+      "verification_item": "VER-BUS-040",
+      "test_case": null,
+      "result": "검사 완료",
+      "section": "3.2 시스템 요구사항(SRS)",
+      "page": 10
+    },
+    {
+      "id": "BUS-001",
+      "doc_id": "GKX-VCRM-001",
+      "type": "VCRM행",
+      "title": "구조 형상",
+      "source_doc": "GKX-SSS-BUS-001",
+      "methods": [
+        "I",
+        "A"
+      ],
+      "verification_item": "VER-BUS-041",
+      "test_case": null,
+      "result": "해석 완료",
+      "section": "3.3 본체(버스) 통합 요구사항(BUS)",
+      "page": 10
+    },
+    {
+      "id": "BUS-002",
+      "doc_id": "GKX-VCRM-001",
+      "type": "VCRM행",
+      "title": "질량 예산",
+      "source_doc": "GKX-SSS-BUS-001",
+      "methods": [
+        "A",
+        "I"
+      ],
+      "verification_item": "VER-BUS-042",
+      "test_case": null,
+      "result": "해석 완료",
+      "section": "3.3 본체(버스) 통합 요구사항(BUS)",
+      "page": 10
+    },
+    {
+      "id": "BUS-003",
+      "doc_id": "GKX-VCRM-001",
+      "type": "VCRM행",
+      "title": "구조 고유진동수",
+      "source_doc": "GKX-SSS-BUS-001",
+      "methods": [
+        "A",
+        "T"
+      ],
+      "verification_item": "VER-BUS-043",
+      "test_case": "TC-BUS-011",
+      "result": "합격",
+      "section": "3.3 본체(버스) 통합 요구사항(BUS)",
+      "page": 10
+    },
+    {
+      "id": "BUS-004",
+      "doc_id": "GKX-VCRM-001",
+      "type": "VCRM행",
+      "title": "준정적 하중",
+      "source_doc": "GKX-SSS-BUS-001",
+      "methods": [
+        "A",
+        "T"
+      ],
+      "verification_item": "VER-BUS-044",
+      "test_case": "TC-BUS-011",
+      "result": "합격",
+      "section": "3.3 본체(버스) 통합 요구사항(BUS)",
+      "page": 10
+    },
+    {
+      "id": "BUS-005",
+      "doc_id": "GKX-VCRM-001",
+      "type": "VCRM행",
+      "title": "탑재체 정렬",
+      "source_doc": "GKX-SSS-BUS-001",
+      "methods": [
+        "I",
+        "T"
+      ],
+      "verification_item": "VER-BUS-045",
+      "test_case": "TC-BUS-011",
+      "result": "합격",
+      "section": "3.3 본체(버스) 통합 요구사항(BUS)",
+      "page": 10
+    },
+    {
+      "id": "BUS-006",
+      "doc_id": "GKX-VCRM-001",
+      "type": "VCRM행",
+      "title": "전력 예산",
+      "source_doc": "GKX-SSS-BUS-001",
+      "methods": [
+        "A"
+      ],
+      "verification_item": "VER-BUS-046",
+      "test_case": null,
+      "result": "해석 완료",
+      "section": "3.3 본체(버스) 통합 요구사항(BUS)",
+      "page": 10
+    },
+    {
+      "id": "BUS-007",
+      "doc_id": "GKX-VCRM-001",
+      "type": "VCRM행",
+      "title": "1차 전원 버스",
+      "source_doc": "GKX-SSS-BUS-001",
+      "methods": [
+        "T"
+      ],
+      "verification_item": "VER-BUS-047",
+      "test_case": "TC-BUS-012",
+      "result": "합격",
+      "section": "3.3 본체(버스) 통합 요구사항(BUS)",
+      "page": 10
+    },
+    {
+      "id": "BUS-008",
+      "doc_id": "GKX-VCRM-001",
+      "type": "VCRM행",
+      "title": "하네스",
+      "source_doc": "GKX-SSS-BUS-001",
+      "methods": [
+        "I",
+        "A"
+      ],
+      "verification_item": "VER-BUS-048",
+      "test_case": null,
+      "result": "해석 완료",
+      "section": "3.3 본체(버스) 통합 요구사항(BUS)",
+      "page": 10
+    },
+    {
+      "id": "BUS-009",
+      "doc_id": "GKX-VCRM-001",
+      "type": "VCRM행",
+      "title": "접지 체계",
+      "source_doc": "GKX-SSS-BUS-001",
+      "methods": [
+        "T",
+        "I"
+      ],
+      "verification_item": "VER-BUS-049",
+      "test_case": "TC-BUS-012",
+      "result": "합격",
+      "section": "3.3 본체(버스) 통합 요구사항(BUS)",
+      "page": 10
+    },
+    {
+      "id": "BUS-010",
+      "doc_id": "GKX-VCRM-001",
+      "type": "VCRM행",
+      "title": "데이터 버스",
+      "source_doc": "GKX-SSS-BUS-001",
+      "methods": [
+        "T",
+        "I"
+      ],
+      "verification_item": "VER-BUS-050",
+      "test_case": "TC-BUS-012",
+      "result": "합격",
+      "section": "3.3 본체(버스) 통합 요구사항(BUS)",
+      "page": 10
+    },
+    {
+      "id": "BUS-011",
+      "doc_id": "GKX-VCRM-001",
+      "type": "VCRM행",
+      "title": "탑재컴퓨터",
+      "source_doc": "GKX-SSS-BUS-001",
+      "methods": [
+        "T"
+      ],
+      "verification_item": "VER-BUS-051",
+      "test_case": "TC-BUS-013",
+      "result": "합격",
+      "section": "3.3 본체(버스) 통합 요구사항(BUS)",
+      "page": 10
+    },
+    {
+      "id": "BUS-012",
+      "doc_id": "GKX-VCRM-001",
+      "type": "VCRM행",
+      "title": "시각 배분",
+      "source_doc": "GKX-SSS-BUS-001",
+      "methods": [
+        "T"
+      ],
+      "verification_item": "VER-BUS-052",
+      "test_case": "TC-BUS-013",
+      "result": "합격",
+      "section": "3.3 본체(버스) 통합 요구사항(BUS)",
+      "page": 10
+    },
+    {
+      "id": "BUS-013",
+      "doc_id": "GKX-VCRM-001",
+      "type": "VCRM행",
+      "title": "온보드 저장",
+      "source_doc": "GKX-SSS-BUS-001",
+      "methods": [
+        "T",
+        "I"
+      ],
+      "verification_item": "VER-BUS-053",
+      "test_case": "TC-BUS-013",
+      "result": "합격",
+      "section": "3.3 본체(버스) 통합 요구사항(BUS)",
+      "page": 10
+    },
+    {
+      "id": "BUS-014",
+      "doc_id": "GKX-VCRM-001",
+      "type": "VCRM행",
+      "title": "열 인터페이스 기준",
+      "source_doc": "GKX-SSS-BUS-001",
+      "methods": [
+        "A",
+        "T"
+      ],
+      "verification_item": "VER-BUS-054",
+      "test_case": "TC-BUS-014",
+      "result": "합격",
+      "section": "3.3 본체(버스) 통합 요구사항(BUS)",
+      "page": 10
+    },
+    {
+      "id": "BUS-015",
+      "doc_id": "GKX-VCRM-001",
+      "type": "VCRM행",
+      "title": "FDIR 계층",
+      "source_doc": "GKX-SSS-BUS-001",
+      "methods": [
+        "A",
+        "T"
+      ],
+      "verification_item": "VER-BUS-055",
+      "test_case": "TC-BUS-014",
+      "result": "합격",
+      "section": "3.3 본체(버스) 통합 요구사항(BUS)",
+      "page": 10
+    },
+    {
+      "id": "BUS-016",
+      "doc_id": "GKX-VCRM-001",
+      "type": "VCRM행",
+      "title": "안전모드 부하 관리",
+      "source_doc": "GKX-SSS-BUS-001",
+      "methods": [
+        "T",
+        "D"
+      ],
+      "verification_item": "VER-BUS-056",
+      "test_case": "TC-BUS-014",
+      "result": "합격",
+      "section": "3.3 본체(버스) 통합 요구사항(BUS)",
+      "page": 10
+    },
+    {
+      "id": "BUS-017",
+      "doc_id": "GKX-VCRM-001",
+      "type": "VCRM행",
+      "title": "장비 EMC 한계",
+      "source_doc": "GKX-SSS-BUS-001",
+      "methods": [
+        "T"
+      ],
+      "verification_item": "VER-BUS-057",
+      "test_case": "TC-BUS-015",
+      "result": "합격",
+      "section": "3.3 본체(버스) 통합 요구사항(BUS)",
+      "page": 10
+    },
+    {
+      "id": "BUS-018",
+      "doc_id": "GKX-VCRM-001",
+      "type": "VCRM행",
+      "title": "방사선 설계 기준",
+      "source_doc": "GKX-SSS-BUS-001",
+      "methods": [
+        "A"
+      ],
+      "verification_item": "VER-BUS-058",
+      "test_case": null,
+      "result": "해석 완료",
+      "section": "3.3 본체(버스) 통합 요구사항(BUS)",
+      "page": 11
+    },
+    {
+      "id": "BUS-019",
+      "doc_id": "GKX-VCRM-001",
+      "type": "VCRM행",
+      "title": "비행 소프트웨어 갱신",
+      "source_doc": "GKX-SSS-BUS-001",
+      "methods": [
+        "T",
+        "D"
+      ],
+      "verification_item": "VER-BUS-059",
+      "test_case": "TC-BUS-015",
+      "result": "합격",
+      "section": "3.3 본체(버스) 통합 요구사항(BUS)",
+      "page": 11
+    },
+    {
+      "id": "BUS-020",
+      "doc_id": "GKX-VCRM-001",
+      "type": "VCRM행",
+      "title": "EGSE 인터페이스",
+      "source_doc": "GKX-SSS-BUS-001",
+      "methods": [
+        "I",
+        "D"
+      ],
+      "verification_item": "VER-BUS-060",
+      "test_case": null,
+      "result": "검사 완료",
+      "section": "3.3 본체(버스) 통합 요구사항(BUS)",
+      "page": 11
+    },
+    {
+      "id": "EPS-001",
+      "doc_id": "GKX-VCRM-001",
+      "type": "VCRM행",
+      "title": "태양전지판 EOL 출력",
+      "source_doc": "GKX-SSS-EPS-001",
+      "methods": [
+        "A",
+        "T"
+      ],
+      "verification_item": "VER-EPS-001",
+      "test_case": "TC-EPS-001",
+      "result": "합격",
+      "section": "3.4 전력계 요구사항(EPS)",
+      "page": 11
+    },
+    {
+      "id": "EPS-002",
+      "doc_id": "GKX-VCRM-001",
+      "type": "VCRM행",
+      "title": "태양전지 셀",
+      "source_doc": "GKX-SSS-EPS-001",
+      "methods": [
+        "T",
+        "I"
+      ],
+      "verification_item": "VER-EPS-002",
+      "test_case": "TC-EPS-001",
+      "result": "합격",
+      "section": "3.4 전력계 요구사항(EPS)",
+      "page": 11
+    },
+    {
+      "id": "EPS-003",
+      "doc_id": "GKX-VCRM-001",
+      "type": "VCRM행",
+      "title": "태양전지판 구성",
+      "source_doc": "GKX-SSS-EPS-001",
+      "methods": [
+        "I"
+      ],
+      "verification_item": "VER-EPS-003",
+      "test_case": null,
+      "result": "검사 완료",
+      "section": "3.4 전력계 요구사항(EPS)",
+      "page": 11
+    },
+    {
+      "id": "EPS-004",
+      "doc_id": "GKX-VCRM-001",
+      "type": "VCRM행",
+      "title": "전개 신뢰도",
+      "source_doc": "GKX-SSS-EPS-001",
+      "methods": [
+        "T",
+        "A"
+      ],
+      "verification_item": "VER-EPS-004",
+      "test_case": "TC-EPS-001",
+      "result": "합격",
+      "section": "3.4 전력계 요구사항(EPS)",
+      "page": 11
+    },
+    {
+      "id": "EPS-005",
+      "doc_id": "GKX-VCRM-001",
+      "type": "VCRM행",
+      "title": "SADA 추적 정확도",
+      "source_doc": "GKX-SSS-EPS-001",
+      "methods": [
+        "T"
+      ],
+      "verification_item": "VER-EPS-005",
+      "test_case": "TC-EPS-002",
+      "result": "합격",
+      "section": "3.4 전력계 요구사항(EPS)",
+      "page": 11
+    },
+    {
+      "id": "EPS-006",
+      "doc_id": "GKX-VCRM-001",
+      "type": "VCRM행",
+      "title": "배터리 용량",
+      "source_doc": "GKX-SSS-EPS-001",
+      "methods": [
+        "A",
+        "T"
+      ],
+      "verification_item": "VER-EPS-006",
+      "test_case": "TC-EPS-002",
+      "result": "합격",
+      "section": "3.4 전력계 요구사항(EPS)",
+      "page": 11
+    },
+    {
+      "id": "EPS-007",
+      "doc_id": "GKX-VCRM-001",
+      "type": "VCRM행",
+      "title": "방전 심도",
+      "source_doc": "GKX-SSS-EPS-001",
+      "methods": [
+        "A"
+      ],
+      "verification_item": "VER-EPS-007",
+      "test_case": null,
+      "result": "해석 완료",
+      "section": "3.4 전력계 요구사항(EPS)",
+      "page": 11
+    },
+    {
+      "id": "EPS-008",
+      "doc_id": "GKX-VCRM-001",
+      "type": "VCRM행",
+      "title": "셀 전압 균형",
+      "source_doc": "GKX-SSS-EPS-001",
+      "methods": [
+        "T"
+      ],
+      "verification_item": "VER-EPS-008",
+      "test_case": "TC-EPS-002",
+      "result": "합격",
+      "section": "3.4 전력계 요구사항(EPS)",
+      "page": 11
+    },
+    {
+      "id": "EPS-009",
+      "doc_id": "GKX-VCRM-001",
+      "type": "VCRM행",
+      "title": "버스 전압 조정",
+      "source_doc": "GKX-SSS-EPS-001",
+      "methods": [
+        "T"
+      ],
+      "verification_item": "VER-EPS-009",
+      "test_case": "TC-EPS-003",
+      "result": "합격",
+      "section": "3.4 전력계 요구사항(EPS)",
+      "page": 11
+    },
+    {
+      "id": "EPS-010",
+      "doc_id": "GKX-VCRM-001",
+      "type": "VCRM행",
+      "title": "버스 리플",
+      "source_doc": "GKX-SSS-EPS-001",
+      "methods": [
+        "T"
+      ],
+      "verification_item": "VER-EPS-010",
+      "test_case": "TC-EPS-003",
+      "result": "합격",
+      "section": "3.4 전력계 요구사항(EPS)",
+      "page": 11
+    },
+    {
+      "id": "EPS-011",
+      "doc_id": "GKX-VCRM-001",
+      "type": "VCRM행",
+      "title": "PCU 효율",
+      "source_doc": "GKX-SSS-EPS-001",
+      "methods": [
+        "T"
+      ],
+      "verification_item": "VER-EPS-011",
+      "test_case": "TC-EPS-003",
+      "result": "합격",
+      "section": "3.4 전력계 요구사항(EPS)",
+      "page": 11
+    },
+    {
+      "id": "EPS-012",
+      "doc_id": "GKX-VCRM-001",
+      "type": "VCRM행",
+      "title": "부하 보호",
+      "source_doc": "GKX-SSS-EPS-001",
+      "methods": [
+        "T"
+      ],
+      "verification_item": "VER-EPS-012",
+      "test_case": "TC-EPS-004",
+      "result": "합격",
+      "section": "3.4 전력계 요구사항(EPS)",
+      "page": 11
+    },
+    {
+      "id": "EPS-013",
+      "doc_id": "GKX-VCRM-001",
+      "type": "VCRM행",
+      "title": "저전압 부하 차단",
+      "source_doc": "GKX-SSS-EPS-001",
+      "methods": [
+        "T",
+        "A"
+      ],
+      "verification_item": "VER-EPS-013",
+      "test_case": "TC-EPS-004",
+      "result": "합격",
+      "section": "3.4 전력계 요구사항(EPS)",
+      "page": 11
+    },
+    {
+      "id": "EPS-014",
+      "doc_id": "GKX-VCRM-001",
+      "type": "VCRM행",
+      "title": "전력계 원격측정",
+      "source_doc": "GKX-SSS-EPS-001",
+      "methods": [
+        "T",
+        "I"
+      ],
+      "verification_item": "VER-EPS-014",
+      "test_case": "TC-EPS-004",
+      "result": "합격",
+      "section": "3.4 전력계 요구사항(EPS)",
+      "page": 11
+    },
+    {
+      "id": "EPS-015",
+      "doc_id": "GKX-VCRM-001",
+      "type": "VCRM행",
+      "title": "배터리 단일고장 허용",
+      "source_doc": "GKX-SSS-EPS-001",
+      "methods": [
+        "A"
+      ],
+      "verification_item": "VER-EPS-015",
+      "test_case": null,
+      "result": "해석 완료",
+      "section": "3.4 전력계 요구사항(EPS)",
+      "page": 11
+    },
+    {
+      "id": "EPS-016",
+      "doc_id": "GKX-VCRM-001",
+      "type": "VCRM행",
+      "title": "배터리 운용 온도",
+      "source_doc": "GKX-SSS-EPS-001",
+      "methods": [
+        "T"
+      ],
+      "verification_item": "VER-EPS-016",
+      "test_case": "TC-EPS-005",
+      "result": "합격",
+      "section": "3.4 전력계 요구사항(EPS)",
+      "page": 11
+    },
+    {
+      "id": "EPS-017",
+      "doc_id": "GKX-VCRM-001",
+      "type": "VCRM행",
+      "title": "전력계 질량",
+      "source_doc": "GKX-SSS-EPS-001",
+      "methods": [
+        "I"
+      ],
+      "verification_item": "VER-EPS-017",
+      "test_case": null,
+      "result": "검사 완료",
+      "section": "3.4 전력계 요구사항(EPS)",
+      "page": 12
+    },
+    {
+      "id": "EPS-018",
+      "doc_id": "GKX-VCRM-001",
+      "type": "VCRM행",
+      "title": "화공품 점화 안전",
+      "source_doc": "GKX-SSS-EPS-001",
+      "methods": [
+        "T",
+        "I"
+      ],
+      "verification_item": "VER-EPS-018",
+      "test_case": "TC-EPS-005",
+      "result": "합격",
+      "section": "3.4 전력계 요구사항(EPS)",
+      "page": 12
+    },
+    {
+      "id": "EPS-019",
+      "doc_id": "GKX-VCRM-001",
+      "type": "VCRM행",
+      "title": "임무 종료 비활성화",
+      "source_doc": "GKX-SSS-EPS-001",
+      "methods": [
+        "D",
+        "A"
+      ],
+      "verification_item": "VER-EPS-019",
+      "test_case": null,
+      "result": "해석 완료",
+      "section": "3.4 전력계 요구사항(EPS)",
+      "page": 12
+    },
+    {
+      "id": "EPS-020",
+      "doc_id": "GKX-VCRM-001",
+      "type": "VCRM행",
+      "title": "전력 전자부품 방사선",
+      "source_doc": "GKX-SSS-EPS-001",
+      "methods": [
+        "A",
+        "T"
+      ],
+      "verification_item": "VER-EPS-020",
+      "test_case": "TC-EPS-005",
+      "result": "합격",
+      "section": "3.4 전력계 요구사항(EPS)",
+      "page": 12
+    },
+    {
+      "id": "AOCS-001",
+      "doc_id": "GKX-VCRM-001",
+      "type": "VCRM행",
+      "title": "자세 지향 정확도",
+      "source_doc": "GKX-SSS-AOCS-001",
+      "methods": [
+        "A",
+        "T"
+      ],
+      "verification_item": "VER-AOCS-001",
+      "test_case": "TC-AOCS-001",
+      "result": "합격",
+      "section": "3.5 자세·궤도제어계 요구사항(AOCS)",
+      "page": 12
+    },
+    {
+      "id": "AOCS-002",
+      "doc_id": "GKX-VCRM-001",
+      "type": "VCRM행",
+      "title": "자세 안정도",
+      "source_doc": "GKX-SSS-AOCS-001",
+      "methods": [
+        "A",
+        "T"
+      ],
+      "verification_item": "VER-AOCS-002",
+      "test_case": "TC-AOCS-001",
+      "result": "합격",
+      "section": "3.5 자세·궤도제어계 요구사항(AOCS)",
+      "page": 12
+    },
+    {
+      "id": "AOCS-003",
+      "doc_id": "GKX-VCRM-001",
+      "type": "VCRM행",
+      "title": "별추적기",
+      "source_doc": "GKX-SSS-AOCS-001",
+      "methods": [
+        "T"
+      ],
+      "verification_item": "VER-AOCS-003",
+      "test_case": "TC-AOCS-001",
+      "result": "합격",
+      "section": "3.5 자세·궤도제어계 요구사항(AOCS)",
+      "page": 12
+    },
+    {
+      "id": "AOCS-004",
+      "doc_id": "GKX-VCRM-001",
+      "type": "VCRM행",
+      "title": "관성기준장치",
+      "source_doc": "GKX-SSS-AOCS-001",
+      "methods": [
+        "T"
+      ],
+      "verification_item": "VER-AOCS-004",
+      "test_case": "TC-AOCS-002",
+      "result": "합격",
+      "section": "3.5 자세·궤도제어계 요구사항(AOCS)",
+      "page": 12
+    },
+    {
+      "id": "AOCS-005",
+      "doc_id": "GKX-VCRM-001",
+      "type": "VCRM행",
+      "title": "조대태양센서",
+      "source_doc": "GKX-SSS-AOCS-001",
+      "methods": [
+        "T",
+        "I"
+      ],
+      "verification_item": "VER-AOCS-005",
+      "test_case": "TC-AOCS-002",
+      "result": "합격",
+      "section": "3.5 자세·궤도제어계 요구사항(AOCS)",
+      "page": 12
+    },
+    {
+      "id": "AOCS-006",
+      "doc_id": "GKX-VCRM-001",
+      "type": "VCRM행",
+      "title": "반작용휠",
+      "source_doc": "GKX-SSS-AOCS-001",
+      "methods": [
+        "T"
+      ],
+      "verification_item": "VER-AOCS-006",
+      "test_case": "TC-AOCS-002",
+      "result": "합격",
+      "section": "3.5 자세·궤도제어계 요구사항(AOCS)",
+      "page": 12
+    },
+    {
+      "id": "AOCS-007",
+      "doc_id": "GKX-VCRM-001",
+      "type": "VCRM행",
+      "title": "휠 미소진동",
+      "source_doc": "GKX-SSS-AOCS-001",
+      "methods": [
+        "T"
+      ],
+      "verification_item": "VER-AOCS-007",
+      "test_case": "TC-AOCS-003",
+      "result": "부적합(NCR-AOCS-001)",
+      "section": "3.5 자세·궤도제어계 요구사항(AOCS)",
+      "page": 12
+    },
+    {
+      "id": "AOCS-008",
+      "doc_id": "GKX-VCRM-001",
+      "type": "VCRM행",
+      "title": "모멘텀 덤핑",
+      "source_doc": "GKX-SSS-AOCS-001",
+      "methods": [
+        "A",
+        "D"
+      ],
+      "verification_item": "VER-AOCS-008",
+      "test_case": null,
+      "result": "해석 완료",
+      "section": "3.5 자세·궤도제어계 요구사항(AOCS)",
+      "page": 12
+    },
+    {
+      "id": "AOCS-009",
+      "doc_id": "GKX-VCRM-001",
+      "type": "VCRM행",
+      "title": "궤도결정 정확도",
+      "source_doc": "GKX-SSS-AOCS-001",
+      "methods": [
+        "A"
+      ],
+      "verification_item": "VER-AOCS-009",
+      "test_case": null,
+      "result": "해석 완료",
+      "section": "3.5 자세·궤도제어계 요구사항(AOCS)",
+      "page": 12
+    },
+    {
+      "id": "AOCS-010",
+      "doc_id": "GKX-VCRM-001",
+      "type": "VCRM행",
+      "title": "위치유지 기동 주기",
+      "source_doc": "GKX-SSS-AOCS-001",
+      "methods": [
+        "A",
+        "D"
+      ],
+      "verification_item": "VER-AOCS-010",
+      "test_case": null,
+      "result": "해석 완료",
+      "section": "3.5 자세·궤도제어계 요구사항(AOCS)",
+      "page": 12
+    },
+    {
+      "id": "AOCS-011",
+      "doc_id": "GKX-VCRM-001",
+      "type": "VCRM행",
+      "title": "기동 중 지향",
+      "source_doc": "GKX-SSS-AOCS-001",
+      "methods": [
+        "A",
+        "T"
+      ],
+      "verification_item": "VER-AOCS-011",
+      "test_case": "TC-AOCS-003",
+      "result": "합격",
+      "section": "3.5 자세·궤도제어계 요구사항(AOCS)",
+      "page": 12
+    },
+    {
+      "id": "AOCS-012",
+      "doc_id": "GKX-VCRM-001",
+      "type": "VCRM행",
+      "title": "기동 후 정착",
+      "source_doc": "GKX-SSS-AOCS-001",
+      "methods": [
+        "A",
+        "T"
+      ],
+      "verification_item": "VER-AOCS-012",
+      "test_case": "TC-AOCS-003",
+      "result": "합격",
+      "section": "3.5 자세·궤도제어계 요구사항(AOCS)",
+      "page": 12
+    },
+    {
+      "id": "AOCS-013",
+      "doc_id": "GKX-VCRM-001",
+      "type": "VCRM행",
+      "title": "안전모드 안정화",
+      "source_doc": "GKX-SSS-AOCS-001",
+      "methods": [
+        "A",
+        "T"
+      ],
+      "verification_item": "VER-AOCS-013",
+      "test_case": "TC-AOCS-004",
+      "result": "합격",
+      "section": "3.5 자세·궤도제어계 요구사항(AOCS)",
+      "page": 12
+    },
+    {
+      "id": "AOCS-014",
+      "doc_id": "GKX-VCRM-001",
+      "type": "VCRM행",
+      "title": "자율 위치·자세 유지",
+      "source_doc": "GKX-SSS-AOCS-001",
+      "methods": [
+        "A",
+        "D"
+      ],
+      "verification_item": "VER-AOCS-014",
+      "test_case": null,
+      "result": "해석 완료",
+      "section": "3.5 자세·궤도제어계 요구사항(AOCS)",
+      "page": 12
+    },
+    {
+      "id": "AOCS-015",
+      "doc_id": "GKX-VCRM-001",
+      "type": "VCRM행",
+      "title": "제어 주기",
+      "source_doc": "GKX-SSS-AOCS-001",
+      "methods": [
+        "T",
+        "I"
+      ],
+      "verification_item": "VER-AOCS-015",
+      "test_case": "TC-AOCS-004",
+      "result": "합격",
+      "section": "3.5 자세·궤도제어계 요구사항(AOCS)",
+      "page": 12
+    },
+    {
+      "id": "AOCS-016",
+      "doc_id": "GKX-VCRM-001",
+      "type": "VCRM행",
+      "title": "자세자료 제공",
+      "source_doc": "GKX-SSS-AOCS-001",
+      "methods": [
+        "T"
+      ],
+      "verification_item": "VER-AOCS-016",
+      "test_case": "TC-AOCS-004",
+      "result": "합격",
+      "section": "3.5 자세·궤도제어계 요구사항(AOCS)",
+      "page": 13
+    },
+    {
+      "id": "AOCS-017",
+      "doc_id": "GKX-VCRM-001",
+      "type": "VCRM행",
+      "title": "아포지 기동 지향",
+      "source_doc": "GKX-SSS-AOCS-001",
+      "methods": [
+        "A",
+        "T"
+      ],
+      "verification_item": "VER-AOCS-017",
+      "test_case": "TC-AOCS-005",
+      "result": "합격",
+      "section": "3.5 자세·궤도제어계 요구사항(AOCS)",
+      "page": 13
+    },
+    {
+      "id": "AOCS-018",
+      "doc_id": "GKX-VCRM-001",
+      "type": "VCRM행",
+      "title": "센서·구동기 FDIR",
+      "source_doc": "GKX-SSS-AOCS-001",
+      "methods": [
+        "T"
+      ],
+      "verification_item": "VER-AOCS-018",
+      "test_case": "TC-AOCS-005",
+      "result": "합격",
+      "section": "3.5 자세·궤도제어계 요구사항(AOCS)",
+      "page": 13
+    },
+    {
+      "id": "AOCS-019",
+      "doc_id": "GKX-VCRM-001",
+      "type": "VCRM행",
+      "title": "자세·궤도제어계 질량",
+      "source_doc": "GKX-SSS-AOCS-001",
+      "methods": [
+        "I"
+      ],
+      "verification_item": "VER-AOCS-019",
+      "test_case": null,
+      "result": "검사 완료",
+      "section": "3.5 자세·궤도제어계 요구사항(AOCS)",
+      "page": 13
+    },
+    {
+      "id": "AOCS-020",
+      "doc_id": "GKX-VCRM-001",
+      "type": "VCRM행",
+      "title": "자세·궤도제어계 전력",
+      "source_doc": "GKX-SSS-AOCS-001",
+      "methods": [
+        "T"
+      ],
+      "verification_item": "VER-AOCS-020",
+      "test_case": "TC-AOCS-005",
+      "result": "합격",
+      "section": "3.5 자세·궤도제어계 요구사항(AOCS)",
+      "page": 13
+    },
+    {
+      "id": "PROP-001",
+      "doc_id": "GKX-VCRM-001",
+      "type": "VCRM행",
+      "title": "추진 방식",
+      "source_doc": "GKX-SSS-PROP-001",
+      "methods": [
+        "I"
+      ],
+      "verification_item": "VER-PROP-001",
+      "test_case": null,
+      "result": "검사 완료",
+      "section": "3.6 추진계 요구사항(PROP)",
+      "page": 13
+    },
+    {
+      "id": "PROP-002",
+      "doc_id": "GKX-VCRM-001",
+      "type": "VCRM행",
+      "title": "추진제 탑재량",
+      "source_doc": "GKX-SSS-PROP-001",
+      "methods": [
+        "A"
+      ],
+      "verification_item": "VER-PROP-002",
+      "test_case": null,
+      "result": "해석 완료",
+      "section": "3.6 추진계 요구사항(PROP)",
+      "page": 13
+    },
+    {
+      "id": "PROP-003",
+      "doc_id": "GKX-VCRM-001",
+      "type": "VCRM행",
+      "title": "아포지 엔진 성능",
+      "source_doc": "GKX-SSS-PROP-001",
+      "methods": [
+        "T"
+      ],
+      "verification_item": "VER-PROP-003",
+      "test_case": "TC-PROP-001",
+      "result": "합격",
+      "section": "3.6 추진계 요구사항(PROP)",
+      "page": 13
+    },
+    {
+      "id": "PROP-004",
+      "doc_id": "GKX-VCRM-001",
+      "type": "VCRM행",
+      "title": "자세제어 추력기",
+      "source_doc": "GKX-SSS-PROP-001",
+      "methods": [
+        "T",
+        "I"
+      ],
+      "verification_item": "VER-PROP-004",
+      "test_case": "TC-PROP-001",
+      "result": "합격",
+      "section": "3.6 추진계 요구사항(PROP)",
+      "page": 13
+    },
+    {
+      "id": "PROP-005",
+      "doc_id": "GKX-VCRM-001",
+      "type": "VCRM행",
+      "title": "최소 임펄스 비트",
+      "source_doc": "GKX-SSS-PROP-001",
+      "methods": [
+        "T"
+      ],
+      "verification_item": "VER-PROP-005",
+      "test_case": "TC-PROP-001",
+      "result": "합격",
+      "section": "3.6 추진계 요구사항(PROP)",
+      "page": 13
+    },
+    {
+      "id": "PROP-006",
+      "doc_id": "GKX-VCRM-001",
+      "type": "VCRM행",
+      "title": "추진제 탱크",
+      "source_doc": "GKX-SSS-PROP-001",
+      "methods": [
+        "T",
+        "I"
+      ],
+      "verification_item": "VER-PROP-006",
+      "test_case": "TC-PROP-002",
+      "result": "합격",
+      "section": "3.6 추진계 요구사항(PROP)",
+      "page": 13
+    },
+    {
+      "id": "PROP-007",
+      "doc_id": "GKX-VCRM-001",
+      "type": "VCRM행",
+      "title": "가압제 탱크",
+      "source_doc": "GKX-SSS-PROP-001",
+      "methods": [
+        "T",
+        "A"
+      ],
+      "verification_item": "VER-PROP-007",
+      "test_case": "TC-PROP-002",
+      "result": "합격",
+      "section": "3.6 추진계 요구사항(PROP)",
+      "page": 13
+    },
+    {
+      "id": "PROP-008",
+      "doc_id": "GKX-VCRM-001",
+      "type": "VCRM행",
+      "title": "압력용기 검증 압력",
+      "source_doc": "GKX-SSS-PROP-001",
+      "methods": [
+        "T"
+      ],
+      "verification_item": "VER-PROP-008",
+      "test_case": "TC-PROP-002",
+      "result": "합격",
+      "section": "3.6 추진계 요구사항(PROP)",
+      "page": 13
+    },
+    {
+      "id": "PROP-009",
+      "doc_id": "GKX-VCRM-001",
+      "type": "VCRM행",
+      "title": "외부 누설률",
+      "source_doc": "GKX-SSS-PROP-001",
+      "methods": [
+        "T"
+      ],
+      "verification_item": "VER-PROP-009",
+      "test_case": "TC-PROP-003",
+      "result": "합격",
+      "section": "3.6 추진계 요구사항(PROP)",
+      "page": 13
+    },
+    {
+      "id": "PROP-010",
+      "doc_id": "GKX-VCRM-001",
+      "type": "VCRM행",
+      "title": "압력 조절 정확도",
+      "source_doc": "GKX-SSS-PROP-001",
+      "methods": [
+        "T"
+      ],
+      "verification_item": "VER-PROP-010",
+      "test_case": "TC-PROP-003",
+      "result": "합격",
+      "section": "3.6 추진계 요구사항(PROP)",
+      "page": 13
+    },
+    {
+      "id": "PROP-011",
+      "doc_id": "GKX-VCRM-001",
+      "type": "VCRM행",
+      "title": "추진제 잔량 추정",
+      "source_doc": "GKX-SSS-PROP-001",
+      "methods": [
+        "A"
+      ],
+      "verification_item": "VER-PROP-011",
+      "test_case": null,
+      "result": "해석 완료",
+      "section": "3.6 추진계 요구사항(PROP)",
+      "page": 13
+    },
+    {
+      "id": "PROP-012",
+      "doc_id": "GKX-VCRM-001",
+      "type": "VCRM행",
+      "title": "동결 방지",
+      "source_doc": "GKX-SSS-PROP-001",
+      "methods": [
+        "T",
+        "A"
+      ],
+      "verification_item": "VER-PROP-012",
+      "test_case": "TC-PROP-003",
+      "result": "합격",
+      "section": "3.6 추진계 요구사항(PROP)",
+      "page": 13
+    },
+    {
+      "id": "PROP-013",
+      "doc_id": "GKX-VCRM-001",
+      "type": "VCRM행",
+      "title": "누출 차단 장벽",
+      "source_doc": "GKX-SSS-PROP-001",
+      "methods": [
+        "I",
+        "T"
+      ],
+      "verification_item": "VER-PROP-013",
+      "test_case": "TC-PROP-004",
+      "result": "합격",
+      "section": "3.6 추진계 요구사항(PROP)",
+      "page": 13
+    },
+    {
+      "id": "PROP-014",
+      "doc_id": "GKX-VCRM-001",
+      "type": "VCRM행",
+      "title": "위치유지 Δv",
+      "source_doc": "GKX-SSS-PROP-001",
+      "methods": [
+        "A"
+      ],
+      "verification_item": "VER-PROP-014",
+      "test_case": null,
+      "result": "해석 완료",
+      "section": "3.6 추진계 요구사항(PROP)",
+      "page": 13
+    },
+    {
+      "id": "PROP-015",
+      "doc_id": "GKX-VCRM-001",
+      "type": "VCRM행",
+      "title": "폐기 기동 Δv",
+      "source_doc": "GKX-SSS-PROP-001",
+      "methods": [
+        "A"
+      ],
+      "verification_item": "VER-PROP-015",
+      "test_case": null,
+      "result": "해석 완료",
+      "section": "3.6 추진계 요구사항(PROP)",
+      "page": 14
+    },
+    {
+      "id": "PROP-016",
+      "doc_id": "GKX-VCRM-001",
+      "type": "VCRM행",
+      "title": "패시베이션",
+      "source_doc": "GKX-SSS-PROP-001",
+      "methods": [
+        "A",
+        "D"
+      ],
+      "verification_item": "VER-PROP-016",
+      "test_case": null,
+      "result": "해석 완료",
+      "section": "3.6 추진계 요구사항(PROP)",
+      "page": 14
+    },
+    {
+      "id": "PROP-017",
+      "doc_id": "GKX-VCRM-001",
+      "type": "VCRM행",
+      "title": "플룸 오염 제한",
+      "source_doc": "GKX-SSS-PROP-001",
+      "methods": [
+        "A"
+      ],
+      "verification_item": "VER-PROP-017",
+      "test_case": null,
+      "result": "해석 완료",
+      "section": "3.6 추진계 요구사항(PROP)",
+      "page": 14
+    },
+    {
+      "id": "PROP-018",
+      "doc_id": "GKX-VCRM-001",
+      "type": "VCRM행",
+      "title": "압력·온도 측정",
+      "source_doc": "GKX-SSS-PROP-001",
+      "methods": [
+        "T"
+      ],
+      "verification_item": "VER-PROP-018",
+      "test_case": "TC-PROP-004",
+      "result": "합격",
+      "section": "3.6 추진계 요구사항(PROP)",
+      "page": 14
+    },
+    {
+      "id": "PROP-019",
+      "doc_id": "GKX-VCRM-001",
+      "type": "VCRM행",
+      "title": "추진계 건조 질량",
+      "source_doc": "GKX-SSS-PROP-001",
+      "methods": [
+        "I"
+      ],
+      "verification_item": "VER-PROP-019",
+      "test_case": null,
+      "result": "검사 완료",
+      "section": "3.6 추진계 요구사항(PROP)",
+      "page": 14
+    },
+    {
+      "id": "PROP-020",
+      "doc_id": "GKX-VCRM-001",
+      "type": "VCRM행",
+      "title": "지상 취급 안전",
+      "source_doc": "GKX-SSS-PROP-001",
+      "methods": [
+        "I",
+        "A"
+      ],
+      "verification_item": "VER-PROP-020",
+      "test_case": null,
+      "result": "해석 완료",
+      "section": "3.6 추진계 요구사항(PROP)",
+      "page": 14
+    },
+    {
+      "id": "TCS-001",
+      "doc_id": "GKX-VCRM-001",
+      "type": "VCRM행",
+      "title": "열 설계 방식",
+      "source_doc": "GKX-SSS-TCS-001",
+      "methods": [
+        "A",
+        "I"
+      ],
+      "verification_item": "VER-TCS-001",
+      "test_case": null,
+      "result": "해석 완료",
+      "section": "3.7 열제어계 요구사항(TCS)",
+      "page": 14
+    },
+    {
+      "id": "TCS-002",
+      "doc_id": "GKX-VCRM-001",
+      "type": "VCRM행",
+      "title": "온도 마진",
+      "source_doc": "GKX-SSS-TCS-001",
+      "methods": [
+        "A",
+        "T"
+      ],
+      "verification_item": "VER-TCS-002",
+      "test_case": "TC-TCS-001",
+      "result": "합격",
+      "section": "3.7 열제어계 요구사항(TCS)",
+      "page": 14
+    },
+    {
+      "id": "TCS-003",
+      "doc_id": "GKX-VCRM-001",
+      "type": "VCRM행",
+      "title": "방열판",
+      "source_doc": "GKX-SSS-TCS-001",
+      "methods": [
+        "I",
+        "A"
+      ],
+      "verification_item": "VER-TCS-003",
+      "test_case": null,
+      "result": "해석 완료",
+      "section": "3.7 열제어계 요구사항(TCS)",
+      "page": 14
+    },
+    {
+      "id": "TCS-004",
+      "doc_id": "GKX-VCRM-001",
+      "type": "VCRM행",
+      "title": "히트파이프",
+      "source_doc": "GKX-SSS-TCS-001",
+      "methods": [
+        "T",
+        "I"
+      ],
+      "verification_item": "VER-TCS-004",
+      "test_case": "TC-TCS-001",
+      "result": "합격",
+      "section": "3.7 열제어계 요구사항(TCS)",
+      "page": 14
+    },
+    {
+      "id": "TCS-005",
+      "doc_id": "GKX-VCRM-001",
+      "type": "VCRM행",
+      "title": "히터 회로",
+      "source_doc": "GKX-SSS-TCS-001",
+      "methods": [
+        "T"
+      ],
+      "verification_item": "VER-TCS-005",
+      "test_case": "TC-TCS-001",
+      "result": "합격",
+      "section": "3.7 열제어계 요구사항(TCS)",
+      "page": 14
+    },
+    {
+      "id": "TCS-006",
+      "doc_id": "GKX-VCRM-001",
+      "type": "VCRM행",
+      "title": "히터 전력",
+      "source_doc": "GKX-SSS-TCS-001",
+      "methods": [
+        "A",
+        "T"
+      ],
+      "verification_item": "VER-TCS-006",
+      "test_case": "TC-TCS-002",
+      "result": "합격",
+      "section": "3.7 열제어계 요구사항(TCS)",
+      "page": 14
+    },
+    {
+      "id": "TCS-007",
+      "doc_id": "GKX-VCRM-001",
+      "type": "VCRM행",
+      "title": "다층단열재",
+      "source_doc": "GKX-SSS-TCS-001",
+      "methods": [
+        "T",
+        "A"
+      ],
+      "verification_item": "VER-TCS-007",
+      "test_case": "TC-TCS-002",
+      "result": "합격",
+      "section": "3.7 열제어계 요구사항(TCS)",
+      "page": 14
+    },
+    {
+      "id": "TCS-008",
+      "doc_id": "GKX-VCRM-001",
+      "type": "VCRM행",
+      "title": "영상기 냉각기",
+      "source_doc": "GKX-SSS-TCS-001",
+      "methods": [
+        "T"
+      ],
+      "verification_item": "VER-TCS-008",
+      "test_case": "TC-TCS-002",
+      "result": "합격",
+      "section": "3.7 열제어계 요구사항(TCS)",
+      "page": 14
+    },
+    {
+      "id": "TCS-009",
+      "doc_id": "GKX-VCRM-001",
+      "type": "VCRM행",
+      "title": "냉각 안정도",
+      "source_doc": "GKX-SSS-TCS-001",
+      "methods": [
+        "T"
+      ],
+      "verification_item": "VER-TCS-009",
+      "test_case": "TC-TCS-003",
+      "result": "합격",
+      "section": "3.7 열제어계 요구사항(TCS)",
+      "page": 14
+    },
+    {
+      "id": "TCS-010",
+      "doc_id": "GKX-VCRM-001",
+      "type": "VCRM행",
+      "title": "광학부 온도",
+      "source_doc": "GKX-SSS-TCS-001",
+      "methods": [
+        "T"
+      ],
+      "verification_item": "VER-TCS-010",
+      "test_case": "TC-TCS-003",
+      "result": "합격",
+      "section": "3.7 열제어계 요구사항(TCS)",
+      "page": 14
+    },
+    {
+      "id": "TCS-011",
+      "doc_id": "GKX-VCRM-001",
+      "type": "VCRM행",
+      "title": "배터리 온도 제어",
+      "source_doc": "GKX-SSS-TCS-001",
+      "methods": [
+        "T"
+      ],
+      "verification_item": "VER-TCS-011",
+      "test_case": "TC-TCS-003",
+      "result": "합격",
+      "section": "3.7 열제어계 요구사항(TCS)",
+      "page": 14
+    },
+    {
+      "id": "TCS-012",
+      "doc_id": "GKX-VCRM-001",
+      "type": "VCRM행",
+      "title": "추진계 온도 제어",
+      "source_doc": "GKX-SSS-TCS-001",
+      "methods": [
+        "T"
+      ],
+      "verification_item": "VER-TCS-012",
+      "test_case": "TC-TCS-004",
+      "result": "합격",
+      "section": "3.7 열제어계 요구사항(TCS)",
+      "page": 14
+    },
+    {
+      "id": "TCS-013",
+      "doc_id": "GKX-VCRM-001",
+      "type": "VCRM행",
+      "title": "온도 센서",
+      "source_doc": "GKX-SSS-TCS-001",
+      "methods": [
+        "T",
+        "I"
+      ],
+      "verification_item": "VER-TCS-013",
+      "test_case": "TC-TCS-004",
+      "result": "합격",
+      "section": "3.7 열제어계 요구사항(TCS)",
+      "page": 14
+    },
+    {
+      "id": "TCS-014",
+      "doc_id": "GKX-VCRM-001",
+      "type": "VCRM행",
+      "title": "열진공 시험",
+      "source_doc": "GKX-SSS-TCS-001",
+      "methods": [
+        "T"
+      ],
+      "verification_item": "VER-TCS-014",
+      "test_case": "TC-TCS-004",
+      "result": "합격",
+      "section": "3.7 열제어계 요구사항(TCS)",
+      "page": 15
+    },
+    {
+      "id": "TCS-015",
+      "doc_id": "GKX-VCRM-001",
+      "type": "VCRM행",
+      "title": "열 모델 상관",
+      "source_doc": "GKX-SSS-TCS-001",
+      "methods": [
+        "T",
+        "A"
+      ],
+      "verification_item": "VER-TCS-015",
+      "test_case": "TC-TCS-005",
+      "result": "합격",
+      "section": "3.7 열제어계 요구사항(TCS)",
+      "page": 15
+    },
+    {
+      "id": "TCS-016",
+      "doc_id": "GKX-VCRM-001",
+      "type": "VCRM행",
+      "title": "춘추분 식 기간",
+      "source_doc": "GKX-SSS-TCS-001",
+      "methods": [
+        "A"
+      ],
+      "verification_item": "VER-TCS-016",
+      "test_case": null,
+      "result": "해석 완료",
+      "section": "3.7 열제어계 요구사항(TCS)",
+      "page": 15
+    },
+    {
+      "id": "TCS-017",
+      "doc_id": "GKX-VCRM-001",
+      "type": "VCRM행",
+      "title": "안전모드 생존 온도",
+      "source_doc": "GKX-SSS-TCS-001",
+      "methods": [
+        "A",
+        "T"
+      ],
+      "verification_item": "VER-TCS-017",
+      "test_case": "TC-TCS-005",
+      "result": "합격",
+      "section": "3.7 열제어계 요구사항(TCS)",
+      "page": 15
+    },
+    {
+      "id": "TCS-018",
+      "doc_id": "GKX-VCRM-001",
+      "type": "VCRM행",
+      "title": "열광학 특성 열화",
+      "source_doc": "GKX-SSS-TCS-001",
+      "methods": [
+        "A"
+      ],
+      "verification_item": "VER-TCS-018",
+      "test_case": null,
+      "result": "해석 완료",
+      "section": "3.7 열제어계 요구사항(TCS)",
+      "page": 15
+    },
+    {
+      "id": "TCS-019",
+      "doc_id": "GKX-VCRM-001",
+      "type": "VCRM행",
+      "title": "열제어계 질량",
+      "source_doc": "GKX-SSS-TCS-001",
+      "methods": [
+        "I"
+      ],
+      "verification_item": "VER-TCS-019",
+      "test_case": null,
+      "result": "검사 완료",
+      "section": "3.7 열제어계 요구사항(TCS)",
+      "page": 15
+    },
+    {
+      "id": "TCS-020",
+      "doc_id": "GKX-VCRM-001",
+      "type": "VCRM행",
+      "title": "열제어계 전력",
+      "source_doc": "GKX-SSS-TCS-001",
+      "methods": [
+        "A",
+        "T"
+      ],
+      "verification_item": "VER-TCS-020",
+      "test_case": "TC-TCS-005",
+      "result": "합격",
+      "section": "3.7 열제어계 요구사항(TCS)",
+      "page": 15
+    },
+    {
+      "id": "TTC-001",
+      "doc_id": "GKX-VCRM-001",
+      "type": "VCRM행",
+      "title": "S 대역 주파수",
+      "source_doc": "GKX-SSS-TTC-001",
+      "methods": [
+        "T"
+      ],
+      "verification_item": "VER-TTC-001",
+      "test_case": "TC-TTC-001",
+      "result": "합격",
+      "section": "3.8 원격측정·추적·명령계 요구사항(TTC)",
+      "page": 15
+    },
+    {
+      "id": "TTC-002",
+      "doc_id": "GKX-VCRM-001",
+      "type": "VCRM행",
+      "title": "TT&C 안테나",
+      "source_doc": "GKX-SSS-TTC-001",
+      "methods": [
+        "T",
+        "A"
+      ],
+      "verification_item": "VER-TTC-002",
+      "test_case": "TC-TTC-001",
+      "result": "합격",
+      "section": "3.8 원격측정·추적·명령계 요구사항(TTC)",
+      "page": 15
+    },
+    {
+      "id": "TTC-003",
+      "doc_id": "GKX-VCRM-001",
+      "type": "VCRM행",
+      "title": "트랜스폰더 이중화",
+      "source_doc": "GKX-SSS-TTC-001",
+      "methods": [
+        "T",
+        "I"
+      ],
+      "verification_item": "VER-TTC-003",
+      "test_case": "TC-TTC-001",
+      "result": "합격",
+      "section": "3.8 원격측정·추적·명령계 요구사항(TTC)",
+      "page": 15
+    },
+    {
+      "id": "TTC-004",
+      "doc_id": "GKX-VCRM-001",
+      "type": "VCRM행",
+      "title": "수신 감도",
+      "source_doc": "GKX-SSS-TTC-001",
+      "methods": [
+        "T"
+      ],
+      "verification_item": "VER-TTC-004",
+      "test_case": "TC-TTC-002",
+      "result": "합격",
+      "section": "3.8 원격측정·추적·명령계 요구사항(TTC)",
+      "page": 15
+    },
+    {
+      "id": "TTC-005",
+      "doc_id": "GKX-VCRM-001",
+      "type": "VCRM행",
+      "title": "S 대역 EIRP",
+      "source_doc": "GKX-SSS-TTC-001",
+      "methods": [
+        "T",
+        "A"
+      ],
+      "verification_item": "VER-TTC-005",
+      "test_case": "TC-TTC-002",
+      "result": "합격",
+      "section": "3.8 원격측정·추적·명령계 요구사항(TTC)",
+      "page": 15
+    },
+    {
+      "id": "TTC-006",
+      "doc_id": "GKX-VCRM-001",
+      "type": "VCRM행",
+      "title": "변조 방식",
+      "source_doc": "GKX-SSS-TTC-001",
+      "methods": [
+        "T",
+        "I"
+      ],
+      "verification_item": "VER-TTC-006",
+      "test_case": "TC-TTC-002",
+      "result": "합격",
+      "section": "3.8 원격측정·추적·명령계 요구사항(TTC)",
+      "page": 15
+    },
+    {
+      "id": "TTC-007",
+      "doc_id": "GKX-VCRM-001",
+      "type": "VCRM행",
+      "title": "원격측정 전송률 선택",
+      "source_doc": "GKX-SSS-TTC-001",
+      "methods": [
+        "T"
+      ],
+      "verification_item": "VER-TTC-007",
+      "test_case": "TC-TTC-003",
+      "result": "합격",
+      "section": "3.8 원격측정·추적·명령계 요구사항(TTC)",
+      "page": 15
+    },
+    {
+      "id": "TTC-008",
+      "doc_id": "GKX-VCRM-001",
+      "type": "VCRM행",
+      "title": "명령 전송률",
+      "source_doc": "GKX-SSS-TTC-001",
+      "methods": [
+        "T"
+      ],
+      "verification_item": "VER-TTC-008",
+      "test_case": "TC-TTC-003",
+      "result": "합격",
+      "section": "3.8 원격측정·추적·명령계 요구사항(TTC)",
+      "page": 15
+    },
+    {
+      "id": "TTC-009",
+      "doc_id": "GKX-VCRM-001",
+      "type": "VCRM행",
+      "title": "톤 거리측정",
+      "source_doc": "GKX-SSS-TTC-001",
+      "methods": [
+        "T",
+        "A"
+      ],
+      "verification_item": "VER-TTC-009",
+      "test_case": "TC-TTC-003",
+      "result": "합격",
+      "section": "3.8 원격측정·추적·명령계 요구사항(TTC)",
+      "page": 15
+    },
+    {
+      "id": "TTC-010",
+      "doc_id": "GKX-VCRM-001",
+      "type": "VCRM행",
+      "title": "CCSDS 프레임",
+      "source_doc": "GKX-SSS-TTC-001",
+      "methods": [
+        "T",
+        "I"
+      ],
+      "verification_item": "VER-TTC-010",
+      "test_case": "TC-TTC-004",
+      "result": "합격",
+      "section": "3.8 원격측정·추적·명령계 요구사항(TTC)",
+      "page": 15
+    },
+    {
+      "id": "TTC-011",
+      "doc_id": "GKX-VCRM-001",
+      "type": "VCRM행",
+      "title": "명령 인증",
+      "source_doc": "GKX-SSS-TTC-001",
+      "methods": [
+        "T"
+      ],
+      "verification_item": "VER-TTC-011",
+      "test_case": "TC-TTC-004",
+      "result": "합격",
+      "section": "3.8 원격측정·추적·명령계 요구사항(TTC)",
+      "page": 15
+    },
+    {
+      "id": "TTC-012",
+      "doc_id": "GKX-VCRM-001",
+      "type": "VCRM행",
+      "title": "키 갱신",
+      "source_doc": "GKX-SSS-TTC-001",
+      "methods": [
+        "D",
+        "T"
+      ],
+      "verification_item": "VER-TTC-012",
+      "test_case": "TC-TTC-004",
+      "result": "합격",
+      "section": "3.8 원격측정·추적·명령계 요구사항(TTC)",
+      "page": 15
+    },
+    {
+      "id": "TTC-013",
+      "doc_id": "GKX-VCRM-001",
+      "type": "VCRM행",
+      "title": "하드웨어 비상 명령",
+      "source_doc": "GKX-SSS-TTC-001",
+      "methods": [
+        "T"
+      ],
+      "verification_item": "VER-TTC-013",
+      "test_case": "TC-TTC-005",
+      "result": "합격",
+      "section": "3.8 원격측정·추적·명령계 요구사항(TTC)",
+      "page": 16
+    },
+    {
+      "id": "TTC-014",
+      "doc_id": "GKX-VCRM-001",
+      "type": "VCRM행",
+      "title": "X 대역 자료 송신기",
+      "source_doc": "GKX-SSS-TTC-001",
+      "methods": [
+        "T"
+      ],
+      "verification_item": "VER-TTC-014",
+      "test_case": "TC-TTC-005",
+      "result": "합격",
+      "section": "3.8 원격측정·추적·명령계 요구사항(TTC)",
+      "page": 16
+    },
+    {
+      "id": "TTC-015",
+      "doc_id": "GKX-VCRM-001",
+      "type": "VCRM행",
+      "title": "X 대역 EIRP",
+      "source_doc": "GKX-SSS-TTC-001",
+      "methods": [
+        "A",
+        "T"
+      ],
+      "verification_item": "VER-TTC-015",
+      "test_case": "TC-TTC-005",
+      "result": "합격",
+      "section": "3.8 원격측정·추적·명령계 요구사항(TTC)",
+      "page": 16
+    },
+    {
+      "id": "TTC-016",
+      "doc_id": "GKX-VCRM-001",
+      "type": "VCRM행",
+      "title": "자료 전송 지연",
+      "source_doc": "GKX-SSS-TTC-001",
+      "methods": [
+        "A",
+        "T"
+      ],
+      "verification_item": "VER-TTC-016",
+      "test_case": "TC-TTC-006",
+      "result": "합격",
+      "section": "3.8 원격측정·추적·명령계 요구사항(TTC)",
+      "page": 16
+    },
+    {
+      "id": "TTC-017",
+      "doc_id": "GKX-VCRM-001",
+      "type": "VCRM행",
+      "title": "링크 마진",
+      "source_doc": "GKX-SSS-TTC-001",
+      "methods": [
+        "A"
+      ],
+      "verification_item": "VER-TTC-017",
+      "test_case": null,
+      "result": "해석 완료",
+      "section": "3.8 원격측정·추적·명령계 요구사항(TTC)",
+      "page": 16
+    },
+    {
+      "id": "TTC-018",
+      "doc_id": "GKX-VCRM-001",
+      "type": "VCRM행",
+      "title": "RF 자기간섭",
+      "source_doc": "GKX-SSS-TTC-001",
+      "methods": [
+        "T"
+      ],
+      "verification_item": "VER-TTC-018",
+      "test_case": "TC-TTC-006",
+      "result": "합격",
+      "section": "3.8 원격측정·추적·명령계 요구사항(TTC)",
+      "page": 16
+    },
+    {
+      "id": "TTC-019",
+      "doc_id": "GKX-VCRM-001",
+      "type": "VCRM행",
+      "title": "TT&C 질량",
+      "source_doc": "GKX-SSS-TTC-001",
+      "methods": [
+        "I"
+      ],
+      "verification_item": "VER-TTC-019",
+      "test_case": null,
+      "result": "검사 완료",
+      "section": "3.8 원격측정·추적·명령계 요구사항(TTC)",
+      "page": 16
+    },
+    {
+      "id": "TTC-020",
+      "doc_id": "GKX-VCRM-001",
+      "type": "VCRM행",
+      "title": "TT&C 전력",
+      "source_doc": "GKX-SSS-TTC-001",
+      "methods": [
+        "T"
+      ],
+      "verification_item": "VER-TTC-020",
+      "test_case": "TC-TTC-006",
+      "result": "합격",
+      "section": "3.8 원격측정·추적·명령계 요구사항(TTC)",
+      "page": 16
+    },
+    {
+      "id": "PL-001",
+      "doc_id": "GKX-VCRM-001",
+      "type": "VCRM행",
+      "title": "영상기 채널 구성",
+      "source_doc": "GKX-SSS-PL-001",
+      "methods": [
+        "T",
+        "I"
+      ],
+      "verification_item": "VER-PL-001",
+      "test_case": "TC-PL-001",
+      "result": "합격",
+      "section": "3.9 탑재체 요구사항(PL)",
+      "page": 16
+    },
+    {
+      "id": "PL-002",
+      "doc_id": "GKX-VCRM-001",
+      "type": "VCRM행",
+      "title": "가시 해상도",
+      "source_doc": "GKX-SSS-PL-001",
+      "methods": [
+        "T"
+      ],
+      "verification_item": "VER-PL-002",
+      "test_case": "TC-PL-001",
+      "result": "합격",
+      "section": "3.9 탑재체 요구사항(PL)",
+      "page": 16
+    },
+    {
+      "id": "PL-003",
+      "doc_id": "GKX-VCRM-001",
+      "type": "VCRM행",
+      "title": "적외 해상도",
+      "source_doc": "GKX-SSS-PL-001",
+      "methods": [
+        "T"
+      ],
+      "verification_item": "VER-PL-003",
+      "test_case": "TC-PL-001",
+      "result": "합격",
+      "section": "3.9 탑재체 요구사항(PL)",
+      "page": 16
+    },
+    {
+      "id": "PL-004",
+      "doc_id": "GKX-VCRM-001",
+      "type": "VCRM행",
+      "title": "가시 채널 SNR",
+      "source_doc": "GKX-SSS-PL-001",
+      "methods": [
+        "T"
+      ],
+      "verification_item": "VER-PL-004",
+      "test_case": "TC-PL-002",
+      "result": "합격",
+      "section": "3.9 탑재체 요구사항(PL)",
+      "page": 16
+    },
+    {
+      "id": "PL-005",
+      "doc_id": "GKX-VCRM-001",
+      "type": "VCRM행",
+      "title": "적외 채널 NEdT",
+      "source_doc": "GKX-SSS-PL-001",
+      "methods": [
+        "T"
+      ],
+      "verification_item": "VER-PL-005",
+      "test_case": "TC-PL-002",
+      "result": "합격",
+      "section": "3.9 탑재체 요구사항(PL)",
+      "page": 16
+    },
+    {
+      "id": "PL-006",
+      "doc_id": "GKX-VCRM-001",
+      "type": "VCRM행",
+      "title": "기내 복사보정",
+      "source_doc": "GKX-SSS-PL-001",
+      "methods": [
+        "T"
+      ],
+      "verification_item": "VER-PL-006",
+      "test_case": "TC-PL-002",
+      "result": "합격",
+      "section": "3.9 탑재체 요구사항(PL)",
+      "page": 16
+    },
+    {
+      "id": "PL-007",
+      "doc_id": "GKX-VCRM-001",
+      "type": "VCRM행",
+      "title": "관측 시나리오",
+      "source_doc": "GKX-SSS-PL-001",
+      "methods": [
+        "A",
+        "D"
+      ],
+      "verification_item": "VER-PL-007",
+      "test_case": null,
+      "result": "해석 완료",
+      "section": "3.9 탑재체 요구사항(PL)",
+      "page": 16
+    },
+    {
+      "id": "PL-008",
+      "doc_id": "GKX-VCRM-001",
+      "type": "VCRM행",
+      "title": "주사 거울 지향",
+      "source_doc": "GKX-SSS-PL-001",
+      "methods": [
+        "T"
+      ],
+      "verification_item": "VER-PL-008",
+      "test_case": "TC-PL-003",
+      "result": "합격",
+      "section": "3.9 탑재체 요구사항(PL)",
+      "page": 16
+    },
+    {
+      "id": "PL-009",
+      "doc_id": "GKX-VCRM-001",
+      "type": "VCRM행",
+      "title": "영상 항법정합",
+      "source_doc": "GKX-SSS-PL-001",
+      "methods": [
+        "A",
+        "T"
+      ],
+      "verification_item": "VER-PL-009",
+      "test_case": "TC-PL-003",
+      "result": "합격",
+      "section": "3.9 탑재체 요구사항(PL)",
+      "page": 16
+    },
+    {
+      "id": "PL-010",
+      "doc_id": "GKX-VCRM-001",
+      "type": "VCRM행",
+      "title": "태양 침입 보호",
+      "source_doc": "GKX-SSS-PL-001",
+      "methods": [
+        "T",
+        "D"
+      ],
+      "verification_item": "VER-PL-010",
+      "test_case": "TC-PL-003",
+      "result": "합격",
+      "section": "3.9 탑재체 요구사항(PL)",
+      "page": 16
+    },
+    {
+      "id": "PL-011",
+      "doc_id": "GKX-VCRM-001",
+      "type": "VCRM행",
+      "title": "자료 압축",
+      "source_doc": "GKX-SSS-PL-001",
+      "methods": [
+        "T"
+      ],
+      "verification_item": "VER-PL-011",
+      "test_case": "TC-PL-004",
+      "result": "합격",
+      "section": "3.9 탑재체 요구사항(PL)",
+      "page": 16
+    },
+    {
+      "id": "PL-012",
+      "doc_id": "GKX-VCRM-001",
+      "type": "VCRM행",
+      "title": "Ka 중계기 채널",
+      "source_doc": "GKX-SSS-PL-001",
+      "methods": [
+        "T",
+        "I"
+      ],
+      "verification_item": "VER-PL-012",
+      "test_case": "TC-PL-004",
+      "result": "합격",
+      "section": "3.9 탑재체 요구사항(PL)",
+      "page": 17
+    },
+    {
+      "id": "PL-013",
+      "doc_id": "GKX-VCRM-001",
+      "type": "VCRM행",
+      "title": "Ka 빔 EIRP",
+      "source_doc": "GKX-SSS-PL-001",
+      "methods": [
+        "T",
+        "A"
+      ],
+      "verification_item": "VER-PL-013",
+      "test_case": "TC-PL-004",
+      "result": "합격",
+      "section": "3.9 탑재체 요구사항(PL)",
+      "page": 17
+    },
+    {
+      "id": "PL-014",
+      "doc_id": "GKX-VCRM-001",
+      "type": "VCRM행",
+      "title": "수신 G/T",
+      "source_doc": "GKX-SSS-PL-001",
+      "methods": [
+        "T"
+      ],
+      "verification_item": "VER-PL-014",
+      "test_case": "TC-PL-005",
+      "result": "합격",
+      "section": "3.9 탑재체 요구사항(PL)",
+      "page": 17
+    },
+    {
+      "id": "PL-015",
+      "doc_id": "GKX-VCRM-001",
+      "type": "VCRM행",
+      "title": "TWTA 이중화",
+      "source_doc": "GKX-SSS-PL-001",
+      "methods": [
+        "I",
+        "T"
+      ],
+      "verification_item": "VER-PL-015",
+      "test_case": "TC-PL-005",
+      "result": "합격",
+      "section": "3.9 탑재체 요구사항(PL)",
+      "page": 17
+    },
+    {
+      "id": "PL-016",
+      "doc_id": "GKX-VCRM-001",
+      "type": "VCRM행",
+      "title": "수동 상호변조",
+      "source_doc": "GKX-SSS-PL-001",
+      "methods": [
+        "T"
+      ],
+      "verification_item": "VER-PL-016",
+      "test_case": "TC-PL-005",
+      "result": "합격",
+      "section": "3.9 탑재체 요구사항(PL)",
+      "page": 17
+    },
+    {
+      "id": "PL-017",
+      "doc_id": "GKX-VCRM-001",
+      "type": "VCRM행",
+      "title": "주파수 안정도",
+      "source_doc": "GKX-SSS-PL-001",
+      "methods": [
+        "T",
+        "A"
+      ],
+      "verification_item": "VER-PL-017",
+      "test_case": "TC-PL-006",
+      "result": "합격",
+      "section": "3.9 탑재체 요구사항(PL)",
+      "page": 17
+    },
+    {
+      "id": "PL-018",
+      "doc_id": "GKX-VCRM-001",
+      "type": "VCRM행",
+      "title": "탑재체 열 소산",
+      "source_doc": "GKX-SSS-PL-001",
+      "methods": [
+        "A",
+        "T"
+      ],
+      "verification_item": "VER-PL-018",
+      "test_case": "TC-PL-006",
+      "result": "합격",
+      "section": "3.9 탑재체 요구사항(PL)",
+      "page": 17
+    },
+    {
+      "id": "PL-019",
+      "doc_id": "GKX-VCRM-001",
+      "type": "VCRM행",
+      "title": "탑재체 질량",
+      "source_doc": "GKX-SSS-PL-001",
+      "methods": [
+        "I"
+      ],
+      "verification_item": "VER-PL-019",
+      "test_case": null,
+      "result": "검사 완료",
+      "section": "3.9 탑재체 요구사항(PL)",
+      "page": 17
+    },
+    {
+      "id": "PL-020",
+      "doc_id": "GKX-VCRM-001",
+      "type": "VCRM행",
+      "title": "탑재체 전력",
+      "source_doc": "GKX-SSS-PL-001",
+      "methods": [
+        "T"
+      ],
+      "verification_item": "VER-PL-020",
+      "test_case": "TC-PL-006",
+      "result": "합격",
+      "section": "3.9 탑재체 요구사항(PL)",
+      "page": 17
+    },
+    {
+      "id": "ICD-EPS-001",
+      "doc_id": "GKX-VCRM-001",
+      "type": "VCRM행",
+      "title": "기계적 장착",
+      "source_doc": "GKX-ICD-EPS-001",
+      "methods": [
+        "I"
+      ],
+      "verification_item": "VER-EPS-021",
+      "test_case": null,
+      "result": "검사 완료",
+      "section": "3.10 본체-전력계 인터페이스(ICD-EPS)",
+      "page": 17
+    },
+    {
+      "id": "ICD-EPS-002",
+      "doc_id": "GKX-VCRM-001",
+      "type": "VCRM행",
+      "title": "질량 특성 자료",
+      "source_doc": "GKX-ICD-EPS-001",
+      "methods": [
+        "I",
+        "A"
+      ],
+      "verification_item": "VER-EPS-022",
+      "test_case": null,
+      "result": "해석 완료",
+      "section": "3.10 본체-전력계 인터페이스(ICD-EPS)",
+      "page": 17
+    },
+    {
+      "id": "ICD-EPS-003",
+      "doc_id": "GKX-VCRM-001",
+      "type": "VCRM행",
+      "title": "전력 공급 인터페이스",
+      "source_doc": "GKX-ICD-EPS-001",
+      "methods": [
+        "T"
+      ],
+      "verification_item": "VER-EPS-023",
+      "test_case": "TC-EPS-006",
+      "result": "합격",
+      "section": "3.10 본체-전력계 인터페이스(ICD-EPS)",
+      "page": 17
+    },
+    {
+      "id": "ICD-EPS-004",
+      "doc_id": "GKX-VCRM-001",
+      "type": "VCRM행",
+      "title": "돌입 전류",
+      "source_doc": "GKX-ICD-EPS-001",
+      "methods": [
+        "T"
+      ],
+      "verification_item": "VER-EPS-024",
+      "test_case": "TC-EPS-006",
+      "result": "합격",
+      "section": "3.10 본체-전력계 인터페이스(ICD-EPS)",
+      "page": 17
+    },
+    {
+      "id": "ICD-EPS-005",
+      "doc_id": "GKX-VCRM-001",
+      "type": "VCRM행",
+      "title": "전원 커넥터",
+      "source_doc": "GKX-ICD-EPS-001",
+      "methods": [
+        "I"
+      ],
+      "verification_item": "VER-EPS-025",
+      "test_case": null,
+      "result": "검사 완료",
+      "section": "3.10 본체-전력계 인터페이스(ICD-EPS)",
+      "page": 17
+    },
+    {
+      "id": "ICD-EPS-006",
+      "doc_id": "GKX-VCRM-001",
+      "type": "VCRM행",
+      "title": "데이터 버스 주소",
+      "source_doc": "GKX-ICD-EPS-001",
+      "methods": [
+        "T",
+        "I"
+      ],
+      "verification_item": "VER-EPS-026",
+      "test_case": "TC-EPS-006",
+      "result": "합격",
+      "section": "3.10 본체-전력계 인터페이스(ICD-EPS)",
+      "page": 17
+    },
+    {
+      "id": "ICD-EPS-007",
+      "doc_id": "GKX-VCRM-001",
+      "type": "VCRM행",
+      "title": "원격측정 패킷",
+      "source_doc": "GKX-ICD-EPS-001",
+      "methods": [
+        "T"
+      ],
+      "verification_item": "VER-EPS-027",
+      "test_case": "TC-EPS-007",
+      "result": "합격",
+      "section": "3.10 본체-전력계 인터페이스(ICD-EPS)",
+      "page": 17
+    },
+    {
+      "id": "ICD-EPS-008",
+      "doc_id": "GKX-VCRM-001",
+      "type": "VCRM행",
+      "title": "명령 인터페이스",
+      "source_doc": "GKX-ICD-EPS-001",
+      "methods": [
+        "T"
+      ],
+      "verification_item": "VER-EPS-028",
+      "test_case": "TC-EPS-007",
+      "result": "합격",
+      "section": "3.10 본체-전력계 인터페이스(ICD-EPS)",
+      "page": 17
+    },
+    {
+      "id": "ICD-EPS-009",
+      "doc_id": "GKX-VCRM-001",
+      "type": "VCRM행",
+      "title": "시각 동기",
+      "source_doc": "GKX-ICD-EPS-001",
+      "methods": [
+        "T"
+      ],
+      "verification_item": "VER-EPS-029",
+      "test_case": "TC-EPS-007",
+      "result": "합격",
+      "section": "3.10 본체-전력계 인터페이스(ICD-EPS)",
+      "page": 17
+    },
+    {
+      "id": "ICD-EPS-010",
+      "doc_id": "GKX-VCRM-001",
+      "type": "VCRM행",
+      "title": "열 인터페이스",
+      "source_doc": "GKX-ICD-EPS-001",
+      "methods": [
+        "A",
+        "T"
+      ],
+      "verification_item": "VER-EPS-030",
+      "test_case": "TC-EPS-008",
+      "result": "합격",
+      "section": "3.10 본체-전력계 인터페이스(ICD-EPS)",
+      "page": 17
+    },
+    {
+      "id": "ICD-EPS-011",
+      "doc_id": "GKX-VCRM-001",
+      "type": "VCRM행",
+      "title": "접지 및 본딩",
+      "source_doc": "GKX-ICD-EPS-001",
+      "methods": [
+        "T"
+      ],
+      "verification_item": "VER-EPS-031",
+      "test_case": "TC-EPS-008",
+      "result": "합격",
+      "section": "3.10 본체-전력계 인터페이스(ICD-EPS)",
+      "page": 18
+    },
+    {
+      "id": "ICD-EPS-012",
+      "doc_id": "GKX-VCRM-001",
+      "type": "VCRM행",
+      "title": "EMC 방출 한계",
+      "source_doc": "GKX-ICD-EPS-001",
+      "methods": [
+        "T"
+      ],
+      "verification_item": "VER-EPS-032",
+      "test_case": "TC-EPS-008",
+      "result": "합격",
+      "section": "3.10 본체-전력계 인터페이스(ICD-EPS)",
+      "page": 18
+    },
+    {
+      "id": "ICD-AOCS-001",
+      "doc_id": "GKX-VCRM-001",
+      "type": "VCRM행",
+      "title": "기계적 장착",
+      "source_doc": "GKX-ICD-AOCS-001",
+      "methods": [
+        "I"
+      ],
+      "verification_item": "VER-AOCS-021",
+      "test_case": null,
+      "result": "검사 완료",
+      "section": "3.11 본체-자세·궤도제어계 인터페이스(ICD-AOCS)",
+      "page": 18
+    },
+    {
+      "id": "ICD-AOCS-002",
+      "doc_id": "GKX-VCRM-001",
+      "type": "VCRM행",
+      "title": "질량 특성 자료",
+      "source_doc": "GKX-ICD-AOCS-001",
+      "methods": [
+        "I",
+        "A"
+      ],
+      "verification_item": "VER-AOCS-022",
+      "test_case": null,
+      "result": "해석 완료",
+      "section": "3.11 본체-자세·궤도제어계 인터페이스(ICD-AOCS)",
+      "page": 18
+    },
+    {
+      "id": "ICD-AOCS-003",
+      "doc_id": "GKX-VCRM-001",
+      "type": "VCRM행",
+      "title": "전원 공급 인터페이스",
+      "source_doc": "GKX-ICD-AOCS-001",
+      "methods": [
+        "T"
+      ],
+      "verification_item": "VER-AOCS-023",
+      "test_case": "TC-AOCS-006",
+      "result": "합격",
+      "section": "3.11 본체-자세·궤도제어계 인터페이스(ICD-AOCS)",
+      "page": 18
+    },
+    {
+      "id": "ICD-AOCS-004",
+      "doc_id": "GKX-VCRM-001",
+      "type": "VCRM행",
+      "title": "돌입 전류",
+      "source_doc": "GKX-ICD-AOCS-001",
+      "methods": [
+        "T"
+      ],
+      "verification_item": "VER-AOCS-024",
+      "test_case": "TC-AOCS-006",
+      "result": "합격",
+      "section": "3.11 본체-자세·궤도제어계 인터페이스(ICD-AOCS)",
+      "page": 18
+    },
+    {
+      "id": "ICD-AOCS-005",
+      "doc_id": "GKX-VCRM-001",
+      "type": "VCRM행",
+      "title": "전원 커넥터",
+      "source_doc": "GKX-ICD-AOCS-001",
+      "methods": [
+        "I"
+      ],
+      "verification_item": "VER-AOCS-025",
+      "test_case": null,
+      "result": "검사 완료",
+      "section": "3.11 본체-자세·궤도제어계 인터페이스(ICD-AOCS)",
+      "page": 18
+    },
+    {
+      "id": "ICD-AOCS-006",
+      "doc_id": "GKX-VCRM-001",
+      "type": "VCRM행",
+      "title": "데이터 버스 주소",
+      "source_doc": "GKX-ICD-AOCS-001",
+      "methods": [
+        "T",
+        "I"
+      ],
+      "verification_item": "VER-AOCS-026",
+      "test_case": "TC-AOCS-006",
+      "result": "합격",
+      "section": "3.11 본체-자세·궤도제어계 인터페이스(ICD-AOCS)",
+      "page": 18
+    },
+    {
+      "id": "ICD-AOCS-007",
+      "doc_id": "GKX-VCRM-001",
+      "type": "VCRM행",
+      "title": "원격측정 패킷",
+      "source_doc": "GKX-ICD-AOCS-001",
+      "methods": [
+        "T"
+      ],
+      "verification_item": "VER-AOCS-027",
+      "test_case": "TC-AOCS-007",
+      "result": "합격",
+      "section": "3.11 본체-자세·궤도제어계 인터페이스(ICD-AOCS)",
+      "page": 18
+    },
+    {
+      "id": "ICD-AOCS-008",
+      "doc_id": "GKX-VCRM-001",
+      "type": "VCRM행",
+      "title": "명령 인터페이스",
+      "source_doc": "GKX-ICD-AOCS-001",
+      "methods": [
+        "T"
+      ],
+      "verification_item": "VER-AOCS-028",
+      "test_case": "TC-AOCS-007",
+      "result": "합격",
+      "section": "3.11 본체-자세·궤도제어계 인터페이스(ICD-AOCS)",
+      "page": 18
+    },
+    {
+      "id": "ICD-AOCS-009",
+      "doc_id": "GKX-VCRM-001",
+      "type": "VCRM행",
+      "title": "시각 동기",
+      "source_doc": "GKX-ICD-AOCS-001",
+      "methods": [
+        "T"
+      ],
+      "verification_item": "VER-AOCS-029",
+      "test_case": "TC-AOCS-007",
+      "result": "합격",
+      "section": "3.11 본체-자세·궤도제어계 인터페이스(ICD-AOCS)",
+      "page": 18
+    },
+    {
+      "id": "ICD-AOCS-010",
+      "doc_id": "GKX-VCRM-001",
+      "type": "VCRM행",
+      "title": "열 인터페이스",
+      "source_doc": "GKX-ICD-AOCS-001",
+      "methods": [
+        "A",
+        "T"
+      ],
+      "verification_item": "VER-AOCS-030",
+      "test_case": "TC-AOCS-008",
+      "result": "합격",
+      "section": "3.11 본체-자세·궤도제어계 인터페이스(ICD-AOCS)",
+      "page": 18
+    },
+    {
+      "id": "ICD-AOCS-011",
+      "doc_id": "GKX-VCRM-001",
+      "type": "VCRM행",
+      "title": "접지 및 본딩",
+      "source_doc": "GKX-ICD-AOCS-001",
+      "methods": [
+        "T"
+      ],
+      "verification_item": "VER-AOCS-031",
+      "test_case": "TC-AOCS-008",
+      "result": "합격",
+      "section": "3.11 본체-자세·궤도제어계 인터페이스(ICD-AOCS)",
+      "page": 18
+    },
+    {
+      "id": "ICD-AOCS-012",
+      "doc_id": "GKX-VCRM-001",
+      "type": "VCRM행",
+      "title": "EMC 방출 한계",
+      "source_doc": "GKX-ICD-AOCS-001",
+      "methods": [
+        "T"
+      ],
+      "verification_item": "VER-AOCS-032",
+      "test_case": "TC-AOCS-008",
+      "result": "합격",
+      "section": "3.11 본체-자세·궤도제어계 인터페이스(ICD-AOCS)",
+      "page": 18
+    },
+    {
+      "id": "ICD-PROP-001",
+      "doc_id": "GKX-VCRM-001",
+      "type": "VCRM행",
+      "title": "기계적 장착",
+      "source_doc": "GKX-ICD-PROP-001",
+      "methods": [
+        "I"
+      ],
+      "verification_item": "VER-PROP-021",
+      "test_case": null,
+      "result": "검사 완료",
+      "section": "3.12 본체-추진계 인터페이스(ICD-PROP)",
+      "page": 18
+    },
+    {
+      "id": "ICD-PROP-002",
+      "doc_id": "GKX-VCRM-001",
+      "type": "VCRM행",
+      "title": "질량 특성 자료",
+      "source_doc": "GKX-ICD-PROP-001",
+      "methods": [
+        "I",
+        "A"
+      ],
+      "verification_item": "VER-PROP-022",
+      "test_case": null,
+      "result": "해석 완료",
+      "section": "3.12 본체-추진계 인터페이스(ICD-PROP)",
+      "page": 19
+    },
+    {
+      "id": "ICD-PROP-003",
+      "doc_id": "GKX-VCRM-001",
+      "type": "VCRM행",
+      "title": "전원 공급 인터페이스",
+      "source_doc": "GKX-ICD-PROP-001",
+      "methods": [
+        "T"
+      ],
+      "verification_item": "VER-PROP-023",
+      "test_case": "TC-PROP-004",
+      "result": "합격",
+      "section": "3.12 본체-추진계 인터페이스(ICD-PROP)",
+      "page": 19
+    },
+    {
+      "id": "ICD-PROP-004",
+      "doc_id": "GKX-VCRM-001",
+      "type": "VCRM행",
+      "title": "돌입 전류",
+      "source_doc": "GKX-ICD-PROP-001",
+      "methods": [
+        "T"
+      ],
+      "verification_item": "VER-PROP-024",
+      "test_case": "TC-PROP-005",
+      "result": "합격",
+      "section": "3.12 본체-추진계 인터페이스(ICD-PROP)",
+      "page": 19
+    },
+    {
+      "id": "ICD-PROP-005",
+      "doc_id": "GKX-VCRM-001",
+      "type": "VCRM행",
+      "title": "전원 커넥터",
+      "source_doc": "GKX-ICD-PROP-001",
+      "methods": [
+        "I"
+      ],
+      "verification_item": "VER-PROP-025",
+      "test_case": null,
+      "result": "검사 완료",
+      "section": "3.12 본체-추진계 인터페이스(ICD-PROP)",
+      "page": 19
+    },
+    {
+      "id": "ICD-PROP-006",
+      "doc_id": "GKX-VCRM-001",
+      "type": "VCRM행",
+      "title": "데이터 버스 주소",
+      "source_doc": "GKX-ICD-PROP-001",
+      "methods": [
+        "T",
+        "I"
+      ],
+      "verification_item": "VER-PROP-026",
+      "test_case": "TC-PROP-005",
+      "result": "합격",
+      "section": "3.12 본체-추진계 인터페이스(ICD-PROP)",
+      "page": 19
+    },
+    {
+      "id": "ICD-PROP-007",
+      "doc_id": "GKX-VCRM-001",
+      "type": "VCRM행",
+      "title": "원격측정 패킷",
+      "source_doc": "GKX-ICD-PROP-001",
+      "methods": [
+        "T"
+      ],
+      "verification_item": "VER-PROP-027",
+      "test_case": "TC-PROP-005",
+      "result": "합격",
+      "section": "3.12 본체-추진계 인터페이스(ICD-PROP)",
+      "page": 19
+    },
+    {
+      "id": "ICD-PROP-008",
+      "doc_id": "GKX-VCRM-001",
+      "type": "VCRM행",
+      "title": "명령 인터페이스",
+      "source_doc": "GKX-ICD-PROP-001",
+      "methods": [
+        "T"
+      ],
+      "verification_item": "VER-PROP-028",
+      "test_case": "TC-PROP-006",
+      "result": "합격",
+      "section": "3.12 본체-추진계 인터페이스(ICD-PROP)",
+      "page": 19
+    },
+    {
+      "id": "ICD-PROP-009",
+      "doc_id": "GKX-VCRM-001",
+      "type": "VCRM행",
+      "title": "시각 동기",
+      "source_doc": "GKX-ICD-PROP-001",
+      "methods": [
+        "T"
+      ],
+      "verification_item": "VER-PROP-029",
+      "test_case": "TC-PROP-006",
+      "result": "합격",
+      "section": "3.12 본체-추진계 인터페이스(ICD-PROP)",
+      "page": 19
+    },
+    {
+      "id": "ICD-PROP-010",
+      "doc_id": "GKX-VCRM-001",
+      "type": "VCRM행",
+      "title": "열 인터페이스",
+      "source_doc": "GKX-ICD-PROP-001",
+      "methods": [
+        "A",
+        "T"
+      ],
+      "verification_item": "VER-PROP-030",
+      "test_case": "TC-PROP-006",
+      "result": "합격",
+      "section": "3.12 본체-추진계 인터페이스(ICD-PROP)",
+      "page": 19
+    },
+    {
+      "id": "ICD-PROP-011",
+      "doc_id": "GKX-VCRM-001",
+      "type": "VCRM행",
+      "title": "접지 및 본딩",
+      "source_doc": "GKX-ICD-PROP-001",
+      "methods": [
+        "T"
+      ],
+      "verification_item": "VER-PROP-031",
+      "test_case": "TC-PROP-007",
+      "result": "합격",
+      "section": "3.12 본체-추진계 인터페이스(ICD-PROP)",
+      "page": 19
+    },
+    {
+      "id": "ICD-PROP-012",
+      "doc_id": "GKX-VCRM-001",
+      "type": "VCRM행",
+      "title": "EMC 방출 한계",
+      "source_doc": "GKX-ICD-PROP-001",
+      "methods": [
+        "T"
+      ],
+      "verification_item": "VER-PROP-032",
+      "test_case": "TC-PROP-007",
+      "result": "합격",
+      "section": "3.12 본체-추진계 인터페이스(ICD-PROP)",
+      "page": 19
+    },
+    {
+      "id": "ICD-TCS-001",
+      "doc_id": "GKX-VCRM-001",
+      "type": "VCRM행",
+      "title": "기계적 장착",
+      "source_doc": "GKX-ICD-TCS-001",
+      "methods": [
+        "I"
+      ],
+      "verification_item": "VER-TCS-021",
+      "test_case": null,
+      "result": "검사 완료",
+      "section": "3.13 본체-열제어계 인터페이스(ICD-TCS)",
+      "page": 19
+    },
+    {
+      "id": "ICD-TCS-002",
+      "doc_id": "GKX-VCRM-001",
+      "type": "VCRM행",
+      "title": "질량 특성 자료",
+      "source_doc": "GKX-ICD-TCS-001",
+      "methods": [
+        "I",
+        "A"
+      ],
+      "verification_item": "VER-TCS-022",
+      "test_case": null,
+      "result": "해석 완료",
+      "section": "3.13 본체-열제어계 인터페이스(ICD-TCS)",
+      "page": 19
+    },
+    {
+      "id": "ICD-TCS-003",
+      "doc_id": "GKX-VCRM-001",
+      "type": "VCRM행",
+      "title": "전원 공급 인터페이스",
+      "source_doc": "GKX-ICD-TCS-001",
+      "methods": [
+        "T"
+      ],
+      "verification_item": "VER-TCS-023",
+      "test_case": "TC-TCS-006",
+      "result": "합격",
+      "section": "3.13 본체-열제어계 인터페이스(ICD-TCS)",
+      "page": 19
+    },
+    {
+      "id": "ICD-TCS-004",
+      "doc_id": "GKX-VCRM-001",
+      "type": "VCRM행",
+      "title": "돌입 전류",
+      "source_doc": "GKX-ICD-TCS-001",
+      "methods": [
+        "T"
+      ],
+      "verification_item": "VER-TCS-024",
+      "test_case": "TC-TCS-006",
+      "result": "합격",
+      "section": "3.13 본체-열제어계 인터페이스(ICD-TCS)",
+      "page": 19
+    },
+    {
+      "id": "ICD-TCS-005",
+      "doc_id": "GKX-VCRM-001",
+      "type": "VCRM행",
+      "title": "전원 커넥터",
+      "source_doc": "GKX-ICD-TCS-001",
+      "methods": [
+        "I"
+      ],
+      "verification_item": "VER-TCS-025",
+      "test_case": null,
+      "result": "검사 완료",
+      "section": "3.13 본체-열제어계 인터페이스(ICD-TCS)",
+      "page": 19
+    },
+    {
+      "id": "ICD-TCS-006",
+      "doc_id": "GKX-VCRM-001",
+      "type": "VCRM행",
+      "title": "데이터 버스 주소",
+      "source_doc": "GKX-ICD-TCS-001",
+      "methods": [
+        "T",
+        "I"
+      ],
+      "verification_item": "VER-TCS-026",
+      "test_case": "TC-TCS-006",
+      "result": "합격",
+      "section": "3.13 본체-열제어계 인터페이스(ICD-TCS)",
+      "page": 19
+    },
+    {
+      "id": "ICD-TCS-007",
+      "doc_id": "GKX-VCRM-001",
+      "type": "VCRM행",
+      "title": "원격측정 패킷",
+      "source_doc": "GKX-ICD-TCS-001",
+      "methods": [
+        "T"
+      ],
+      "verification_item": "VER-TCS-027",
+      "test_case": "TC-TCS-007",
+      "result": "합격",
+      "section": "3.13 본체-열제어계 인터페이스(ICD-TCS)",
+      "page": 19
+    },
+    {
+      "id": "ICD-TCS-008",
+      "doc_id": "GKX-VCRM-001",
+      "type": "VCRM행",
+      "title": "명령 인터페이스",
+      "source_doc": "GKX-ICD-TCS-001",
+      "methods": [
+        "T"
+      ],
+      "verification_item": "VER-TCS-028",
+      "test_case": "TC-TCS-007",
+      "result": "합격",
+      "section": "3.13 본체-열제어계 인터페이스(ICD-TCS)",
+      "page": 19
+    },
+    {
+      "id": "ICD-TCS-009",
+      "doc_id": "GKX-VCRM-001",
+      "type": "VCRM행",
+      "title": "시각 동기",
+      "source_doc": "GKX-ICD-TCS-001",
+      "methods": [
+        "T"
+      ],
+      "verification_item": "VER-TCS-029",
+      "test_case": "TC-TCS-007",
+      "result": "합격",
+      "section": "3.13 본체-열제어계 인터페이스(ICD-TCS)",
+      "page": 20
+    },
+    {
+      "id": "ICD-TCS-010",
+      "doc_id": "GKX-VCRM-001",
+      "type": "VCRM행",
+      "title": "열 인터페이스",
+      "source_doc": "GKX-ICD-TCS-001",
+      "methods": [
+        "A",
+        "T"
+      ],
+      "verification_item": "VER-TCS-030",
+      "test_case": "TC-TCS-008",
+      "result": "합격",
+      "section": "3.13 본체-열제어계 인터페이스(ICD-TCS)",
+      "page": 20
+    },
+    {
+      "id": "ICD-TCS-011",
+      "doc_id": "GKX-VCRM-001",
+      "type": "VCRM행",
+      "title": "접지 및 본딩",
+      "source_doc": "GKX-ICD-TCS-001",
+      "methods": [
+        "T"
+      ],
+      "verification_item": "VER-TCS-031",
+      "test_case": "TC-TCS-008",
+      "result": "합격",
+      "section": "3.13 본체-열제어계 인터페이스(ICD-TCS)",
+      "page": 20
+    },
+    {
+      "id": "ICD-TCS-012",
+      "doc_id": "GKX-VCRM-001",
+      "type": "VCRM행",
+      "title": "EMC 방출 한계",
+      "source_doc": "GKX-ICD-TCS-001",
+      "methods": [
+        "T"
+      ],
+      "verification_item": "VER-TCS-032",
+      "test_case": "TC-TCS-008",
+      "result": "합격",
+      "section": "3.13 본체-열제어계 인터페이스(ICD-TCS)",
+      "page": 20
+    },
+    {
+      "id": "ICD-TTC-001",
+      "doc_id": "GKX-VCRM-001",
+      "type": "VCRM행",
+      "title": "기계적 장착",
+      "source_doc": "GKX-ICD-TTC-001",
+      "methods": [
+        "I"
+      ],
+      "verification_item": "VER-TTC-021",
+      "test_case": null,
+      "result": "검사 완료",
+      "section": "3.14 본체-원격측정·추적·명령계 인터페이스(ICD-TTC)",
+      "page": 20
+    },
+    {
+      "id": "ICD-TTC-002",
+      "doc_id": "GKX-VCRM-001",
+      "type": "VCRM행",
+      "title": "질량 특성 자료",
+      "source_doc": "GKX-ICD-TTC-001",
+      "methods": [
+        "I",
+        "A"
+      ],
+      "verification_item": "VER-TTC-022",
+      "test_case": null,
+      "result": "해석 완료",
+      "section": "3.14 본체-원격측정·추적·명령계 인터페이스(ICD-TTC)",
+      "page": 20
+    },
+    {
+      "id": "ICD-TTC-003",
+      "doc_id": "GKX-VCRM-001",
+      "type": "VCRM행",
+      "title": "전원 공급 인터페이스",
+      "source_doc": "GKX-ICD-TTC-001",
+      "methods": [
+        "T"
+      ],
+      "verification_item": "VER-TTC-023",
+      "test_case": "TC-TTC-007",
+      "result": "합격",
+      "section": "3.14 본체-원격측정·추적·명령계 인터페이스(ICD-TTC)",
+      "page": 20
+    },
+    {
+      "id": "ICD-TTC-004",
+      "doc_id": "GKX-VCRM-001",
+      "type": "VCRM행",
+      "title": "돌입 전류",
+      "source_doc": "GKX-ICD-TTC-001",
+      "methods": [
+        "T"
+      ],
+      "verification_item": "VER-TTC-024",
+      "test_case": "TC-TTC-007",
+      "result": "합격",
+      "section": "3.14 본체-원격측정·추적·명령계 인터페이스(ICD-TTC)",
+      "page": 20
+    },
+    {
+      "id": "ICD-TTC-005",
+      "doc_id": "GKX-VCRM-001",
+      "type": "VCRM행",
+      "title": "전원 커넥터",
+      "source_doc": "GKX-ICD-TTC-001",
+      "methods": [
+        "I"
+      ],
+      "verification_item": "VER-TTC-025",
+      "test_case": null,
+      "result": "검사 완료",
+      "section": "3.14 본체-원격측정·추적·명령계 인터페이스(ICD-TTC)",
+      "page": 20
+    },
+    {
+      "id": "ICD-TTC-006",
+      "doc_id": "GKX-VCRM-001",
+      "type": "VCRM행",
+      "title": "데이터 버스 주소",
+      "source_doc": "GKX-ICD-TTC-001",
+      "methods": [
+        "T",
+        "I"
+      ],
+      "verification_item": "VER-TTC-026",
+      "test_case": "TC-TTC-007",
+      "result": "합격",
+      "section": "3.14 본체-원격측정·추적·명령계 인터페이스(ICD-TTC)",
+      "page": 20
+    },
+    {
+      "id": "ICD-TTC-007",
+      "doc_id": "GKX-VCRM-001",
+      "type": "VCRM행",
+      "title": "원격측정 패킷",
+      "source_doc": "GKX-ICD-TTC-001",
+      "methods": [
+        "T"
+      ],
+      "verification_item": "VER-TTC-027",
+      "test_case": "TC-TTC-008",
+      "result": "합격",
+      "section": "3.14 본체-원격측정·추적·명령계 인터페이스(ICD-TTC)",
+      "page": 20
+    },
+    {
+      "id": "ICD-TTC-008",
+      "doc_id": "GKX-VCRM-001",
+      "type": "VCRM행",
+      "title": "명령 인터페이스",
+      "source_doc": "GKX-ICD-TTC-001",
+      "methods": [
+        "T"
+      ],
+      "verification_item": "VER-TTC-028",
+      "test_case": "TC-TTC-008",
+      "result": "합격",
+      "section": "3.14 본체-원격측정·추적·명령계 인터페이스(ICD-TTC)",
+      "page": 20
+    },
+    {
+      "id": "ICD-TTC-009",
+      "doc_id": "GKX-VCRM-001",
+      "type": "VCRM행",
+      "title": "시각 동기",
+      "source_doc": "GKX-ICD-TTC-001",
+      "methods": [
+        "T"
+      ],
+      "verification_item": "VER-TTC-029",
+      "test_case": "TC-TTC-008",
+      "result": "합격",
+      "section": "3.14 본체-원격측정·추적·명령계 인터페이스(ICD-TTC)",
+      "page": 20
+    },
+    {
+      "id": "ICD-TTC-010",
+      "doc_id": "GKX-VCRM-001",
+      "type": "VCRM행",
+      "title": "열 인터페이스",
+      "source_doc": "GKX-ICD-TTC-001",
+      "methods": [
+        "A",
+        "T"
+      ],
+      "verification_item": "VER-TTC-030",
+      "test_case": "TC-TTC-009",
+      "result": "합격",
+      "section": "3.14 본체-원격측정·추적·명령계 인터페이스(ICD-TTC)",
+      "page": 20
+    },
+    {
+      "id": "ICD-TTC-011",
+      "doc_id": "GKX-VCRM-001",
+      "type": "VCRM행",
+      "title": "접지 및 본딩",
+      "source_doc": "GKX-ICD-TTC-001",
+      "methods": [
+        "T"
+      ],
+      "verification_item": "VER-TTC-031",
+      "test_case": "TC-TTC-009",
+      "result": "합격",
+      "section": "3.14 본체-원격측정·추적·명령계 인터페이스(ICD-TTC)",
+      "page": 20
+    },
+    {
+      "id": "ICD-TTC-012",
+      "doc_id": "GKX-VCRM-001",
+      "type": "VCRM행",
+      "title": "EMC 방출 한계",
+      "source_doc": "GKX-ICD-TTC-001",
+      "methods": [
+        "T"
+      ],
+      "verification_item": "VER-TTC-032",
+      "test_case": "TC-TTC-009",
+      "result": "합격",
+      "section": "3.14 본체-원격측정·추적·명령계 인터페이스(ICD-TTC)",
+      "page": 20
+    },
+    {
+      "id": "ICD-PL-001",
+      "doc_id": "GKX-VCRM-001",
+      "type": "VCRM행",
+      "title": "기계적 장착",
+      "source_doc": "GKX-ICD-PL-001",
+      "methods": [
+        "I"
+      ],
+      "verification_item": "VER-PL-021",
+      "test_case": null,
+      "result": "검사 완료",
+      "section": "3.15 본체-탑재체 인터페이스(ICD-PL)",
+      "page": 21
+    },
+    {
+      "id": "ICD-PL-002",
+      "doc_id": "GKX-VCRM-001",
+      "type": "VCRM행",
+      "title": "질량 특성 자료",
+      "source_doc": "GKX-ICD-PL-001",
+      "methods": [
+        "I",
+        "A"
+      ],
+      "verification_item": "VER-PL-022",
+      "test_case": null,
+      "result": "해석 완료",
+      "section": "3.15 본체-탑재체 인터페이스(ICD-PL)",
+      "page": 21
+    },
+    {
+      "id": "ICD-PL-003",
+      "doc_id": "GKX-VCRM-001",
+      "type": "VCRM행",
+      "title": "전원 공급 인터페이스",
+      "source_doc": "GKX-ICD-PL-001",
+      "methods": [
+        "T"
+      ],
+      "verification_item": "VER-PL-023",
+      "test_case": "TC-PL-007",
+      "result": "합격",
+      "section": "3.15 본체-탑재체 인터페이스(ICD-PL)",
+      "page": 21
+    },
+    {
+      "id": "ICD-PL-004",
+      "doc_id": "GKX-VCRM-001",
+      "type": "VCRM행",
+      "title": "돌입 전류",
+      "source_doc": "GKX-ICD-PL-001",
+      "methods": [
+        "T"
+      ],
+      "verification_item": "VER-PL-024",
+      "test_case": "TC-PL-007",
+      "result": "합격",
+      "section": "3.15 본체-탑재체 인터페이스(ICD-PL)",
+      "page": 21
+    },
+    {
+      "id": "ICD-PL-005",
+      "doc_id": "GKX-VCRM-001",
+      "type": "VCRM행",
+      "title": "전원 커넥터",
+      "source_doc": "GKX-ICD-PL-001",
+      "methods": [
+        "I"
+      ],
+      "verification_item": "VER-PL-025",
+      "test_case": null,
+      "result": "검사 완료",
+      "section": "3.15 본체-탑재체 인터페이스(ICD-PL)",
+      "page": 21
+    },
+    {
+      "id": "ICD-PL-006",
+      "doc_id": "GKX-VCRM-001",
+      "type": "VCRM행",
+      "title": "데이터 버스 주소",
+      "source_doc": "GKX-ICD-PL-001",
+      "methods": [
+        "T",
+        "I"
+      ],
+      "verification_item": "VER-PL-026",
+      "test_case": "TC-PL-007",
+      "result": "합격",
+      "section": "3.15 본체-탑재체 인터페이스(ICD-PL)",
+      "page": 21
+    },
+    {
+      "id": "ICD-PL-007",
+      "doc_id": "GKX-VCRM-001",
+      "type": "VCRM행",
+      "title": "원격측정 패킷",
+      "source_doc": "GKX-ICD-PL-001",
+      "methods": [
+        "T"
+      ],
+      "verification_item": "VER-PL-027",
+      "test_case": "TC-PL-008",
+      "result": "합격",
+      "section": "3.15 본체-탑재체 인터페이스(ICD-PL)",
+      "page": 21
+    },
+    {
+      "id": "ICD-PL-008",
+      "doc_id": "GKX-VCRM-001",
+      "type": "VCRM행",
+      "title": "명령 인터페이스",
+      "source_doc": "GKX-ICD-PL-001",
+      "methods": [
+        "T"
+      ],
+      "verification_item": "VER-PL-028",
+      "test_case": "TC-PL-008",
+      "result": "합격",
+      "section": "3.15 본체-탑재체 인터페이스(ICD-PL)",
+      "page": 21
+    },
+    {
+      "id": "ICD-PL-009",
+      "doc_id": "GKX-VCRM-001",
+      "type": "VCRM행",
+      "title": "시각 동기",
+      "source_doc": "GKX-ICD-PL-001",
+      "methods": [
+        "T"
+      ],
+      "verification_item": "VER-PL-029",
+      "test_case": "TC-PL-008",
+      "result": "합격",
+      "section": "3.15 본체-탑재체 인터페이스(ICD-PL)",
+      "page": 21
+    },
+    {
+      "id": "ICD-PL-010",
+      "doc_id": "GKX-VCRM-001",
+      "type": "VCRM행",
+      "title": "열 인터페이스",
+      "source_doc": "GKX-ICD-PL-001",
+      "methods": [
+        "A",
+        "T"
+      ],
+      "verification_item": "VER-PL-030",
+      "test_case": "TC-PL-009",
+      "result": "합격",
+      "section": "3.15 본체-탑재체 인터페이스(ICD-PL)",
+      "page": 21
+    },
+    {
+      "id": "ICD-PL-011",
+      "doc_id": "GKX-VCRM-001",
+      "type": "VCRM행",
+      "title": "접지 및 본딩",
+      "source_doc": "GKX-ICD-PL-001",
+      "methods": [
+        "T"
+      ],
+      "verification_item": "VER-PL-031",
+      "test_case": "TC-PL-009",
+      "result": "합격",
+      "section": "3.15 본체-탑재체 인터페이스(ICD-PL)",
+      "page": 21
+    },
+    {
+      "id": "ICD-PL-012",
+      "doc_id": "GKX-VCRM-001",
+      "type": "VCRM행",
+      "title": "EMC 방출 한계",
+      "source_doc": "GKX-ICD-PL-001",
+      "methods": [
+        "T"
+      ],
+      "verification_item": "VER-PL-032",
+      "test_case": "TC-PL-009",
+      "result": "합격",
+      "section": "3.15 본체-탑재체 인터페이스(ICD-PL)",
+      "page": 21
+    }
+  ]
+}

@@ -1,0 +1,165 @@
+{
+  "document": {
+    "doc_no": "GKX-TP-TCS-001",
+    "title": "열제어계 시험절차서",
+    "rev": "-",
+    "date": "2026-08-25",
+    "pages": 10,
+    "file": "07_TP/GKX-TP-TCS-001.pdf",
+    "item_count": 8
+  },
+  "items": [
+    {
+      "id": "TC-TCS-001",
+      "doc_id": "GKX-TP-TCS-001",
+      "type": "시험케이스",
+      "title": "온도 마진 · 히트파이프 · 히터 회로 시험",
+      "statement": "시험 구성 확인 및 EGSE 연결; 전원 인가 및 초기 원격측정 확인; [VER-TCS-002] 온도 마진 측정; [VER-TCS-004] 히트파이프 측정; [VER-TCS-005] 히터 회로 측정; 전원 차단 및 시험 자료 저장",
+      "parents": [
+        "VER-TCS-002",
+        "VER-TCS-004",
+        "VER-TCS-005"
+      ],
+      "requirements": [
+        "TCS-002",
+        "TCS-004",
+        "TCS-005"
+      ],
+      "section": "4.1 TC-TCS-001 온도 마진 · 히트파이프 · 히터 회로 시험",
+      "page": 6
+    },
+    {
+      "id": "TC-TCS-002",
+      "doc_id": "GKX-TP-TCS-001",
+      "type": "시험케이스",
+      "title": "히터 전력 · 다층단열재 · 영상기 냉각기 시험",
+      "statement": "시험 구성 확인 및 EGSE 연결; 전원 인가 및 초기 원격측정 확인; [VER-TCS-006] 히터 전력 측정; [VER-TCS-007] 다층단열재 측정; [VER-TCS-008] 영상기 냉각기 측정; 전원 차단 및 시험 자료 저장",
+      "parents": [
+        "VER-TCS-006",
+        "VER-TCS-007",
+        "VER-TCS-008"
+      ],
+      "requirements": [
+        "TCS-006",
+        "TCS-007",
+        "TCS-008"
+      ],
+      "section": "4.2 TC-TCS-002 히터 전력 · 다층단열재 · 영상기 냉각기 시험",
+      "page": 6
+    },
+    {
+      "id": "TC-TCS-003",
+      "doc_id": "GKX-TP-TCS-001",
+      "type": "시험케이스",
+      "title": "냉각 안정도 · 광학부 온도 · 배터리 온도 제어 시험",
+      "statement": "시험 구성 확인 및 EGSE 연결; 전원 인가 및 초기 원격측정 확인; [VER-TCS-009] 냉각 안정도 측정; [VER-TCS-010] 광학부 온도 측정; [VER-TCS-011] 배터리 온도 제어 측정; 전원 차단 및 시험 자료 저장",
+      "parents": [
+        "VER-TCS-009",
+        "VER-TCS-010",
+        "VER-TCS-011"
+      ],
+      "requirements": [
+        "TCS-009",
+        "TCS-010",
+        "TCS-011"
+      ],
+      "section": "4.3 TC-TCS-003 냉각 안정도 · 광학부 온도 · 배터리 온도 제어 시험",
+      "page": 7
+    },
+    {
+      "id": "TC-TCS-004",
+      "doc_id": "GKX-TP-TCS-001",
+      "type": "시험케이스",
+      "title": "추진계 온도 제어 · 온도 센서 · 열진공 시험 시험",
+      "statement": "시험 구성 확인 및 EGSE 연결; 전원 인가 및 초기 원격측정 확인; [VER-TCS-012] 추진계 온도 제어 측정; [VER-TCS-013] 온도 센서 측정; [VER-TCS-014] 열진공 시험 측정; 전원 차단 및 시험 자료 저장",
+      "parents": [
+        "VER-TCS-012",
+        "VER-TCS-013",
+        "VER-TCS-014"
+      ],
+      "requirements": [
+        "TCS-012",
+        "TCS-013",
+        "TCS-014"
+      ],
+      "section": "4.4 TC-TCS-004 추진계 온도 제어 · 온도 센서 · 열진공 시험 시험",
+      "page": 7
+    },
+    {
+      "id": "TC-TCS-005",
+      "doc_id": "GKX-TP-TCS-001",
+      "type": "시험케이스",
+      "title": "열 모델 상관 · 안전모드 생존 온도 · 열제어계 전력 시험",
+      "statement": "시험 구성 확인 및 EGSE 연결; 전원 인가 및 초기 원격측정 확인; [VER-TCS-015] 열 모델 상관 측정; [VER-TCS-017] 안전모드 생존 온도 측정; [VER-TCS-020] 열제어계 전력 측정; 전원 차단 및 시험 자료 저장",
+      "parents": [
+        "VER-TCS-015",
+        "VER-TCS-017",
+        "VER-TCS-020"
+      ],
+      "requirements": [
+        "TCS-015",
+        "TCS-017",
+        "TCS-020"
+      ],
+      "section": "4.5 TC-TCS-005 열 모델 상관 · 안전모드 생존 온도 · 열제어계 전력 시험",
+      "page": 8
+    },
+    {
+      "id": "TC-TCS-006",
+      "doc_id": "GKX-TP-TCS-001",
+      "type": "시험케이스",
+      "title": "전원 공급 인터페이스 · 돌입 전류 · 데이터 버스 주소 시험",
+      "statement": "시험 구성 확인 및 EGSE 연결; 전원 인가 및 초기 원격측정 확인; [VER-TCS-023] 전원 공급 인터페이스 측정; [VER-TCS-024] 돌입 전류 측정; [VER-TCS-026] 데이터 버스 주소 측정; 전원 차단 및 시험 자료 저장",
+      "parents": [
+        "VER-TCS-023",
+        "VER-TCS-024",
+        "VER-TCS-026"
+      ],
+      "requirements": [
+        "ICD-TCS-003",
+        "ICD-TCS-004",
+        "ICD-TCS-006"
+      ],
+      "section": "4.6 TC-TCS-006 전원 공급 인터페이스 · 돌입 전류 · 데이터 버스 주소 시험",
+      "page": 8
+    },
+    {
+      "id": "TC-TCS-007",
+      "doc_id": "GKX-TP-TCS-001",
+      "type": "시험케이스",
+      "title": "원격측정 패킷 · 명령 인터페이스 · 시각 동기 시험",
+      "statement": "시험 구성 확인 및 EGSE 연결; 전원 인가 및 초기 원격측정 확인; [VER-TCS-027] 원격측정 패킷 측정; [VER-TCS-028] 명령 인터페이스 측정; [VER-TCS-029] 시각 동기 측정; 전원 차단 및 시험 자료 저장",
+      "parents": [
+        "VER-TCS-027",
+        "VER-TCS-028",
+        "VER-TCS-029"
+      ],
+      "requirements": [
+        "ICD-TCS-007",
+        "ICD-TCS-008",
+        "ICD-TCS-009"
+      ],
+      "section": "4.7 TC-TCS-007 원격측정 패킷 · 명령 인터페이스 · 시각 동기 시험",
+      "page": 9
+    },
+    {
+      "id": "TC-TCS-008",
+      "doc_id": "GKX-TP-TCS-001",
+      "type": "시험케이스",
+      "title": "열 인터페이스 · 접지 및 본딩 · EMC 방출 한계 시험",
+      "statement": "시험 구성 확인 및 EGSE 연결; 전원 인가 및 초기 원격측정 확인; [VER-TCS-030] 열 인터페이스 측정; [VER-TCS-031] 접지 및 본딩 측정; [VER-TCS-032] EMC 방출 한계 측정; 전원 차단 및 시험 자료 저장",
+      "parents": [
+        "VER-TCS-030",
+        "VER-TCS-031",
+        "VER-TCS-032"
+      ],
+      "requirements": [
+        "ICD-TCS-010",
+        "ICD-TCS-011",
+        "ICD-TCS-012"
+      ],
+      "section": "4.8 TC-TCS-008 열 인터페이스 · 접지 및 본딩 · EMC 방출 한계 시험",
+      "page": 10
+    }
+  ]
+}

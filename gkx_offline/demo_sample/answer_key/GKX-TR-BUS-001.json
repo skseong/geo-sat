@@ -1,0 +1,517 @@
+{
+  "document": {
+    "doc_no": "GKX-TR-BUS-001",
+    "title": "위성체 시험결과서",
+    "rev": "-",
+    "date": "2026-10-16",
+    "pages": 13,
+    "file": "08_TR/GKX-TR-BUS-001.pdf",
+    "item_count": 15
+  },
+  "items": [
+    {
+      "id": "TR-BUS-001",
+      "doc_id": "GKX-TR-BUS-001",
+      "type": "시험결과",
+      "title": "위치유지 정밀도 · 무게중심 · 고유진동수 시험",
+      "statement": "합격",
+      "parents": [
+        "TC-BUS-001"
+      ],
+      "test_date": "2026-09-08",
+      "verdict": "합격",
+      "measurements": [
+        {
+          "ver": "VER-BUS-001",
+          "requirement": "SYS-001",
+          "measured": "0.048 ° (요구 0.05 ° 이내)",
+          "verdict": "합격"
+        },
+        {
+          "ver": "VER-BUS-005",
+          "requirement": "SYS-005",
+          "measured": "1.68 m (요구 1.8 m 이하)",
+          "verdict": "합격"
+        },
+        {
+          "ver": "VER-BUS-006",
+          "requirement": "SYS-006",
+          "measured": "32.5 Hz (요구 30 Hz 이상)",
+          "verdict": "합격"
+        }
+      ],
+      "section": "4.1 TR-BUS-001 (TC-BUS-001)",
+      "page": 6
+    },
+    {
+      "id": "TR-BUS-002",
+      "doc_id": "GKX-TR-BUS-001",
+      "type": "시험결과",
+      "title": "발사 환경 · EOL 가용 전력 · 식 기간 운용 시험",
+      "statement": "합격",
+      "parents": [
+        "TC-BUS-002"
+      ],
+      "test_date": "2026-09-15",
+      "verdict": "합격",
+      "measurements": [
+        {
+          "ver": "VER-BUS-007",
+          "requirement": "SYS-007",
+          "measured": "요구 충족 확인",
+          "verdict": "합격"
+        },
+        {
+          "ver": "VER-BUS-008",
+          "requirement": "SYS-008",
+          "measured": "5.31 kW (요구 5.0 kW 이상)",
+          "verdict": "합격"
+        },
+        {
+          "ver": "VER-BUS-009",
+          "requirement": "SYS-009",
+          "measured": "요구 충족 확인",
+          "verdict": "합격"
+        }
+      ],
+      "section": "4.2 TR-BUS-002 (TC-BUS-002)",
+      "page": 6
+    },
+    {
+      "id": "TR-BUS-003",
+      "doc_id": "GKX-TR-BUS-001",
+      "type": "시험결과",
+      "title": "지향 정확도 · 지향 안정도 · 자세 결정 정확도 시험",
+      "statement": "합격",
+      "parents": [
+        "TC-BUS-003"
+      ],
+      "test_date": "2026-09-22",
+      "verdict": "합격",
+      "measurements": [
+        {
+          "ver": "VER-BUS-010",
+          "requirement": "SYS-010",
+          "measured": "0.029 ° (요구 0.03 ° 이내)",
+          "verdict": "합격"
+        },
+        {
+          "ver": "VER-BUS-011",
+          "requirement": "SYS-011",
+          "measured": "8.9 µrad (요구 10 µrad 이하)",
+          "verdict": "합격"
+        },
+        {
+          "ver": "VER-BUS-012",
+          "requirement": "SYS-012",
+          "measured": "4.5 arcsec (요구 5 arcsec 이하)",
+          "verdict": "합격"
+        }
+      ],
+      "section": "4.3 TR-BUS-003 (TC-BUS-003)",
+      "page": 7
+    },
+    {
+      "id": "TR-BUS-004",
+      "doc_id": "GKX-TR-BUS-001",
+      "type": "시험결과",
+      "title": "장비 열환경 · 적외 검출기 냉각 · TT&C 주파수 시험",
+      "statement": "합격",
+      "parents": [
+        "TC-BUS-004"
+      ],
+      "test_date": "2026-09-01",
+      "verdict": "합격",
+      "measurements": [
+        {
+          "ver": "VER-BUS-015",
+          "requirement": "SYS-015",
+          "measured": "요구 충족 확인",
+          "verdict": "합격"
+        },
+        {
+          "ver": "VER-BUS-016",
+          "requirement": "SYS-016",
+          "measured": "요구 충족 확인",
+          "verdict": "합격"
+        },
+        {
+          "ver": "VER-BUS-017",
+          "requirement": "SYS-017",
+          "measured": "요구 충족 확인",
+          "verdict": "합격"
+        }
+      ],
+      "section": "4.4 TR-BUS-004 (TC-BUS-004)",
+      "page": 7
+    },
+    {
+      "id": "TR-BUS-005",
+      "doc_id": "GKX-TR-BUS-001",
+      "type": "시험결과",
+      "title": "명령 링크 품질 · 원격측정 전송률 · 거리측정 정확도 시험",
+      "statement": "합격",
+      "parents": [
+        "TC-BUS-005"
+      ],
+      "test_date": "2026-10-08",
+      "verdict": "합격",
+      "measurements": [
+        {
+          "ver": "VER-BUS-018",
+          "requirement": "SYS-018",
+          "measured": "요구 충족 확인",
+          "verdict": "합격"
+        },
+        {
+          "ver": "VER-BUS-019",
+          "requirement": "SYS-019",
+          "measured": "요구 충족 확인",
+          "verdict": "합격"
+        },
+        {
+          "ver": "VER-BUS-020",
+          "requirement": "SYS-020",
+          "measured": "8.8 m (요구 10 m 이하)",
+          "verdict": "합격"
+        }
+      ],
+      "section": "4.5 TR-BUS-005 (TC-BUS-005)",
+      "page": 8
+    },
+    {
+      "id": "TR-BUS-006",
+      "doc_id": "GKX-TR-BUS-001",
+      "type": "시험결과",
+      "title": "명령 보안 적용 · 관측자료 다운링크 · 관측 운용 주기 시험",
+      "statement": "합격",
+      "parents": [
+        "TC-BUS-006"
+      ],
+      "test_date": "2026-10-15",
+      "verdict": "합격",
+      "measurements": [
+        {
+          "ver": "VER-BUS-021",
+          "requirement": "SYS-021",
+          "measured": "요구 충족 확인",
+          "verdict": "합격"
+        },
+        {
+          "ver": "VER-BUS-022",
+          "requirement": "SYS-022",
+          "measured": "125 Mbps (요구 120 Mbps 이상)",
+          "verdict": "합격"
+        },
+        {
+          "ver": "VER-BUS-023",
+          "requirement": "SYS-023",
+          "measured": "요구 충족 확인",
+          "verdict": "합격"
+        }
+      ],
+      "section": "4.6 TR-BUS-006 (TC-BUS-006)",
+      "page": 8
+    },
+    {
+      "id": "TR-BUS-007",
+      "doc_id": "GKX-TR-BUS-001",
+      "type": "시험결과",
+      "title": "관측 채널 구성 · 채널별 공간해상도 · 복사보정 정확도 시험",
+      "statement": "합격",
+      "parents": [
+        "TC-BUS-007"
+      ],
+      "test_date": "2026-10-22",
+      "verdict": "합격",
+      "measurements": [
+        {
+          "ver": "VER-BUS-024",
+          "requirement": "SYS-024",
+          "measured": "요구 충족 확인",
+          "verdict": "합격"
+        },
+        {
+          "ver": "VER-BUS-025",
+          "requirement": "SYS-025",
+          "measured": "1.9 km (요구 2 km 이하)",
+          "verdict": "합격"
+        },
+        {
+          "ver": "VER-BUS-026",
+          "requirement": "SYS-026",
+          "measured": "0.18 K (요구 0.2 K 이하)",
+          "verdict": "합격"
+        }
+      ],
+      "section": "4.7 TR-BUS-007 (TC-BUS-007)",
+      "page": 9
+    },
+    {
+      "id": "TR-BUS-008",
+      "doc_id": "GKX-TR-BUS-001",
+      "type": "시험결과",
+      "title": "통신 커버리지 · 통신 채널 구성 · 안전모드 시험",
+      "statement": "합격",
+      "parents": [
+        "TC-BUS-008"
+      ],
+      "test_date": "2026-10-01",
+      "verdict": "합격",
+      "measurements": [
+        {
+          "ver": "VER-BUS-027",
+          "requirement": "SYS-027",
+          "measured": "60 dBW (요구 58 dBW 이상)",
+          "verdict": "합격"
+        },
+        {
+          "ver": "VER-BUS-028",
+          "requirement": "SYS-028",
+          "measured": "요구 충족 확인",
+          "verdict": "합격"
+        },
+        {
+          "ver": "VER-BUS-030",
+          "requirement": "SYS-030",
+          "measured": "요구 충족 확인",
+          "verdict": "합격"
+        }
+      ],
+      "section": "4.8 TR-BUS-008 (TC-BUS-008)",
+      "page": 9
+    },
+    {
+      "id": "TR-BUS-009",
+      "doc_id": "GKX-TR-BUS-001",
+      "type": "시험결과",
+      "title": "FDIR · 시각 동기 · 탑재 처리 지연 시험",
+      "statement": "합격",
+      "parents": [
+        "TC-BUS-009"
+      ],
+      "test_date": "2026-11-08",
+      "verdict": "합격",
+      "measurements": [
+        {
+          "ver": "VER-BUS-032",
+          "requirement": "SYS-032",
+          "measured": "요구 충족 확인",
+          "verdict": "합격"
+        },
+        {
+          "ver": "VER-BUS-033",
+          "requirement": "SYS-033",
+          "measured": "0.9 ms (요구 1 ms 이내)",
+          "verdict": "합격"
+        },
+        {
+          "ver": "VER-BUS-034",
+          "requirement": "SYS-034",
+          "measured": "26.9 초 (요구 30 초 이하)",
+          "verdict": "합격"
+        }
+      ],
+      "section": "4.9 TR-BUS-009 (TC-BUS-009)",
+      "page": 10
+    },
+    {
+      "id": "TR-BUS-010",
+      "doc_id": "GKX-TR-BUS-001",
+      "type": "시험결과",
+      "title": "총이온화선량 · 단일사건효과 · 전자기 적합성 시험",
+      "statement": "합격",
+      "parents": [
+        "TC-BUS-010"
+      ],
+      "test_date": "2026-11-15",
+      "verdict": "합격",
+      "measurements": [
+        {
+          "ver": "VER-BUS-035",
+          "requirement": "SYS-035",
+          "measured": "요구 충족 확인",
+          "verdict": "합격"
+        },
+        {
+          "ver": "VER-BUS-036",
+          "requirement": "SYS-036",
+          "measured": "요구 충족 확인",
+          "verdict": "합격"
+        },
+        {
+          "ver": "VER-BUS-037",
+          "requirement": "SYS-037",
+          "measured": "요구 충족 확인",
+          "verdict": "합격"
+        }
+      ],
+      "section": "4.10 TR-BUS-010 (TC-BUS-010)",
+      "page": 10
+    },
+    {
+      "id": "TR-BUS-011",
+      "doc_id": "GKX-TR-BUS-001",
+      "type": "시험결과",
+      "title": "구조 고유진동수 · 준정적 하중 · 탑재체 정렬 시험",
+      "statement": "합격",
+      "parents": [
+        "TC-BUS-011"
+      ],
+      "test_date": "2026-11-22",
+      "verdict": "합격",
+      "measurements": [
+        {
+          "ver": "VER-BUS-043",
+          "requirement": "BUS-003",
+          "measured": "12.6 Hz (요구 12 Hz 이상)",
+          "verdict": "합격"
+        },
+        {
+          "ver": "VER-BUS-044",
+          "requirement": "BUS-004",
+          "measured": "1.390 (요구 1.25 이상)",
+          "verdict": "합격"
+        },
+        {
+          "ver": "VER-BUS-045",
+          "requirement": "BUS-005",
+          "measured": "0.0047 ° (요구 0.005 ° 이하)",
+          "verdict": "합격"
+        }
+      ],
+      "section": "4.11 TR-BUS-011 (TC-BUS-011)",
+      "page": 11
+    },
+    {
+      "id": "TR-BUS-012",
+      "doc_id": "GKX-TR-BUS-001",
+      "type": "시험결과",
+      "title": "1차 전원 버스 · 접지 체계 · 데이터 버스 시험",
+      "statement": "합격",
+      "parents": [
+        "TC-BUS-012"
+      ],
+      "test_date": "2026-11-01",
+      "verdict": "합격",
+      "measurements": [
+        {
+          "ver": "VER-BUS-047",
+          "requirement": "BUS-007",
+          "measured": "요구 충족 확인",
+          "verdict": "합격"
+        },
+        {
+          "ver": "VER-BUS-049",
+          "requirement": "BUS-009",
+          "measured": "2.35 mΩ (요구 2.5 mΩ 이하)",
+          "verdict": "합격"
+        },
+        {
+          "ver": "VER-BUS-050",
+          "requirement": "BUS-010",
+          "measured": "요구 충족 확인",
+          "verdict": "합격"
+        }
+      ],
+      "section": "4.12 TR-BUS-012 (TC-BUS-012)",
+      "page": 11
+    },
+    {
+      "id": "TR-BUS-013",
+      "doc_id": "GKX-TR-BUS-001",
+      "type": "시험결과",
+      "title": "탑재컴퓨터 · 시각 배분 · 온보드 저장 시험",
+      "statement": "합격",
+      "parents": [
+        "TC-BUS-013"
+      ],
+      "test_date": "2026-12-08",
+      "verdict": "합격",
+      "measurements": [
+        {
+          "ver": "VER-BUS-051",
+          "requirement": "BUS-011",
+          "measured": "108 MIPS (요구 100 MIPS 이상)",
+          "verdict": "합격"
+        },
+        {
+          "ver": "VER-BUS-052",
+          "requirement": "BUS-012",
+          "measured": "요구 충족 확인",
+          "verdict": "합격"
+        },
+        {
+          "ver": "VER-BUS-053",
+          "requirement": "BUS-013",
+          "measured": "272 Gbit (요구 256 Gbit 이상)",
+          "verdict": "합격"
+        }
+      ],
+      "section": "4.13 TR-BUS-013 (TC-BUS-013)",
+      "page": 12
+    },
+    {
+      "id": "TR-BUS-014",
+      "doc_id": "GKX-TR-BUS-001",
+      "type": "시험결과",
+      "title": "열 인터페이스 기준 · FDIR 계층 · 안전모드 부하 관리 시험",
+      "statement": "합격",
+      "parents": [
+        "TC-BUS-014"
+      ],
+      "test_date": "2026-12-15",
+      "verdict": "합격",
+      "measurements": [
+        {
+          "ver": "VER-BUS-054",
+          "requirement": "BUS-014",
+          "measured": "요구 충족 확인",
+          "verdict": "합격"
+        },
+        {
+          "ver": "VER-BUS-055",
+          "requirement": "BUS-015",
+          "measured": "요구 충족 확인",
+          "verdict": "합격"
+        },
+        {
+          "ver": "VER-BUS-056",
+          "requirement": "BUS-016",
+          "measured": "요구 충족 확인",
+          "verdict": "합격"
+        }
+      ],
+      "section": "4.14 TR-BUS-014 (TC-BUS-014)",
+      "page": 12
+    },
+    {
+      "id": "TR-BUS-015",
+      "doc_id": "GKX-TR-BUS-001",
+      "type": "시험결과",
+      "title": "장비 EMC 한계 · 비행 소프트웨어 갱신 시험",
+      "statement": "합격",
+      "parents": [
+        "TC-BUS-015"
+      ],
+      "test_date": "2026-12-22",
+      "verdict": "합격",
+      "measurements": [
+        {
+          "ver": "VER-BUS-057",
+          "requirement": "BUS-017",
+          "measured": "요구 충족 확인",
+          "verdict": "합격"
+        },
+        {
+          "ver": "VER-BUS-059",
+          "requirement": "BUS-019",
+          "measured": "요구 충족 확인",
+          "verdict": "합격"
+        }
+      ],
+      "section": "4.15 TR-BUS-015 (TC-BUS-015)",
+      "page": 13
+    }
+  ]
+}

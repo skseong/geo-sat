@@ -14,7 +14,9 @@ import app
 from pdf_extract import extract
 
 
-SAMPLE = Path(__file__).resolve().parents[2] / "GEO-KSAT-X"
+SAMPLE = Path(__file__).resolve().parents[1] / "demo_sample"
+if not SAMPLE.is_dir():
+    SAMPLE = Path(__file__).resolve().parents[2] / "GEO-KSAT-X"
 
 
 class OfflineWorkflowTest(unittest.TestCase):
@@ -103,15 +105,10 @@ class OfflineWorkflowTest(unittest.TestCase):
         cautious = app.ollama_review(self.db, doc, item, "qwen3.5:9b-mlx", fake_opener)
         self.assertEqual(cautious["opinion"]["status"], "insufficient_evidence")
 
-    def test_question_uses_only_saved_evidence(self):
-        question = "MRD-001 요구사항은?"
-        before = app.ollama_answer(self.db, question, "qwen3.5:9b-mlx")
-        self.assertEqual(before["status"], "insufficient_evidence")
-        self.assertEqual(before["evidence"], [])
-        row = app.get_candidate(self.db, "GKX-MRD-001", "MRD-001")
-        self.db.execute("UPDATE candidates SET selected=1 WHERE candidate_id=?", (row["candidate_id"],))
-        self.db.commit()
-        app.save_selected(self.db, "GKX-MRD-001")
+    def test_question_searches_all_registered_documents_without_name(self):
+        question = "궤도 위치 요구값은?"
+        evidence = app.question_evidence(self.db, question)
+        self.assertTrue(any(x["item_id"] == "MRD-001" and x["source_state"] == "후보" for x in evidence))
         def fake_opener(request, timeout):
             self.assertIs(json.loads(request.data)["think"], False)
             answer = {"answer": "궤도 위치에 대한 요구사항입니다.", "status": "answered",
@@ -121,6 +118,7 @@ class OfflineWorkflowTest(unittest.TestCase):
         result = app.ollama_answer(self.db, question, "qwen3.5:9b-mlx", fake_opener)
         self.assertEqual(result["status"], "answered")
         self.assertEqual(result["citations"][0]["item_id"], "MRD-001")
+        self.assertTrue(any(x["document_id"] == "GKX-MRD-001" for x in result["evidence"]))
 
     def test_pdf_extraction_matches_all_sample_ids_and_pages(self):
         for path in sorted((SAMPLE / "answer_key").glob("GKX-*.json")):

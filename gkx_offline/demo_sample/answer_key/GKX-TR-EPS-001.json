@@ -1,0 +1,285 @@
+{
+  "document": {
+    "doc_no": "GKX-TR-EPS-001",
+    "title": "전력계 시험결과서",
+    "rev": "-",
+    "date": "2026-10-16",
+    "pages": 9,
+    "file": "08_TR/GKX-TR-EPS-001.pdf",
+    "item_count": 8
+  },
+  "items": [
+    {
+      "id": "TR-EPS-001",
+      "doc_id": "GKX-TR-EPS-001",
+      "type": "시험결과",
+      "title": "태양전지판 EOL 출력 · 태양전지 셀 · 전개 신뢰도 시험",
+      "statement": "합격",
+      "parents": [
+        "TC-EPS-001"
+      ],
+      "test_date": "2026-09-08",
+      "verdict": "합격",
+      "measurements": [
+        {
+          "ver": "VER-EPS-001",
+          "requirement": "EPS-001",
+          "measured": "5.89 kW (요구 5.4 kW 이상)",
+          "verdict": "합격"
+        },
+        {
+          "ver": "VER-EPS-002",
+          "requirement": "EPS-002",
+          "measured": "33.0 % (요구 29.5 % 이상)",
+          "verdict": "합격"
+        },
+        {
+          "ver": "VER-EPS-004",
+          "requirement": "EPS-004",
+          "measured": "0.99974 (요구 0.9995 이상)",
+          "verdict": "합격"
+        }
+      ],
+      "section": "4.1 TR-EPS-001 (TC-EPS-001)",
+      "page": 6
+    },
+    {
+      "id": "TR-EPS-002",
+      "doc_id": "GKX-TR-EPS-001",
+      "type": "시험결과",
+      "title": "SADA 추적 정확도 · 배터리 용량 · 셀 전압 균형 시험",
+      "statement": "합격",
+      "parents": [
+        "TC-EPS-002"
+      ],
+      "test_date": "2026-09-15",
+      "verdict": "합격",
+      "measurements": [
+        {
+          "ver": "VER-EPS-005",
+          "requirement": "EPS-005",
+          "measured": "1.0 ° (요구 1 ° 이내)",
+          "verdict": "합격"
+        },
+        {
+          "ver": "VER-EPS-006",
+          "requirement": "EPS-006",
+          "measured": "331 Ah (요구 300 Ah 이상)",
+          "verdict": "합격"
+        },
+        {
+          "ver": "VER-EPS-008",
+          "requirement": "EPS-008",
+          "measured": "19.3 mV (요구 20 mV 이하)",
+          "verdict": "합격"
+        }
+      ],
+      "section": "4.2 TR-EPS-002 (TC-EPS-002)",
+      "page": 6
+    },
+    {
+      "id": "TR-EPS-003",
+      "doc_id": "GKX-TR-EPS-001",
+      "type": "시험결과",
+      "title": "버스 전압 조정 · 버스 리플 · PCU 효율 시험",
+      "statement": "합격",
+      "parents": [
+        "TC-EPS-003"
+      ],
+      "test_date": "2026-09-22",
+      "verdict": "합격",
+      "measurements": [
+        {
+          "ver": "VER-EPS-009",
+          "requirement": "EPS-009",
+          "measured": "요구 충족 확인",
+          "verdict": "합격"
+        },
+        {
+          "ver": "VER-EPS-010",
+          "requirement": "EPS-010",
+          "measured": "474 mVpp (요구 500 mVpp 이하)",
+          "verdict": "합격"
+        },
+        {
+          "ver": "VER-EPS-011",
+          "requirement": "EPS-011",
+          "measured": "99.0 % (요구 94 % 이상)",
+          "verdict": "합격"
+        }
+      ],
+      "section": "4.3 TR-EPS-003 (TC-EPS-003)",
+      "page": 7
+    },
+    {
+      "id": "TR-EPS-004",
+      "doc_id": "GKX-TR-EPS-001",
+      "type": "시험결과",
+      "title": "부하 보호 · 저전압 부하 차단 · 전력계 원격측정 시험",
+      "statement": "합격",
+      "parents": [
+        "TC-EPS-004"
+      ],
+      "test_date": "2026-09-01",
+      "verdict": "합격",
+      "measurements": [
+        {
+          "ver": "VER-EPS-012",
+          "requirement": "EPS-012",
+          "measured": "요구 충족 확인",
+          "verdict": "합격"
+        },
+        {
+          "ver": "VER-EPS-013",
+          "requirement": "EPS-013",
+          "measured": "요구 충족 확인",
+          "verdict": "합격"
+        },
+        {
+          "ver": "VER-EPS-014",
+          "requirement": "EPS-014",
+          "measured": "132 개 (요구 120 개 이상)",
+          "verdict": "합격"
+        }
+      ],
+      "section": "4.4 TR-EPS-004 (TC-EPS-004)",
+      "page": 7
+    },
+    {
+      "id": "TR-EPS-005",
+      "doc_id": "GKX-TR-EPS-001",
+      "type": "시험결과",
+      "title": "배터리 운용 온도 · 화공품 점화 안전 · 전력 전자부품 방사선 시험",
+      "statement": "합격",
+      "parents": [
+        "TC-EPS-005"
+      ],
+      "test_date": "2026-10-08",
+      "verdict": "합격",
+      "measurements": [
+        {
+          "ver": "VER-EPS-016",
+          "requirement": "EPS-016",
+          "measured": "요구 충족 확인",
+          "verdict": "합격"
+        },
+        {
+          "ver": "VER-EPS-018",
+          "requirement": "EPS-018",
+          "measured": "요구 충족 확인",
+          "verdict": "합격"
+        },
+        {
+          "ver": "VER-EPS-020",
+          "requirement": "EPS-020",
+          "measured": "요구 충족 확인",
+          "verdict": "합격"
+        }
+      ],
+      "section": "4.5 TR-EPS-005 (TC-EPS-005)",
+      "page": 8
+    },
+    {
+      "id": "TR-EPS-006",
+      "doc_id": "GKX-TR-EPS-001",
+      "type": "시험결과",
+      "title": "전력 공급 인터페이스 · 돌입 전류 · 데이터 버스 주소 시험",
+      "statement": "합격",
+      "parents": [
+        "TC-EPS-006"
+      ],
+      "test_date": "2026-10-15",
+      "verdict": "합격",
+      "measurements": [
+        {
+          "ver": "VER-EPS-023",
+          "requirement": "ICD-EPS-003",
+          "measured": "요구 충족 확인",
+          "verdict": "합격"
+        },
+        {
+          "ver": "VER-EPS-024",
+          "requirement": "ICD-EPS-004",
+          "measured": "4.7 ms (요구 5 ms 이내)",
+          "verdict": "합격"
+        },
+        {
+          "ver": "VER-EPS-026",
+          "requirement": "ICD-EPS-006",
+          "measured": "요구 충족 확인",
+          "verdict": "합격"
+        }
+      ],
+      "section": "4.6 TR-EPS-006 (TC-EPS-006)",
+      "page": 8
+    },
+    {
+      "id": "TR-EPS-007",
+      "doc_id": "GKX-TR-EPS-001",
+      "type": "시험결과",
+      "title": "원격측정 패킷 · 명령 인터페이스 · 시각 동기 시험",
+      "statement": "합격",
+      "parents": [
+        "TC-EPS-007"
+      ],
+      "test_date": "2026-10-22",
+      "verdict": "합격",
+      "measurements": [
+        {
+          "ver": "VER-EPS-027",
+          "requirement": "ICD-EPS-007",
+          "measured": "요구 충족 확인",
+          "verdict": "합격"
+        },
+        {
+          "ver": "VER-EPS-028",
+          "requirement": "ICD-EPS-008",
+          "measured": "194 종 (요구 180 종 이상)",
+          "verdict": "합격"
+        },
+        {
+          "ver": "VER-EPS-029",
+          "requirement": "ICD-EPS-009",
+          "measured": "96 µs (요구 100 µs 이내)",
+          "verdict": "합격"
+        }
+      ],
+      "section": "4.7 TR-EPS-007 (TC-EPS-007)",
+      "page": 9
+    },
+    {
+      "id": "TR-EPS-008",
+      "doc_id": "GKX-TR-EPS-001",
+      "type": "시험결과",
+      "title": "열 인터페이스 · 접지 및 본딩 · EMC 방출 한계 시험",
+      "statement": "합격",
+      "parents": [
+        "TC-EPS-008"
+      ],
+      "test_date": "2026-10-01",
+      "verdict": "합격",
+      "measurements": [
+        {
+          "ver": "VER-EPS-030",
+          "requirement": "ICD-EPS-010",
+          "measured": "요구 충족 확인",
+          "verdict": "합격"
+        },
+        {
+          "ver": "VER-EPS-031",
+          "requirement": "ICD-EPS-011",
+          "measured": "2.21 mΩ (요구 2.5 mΩ 이하)",
+          "verdict": "합격"
+        },
+        {
+          "ver": "VER-EPS-032",
+          "requirement": "ICD-EPS-012",
+          "measured": "요구 충족 확인",
+          "verdict": "합격"
+        }
+      ],
+      "section": "4.8 TR-EPS-008 (TC-EPS-008)",
+      "page": 9
+    }
+  ]
+}

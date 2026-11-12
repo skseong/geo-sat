@@ -1,0 +1,245 @@
+{
+  "document": {
+    "doc_no": "GKX-TR-PROP-001",
+    "title": "추진계 시험결과서",
+    "rev": "-",
+    "date": "2026-10-16",
+    "pages": 9,
+    "file": "08_TR/GKX-TR-PROP-001.pdf",
+    "item_count": 7
+  },
+  "items": [
+    {
+      "id": "TR-PROP-001",
+      "doc_id": "GKX-TR-PROP-001",
+      "type": "시험결과",
+      "title": "아포지 엔진 성능 · 자세제어 추력기 · 최소 임펄스 비트 시험",
+      "statement": "합격",
+      "parents": [
+        "TC-PROP-001"
+      ],
+      "test_date": "2026-09-08",
+      "verdict": "합격",
+      "measurements": [
+        {
+          "ver": "VER-PROP-003",
+          "requirement": "PROP-003",
+          "measured": "340 s (요구 318 s 이상)",
+          "verdict": "합격"
+        },
+        {
+          "ver": "VER-PROP-004",
+          "requirement": "PROP-004",
+          "measured": "요구 충족 확인",
+          "verdict": "합격"
+        },
+        {
+          "ver": "VER-PROP-005",
+          "requirement": "PROP-005",
+          "measured": "0.018 Ns (요구 0.02 Ns 이하)",
+          "verdict": "합격"
+        }
+      ],
+      "section": "4.1 TR-PROP-001 (TC-PROP-001)",
+      "page": 6
+    },
+    {
+      "id": "TR-PROP-002",
+      "doc_id": "GKX-TR-PROP-001",
+      "type": "시험결과",
+      "title": "추진제 탱크 · 가압제 탱크 · 압력용기 검증 압력 시험",
+      "statement": "합격",
+      "parents": [
+        "TC-PROP-002"
+      ],
+      "test_date": "2026-09-15",
+      "verdict": "합격",
+      "measurements": [
+        {
+          "ver": "VER-PROP-006",
+          "requirement": "PROP-006",
+          "measured": "요구 충족 확인",
+          "verdict": "합격"
+        },
+        {
+          "ver": "VER-PROP-007",
+          "requirement": "PROP-007",
+          "measured": "요구 충족 확인",
+          "verdict": "합격"
+        },
+        {
+          "ver": "VER-PROP-008",
+          "requirement": "PROP-008",
+          "measured": "요구 충족 확인",
+          "verdict": "합격"
+        }
+      ],
+      "section": "4.2 TR-PROP-002 (TC-PROP-002)",
+      "page": 6
+    },
+    {
+      "id": "TR-PROP-003",
+      "doc_id": "GKX-TR-PROP-001",
+      "type": "시험결과",
+      "title": "외부 누설률 · 압력 조절 정확도 · 동결 방지 시험",
+      "statement": "합격",
+      "parents": [
+        "TC-PROP-003"
+      ],
+      "test_date": "2026-09-22",
+      "verdict": "합격",
+      "measurements": [
+        {
+          "ver": "VER-PROP-009",
+          "requirement": "PROP-009",
+          "measured": "요구 충족 확인",
+          "verdict": "합격"
+        },
+        {
+          "ver": "VER-PROP-010",
+          "requirement": "PROP-010",
+          "measured": "2.8 % (요구 3 % 이내)",
+          "verdict": "합격"
+        },
+        {
+          "ver": "VER-PROP-012",
+          "requirement": "PROP-012",
+          "measured": "10.4 °C (요구 10 °C 이상)",
+          "verdict": "합격"
+        }
+      ],
+      "section": "4.3 TR-PROP-003 (TC-PROP-003)",
+      "page": 7
+    },
+    {
+      "id": "TR-PROP-004",
+      "doc_id": "GKX-TR-PROP-001",
+      "type": "시험결과",
+      "title": "누출 차단 장벽 · 압력·온도 측정 · 전원 공급 인터페이스 시험",
+      "statement": "합격",
+      "parents": [
+        "TC-PROP-004"
+      ],
+      "test_date": "2026-09-01",
+      "verdict": "합격",
+      "measurements": [
+        {
+          "ver": "VER-PROP-013",
+          "requirement": "PROP-013",
+          "measured": "요구 충족 확인",
+          "verdict": "합격"
+        },
+        {
+          "ver": "VER-PROP-018",
+          "requirement": "PROP-018",
+          "measured": "1.0 % (요구 1 % 이내)",
+          "verdict": "합격"
+        },
+        {
+          "ver": "VER-PROP-023",
+          "requirement": "ICD-PROP-003",
+          "measured": "요구 충족 확인",
+          "verdict": "합격"
+        }
+      ],
+      "section": "4.4 TR-PROP-004 (TC-PROP-004)",
+      "page": 7
+    },
+    {
+      "id": "TR-PROP-005",
+      "doc_id": "GKX-TR-PROP-001",
+      "type": "시험결과",
+      "title": "돌입 전류 · 데이터 버스 주소 · 원격측정 패킷 시험",
+      "statement": "합격",
+      "parents": [
+        "TC-PROP-005"
+      ],
+      "test_date": "2026-10-08",
+      "verdict": "합격",
+      "measurements": [
+        {
+          "ver": "VER-PROP-024",
+          "requirement": "ICD-PROP-004",
+          "measured": "9.0 ms (요구 10 ms 이내)",
+          "verdict": "합격"
+        },
+        {
+          "ver": "VER-PROP-026",
+          "requirement": "ICD-PROP-006",
+          "measured": "요구 충족 확인",
+          "verdict": "합격"
+        },
+        {
+          "ver": "VER-PROP-027",
+          "requirement": "ICD-PROP-007",
+          "measured": "요구 충족 확인",
+          "verdict": "합격"
+        }
+      ],
+      "section": "4.5 TR-PROP-005 (TC-PROP-005)",
+      "page": 8
+    },
+    {
+      "id": "TR-PROP-006",
+      "doc_id": "GKX-TR-PROP-001",
+      "type": "시험결과",
+      "title": "명령 인터페이스 · 시각 동기 · 열 인터페이스 시험",
+      "statement": "합격",
+      "parents": [
+        "TC-PROP-006"
+      ],
+      "test_date": "2026-10-15",
+      "verdict": "합격",
+      "measurements": [
+        {
+          "ver": "VER-PROP-028",
+          "requirement": "ICD-PROP-008",
+          "measured": "154 종 (요구 150 종 이상)",
+          "verdict": "합격"
+        },
+        {
+          "ver": "VER-PROP-029",
+          "requirement": "ICD-PROP-009",
+          "measured": "88 µs (요구 100 µs 이내)",
+          "verdict": "합격"
+        },
+        {
+          "ver": "VER-PROP-030",
+          "requirement": "ICD-PROP-010",
+          "measured": "요구 충족 확인",
+          "verdict": "합격"
+        }
+      ],
+      "section": "4.6 TR-PROP-006 (TC-PROP-006)",
+      "page": 8
+    },
+    {
+      "id": "TR-PROP-007",
+      "doc_id": "GKX-TR-PROP-001",
+      "type": "시험결과",
+      "title": "접지 및 본딩 · EMC 방출 한계 시험",
+      "statement": "합격",
+      "parents": [
+        "TC-PROP-007"
+      ],
+      "test_date": "2026-10-22",
+      "verdict": "합격",
+      "measurements": [
+        {
+          "ver": "VER-PROP-031",
+          "requirement": "ICD-PROP-011",
+          "measured": "2.42 mΩ (요구 2.5 mΩ 이하)",
+          "verdict": "합격"
+        },
+        {
+          "ver": "VER-PROP-032",
+          "requirement": "ICD-PROP-012",
+          "measured": "요구 충족 확인",
+          "verdict": "합격"
+        }
+      ],
+      "section": "4.7 TR-PROP-007 (TC-PROP-007)",
+      "page": 9
+    }
+  ]
+}

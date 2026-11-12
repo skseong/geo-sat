@@ -1,0 +1,385 @@
+{
+  "document": {
+    "doc_no": "GKX-SSS-AOCS-001",
+    "title": "자세·궤도제어계 요구규격서",
+    "rev": "A",
+    "date": "2026-05-20",
+    "pages": 12,
+    "file": "03_SSS/GKX-SSS-AOCS-001.pdf",
+    "item_count": 20
+  },
+  "items": [
+    {
+      "id": "AOCS-001",
+      "doc_id": "GKX-SSS-AOCS-001",
+      "type": "요구사항",
+      "title": "자세 지향 정확도",
+      "statement": "자세·궤도제어계는 3σ 기준 롤·피치 0.008°, 요 0.025° 이내의 지향 정확도를 제공해야 한다.",
+      "rationale": "시스템 요구 대비 마진",
+      "parents": [
+        "SYS-010"
+      ],
+      "methods": [
+        "A",
+        "T"
+      ],
+      "priority": "필수",
+      "status": "확정",
+      "section": "3.1 기능·성능 요구사항",
+      "page": 5
+    },
+    {
+      "id": "AOCS-002",
+      "doc_id": "GKX-SSS-AOCS-001",
+      "type": "요구사항",
+      "title": "자세 안정도",
+      "statement": "자세·궤도제어계의 관측 중 자세 안정도는 1초 구간에서 8 µrad 이하여야 한다.",
+      "rationale": "시스템 요구 대비 마진",
+      "parents": [
+        "SYS-011"
+      ],
+      "methods": [
+        "A",
+        "T"
+      ],
+      "priority": "필수",
+      "status": "확정",
+      "section": "3.1 기능·성능 요구사항",
+      "page": 5
+    },
+    {
+      "id": "AOCS-003",
+      "doc_id": "GKX-SSS-AOCS-001",
+      "type": "요구사항",
+      "title": "별추적기",
+      "statement": "자세·궤도제어계는 정확도 3 arcsec 이하의 별추적기 헤드 3개를 탑재해야 한다.",
+      "rationale": "자세 결정 정확도 확보",
+      "parents": [
+        "SYS-012"
+      ],
+      "methods": [
+        "T"
+      ],
+      "priority": "필수",
+      "status": "확정",
+      "section": "3.1 기능·성능 요구사항",
+      "page": 5
+    },
+    {
+      "id": "AOCS-004",
+      "doc_id": "GKX-SSS-AOCS-001",
+      "type": "요구사항",
+      "title": "관성기준장치",
+      "statement": "관성기준장치의 자이로 바이어스 안정도는 0.005°/h 이하여야 한다.",
+      "rationale": "별추적기 공백 구간 보완",
+      "parents": [
+        "SYS-012"
+      ],
+      "methods": [
+        "T"
+      ],
+      "priority": "필수",
+      "status": "확정",
+      "section": "3.1 기능·성능 요구사항",
+      "page": 6
+    },
+    {
+      "id": "AOCS-005",
+      "doc_id": "GKX-SSS-AOCS-001",
+      "type": "요구사항",
+      "title": "조대태양센서",
+      "statement": "자세·궤도제어계는 안전모드용으로 4π 시야를 갖는 조대태양센서를 탑재해야 한다.",
+      "rationale": "안전모드 태양 포착",
+      "parents": [
+        "SYS-030"
+      ],
+      "methods": [
+        "T",
+        "I"
+      ],
+      "priority": "필수",
+      "status": "확정",
+      "section": "3.1 기능·성능 요구사항",
+      "page": 6
+    },
+    {
+      "id": "AOCS-006",
+      "doc_id": "GKX-SSS-AOCS-001",
+      "type": "요구사항",
+      "title": "반작용휠",
+      "statement": "자세·궤도제어계는 각운동량 68 Nms 이상의 반작용휠 4개를 피라미드 배치로 탑재해야 한다.",
+      "rationale": "외란 토크 흡수 및 이중화",
+      "parents": [
+        "SYS-011"
+      ],
+      "methods": [
+        "T"
+      ],
+      "priority": "필수",
+      "status": "확정",
+      "section": "3.1 기능·성능 요구사항",
+      "page": 6
+    },
+    {
+      "id": "AOCS-007",
+      "doc_id": "GKX-SSS-AOCS-001",
+      "type": "요구사항",
+      "title": "휠 미소진동",
+      "statement": "반작용휠의 미소진동 가진력은 0.5 N 이하여야 한다.",
+      "rationale": "지향 안정도 영향 저감",
+      "parents": [
+        "SYS-011"
+      ],
+      "methods": [
+        "T"
+      ],
+      "priority": "필수",
+      "status": "TBR",
+      "section": "3.1 기능·성능 요구사항",
+      "page": 7
+    },
+    {
+      "id": "AOCS-008",
+      "doc_id": "GKX-SSS-AOCS-001",
+      "type": "요구사항",
+      "title": "모멘텀 덤핑",
+      "statement": "자세·궤도제어계는 추력기를 이용한 각운동량 덤핑을 수행해야 하며 덤핑 주기는 24시간 이상이어야 한다.",
+      "rationale": "관측 중단 최소화",
+      "parents": [
+        "SYS-011",
+        "SYS-013"
+      ],
+      "methods": [
+        "A",
+        "D"
+      ],
+      "priority": "필수",
+      "status": "확정",
+      "section": "3.1 기능·성능 요구사항",
+      "page": 7
+    },
+    {
+      "id": "AOCS-009",
+      "doc_id": "GKX-SSS-AOCS-001",
+      "type": "요구사항",
+      "title": "궤도결정 정확도",
+      "statement": "자세·궤도제어계는 거리측정 자료 기반 궤도결정 위치 정확도 1 km 이하를 지원해야 한다.",
+      "rationale": "위치유지 기동 계획",
+      "parents": [
+        "SYS-020"
+      ],
+      "methods": [
+        "A"
+      ],
+      "priority": "필수",
+      "status": "확정",
+      "section": "3.1 기능·성능 요구사항",
+      "page": 7
+    },
+    {
+      "id": "AOCS-010",
+      "doc_id": "GKX-SSS-AOCS-001",
+      "type": "요구사항",
+      "title": "위치유지 기동 주기",
+      "statement": "자세·궤도제어계는 남북 위치유지 기동을 주 1회, 동서 위치유지 기동을 주 2회 수행해야 한다.",
+      "rationale": "위치유지 정밀도 확보",
+      "parents": [
+        "SYS-001"
+      ],
+      "methods": [
+        "A",
+        "D"
+      ],
+      "priority": "필수",
+      "status": "확정",
+      "section": "3.1 기능·성능 요구사항",
+      "page": 8
+    },
+    {
+      "id": "AOCS-011",
+      "doc_id": "GKX-SSS-AOCS-001",
+      "type": "요구사항",
+      "title": "기동 중 지향",
+      "statement": "위치유지 기동 중 지향 오차는 0.05° 이하여야 한다.",
+      "rationale": "기동 중 관측 영향 최소화",
+      "parents": [
+        "SYS-010"
+      ],
+      "methods": [
+        "A",
+        "T"
+      ],
+      "priority": "필수",
+      "status": "확정",
+      "section": "3.1 기능·성능 요구사항",
+      "page": 8
+    },
+    {
+      "id": "AOCS-012",
+      "doc_id": "GKX-SSS-AOCS-001",
+      "type": "요구사항",
+      "title": "기동 후 정착",
+      "statement": "자세·궤도제어계는 기동 종료 후 30분 이내에 관측 지향 정밀도로 복귀해야 한다.",
+      "rationale": "관측 운용 주기 확보",
+      "parents": [
+        "SYS-023"
+      ],
+      "methods": [
+        "A",
+        "T"
+      ],
+      "priority": "필수",
+      "status": "확정",
+      "section": "3.1 기능·성능 요구사항",
+      "page": 8
+    },
+    {
+      "id": "AOCS-015",
+      "doc_id": "GKX-SSS-AOCS-001",
+      "type": "요구사항",
+      "title": "제어 주기",
+      "statement": "자세제어 루프는 10 Hz 이상의 주기로 실행되어야 한다.",
+      "rationale": "제어 대역폭 확보",
+      "parents": [
+        "SYS-011"
+      ],
+      "methods": [
+        "T",
+        "I"
+      ],
+      "priority": "필수",
+      "status": "확정",
+      "section": "3.1 기능·성능 요구사항",
+      "page": 9
+    },
+    {
+      "id": "AOCS-016",
+      "doc_id": "GKX-SSS-AOCS-001",
+      "type": "요구사항",
+      "title": "자세자료 제공",
+      "statement": "자세·궤도제어계는 영상 항법정합을 위해 자세 자료를 100 Hz로 탑재체에 제공해야 한다.",
+      "rationale": "영상 위치 보정",
+      "parents": [
+        "SYS-025"
+      ],
+      "methods": [
+        "T"
+      ],
+      "priority": "필수",
+      "status": "확정",
+      "section": "3.1 기능·성능 요구사항",
+      "page": 9
+    },
+    {
+      "id": "AOCS-017",
+      "doc_id": "GKX-SSS-AOCS-001",
+      "type": "요구사항",
+      "title": "아포지 기동 지향",
+      "statement": "아포지 엔진 기동 중 추력 방향 오차는 0.5° 이하여야 한다.",
+      "rationale": "궤도 전이 효율",
+      "parents": [
+        "SYS-014"
+      ],
+      "methods": [
+        "A",
+        "T"
+      ],
+      "priority": "필수",
+      "status": "확정",
+      "section": "3.1 기능·성능 요구사항",
+      "page": 9
+    },
+    {
+      "id": "AOCS-019",
+      "doc_id": "GKX-SSS-AOCS-001",
+      "type": "요구사항",
+      "title": "자세·궤도제어계 질량",
+      "statement": "자세·궤도제어계의 총 질량은 140 kg 이하여야 한다.",
+      "rationale": "질량 예산 할당",
+      "parents": [
+        "SYS-004"
+      ],
+      "methods": [
+        "I"
+      ],
+      "priority": "필수",
+      "status": "확정",
+      "section": "3.2 물리·자원 요구사항",
+      "page": 10
+    },
+    {
+      "id": "AOCS-020",
+      "doc_id": "GKX-SSS-AOCS-001",
+      "type": "요구사항",
+      "title": "자세·궤도제어계 전력",
+      "statement": "자세·궤도제어계의 정상 모드 소모 전력은 320 W 이하여야 한다.",
+      "rationale": "전력 예산 할당",
+      "parents": [
+        "SYS-008"
+      ],
+      "methods": [
+        "T"
+      ],
+      "priority": "필수",
+      "status": "확정",
+      "section": "3.2 물리·자원 요구사항",
+      "page": 10
+    },
+    {
+      "id": "AOCS-013",
+      "doc_id": "GKX-SSS-AOCS-001",
+      "type": "요구사항",
+      "title": "안전모드 안정화",
+      "statement": "자세·궤도제어계는 안전모드 진입 후 30분 이내에 태양지향 자세로 안정화되어야 한다.",
+      "rationale": "전력 확보",
+      "parents": [
+        "SYS-030"
+      ],
+      "methods": [
+        "A",
+        "T"
+      ],
+      "priority": "필수",
+      "status": "확정",
+      "section": "3.3 신뢰성·안전 요구사항",
+      "page": 10
+    },
+    {
+      "id": "AOCS-014",
+      "doc_id": "GKX-SSS-AOCS-001",
+      "type": "요구사항",
+      "title": "자율 위치·자세 유지",
+      "statement": "자세·궤도제어계는 72시간 동안 지상 개입 없이 위치와 자세를 유지해야 한다.",
+      "rationale": "자율 운용 할당",
+      "parents": [
+        "SYS-031"
+      ],
+      "methods": [
+        "A",
+        "D"
+      ],
+      "priority": "권장",
+      "status": "확정",
+      "section": "3.3 신뢰성·안전 요구사항",
+      "page": 11
+    },
+    {
+      "id": "AOCS-018",
+      "doc_id": "GKX-SSS-AOCS-001",
+      "type": "요구사항",
+      "title": "센서·구동기 FDIR",
+      "statement": "자세·궤도제어계는 센서 및 구동기 이상 시 자동으로 재구성해야 한다.",
+      "rationale": "단일고장 허용",
+      "parents": [
+        "SYS-032"
+      ],
+      "methods": [
+        "T"
+      ],
+      "priority": "필수",
+      "status": "확정",
+      "section": "3.3 신뢰성·안전 요구사항",
+      "page": 11
+    }
+  ]
+}

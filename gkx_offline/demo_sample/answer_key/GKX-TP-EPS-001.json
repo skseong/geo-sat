@@ -1,0 +1,165 @@
+{
+  "document": {
+    "doc_no": "GKX-TP-EPS-001",
+    "title": "전력계 시험절차서",
+    "rev": "-",
+    "date": "2026-08-25",
+    "pages": 10,
+    "file": "07_TP/GKX-TP-EPS-001.pdf",
+    "item_count": 8
+  },
+  "items": [
+    {
+      "id": "TC-EPS-001",
+      "doc_id": "GKX-TP-EPS-001",
+      "type": "시험케이스",
+      "title": "태양전지판 EOL 출력 · 태양전지 셀 · 전개 신뢰도 시험",
+      "statement": "시험 구성 확인 및 EGSE 연결; 전원 인가 및 초기 원격측정 확인; [VER-EPS-001] 태양전지판 EOL 출력 측정; [VER-EPS-002] 태양전지 셀 측정; [VER-EPS-004] 전개 신뢰도 측정; 전원 차단 및 시험 자료 저장",
+      "parents": [
+        "VER-EPS-001",
+        "VER-EPS-002",
+        "VER-EPS-004"
+      ],
+      "requirements": [
+        "EPS-001",
+        "EPS-002",
+        "EPS-004"
+      ],
+      "section": "4.1 TC-EPS-001 태양전지판 EOL 출력 · 태양전지 셀 · 전개 신뢰도 시험",
+      "page": 6
+    },
+    {
+      "id": "TC-EPS-002",
+      "doc_id": "GKX-TP-EPS-001",
+      "type": "시험케이스",
+      "title": "SADA 추적 정확도 · 배터리 용량 · 셀 전압 균형 시험",
+      "statement": "시험 구성 확인 및 EGSE 연결; 전원 인가 및 초기 원격측정 확인; [VER-EPS-005] SADA 추적 정확도 측정; [VER-EPS-006] 배터리 용량 측정; [VER-EPS-008] 셀 전압 균형 측정; 전원 차단 및 시험 자료 저장",
+      "parents": [
+        "VER-EPS-005",
+        "VER-EPS-006",
+        "VER-EPS-008"
+      ],
+      "requirements": [
+        "EPS-005",
+        "EPS-006",
+        "EPS-008"
+      ],
+      "section": "4.2 TC-EPS-002 SADA 추적 정확도 · 배터리 용량 · 셀 전압 균형 시험",
+      "page": 6
+    },
+    {
+      "id": "TC-EPS-003",
+      "doc_id": "GKX-TP-EPS-001",
+      "type": "시험케이스",
+      "title": "버스 전압 조정 · 버스 리플 · PCU 효율 시험",
+      "statement": "시험 구성 확인 및 EGSE 연결; 전원 인가 및 초기 원격측정 확인; [VER-EPS-009] 버스 전압 조정 측정; [VER-EPS-010] 버스 리플 측정; [VER-EPS-011] PCU 효율 측정; 전원 차단 및 시험 자료 저장",
+      "parents": [
+        "VER-EPS-009",
+        "VER-EPS-010",
+        "VER-EPS-011"
+      ],
+      "requirements": [
+        "EPS-009",
+        "EPS-010",
+        "EPS-011"
+      ],
+      "section": "4.3 TC-EPS-003 버스 전압 조정 · 버스 리플 · PCU 효율 시험",
+      "page": 7
+    },
+    {
+      "id": "TC-EPS-004",
+      "doc_id": "GKX-TP-EPS-001",
+      "type": "시험케이스",
+      "title": "부하 보호 · 저전압 부하 차단 · 전력계 원격측정 시험",
+      "statement": "시험 구성 확인 및 EGSE 연결; 전원 인가 및 초기 원격측정 확인; [VER-EPS-012] 부하 보호 측정; [VER-EPS-013] 저전압 부하 차단 측정; [VER-EPS-014] 전력계 원격측정 측정; 전원 차단 및 시험 자료 저장",
+      "parents": [
+        "VER-EPS-012",
+        "VER-EPS-013",
+        "VER-EPS-014"
+      ],
+      "requirements": [
+        "EPS-012",
+        "EPS-013",
+        "EPS-014"
+      ],
+      "section": "4.4 TC-EPS-004 부하 보호 · 저전압 부하 차단 · 전력계 원격측정 시험",
+      "page": 7
+    },
+    {
+      "id": "TC-EPS-005",
+      "doc_id": "GKX-TP-EPS-001",
+      "type": "시험케이스",
+      "title": "배터리 운용 온도 · 화공품 점화 안전 · 전력 전자부품 방사선 시험",
+      "statement": "시험 구성 확인 및 EGSE 연결; 전원 인가 및 초기 원격측정 확인; [VER-EPS-016] 배터리 운용 온도 측정; [VER-EPS-018] 화공품 점화 안전 측정; [VER-EPS-020] 전력 전자부품 방사선 측정; 전원 차단 및 시험 자료 저장",
+      "parents": [
+        "VER-EPS-016",
+        "VER-EPS-018",
+        "VER-EPS-020"
+      ],
+      "requirements": [
+        "EPS-016",
+        "EPS-018",
+        "EPS-020"
+      ],
+      "section": "4.5 TC-EPS-005 배터리 운용 온도 · 화공품 점화 안전 · 전력 전자부품 방사선 시험",
+      "page": 8
+    },
+    {
+      "id": "TC-EPS-006",
+      "doc_id": "GKX-TP-EPS-001",
+      "type": "시험케이스",
+      "title": "전력 공급 인터페이스 · 돌입 전류 · 데이터 버스 주소 시험",
+      "statement": "시험 구성 확인 및 EGSE 연결; 전원 인가 및 초기 원격측정 확인; [VER-EPS-023] 전력 공급 인터페이스 측정; [VER-EPS-024] 돌입 전류 측정; [VER-EPS-026] 데이터 버스 주소 측정; 전원 차단 및 시험 자료 저장",
+      "parents": [
+        "VER-EPS-023",
+        "VER-EPS-024",
+        "VER-EPS-026"
+      ],
+      "requirements": [
+        "ICD-EPS-003",
+        "ICD-EPS-004",
+        "ICD-EPS-006"
+      ],
+      "section": "4.6 TC-EPS-006 전력 공급 인터페이스 · 돌입 전류 · 데이터 버스 주소 시험",
+      "page": 8
+    },
+    {
+      "id": "TC-EPS-007",
+      "doc_id": "GKX-TP-EPS-001",
+      "type": "시험케이스",
+      "title": "원격측정 패킷 · 명령 인터페이스 · 시각 동기 시험",
+      "statement": "시험 구성 확인 및 EGSE 연결; 전원 인가 및 초기 원격측정 확인; [VER-EPS-027] 원격측정 패킷 측정; [VER-EPS-028] 명령 인터페이스 측정; [VER-EPS-029] 시각 동기 측정; 전원 차단 및 시험 자료 저장",
+      "parents": [
+        "VER-EPS-027",
+        "VER-EPS-028",
+        "VER-EPS-029"
+      ],
+      "requirements": [
+        "ICD-EPS-007",
+        "ICD-EPS-008",
+        "ICD-EPS-009"
+      ],
+      "section": "4.7 TC-EPS-007 원격측정 패킷 · 명령 인터페이스 · 시각 동기 시험",
+      "page": 9
+    },
+    {
+      "id": "TC-EPS-008",
+      "doc_id": "GKX-TP-EPS-001",
+      "type": "시험케이스",
+      "title": "열 인터페이스 · 접지 및 본딩 · EMC 방출 한계 시험",
+      "statement": "시험 구성 확인 및 EGSE 연결; 전원 인가 및 초기 원격측정 확인; [VER-EPS-030] 열 인터페이스 측정; [VER-EPS-031] 접지 및 본딩 측정; [VER-EPS-032] EMC 방출 한계 측정; 전원 차단 및 시험 자료 저장",
+      "parents": [
+        "VER-EPS-030",
+        "VER-EPS-031",
+        "VER-EPS-032"
+      ],
+      "requirements": [
+        "ICD-EPS-010",
+        "ICD-EPS-011",
+        "ICD-EPS-012"
+      ],
+      "section": "4.8 TC-EPS-008 열 인터페이스 · 접지 및 본딩 · EMC 방출 한계 시험",
+      "page": 10
+    }
+  ]
+}

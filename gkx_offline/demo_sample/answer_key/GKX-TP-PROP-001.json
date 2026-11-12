@@ -1,0 +1,144 @@
+{
+  "document": {
+    "doc_no": "GKX-TP-PROP-001",
+    "title": "추진계 시험절차서",
+    "rev": "-",
+    "date": "2026-08-25",
+    "pages": 9,
+    "file": "07_TP/GKX-TP-PROP-001.pdf",
+    "item_count": 7
+  },
+  "items": [
+    {
+      "id": "TC-PROP-001",
+      "doc_id": "GKX-TP-PROP-001",
+      "type": "시험케이스",
+      "title": "아포지 엔진 성능 · 자세제어 추력기 · 최소 임펄스 비트 시험",
+      "statement": "시험 구성 확인 및 EGSE 연결; 전원 인가 및 초기 원격측정 확인; [VER-PROP-003] 아포지 엔진 성능 측정; [VER-PROP-004] 자세제어 추력기 측정; [VER-PROP-005] 최소 임펄스 비트 측정; 전원 차단 및 시험 자료 저장",
+      "parents": [
+        "VER-PROP-003",
+        "VER-PROP-004",
+        "VER-PROP-005"
+      ],
+      "requirements": [
+        "PROP-003",
+        "PROP-004",
+        "PROP-005"
+      ],
+      "section": "4.1 TC-PROP-001 아포지 엔진 성능 · 자세제어 추력기 · 최소 임펄스 비트 시험",
+      "page": 6
+    },
+    {
+      "id": "TC-PROP-002",
+      "doc_id": "GKX-TP-PROP-001",
+      "type": "시험케이스",
+      "title": "추진제 탱크 · 가압제 탱크 · 압력용기 검증 압력 시험",
+      "statement": "시험 구성 확인 및 EGSE 연결; 전원 인가 및 초기 원격측정 확인; [VER-PROP-006] 추진제 탱크 측정; [VER-PROP-007] 가압제 탱크 측정; [VER-PROP-008] 압력용기 검증 압력 측정; 전원 차단 및 시험 자료 저장",
+      "parents": [
+        "VER-PROP-006",
+        "VER-PROP-007",
+        "VER-PROP-008"
+      ],
+      "requirements": [
+        "PROP-006",
+        "PROP-007",
+        "PROP-008"
+      ],
+      "section": "4.2 TC-PROP-002 추진제 탱크 · 가압제 탱크 · 압력용기 검증 압력 시험",
+      "page": 6
+    },
+    {
+      "id": "TC-PROP-003",
+      "doc_id": "GKX-TP-PROP-001",
+      "type": "시험케이스",
+      "title": "외부 누설률 · 압력 조절 정확도 · 동결 방지 시험",
+      "statement": "시험 구성 확인 및 EGSE 연결; 전원 인가 및 초기 원격측정 확인; [VER-PROP-009] 외부 누설률 측정; [VER-PROP-010] 압력 조절 정확도 측정; [VER-PROP-012] 동결 방지 측정; 전원 차단 및 시험 자료 저장",
+      "parents": [
+        "VER-PROP-009",
+        "VER-PROP-010",
+        "VER-PROP-012"
+      ],
+      "requirements": [
+        "PROP-009",
+        "PROP-010",
+        "PROP-012"
+      ],
+      "section": "4.3 TC-PROP-003 외부 누설률 · 압력 조절 정확도 · 동결 방지 시험",
+      "page": 7
+    },
+    {
+      "id": "TC-PROP-004",
+      "doc_id": "GKX-TP-PROP-001",
+      "type": "시험케이스",
+      "title": "누출 차단 장벽 · 압력·온도 측정 · 전원 공급 인터페이스 시험",
+      "statement": "시험 구성 확인 및 EGSE 연결; 전원 인가 및 초기 원격측정 확인; [VER-PROP-013] 누출 차단 장벽 측정; [VER-PROP-018] 압력·온도 측정 측정; [VER-PROP-023] 전원 공급 인터페이스 측정; 전원 차단 및 시험 자료 저장",
+      "parents": [
+        "VER-PROP-013",
+        "VER-PROP-018",
+        "VER-PROP-023"
+      ],
+      "requirements": [
+        "PROP-013",
+        "PROP-018",
+        "ICD-PROP-003"
+      ],
+      "section": "4.4 TC-PROP-004 누출 차단 장벽 · 압력·온도 측정 · 전원 공급 인터페이스 시험",
+      "page": 7
+    },
+    {
+      "id": "TC-PROP-005",
+      "doc_id": "GKX-TP-PROP-001",
+      "type": "시험케이스",
+      "title": "돌입 전류 · 데이터 버스 주소 · 원격측정 패킷 시험",
+      "statement": "시험 구성 확인 및 EGSE 연결; 전원 인가 및 초기 원격측정 확인; [VER-PROP-024] 돌입 전류 측정; [VER-PROP-026] 데이터 버스 주소 측정; [VER-PROP-027] 원격측정 패킷 측정; 전원 차단 및 시험 자료 저장",
+      "parents": [
+        "VER-PROP-024",
+        "VER-PROP-026",
+        "VER-PROP-027"
+      ],
+      "requirements": [
+        "ICD-PROP-004",
+        "ICD-PROP-006",
+        "ICD-PROP-007"
+      ],
+      "section": "4.5 TC-PROP-005 돌입 전류 · 데이터 버스 주소 · 원격측정 패킷 시험",
+      "page": 8
+    },
+    {
+      "id": "TC-PROP-006",
+      "doc_id": "GKX-TP-PROP-001",
+      "type": "시험케이스",
+      "title": "명령 인터페이스 · 시각 동기 · 열 인터페이스 시험",
+      "statement": "시험 구성 확인 및 EGSE 연결; 전원 인가 및 초기 원격측정 확인; [VER-PROP-028] 명령 인터페이스 측정; [VER-PROP-029] 시각 동기 측정; [VER-PROP-030] 열 인터페이스 측정; 전원 차단 및 시험 자료 저장",
+      "parents": [
+        "VER-PROP-028",
+        "VER-PROP-029",
+        "VER-PROP-030"
+      ],
+      "requirements": [
+        "ICD-PROP-008",
+        "ICD-PROP-009",
+        "ICD-PROP-010"
+      ],
+      "section": "4.6 TC-PROP-006 명령 인터페이스 · 시각 동기 · 열 인터페이스 시험",
+      "page": 8
+    },
+    {
+      "id": "TC-PROP-007",
+      "doc_id": "GKX-TP-PROP-001",
+      "type": "시험케이스",
+      "title": "접지 및 본딩 · EMC 방출 한계 시험",
+      "statement": "시험 구성 확인 및 EGSE 연결; 전원 인가 및 초기 원격측정 확인; [VER-PROP-031] 접지 및 본딩 측정; [VER-PROP-032] EMC 방출 한계 측정; 전원 차단 및 시험 자료 저장",
+      "parents": [
+        "VER-PROP-031",
+        "VER-PROP-032"
+      ],
+      "requirements": [
+        "ICD-PROP-011",
+        "ICD-PROP-012"
+      ],
+      "section": "4.7 TC-PROP-007 접지 및 본딩 · EMC 방출 한계 시험",
+      "page": 9
+    }
+  ]
+}

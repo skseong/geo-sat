@@ -1,0 +1,601 @@
+{
+  "document": {
+    "doc_no": "GKX-VP-TTC-001",
+    "title": "원격측정·추적·명령계 검증계획서",
+    "rev": "A",
+    "date": "2026-07-22",
+    "pages": 17,
+    "file": "05_VP/GKX-VP-TTC-001.pdf",
+    "item_count": 32
+  },
+  "items": [
+    {
+      "id": "VER-TTC-001",
+      "doc_id": "GKX-VP-TTC-001",
+      "type": "검증항목",
+      "title": "S 대역 주파수 검증",
+      "statement": "부체계 수준 시험에서 'S 대역 주파수' 항목을 계측 장비로 측정하여 요구값 충족 여부를 확인한다.",
+      "criteria": "원격측정·추적·명령계는 S 대역 상향 2025~2110 MHz, 하향 2200~2290 MHz 범위에서 운용되어야 하며 세부 채널은 할당 후 확정한다.",
+      "parents": [
+        "TTC-001"
+      ],
+      "methods": [
+        "T"
+      ],
+      "level": "부체계",
+      "test_case": "TC-TTC-001",
+      "section": "4.1 검증 항목 목록",
+      "page": 6
+    },
+    {
+      "id": "VER-TTC-002",
+      "doc_id": "GKX-VP-TTC-001",
+      "type": "검증항목",
+      "title": "TT&C 안테나 검증",
+      "statement": "부체계 수준 시험에서 'TT&C 안테나' 항목을 계측 장비로 측정하여 요구값 충족 여부를 확인한다. 해석 모델 및 계산을 통해 'TT&C 안테나' 요구 충족을 분석하고 해석 보고서로 확인한다.",
+      "criteria": "원격측정·추적·명령계는 전방향 커버리지를 위해 +Z, -Z 방향의 안테나 2개를 가져야 한다.",
+      "parents": [
+        "TTC-002"
+      ],
+      "methods": [
+        "T",
+        "A"
+      ],
+      "level": "부체계",
+      "test_case": "TC-TTC-001",
+      "section": "4.1 검증 항목 목록",
+      "page": 6
+    },
+    {
+      "id": "VER-TTC-003",
+      "doc_id": "GKX-VP-TTC-001",
+      "type": "검증항목",
+      "title": "트랜스폰더 이중화 검증",
+      "statement": "부체계 수준 시험에서 '트랜스폰더 이중화' 항목을 계측 장비로 측정하여 요구값 충족 여부를 확인한다. 설계 도면, 부품 목록 및 실물 검사를 통해 요구 반영 여부를 확인한다.",
+      "criteria": "원격측정·추적·명령계는 상시 수신이 가능한 트랜스폰더 2대를 탑재해야 한다.",
+      "parents": [
+        "TTC-003"
+      ],
+      "methods": [
+        "T",
+        "I"
+      ],
+      "level": "부체계",
+      "test_case": "TC-TTC-001",
+      "section": "4.1 검증 항목 목록",
+      "page": 7
+    },
+    {
+      "id": "VER-TTC-004",
+      "doc_id": "GKX-VP-TTC-001",
+      "type": "검증항목",
+      "title": "수신 감도 검증",
+      "statement": "부체계 수준 시험에서 '수신 감도' 항목을 계측 장비로 측정하여 요구값 충족 여부를 확인한다.",
+      "criteria": "트랜스폰더는 -120 dBm 입력에서 BER 1×10⁻⁶ 이하를 만족해야 한다.",
+      "parents": [
+        "TTC-004"
+      ],
+      "methods": [
+        "T"
+      ],
+      "level": "부체계",
+      "test_case": "TC-TTC-002",
+      "section": "4.1 검증 항목 목록",
+      "page": 7
+    },
+    {
+      "id": "VER-TTC-005",
+      "doc_id": "GKX-VP-TTC-001",
+      "type": "검증항목",
+      "title": "S 대역 EIRP 검증",
+      "statement": "부체계 수준 시험에서 'S 대역 EIRP' 항목을 계측 장비로 측정하여 요구값 충족 여부를 확인한다. 해석 모델 및 계산을 통해 'S 대역 EIRP' 요구 충족을 분석하고 해석 보고서로 확인한다.",
+      "criteria": "원격측정 하향 링크 EIRP는 13 dBW 이상이어야 한다.",
+      "parents": [
+        "TTC-005"
+      ],
+      "methods": [
+        "T",
+        "A"
+      ],
+      "level": "부체계",
+      "test_case": "TC-TTC-002",
+      "section": "4.1 검증 항목 목록",
+      "page": 7
+    },
+    {
+      "id": "VER-TTC-006",
+      "doc_id": "GKX-VP-TTC-001",
+      "type": "검증항목",
+      "title": "변조 방식 검증",
+      "statement": "부체계 수준 시험에서 '변조 방식' 항목을 계측 장비로 측정하여 요구값 충족 여부를 확인한다. 설계 도면, 부품 목록 및 실물 검사를 통해 요구 반영 여부를 확인한다.",
+      "criteria": "상향 및 하향 링크는 PCM/PSK/PM 변조 방식을 사용해야 한다.",
+      "parents": [
+        "TTC-006"
+      ],
+      "methods": [
+        "T",
+        "I"
+      ],
+      "level": "부체계",
+      "test_case": "TC-TTC-002",
+      "section": "4.1 검증 항목 목록",
+      "page": 8
+    },
+    {
+      "id": "VER-TTC-007",
+      "doc_id": "GKX-VP-TTC-001",
+      "type": "검증항목",
+      "title": "원격측정 전송률 선택 검증",
+      "statement": "부체계 수준 시험에서 '원격측정 전송률 선택' 항목을 계측 장비로 측정하여 요구값 충족 여부를 확인한다.",
+      "criteria": "원격측정·추적·명령계는 4 kbps와 1 kbps 원격측정 전송률을 명령으로 선택할 수 있어야 한다.",
+      "parents": [
+        "TTC-007"
+      ],
+      "methods": [
+        "T"
+      ],
+      "level": "부체계",
+      "test_case": "TC-TTC-003",
+      "section": "4.1 검증 항목 목록",
+      "page": 8
+    },
+    {
+      "id": "VER-TTC-008",
+      "doc_id": "GKX-VP-TTC-001",
+      "type": "검증항목",
+      "title": "명령 전송률 검증",
+      "statement": "부체계 수준 시험에서 '명령 전송률' 항목을 계측 장비로 측정하여 요구값 충족 여부를 확인한다.",
+      "criteria": "명령 링크 전송률은 2 kbps여야 한다.",
+      "parents": [
+        "TTC-008"
+      ],
+      "methods": [
+        "T"
+      ],
+      "level": "부체계",
+      "test_case": "TC-TTC-003",
+      "section": "4.1 검증 항목 목록",
+      "page": 8
+    },
+    {
+      "id": "VER-TTC-009",
+      "doc_id": "GKX-VP-TTC-001",
+      "type": "검증항목",
+      "title": "톤 거리측정 검증",
+      "statement": "부체계 수준 시험에서 '톤 거리측정' 항목을 계측 장비로 측정하여 요구값 충족 여부를 확인한다. 해석 모델 및 계산을 통해 '톤 거리측정' 요구 충족을 분석하고 해석 보고서로 확인한다.",
+      "criteria": "원격측정·추적·명령계는 거리측정 정확도 10 m 이하의 톤 거리측정을 지원해야 한다.",
+      "parents": [
+        "TTC-009"
+      ],
+      "methods": [
+        "T",
+        "A"
+      ],
+      "level": "부체계",
+      "test_case": "TC-TTC-003",
+      "section": "4.1 검증 항목 목록",
+      "page": 9
+    },
+    {
+      "id": "VER-TTC-010",
+      "doc_id": "GKX-VP-TTC-001",
+      "type": "검증항목",
+      "title": "CCSDS 프레임 검증",
+      "statement": "부체계 수준 시험에서 'CCSDS 프레임' 항목을 계측 장비로 측정하여 요구값 충족 여부를 확인한다. 설계 도면, 부품 목록 및 실물 검사를 통해 요구 반영 여부를 확인한다.",
+      "criteria": "원격측정 및 명령은 CCSDS TM/TC 표준 프레임 형식을 따라야 한다.",
+      "parents": [
+        "TTC-010"
+      ],
+      "methods": [
+        "T",
+        "I"
+      ],
+      "level": "부체계",
+      "test_case": "TC-TTC-004",
+      "section": "4.1 검증 항목 목록",
+      "page": 9
+    },
+    {
+      "id": "VER-TTC-011",
+      "doc_id": "GKX-VP-TTC-001",
+      "type": "검증항목",
+      "title": "명령 인증 검증",
+      "statement": "부체계 수준 시험에서 '명령 인증' 항목을 계측 장비로 측정하여 요구값 충족 여부를 확인한다.",
+      "criteria": "원격측정·추적·명령계는 AES-256 기반 명령 인증과 명령 카운터 기반 재전송 공격 방지를 적용해야 한다.",
+      "parents": [
+        "TTC-011"
+      ],
+      "methods": [
+        "T"
+      ],
+      "level": "부체계",
+      "test_case": "TC-TTC-004",
+      "section": "4.1 검증 항목 목록",
+      "page": 9
+    },
+    {
+      "id": "VER-TTC-012",
+      "doc_id": "GKX-VP-TTC-001",
+      "type": "검증항목",
+      "title": "키 갱신 검증",
+      "statement": "운용 시나리오에 따른 기능 시연으로 동작을 확인한다. 부체계 수준 시험에서 '키 갱신' 항목을 계측 장비로 측정하여 요구값 충족 여부를 확인한다.",
+      "criteria": "원격측정·추적·명령계는 궤도상에서 암호 키를 갱신할 수 있어야 한다.",
+      "parents": [
+        "TTC-012"
+      ],
+      "methods": [
+        "D",
+        "T"
+      ],
+      "level": "부체계",
+      "test_case": "TC-TTC-004",
+      "section": "4.1 검증 항목 목록",
+      "page": 10
+    },
+    {
+      "id": "VER-TTC-013",
+      "doc_id": "GKX-VP-TTC-001",
+      "type": "검증항목",
+      "title": "하드웨어 비상 명령 검증",
+      "statement": "부체계 수준 시험에서 '하드웨어 비상 명령' 항목을 계측 장비로 측정하여 요구값 충족 여부를 확인한다.",
+      "criteria": "원격측정·추적·명령계는 OBC를 거치지 않는 하드웨어 디코딩 비상 명령을 16개 이상 제공해야 한다.",
+      "parents": [
+        "TTC-013"
+      ],
+      "methods": [
+        "T"
+      ],
+      "level": "부체계",
+      "test_case": "TC-TTC-005",
+      "section": "4.1 검증 항목 목록",
+      "page": 10
+    },
+    {
+      "id": "VER-TTC-014",
+      "doc_id": "GKX-VP-TTC-001",
+      "type": "검증항목",
+      "title": "X 대역 자료 송신기 검증",
+      "statement": "부체계 수준 시험에서 'X 대역 자료 송신기' 항목을 계측 장비로 측정하여 요구값 충족 여부를 확인한다.",
+      "criteria": "X 대역 관측자료 송신기는 8PSK 변조로 120 Mbps 이상을 전송해야 한다.",
+      "parents": [
+        "TTC-014"
+      ],
+      "methods": [
+        "T"
+      ],
+      "level": "부체계",
+      "test_case": "TC-TTC-005",
+      "section": "4.1 검증 항목 목록",
+      "page": 10
+    },
+    {
+      "id": "VER-TTC-015",
+      "doc_id": "GKX-VP-TTC-001",
+      "type": "검증항목",
+      "title": "X 대역 EIRP 검증",
+      "statement": "해석 모델 및 계산을 통해 'X 대역 EIRP' 요구 충족을 분석하고 해석 보고서로 확인한다. 부체계 수준 시험에서 'X 대역 EIRP' 항목을 계측 장비로 측정하여 요구값 충족 여부를 확인한다.",
+      "criteria": "X 대역 관측자료 링크 EIRP는 한반도 전역에서 40 dBW 이상이어야 한다.",
+      "parents": [
+        "TTC-015"
+      ],
+      "methods": [
+        "A",
+        "T"
+      ],
+      "level": "부체계",
+      "test_case": "TC-TTC-005",
+      "section": "4.1 검증 항목 목록",
+      "page": 11
+    },
+    {
+      "id": "VER-TTC-016",
+      "doc_id": "GKX-VP-TTC-001",
+      "type": "검증항목",
+      "title": "자료 전송 지연 검증",
+      "statement": "해석 모델 및 계산을 통해 '자료 전송 지연' 요구 충족을 분석하고 해석 보고서로 확인한다. 부체계 수준 시험에서 '자료 전송 지연' 항목을 계측 장비로 측정하여 요구값 충족 여부를 확인한다.",
+      "criteria": "관측자료의 탑재 수신부터 X 대역 송신까지의 지연은 30초 이하여야 한다.",
+      "parents": [
+        "TTC-016"
+      ],
+      "methods": [
+        "A",
+        "T"
+      ],
+      "level": "부체계",
+      "test_case": "TC-TTC-006",
+      "section": "4.1 검증 항목 목록",
+      "page": 11
+    },
+    {
+      "id": "VER-TTC-017",
+      "doc_id": "GKX-VP-TTC-001",
+      "type": "검증항목",
+      "title": "링크 마진 검증",
+      "statement": "해석 모델 및 계산을 통해 '링크 마진' 요구 충족을 분석하고 해석 보고서로 확인한다.",
+      "criteria": "모든 RF 링크는 3 dB 이상의 링크 마진을 확보해야 한다.",
+      "parents": [
+        "TTC-017"
+      ],
+      "methods": [
+        "A"
+      ],
+      "level": "부체계",
+      "test_case": null,
+      "section": "4.1 검증 항목 목록",
+      "page": 11
+    },
+    {
+      "id": "VER-TTC-018",
+      "doc_id": "GKX-VP-TTC-001",
+      "type": "검증항목",
+      "title": "RF 자기간섭 검증",
+      "statement": "부체계 수준 시험에서 'RF 자기간섭' 항목을 계측 장비로 측정하여 요구값 충족 여부를 확인한다.",
+      "criteria": "원격측정·추적·명령계 수신 대역 내에 위성 자체 간섭 신호가 없어야 한다.",
+      "parents": [
+        "TTC-018"
+      ],
+      "methods": [
+        "T"
+      ],
+      "level": "부체계",
+      "test_case": "TC-TTC-006",
+      "section": "4.1 검증 항목 목록",
+      "page": 12
+    },
+    {
+      "id": "VER-TTC-019",
+      "doc_id": "GKX-VP-TTC-001",
+      "type": "검증항목",
+      "title": "TT&C 질량 검증",
+      "statement": "설계 도면, 부품 목록 및 실물 검사를 통해 요구 반영 여부를 확인한다.",
+      "criteria": "원격측정·추적·명령계의 총 질량은 45 kg 이하여야 한다.",
+      "parents": [
+        "TTC-019"
+      ],
+      "methods": [
+        "I"
+      ],
+      "level": "부체계",
+      "test_case": null,
+      "section": "4.1 검증 항목 목록",
+      "page": 12
+    },
+    {
+      "id": "VER-TTC-020",
+      "doc_id": "GKX-VP-TTC-001",
+      "type": "검증항목",
+      "title": "TT&C 전력 검증",
+      "statement": "부체계 수준 시험에서 'TT&C 전력' 항목을 계측 장비로 측정하여 요구값 충족 여부를 확인한다.",
+      "criteria": "원격측정·추적·명령계의 소모 전력은 85 W 이하여야 한다.",
+      "parents": [
+        "TTC-020"
+      ],
+      "methods": [
+        "T"
+      ],
+      "level": "부체계",
+      "test_case": "TC-TTC-006",
+      "section": "4.1 검증 항목 목록",
+      "page": 12
+    },
+    {
+      "id": "VER-TTC-021",
+      "doc_id": "GKX-VP-TTC-001",
+      "type": "검증항목",
+      "title": "기계적 장착 검증",
+      "statement": "설계 도면, 부품 목록 및 실물 검사를 통해 요구 반영 여부를 확인한다.",
+      "criteria": "원격측정·추적·명령계 S 대역 트랜스폰더 및 X 대역 송신기는 본체 지구지향(+Z) 패널 내면에 M5 인서트로 장착되어야 하며 장착면 평탄도는 100 mm당 0.1 mm 이하여야 한다.",
+      "parents": [
+        "ICD-TTC-001"
+      ],
+      "methods": [
+        "I"
+      ],
+      "level": "통합",
+      "test_case": null,
+      "section": "4.1 검증 항목 목록",
+      "page": 13
+    },
+    {
+      "id": "VER-TTC-022",
+      "doc_id": "GKX-VP-TTC-001",
+      "type": "검증항목",
+      "title": "질량 특성 자료 검증",
+      "statement": "설계 도면, 부품 목록 및 실물 검사를 통해 요구 반영 여부를 확인한다. 해석 모델 및 계산을 통해 '질량 특성 자료' 요구 충족을 분석하고 해석 보고서로 확인한다.",
+      "criteria": "원격측정·추적·명령계는 장비별 질량, 무게중심, 관성모멘트 자료를 본체에 제공해야 하며 실측 질량은 제공값 대비 ±2% 이내여야 한다.",
+      "parents": [
+        "ICD-TTC-002"
+      ],
+      "methods": [
+        "I",
+        "A"
+      ],
+      "level": "통합",
+      "test_case": null,
+      "section": "4.1 검증 항목 목록",
+      "page": 13
+    },
+    {
+      "id": "VER-TTC-023",
+      "doc_id": "GKX-VP-TTC-001",
+      "type": "검증항목",
+      "title": "전원 공급 인터페이스 검증",
+      "statement": "통합 수준 시험에서 '전원 공급 인터페이스' 항목을 계측 장비로 측정하여 요구값 충족 여부를 확인한다.",
+      "criteria": "본체 전력분배장치(PDU)는 원격측정·추적·명령계 S 대역 트랜스폰더 및 X 대역 송신기에 정격 3 A의 LCL 보호 채널 3개를 통해 100 V 조정 전원을 공급해야 한다.",
+      "parents": [
+        "ICD-TTC-003"
+      ],
+      "methods": [
+        "T"
+      ],
+      "level": "통합",
+      "test_case": "TC-TTC-007",
+      "section": "4.1 검증 항목 목록",
+      "page": 13
+    },
+    {
+      "id": "VER-TTC-024",
+      "doc_id": "GKX-VP-TTC-001",
+      "type": "검증항목",
+      "title": "돌입 전류 검증",
+      "statement": "통합 수준 시험에서 '돌입 전류' 항목을 계측 장비로 측정하여 요구값 충족 여부를 확인한다.",
+      "criteria": "원격측정·추적·명령계 장비의 전원 인가 시 돌입 전류는 정격 전류의 2배, 5 ms 이내로 제한되어야 한다.",
+      "parents": [
+        "ICD-TTC-004"
+      ],
+      "methods": [
+        "T"
+      ],
+      "level": "통합",
+      "test_case": "TC-TTC-007",
+      "section": "4.1 검증 항목 목록",
+      "page": 14
+    },
+    {
+      "id": "VER-TTC-025",
+      "doc_id": "GKX-VP-TTC-001",
+      "type": "검증항목",
+      "title": "전원 커넥터 검증",
+      "statement": "설계 도면, 부품 목록 및 실물 검사를 통해 요구 반영 여부를 확인한다.",
+      "criteria": "원격측정·추적·명령계 전원 커넥터는 MIL-DTL-38999 시리즈 III를 사용해야 하며 핀 배열은 부록 B에 따른다.",
+      "parents": [
+        "ICD-TTC-005"
+      ],
+      "methods": [
+        "I"
+      ],
+      "level": "통합",
+      "test_case": null,
+      "section": "4.1 검증 항목 목록",
+      "page": 14
+    },
+    {
+      "id": "VER-TTC-026",
+      "doc_id": "GKX-VP-TTC-001",
+      "type": "검증항목",
+      "title": "데이터 버스 주소 검증",
+      "statement": "통합 수준 시험에서 '데이터 버스 주소' 항목을 계측 장비로 측정하여 요구값 충족 여부를 확인한다. 설계 도면, 부품 목록 및 실물 검사를 통해 요구 반영 여부를 확인한다.",
+      "criteria": "원격측정·추적·명령계 S 대역 트랜스폰더 및 X 대역 송신기는 MIL-STD-1553B 원격단말(RT) 주소 11번으로 본체 OBC와 통신해야 한다.",
+      "parents": [
+        "ICD-TTC-006"
+      ],
+      "methods": [
+        "T",
+        "I"
+      ],
+      "level": "통합",
+      "test_case": "TC-TTC-007",
+      "section": "4.1 검증 항목 목록",
+      "page": 14
+    },
+    {
+      "id": "VER-TTC-027",
+      "doc_id": "GKX-VP-TTC-001",
+      "type": "검증항목",
+      "title": "원격측정 패킷 검증",
+      "statement": "통합 수준 시험에서 '원격측정 패킷' 항목을 계측 장비로 측정하여 요구값 충족 여부를 확인한다.",
+      "criteria": "원격측정·추적·명령계는 APID 0x150의 원격측정 패킷을 2 Hz 주기로 본체 OBC에 제공해야 한다.",
+      "parents": [
+        "ICD-TTC-007"
+      ],
+      "methods": [
+        "T"
+      ],
+      "level": "통합",
+      "test_case": "TC-TTC-008",
+      "section": "4.1 검증 항목 목록",
+      "page": 15
+    },
+    {
+      "id": "VER-TTC-028",
+      "doc_id": "GKX-VP-TTC-001",
+      "type": "검증항목",
+      "title": "명령 인터페이스 검증",
+      "statement": "통합 수준 시험에서 '명령 인터페이스' 항목을 계측 장비로 측정하여 요구값 충족 여부를 확인한다.",
+      "criteria": "원격측정·추적·명령계는 본체 OBC로부터 90종 이상의 명령을 수신해야 하며 명령 응답 시간은 50 ms 이하여야 한다.",
+      "parents": [
+        "ICD-TTC-008"
+      ],
+      "methods": [
+        "T"
+      ],
+      "level": "통합",
+      "test_case": "TC-TTC-008",
+      "section": "4.1 검증 항목 목록",
+      "page": 15
+    },
+    {
+      "id": "VER-TTC-029",
+      "doc_id": "GKX-VP-TTC-001",
+      "type": "검증항목",
+      "title": "시각 동기 검증",
+      "statement": "통합 수준 시험에서 '시각 동기' 항목을 계측 장비로 측정하여 요구값 충족 여부를 확인한다.",
+      "criteria": "원격측정·추적·명령계는 본체 OBC의 1PPS 신호를 수신하여 100 µs 이내로 시각을 동기해야 한다.",
+      "parents": [
+        "ICD-TTC-009"
+      ],
+      "methods": [
+        "T"
+      ],
+      "level": "통합",
+      "test_case": "TC-TTC-008",
+      "section": "4.1 검증 항목 목록",
+      "page": 15
+    },
+    {
+      "id": "VER-TTC-030",
+      "doc_id": "GKX-VP-TTC-001",
+      "type": "검증항목",
+      "title": "열 인터페이스 검증",
+      "statement": "해석 모델 및 계산을 통해 '열 인터페이스' 요구 충족을 분석하고 해석 보고서로 확인한다. 통합 수준 시험에서 '열 인터페이스' 항목을 계측 장비로 측정하여 요구값 충족 여부를 확인한다.",
+      "criteria": "본체는 원격측정·추적·명령계 장비 장착면 온도를 -15°C ~ +45°C 범위로 유지해야 하며 장착면 열유속은 1,200 W/m² 이하여야 한다.",
+      "parents": [
+        "ICD-TTC-010"
+      ],
+      "methods": [
+        "A",
+        "T"
+      ],
+      "level": "통합",
+      "test_case": "TC-TTC-009",
+      "section": "4.1 검증 항목 목록",
+      "page": 16
+    },
+    {
+      "id": "VER-TTC-031",
+      "doc_id": "GKX-VP-TTC-001",
+      "type": "검증항목",
+      "title": "접지 및 본딩 검증",
+      "statement": "통합 수준 시험에서 '접지 및 본딩' 항목을 계측 장비로 측정하여 요구값 충족 여부를 확인한다.",
+      "criteria": "원격측정·추적·명령계 장비 케이스와 본체 구조 간 본딩 저항은 2.5 mΩ 이하여야 한다.",
+      "parents": [
+        "ICD-TTC-011"
+      ],
+      "methods": [
+        "T"
+      ],
+      "level": "통합",
+      "test_case": "TC-TTC-009",
+      "section": "4.1 검증 항목 목록",
+      "page": 16
+    },
+    {
+      "id": "VER-TTC-032",
+      "doc_id": "GKX-VP-TTC-001",
+      "type": "검증항목",
+      "title": "EMC 방출 한계 검증",
+      "statement": "통합 수준 시험에서 'EMC 방출 한계' 항목을 계측 장비로 측정하여 요구값 충족 여부를 확인한다.",
+      "criteria": "원격측정·추적·명령계 장비는 본체 EMC 한계(CE102, RE102)를 만족해야 한다.",
+      "parents": [
+        "ICD-TTC-012"
+      ],
+      "methods": [
+        "T"
+      ],
+      "level": "통합",
+      "test_case": "TC-TTC-009",
+      "section": "4.1 검증 항목 목록",
+      "page": 16
+    }
+  ]
+}

@@ -24,17 +24,17 @@ async function dashboard(){
 async function qa(){
   $("questionForm").addEventListener("submit",async event=>{
     event.preventDefault();const button=$("askButton");busy(button,true);
-    const status=$("answerStatus");status.classList.remove("error");status.textContent="저장된 항목 검색과 로컬 모델 답변을 진행 중입니다.";
+    const status=$("answerStatus");status.classList.remove("error");status.textContent="전체 문서 검색과 AI 답변을 진행 중입니다.";
     try{
       const result=await api("/api/ask",{question:$("questionInput").value});
       status.textContent=`${result.model} · ${result.status==="answered"?"답변 초안":"근거 부족"} · 인용 ${result.citations.length}건`;
       $("answerText").textContent=result.answer;
       const list=$("answerEvidence");
-      if(!result.evidence.length){list.replaceChildren(empty("관련 저장 항목을 찾지 못했습니다."));return;}
+      if(!result.evidence.length){list.replaceChildren(empty("관련 문서·규격 항목을 찾지 못했습니다."));return;}
       list.replaceChildren(...result.evidence.map(x=>{
         const card=e("article","evidence-card");
         card.append(e("strong","",`${x.item_id} · ${x.title}`),e("p","",x.statement),
-          e("small","",`${x.document_id} · Rev ${x.revision} · ${x.section||"절 정보 없음"} · ${x.page}쪽`),
+          e("small","",`${x.document_title||x.document_id} · ${x.document_id} · Rev ${x.revision} · ${x.section||"절 정보 없음"} · ${x.page}쪽 · ${x.source_state}`),
           link(`/api/pdf?document=${encodeURIComponent(x.document_id)}#page=${x.page}`,"원문 페이지 보기"));
         return card;
       }));
@@ -82,7 +82,7 @@ function openTrace(x){
   body.append(e("p","muted","연결 대상이 현재 저장 자료에서 보이지 않아도 실제 문서 전체에 없다고 단정하지 않습니다."));
   const sameVcrm=traceState.entries.find(y=>y.document==="GKX-VCRM-001"&&y.item.id===item.id);
   if(sameVcrm&&sameVcrm!==x){body.append(e("h3","","VCRM 연결"),e("p","",sameVcrm.item.result||"결과 없음"));}
-  const actions=e("div","detail-actions"),pdf=link(`/api/pdf?document=${encodeURIComponent(x.document)}#page=${item.page}`,"원문 페이지 열기"),ai=e("button","primary","로컬 AI 의견 생성");
+  const actions=e("div","detail-actions"),pdf=link(`/api/pdf?document=${encodeURIComponent(x.document)}#page=${item.page}`,"원문 페이지 열기"),ai=e("button","primary","AI 의견 생성");
   pdf.target="_blank";pdf.rel="noopener";actions.append(pdf,ai);body.append(actions);
   const result=e("p","muted","AI 의견은 담당자 판정 전 초안으로 저장됩니다.");body.append(result);
   ai.addEventListener("click",async()=>{busy(ai,true);try{const response=await api("/api/ai-review",{document:x.document,item:item.id});result.textContent=`${response.model} · ${response.opinion.status}: ${response.opinion.summary||"의견 생성 완료"}`;}catch(error){showError(result,error);}finally{busy(ai,false);}});
@@ -123,7 +123,7 @@ function aiDetail(record){
 }
 async function loadAiQueue(selectId){
   aiState.queue=await api("/api/ai-queue");const list=$("aiQueue");
-  if(!aiState.queue.length){list.replaceChildren(empty("생성된 AI 의견이 없습니다. 문서함에서 항목을 저장한 뒤 상세 화면에서 로컬 AI 의견을 생성하세요."),link("/","문서함으로 이동"));return;}
+  if(!aiState.queue.length){list.replaceChildren(empty("생성된 AI 의견이 없습니다. 문서함에서 항목을 저장한 뒤 상세 화면에서 AI 의견을 생성하세요."),link("/","문서함으로 이동"));return;}
   list.replaceChildren(...aiState.queue.map(x=>{const button=e("button","queue-item");button.type="button";button.append(e("strong","",`${x.item_id} · ${x.title}`),e("span","",`${x.opinion.status} · 담당자 ${x.latest_decision||"대기"}`));button.addEventListener("click",()=>aiDetail(x));return button;}));
   aiDetail(aiState.queue.find(x=>x.review_id===selectId)||aiState.queue[0]);
 }

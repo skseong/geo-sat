@@ -1,0 +1,384 @@
+{
+  "document": {
+    "doc_no": "GKX-SSS-TCS-001",
+    "title": "열제어계 요구규격서",
+    "rev": "A",
+    "date": "2026-05-20",
+    "pages": 12,
+    "file": "03_SSS/GKX-SSS-TCS-001.pdf",
+    "item_count": 20
+  },
+  "items": [
+    {
+      "id": "TCS-016",
+      "doc_id": "GKX-SSS-TCS-001",
+      "type": "요구사항",
+      "title": "춘추분 식 기간",
+      "statement": "열제어계는 춘추분 식 기간 동안 모든 장비를 운용 온도 범위 내로 유지해야 한다.",
+      "rationale": "식 기간 운용 지원",
+      "parents": [
+        "SYS-009",
+        "SYS-015"
+      ],
+      "methods": [
+        "A"
+      ],
+      "priority": "필수",
+      "status": "확정",
+      "section": "3.1 기능·성능 요구사항",
+      "page": 5
+    },
+    {
+      "id": "TCS-001",
+      "doc_id": "GKX-SSS-TCS-001",
+      "type": "요구사항",
+      "title": "열 설계 방식",
+      "statement": "열제어계는 수동 열제어를 기본으로 하고 히터 능동 제어로 보완해야 한다.",
+      "rationale": "신뢰성 및 전력 효율",
+      "parents": [
+        "SYS-015"
+      ],
+      "methods": [
+        "A",
+        "I"
+      ],
+      "priority": "필수",
+      "status": "확정",
+      "section": "3.2 물리·자원 요구사항",
+      "page": 5
+    },
+    {
+      "id": "TCS-006",
+      "doc_id": "GKX-SSS-TCS-001",
+      "type": "요구사항",
+      "title": "히터 전력",
+      "statement": "최악 냉각 조건에서 히터 소모 전력은 450 W 이하여야 한다.",
+      "rationale": "전력 예산 영향 제한",
+      "parents": [
+        "SYS-008"
+      ],
+      "methods": [
+        "A",
+        "T"
+      ],
+      "priority": "필수",
+      "status": "확정",
+      "section": "3.2 물리·자원 요구사항",
+      "page": 6
+    },
+    {
+      "id": "TCS-019",
+      "doc_id": "GKX-SSS-TCS-001",
+      "type": "요구사항",
+      "title": "열제어계 질량",
+      "statement": "열제어계의 총 질량은 95 kg 이하여야 한다.",
+      "rationale": "질량 예산 할당",
+      "parents": [
+        "SYS-004"
+      ],
+      "methods": [
+        "I"
+      ],
+      "priority": "필수",
+      "status": "확정",
+      "section": "3.2 물리·자원 요구사항",
+      "page": 6
+    },
+    {
+      "id": "TCS-020",
+      "doc_id": "GKX-SSS-TCS-001",
+      "type": "요구사항",
+      "title": "열제어계 전력",
+      "statement": "열제어계의 정상 모드 소모 전력은 히터와 냉각기를 합하여 380 W 이하여야 한다.",
+      "rationale": "전력 예산 할당",
+      "parents": [
+        "SYS-008"
+      ],
+      "methods": [
+        "A",
+        "T"
+      ],
+      "priority": "필수",
+      "status": "확정",
+      "section": "3.2 물리·자원 요구사항",
+      "page": 6
+    },
+    {
+      "id": "TCS-002",
+      "doc_id": "GKX-SSS-TCS-001",
+      "type": "요구사항",
+      "title": "온도 마진",
+      "statement": "열제어계는 예측 온도 대비 인증 시험 마진 10°C, 수락 시험 마진 5°C를 확보해야 한다.",
+      "rationale": "열 해석 불확도 고려",
+      "parents": [
+        "SYS-015"
+      ],
+      "methods": [
+        "A",
+        "T"
+      ],
+      "priority": "필수",
+      "status": "확정",
+      "section": "3.3 환경·열 요구사항",
+      "page": 7
+    },
+    {
+      "id": "TCS-003",
+      "doc_id": "GKX-SSS-TCS-001",
+      "type": "요구사항",
+      "title": "방열판",
+      "statement": "열제어계는 남북 패널에 광학 태양반사경(OSR)을 적용한 방열판을 구성해야 한다.",
+      "rationale": "정지궤도 태양 입사 특성",
+      "parents": [
+        "SYS-015"
+      ],
+      "methods": [
+        "I",
+        "A"
+      ],
+      "priority": "필수",
+      "status": "확정",
+      "section": "3.3 환경·열 요구사항",
+      "page": 7
+    },
+    {
+      "id": "TCS-004",
+      "doc_id": "GKX-SSS-TCS-001",
+      "type": "요구사항",
+      "title": "히트파이프",
+      "statement": "남북 패널에는 열 분산을 위한 히트파이프가 매립되어야 한다.",
+      "rationale": "고발열 장비 열 분산",
+      "parents": [
+        "SYS-015"
+      ],
+      "methods": [
+        "T",
+        "I"
+      ],
+      "priority": "필수",
+      "status": "확정",
+      "section": "3.3 환경·열 요구사항",
+      "page": 7
+    },
+    {
+      "id": "TCS-005",
+      "doc_id": "GKX-SSS-TCS-001",
+      "type": "요구사항",
+      "title": "히터 회로",
+      "statement": "열제어계는 소프트웨어 제어 히터 회로를 64개 이상 제공해야 한다.",
+      "rationale": "장비별 독립 온도 제어",
+      "parents": [
+        "SYS-015"
+      ],
+      "methods": [
+        "T"
+      ],
+      "priority": "필수",
+      "status": "확정",
+      "section": "3.3 환경·열 요구사항",
+      "page": 8
+    },
+    {
+      "id": "TCS-007",
+      "doc_id": "GKX-SSS-TCS-001",
+      "type": "요구사항",
+      "title": "다층단열재",
+      "statement": "다층단열재(MLI)의 유효 방사율은 0.02 이하여야 한다.",
+      "rationale": "외부 열교환 차단",
+      "parents": [
+        "SYS-015"
+      ],
+      "methods": [
+        "T",
+        "A"
+      ],
+      "priority": "권장",
+      "status": "확정",
+      "section": "3.3 환경·열 요구사항",
+      "page": 8
+    },
+    {
+      "id": "TCS-008",
+      "doc_id": "GKX-SSS-TCS-001",
+      "type": "요구사항",
+      "title": "영상기 냉각기",
+      "statement": "열제어계는 펄스관 냉각기를 이용하여 영상기 적외 검출기를 60 K로 냉각해야 한다.",
+      "rationale": "적외 검출기 냉각 할당",
+      "parents": [
+        "SYS-016"
+      ],
+      "methods": [
+        "T"
+      ],
+      "priority": "필수",
+      "status": "확정",
+      "section": "3.3 환경·열 요구사항",
+      "page": 8
+    },
+    {
+      "id": "TCS-009",
+      "doc_id": "GKX-SSS-TCS-001",
+      "type": "요구사항",
+      "title": "냉각 안정도",
+      "statement": "적외 검출기 온도 안정도는 60 K ± 0.1 K 이내여야 한다.",
+      "rationale": "적외 채널 잡음 성능",
+      "parents": [
+        "SYS-016"
+      ],
+      "methods": [
+        "T"
+      ],
+      "priority": "필수",
+      "status": "확정",
+      "section": "3.3 환경·열 요구사항",
+      "page": 9
+    },
+    {
+      "id": "TCS-010",
+      "doc_id": "GKX-SSS-TCS-001",
+      "type": "요구사항",
+      "title": "광학부 온도",
+      "statement": "영상기 광학부 온도는 20°C ± 2°C로 유지되어야 한다.",
+      "rationale": "광학 정렬 안정성",
+      "parents": [
+        "SYS-025"
+      ],
+      "methods": [
+        "T"
+      ],
+      "priority": "필수",
+      "status": "확정",
+      "section": "3.3 환경·열 요구사항",
+      "page": 9
+    },
+    {
+      "id": "TCS-011",
+      "doc_id": "GKX-SSS-TCS-001",
+      "type": "요구사항",
+      "title": "배터리 온도 제어",
+      "statement": "열제어계는 배터리 온도를 10°C에서 30°C 사이로 유지해야 한다.",
+      "rationale": "전력계 요구 지원",
+      "parents": [
+        "SYS-015"
+      ],
+      "methods": [
+        "T"
+      ],
+      "priority": "필수",
+      "status": "확정",
+      "section": "3.3 환경·열 요구사항",
+      "page": 9
+    },
+    {
+      "id": "TCS-012",
+      "doc_id": "GKX-SSS-TCS-001",
+      "type": "요구사항",
+      "title": "추진계 온도 제어",
+      "statement": "열제어계는 추진계 장비 온도를 10°C에서 50°C 사이로 유지해야 한다.",
+      "rationale": "추진제 동결 방지",
+      "parents": [
+        "SYS-015"
+      ],
+      "methods": [
+        "T"
+      ],
+      "priority": "필수",
+      "status": "확정",
+      "section": "3.3 환경·열 요구사항",
+      "page": 10
+    },
+    {
+      "id": "TCS-013",
+      "doc_id": "GKX-SSS-TCS-001",
+      "type": "요구사항",
+      "title": "온도 센서",
+      "statement": "열제어계는 정확도 ±1°C 이하의 서미스터를 200개 이상 탑재해야 한다.",
+      "rationale": "열 상태 감시",
+      "parents": [
+        "SYS-019"
+      ],
+      "methods": [
+        "T",
+        "I"
+      ],
+      "priority": "필수",
+      "status": "확정",
+      "section": "3.3 환경·열 요구사항",
+      "page": 10
+    },
+    {
+      "id": "TCS-014",
+      "doc_id": "GKX-SSS-TCS-001",
+      "type": "요구사항",
+      "title": "열진공 시험",
+      "statement": "위성 수준 열진공(TVAC) 시험은 8 사이클 이상 수행되어야 한다.",
+      "rationale": "열 설계 인증",
+      "parents": [
+        "SYS-015"
+      ],
+      "methods": [
+        "T"
+      ],
+      "priority": "권장",
+      "status": "확정",
+      "section": "3.3 환경·열 요구사항",
+      "page": 10
+    },
+    {
+      "id": "TCS-015",
+      "doc_id": "GKX-SSS-TCS-001",
+      "type": "요구사항",
+      "title": "열 모델 상관",
+      "statement": "열평형 시험 결과와 열 해석 모델의 온도 차이는 ±5°C 이내여야 한다.",
+      "rationale": "궤도 예측 신뢰성",
+      "parents": [
+        "SYS-015"
+      ],
+      "methods": [
+        "T",
+        "A"
+      ],
+      "priority": "필수",
+      "status": "확정",
+      "section": "3.3 환경·열 요구사항",
+      "page": 11
+    },
+    {
+      "id": "TCS-018",
+      "doc_id": "GKX-SSS-TCS-001",
+      "type": "요구사항",
+      "title": "열광학 특성 열화",
+      "statement": "열 해석은 EOL 시점의 표면 흡수율 열화를 반영해야 한다.",
+      "rationale": "15년 수명 열 성능",
+      "parents": [
+        "SYS-002"
+      ],
+      "methods": [
+        "A"
+      ],
+      "priority": "필수",
+      "status": "확정",
+      "section": "3.3 환경·열 요구사항",
+      "page": 11
+    },
+    {
+      "id": "TCS-017",
+      "doc_id": "GKX-SSS-TCS-001",
+      "type": "요구사항",
+      "title": "안전모드 생존 온도",
+      "statement": "열제어계는 안전모드에서 모든 장비를 생존 온도 범위 내로 유지해야 한다.",
+      "rationale": "위성 생존성",
+      "parents": [
+        "SYS-030"
+      ],
+      "methods": [
+        "A",
+        "T"
+      ],
+      "priority": "필수",
+      "status": "확정",
+      "section": "3.4 신뢰성·안전 요구사항",
+      "page": 11
+    }
+  ]
+}

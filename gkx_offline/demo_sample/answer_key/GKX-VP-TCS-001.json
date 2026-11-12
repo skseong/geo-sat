@@ -1,0 +1,602 @@
+{
+  "document": {
+    "doc_no": "GKX-VP-TCS-001",
+    "title": "열제어계 검증계획서",
+    "rev": "A",
+    "date": "2026-07-22",
+    "pages": 17,
+    "file": "05_VP/GKX-VP-TCS-001.pdf",
+    "item_count": 32
+  },
+  "items": [
+    {
+      "id": "VER-TCS-001",
+      "doc_id": "GKX-VP-TCS-001",
+      "type": "검증항목",
+      "title": "열 설계 방식 검증",
+      "statement": "해석 모델 및 계산을 통해 '열 설계 방식' 요구 충족을 분석하고 해석 보고서로 확인한다. 설계 도면, 부품 목록 및 실물 검사를 통해 요구 반영 여부를 확인한다.",
+      "criteria": "열제어계는 수동 열제어를 기본으로 하고 히터 능동 제어로 보완해야 한다.",
+      "parents": [
+        "TCS-001"
+      ],
+      "methods": [
+        "A",
+        "I"
+      ],
+      "level": "부체계",
+      "test_case": null,
+      "section": "4.1 검증 항목 목록",
+      "page": 6
+    },
+    {
+      "id": "VER-TCS-002",
+      "doc_id": "GKX-VP-TCS-001",
+      "type": "검증항목",
+      "title": "온도 마진 검증",
+      "statement": "해석 모델 및 계산을 통해 '온도 마진' 요구 충족을 분석하고 해석 보고서로 확인한다. 부체계 수준 시험에서 '온도 마진' 항목을 계측 장비로 측정하여 요구값 충족 여부를 확인한다.",
+      "criteria": "열제어계는 예측 온도 대비 인증 시험 마진 10°C, 수락 시험 마진 5°C를 확보해야 한다.",
+      "parents": [
+        "TCS-002"
+      ],
+      "methods": [
+        "A",
+        "T"
+      ],
+      "level": "부체계",
+      "test_case": "TC-TCS-001",
+      "section": "4.1 검증 항목 목록",
+      "page": 6
+    },
+    {
+      "id": "VER-TCS-003",
+      "doc_id": "GKX-VP-TCS-001",
+      "type": "검증항목",
+      "title": "방열판 검증",
+      "statement": "설계 도면, 부품 목록 및 실물 검사를 통해 요구 반영 여부를 확인한다. 해석 모델 및 계산을 통해 '방열판' 요구 충족을 분석하고 해석 보고서로 확인한다.",
+      "criteria": "열제어계는 남북 패널에 광학 태양반사경(OSR)을 적용한 방열판을 구성해야 한다.",
+      "parents": [
+        "TCS-003"
+      ],
+      "methods": [
+        "I",
+        "A"
+      ],
+      "level": "부체계",
+      "test_case": null,
+      "section": "4.1 검증 항목 목록",
+      "page": 7
+    },
+    {
+      "id": "VER-TCS-004",
+      "doc_id": "GKX-VP-TCS-001",
+      "type": "검증항목",
+      "title": "히트파이프 검증",
+      "statement": "부체계 수준 시험에서 '히트파이프' 항목을 계측 장비로 측정하여 요구값 충족 여부를 확인한다. 설계 도면, 부품 목록 및 실물 검사를 통해 요구 반영 여부를 확인한다.",
+      "criteria": "남북 패널에는 열 분산을 위한 히트파이프가 매립되어야 한다.",
+      "parents": [
+        "TCS-004"
+      ],
+      "methods": [
+        "T",
+        "I"
+      ],
+      "level": "부체계",
+      "test_case": "TC-TCS-001",
+      "section": "4.1 검증 항목 목록",
+      "page": 7
+    },
+    {
+      "id": "VER-TCS-005",
+      "doc_id": "GKX-VP-TCS-001",
+      "type": "검증항목",
+      "title": "히터 회로 검증",
+      "statement": "부체계 수준 시험에서 '히터 회로' 항목을 계측 장비로 측정하여 요구값 충족 여부를 확인한다.",
+      "criteria": "열제어계는 소프트웨어 제어 히터 회로를 64개 이상 제공해야 한다.",
+      "parents": [
+        "TCS-005"
+      ],
+      "methods": [
+        "T"
+      ],
+      "level": "부체계",
+      "test_case": "TC-TCS-001",
+      "section": "4.1 검증 항목 목록",
+      "page": 7
+    },
+    {
+      "id": "VER-TCS-006",
+      "doc_id": "GKX-VP-TCS-001",
+      "type": "검증항목",
+      "title": "히터 전력 검증",
+      "statement": "해석 모델 및 계산을 통해 '히터 전력' 요구 충족을 분석하고 해석 보고서로 확인한다. 부체계 수준 시험에서 '히터 전력' 항목을 계측 장비로 측정하여 요구값 충족 여부를 확인한다.",
+      "criteria": "최악 냉각 조건에서 히터 소모 전력은 450 W 이하여야 한다.",
+      "parents": [
+        "TCS-006"
+      ],
+      "methods": [
+        "A",
+        "T"
+      ],
+      "level": "부체계",
+      "test_case": "TC-TCS-002",
+      "section": "4.1 검증 항목 목록",
+      "page": 8
+    },
+    {
+      "id": "VER-TCS-007",
+      "doc_id": "GKX-VP-TCS-001",
+      "type": "검증항목",
+      "title": "다층단열재 검증",
+      "statement": "부체계 수준 시험에서 '다층단열재' 항목을 계측 장비로 측정하여 요구값 충족 여부를 확인한다. 해석 모델 및 계산을 통해 '다층단열재' 요구 충족을 분석하고 해석 보고서로 확인한다.",
+      "criteria": "다층단열재(MLI)의 유효 방사율은 0.02 이하여야 한다.",
+      "parents": [
+        "TCS-007"
+      ],
+      "methods": [
+        "T",
+        "A"
+      ],
+      "level": "부체계",
+      "test_case": "TC-TCS-002",
+      "section": "4.1 검증 항목 목록",
+      "page": 8
+    },
+    {
+      "id": "VER-TCS-008",
+      "doc_id": "GKX-VP-TCS-001",
+      "type": "검증항목",
+      "title": "영상기 냉각기 검증",
+      "statement": "부체계 수준 시험에서 '영상기 냉각기' 항목을 계측 장비로 측정하여 요구값 충족 여부를 확인한다.",
+      "criteria": "열제어계는 펄스관 냉각기를 이용하여 영상기 적외 검출기를 60 K로 냉각해야 한다.",
+      "parents": [
+        "TCS-008"
+      ],
+      "methods": [
+        "T"
+      ],
+      "level": "부체계",
+      "test_case": "TC-TCS-002",
+      "section": "4.1 검증 항목 목록",
+      "page": 8
+    },
+    {
+      "id": "VER-TCS-009",
+      "doc_id": "GKX-VP-TCS-001",
+      "type": "검증항목",
+      "title": "냉각 안정도 검증",
+      "statement": "부체계 수준 시험에서 '냉각 안정도' 항목을 계측 장비로 측정하여 요구값 충족 여부를 확인한다.",
+      "criteria": "적외 검출기 온도 안정도는 60 K ± 0.1 K 이내여야 한다.",
+      "parents": [
+        "TCS-009"
+      ],
+      "methods": [
+        "T"
+      ],
+      "level": "부체계",
+      "test_case": "TC-TCS-003",
+      "section": "4.1 검증 항목 목록",
+      "page": 9
+    },
+    {
+      "id": "VER-TCS-010",
+      "doc_id": "GKX-VP-TCS-001",
+      "type": "검증항목",
+      "title": "광학부 온도 검증",
+      "statement": "부체계 수준 시험에서 '광학부 온도' 항목을 계측 장비로 측정하여 요구값 충족 여부를 확인한다.",
+      "criteria": "영상기 광학부 온도는 20°C ± 2°C로 유지되어야 한다.",
+      "parents": [
+        "TCS-010"
+      ],
+      "methods": [
+        "T"
+      ],
+      "level": "부체계",
+      "test_case": "TC-TCS-003",
+      "section": "4.1 검증 항목 목록",
+      "page": 9
+    },
+    {
+      "id": "VER-TCS-011",
+      "doc_id": "GKX-VP-TCS-001",
+      "type": "검증항목",
+      "title": "배터리 온도 제어 검증",
+      "statement": "부체계 수준 시험에서 '배터리 온도 제어' 항목을 계측 장비로 측정하여 요구값 충족 여부를 확인한다.",
+      "criteria": "열제어계는 배터리 온도를 10°C에서 30°C 사이로 유지해야 한다.",
+      "parents": [
+        "TCS-011"
+      ],
+      "methods": [
+        "T"
+      ],
+      "level": "부체계",
+      "test_case": "TC-TCS-003",
+      "section": "4.1 검증 항목 목록",
+      "page": 9
+    },
+    {
+      "id": "VER-TCS-012",
+      "doc_id": "GKX-VP-TCS-001",
+      "type": "검증항목",
+      "title": "추진계 온도 제어 검증",
+      "statement": "부체계 수준 시험에서 '추진계 온도 제어' 항목을 계측 장비로 측정하여 요구값 충족 여부를 확인한다.",
+      "criteria": "열제어계는 추진계 장비 온도를 10°C에서 50°C 사이로 유지해야 한다.",
+      "parents": [
+        "TCS-012"
+      ],
+      "methods": [
+        "T"
+      ],
+      "level": "부체계",
+      "test_case": "TC-TCS-004",
+      "section": "4.1 검증 항목 목록",
+      "page": 10
+    },
+    {
+      "id": "VER-TCS-013",
+      "doc_id": "GKX-VP-TCS-001",
+      "type": "검증항목",
+      "title": "온도 센서 검증",
+      "statement": "부체계 수준 시험에서 '온도 센서' 항목을 계측 장비로 측정하여 요구값 충족 여부를 확인한다. 설계 도면, 부품 목록 및 실물 검사를 통해 요구 반영 여부를 확인한다.",
+      "criteria": "열제어계는 정확도 ±1°C 이하의 서미스터를 200개 이상 탑재해야 한다.",
+      "parents": [
+        "TCS-013"
+      ],
+      "methods": [
+        "T",
+        "I"
+      ],
+      "level": "부체계",
+      "test_case": "TC-TCS-004",
+      "section": "4.1 검증 항목 목록",
+      "page": 10
+    },
+    {
+      "id": "VER-TCS-014",
+      "doc_id": "GKX-VP-TCS-001",
+      "type": "검증항목",
+      "title": "열진공 시험 검증",
+      "statement": "부체계 수준 시험에서 '열진공 시험' 항목을 계측 장비로 측정하여 요구값 충족 여부를 확인한다.",
+      "criteria": "위성 수준 열진공(TVAC) 시험은 8 사이클 이상 수행되어야 한다.",
+      "parents": [
+        "TCS-014"
+      ],
+      "methods": [
+        "T"
+      ],
+      "level": "부체계",
+      "test_case": "TC-TCS-004",
+      "section": "4.1 검증 항목 목록",
+      "page": 10
+    },
+    {
+      "id": "VER-TCS-015",
+      "doc_id": "GKX-VP-TCS-001",
+      "type": "검증항목",
+      "title": "열 모델 상관 검증",
+      "statement": "부체계 수준 시험에서 '열 모델 상관' 항목을 계측 장비로 측정하여 요구값 충족 여부를 확인한다. 해석 모델 및 계산을 통해 '열 모델 상관' 요구 충족을 분석하고 해석 보고서로 확인한다.",
+      "criteria": "열평형 시험 결과와 열 해석 모델의 온도 차이는 ±5°C 이내여야 한다.",
+      "parents": [
+        "TCS-015"
+      ],
+      "methods": [
+        "T",
+        "A"
+      ],
+      "level": "부체계",
+      "test_case": "TC-TCS-005",
+      "section": "4.1 검증 항목 목록",
+      "page": 11
+    },
+    {
+      "id": "VER-TCS-016",
+      "doc_id": "GKX-VP-TCS-001",
+      "type": "검증항목",
+      "title": "춘추분 식 기간 검증",
+      "statement": "해석 모델 및 계산을 통해 '춘추분 식 기간' 요구 충족을 분석하고 해석 보고서로 확인한다.",
+      "criteria": "열제어계는 춘추분 식 기간 동안 모든 장비를 운용 온도 범위 내로 유지해야 한다.",
+      "parents": [
+        "TCS-016"
+      ],
+      "methods": [
+        "A"
+      ],
+      "level": "부체계",
+      "test_case": null,
+      "section": "4.1 검증 항목 목록",
+      "page": 11
+    },
+    {
+      "id": "VER-TCS-017",
+      "doc_id": "GKX-VP-TCS-001",
+      "type": "검증항목",
+      "title": "안전모드 생존 온도 검증",
+      "statement": "해석 모델 및 계산을 통해 '안전모드 생존 온도' 요구 충족을 분석하고 해석 보고서로 확인한다. 부체계 수준 시험에서 '안전모드 생존 온도' 항목을 계측 장비로 측정하여 요구값 충족 여부를 확인한다.",
+      "criteria": "열제어계는 안전모드에서 모든 장비를 생존 온도 범위 내로 유지해야 한다.",
+      "parents": [
+        "TCS-017"
+      ],
+      "methods": [
+        "A",
+        "T"
+      ],
+      "level": "부체계",
+      "test_case": "TC-TCS-005",
+      "section": "4.1 검증 항목 목록",
+      "page": 11
+    },
+    {
+      "id": "VER-TCS-018",
+      "doc_id": "GKX-VP-TCS-001",
+      "type": "검증항목",
+      "title": "열광학 특성 열화 검증",
+      "statement": "해석 모델 및 계산을 통해 '열광학 특성 열화' 요구 충족을 분석하고 해석 보고서로 확인한다.",
+      "criteria": "열 해석은 EOL 시점의 표면 흡수율 열화를 반영해야 한다.",
+      "parents": [
+        "TCS-018"
+      ],
+      "methods": [
+        "A"
+      ],
+      "level": "부체계",
+      "test_case": null,
+      "section": "4.1 검증 항목 목록",
+      "page": 12
+    },
+    {
+      "id": "VER-TCS-019",
+      "doc_id": "GKX-VP-TCS-001",
+      "type": "검증항목",
+      "title": "열제어계 질량 검증",
+      "statement": "설계 도면, 부품 목록 및 실물 검사를 통해 요구 반영 여부를 확인한다.",
+      "criteria": "열제어계의 총 질량은 95 kg 이하여야 한다.",
+      "parents": [
+        "TCS-019"
+      ],
+      "methods": [
+        "I"
+      ],
+      "level": "부체계",
+      "test_case": null,
+      "section": "4.1 검증 항목 목록",
+      "page": 12
+    },
+    {
+      "id": "VER-TCS-020",
+      "doc_id": "GKX-VP-TCS-001",
+      "type": "검증항목",
+      "title": "열제어계 전력 검증",
+      "statement": "해석 모델 및 계산을 통해 '열제어계 전력' 요구 충족을 분석하고 해석 보고서로 확인한다. 부체계 수준 시험에서 '열제어계 전력' 항목을 계측 장비로 측정하여 요구값 충족 여부를 확인한다.",
+      "criteria": "열제어계의 정상 모드 소모 전력은 히터와 냉각기를 합하여 380 W 이하여야 한다.",
+      "parents": [
+        "TCS-020"
+      ],
+      "methods": [
+        "A",
+        "T"
+      ],
+      "level": "부체계",
+      "test_case": "TC-TCS-005",
+      "section": "4.1 검증 항목 목록",
+      "page": 12
+    },
+    {
+      "id": "VER-TCS-021",
+      "doc_id": "GKX-VP-TCS-001",
+      "type": "검증항목",
+      "title": "기계적 장착 검증",
+      "statement": "설계 도면, 부품 목록 및 실물 검사를 통해 요구 반영 여부를 확인한다.",
+      "criteria": "열제어계 열제어 전자장치(TCE) 및 히터는 본체 -X 패널 내면에 M5 인서트로 장착되어야 하며 장착면 평탄도는 100 mm당 0.1 mm 이하여야 한다.",
+      "parents": [
+        "ICD-TCS-001"
+      ],
+      "methods": [
+        "I"
+      ],
+      "level": "통합",
+      "test_case": null,
+      "section": "4.1 검증 항목 목록",
+      "page": 13
+    },
+    {
+      "id": "VER-TCS-022",
+      "doc_id": "GKX-VP-TCS-001",
+      "type": "검증항목",
+      "title": "질량 특성 자료 검증",
+      "statement": "설계 도면, 부품 목록 및 실물 검사를 통해 요구 반영 여부를 확인한다. 해석 모델 및 계산을 통해 '질량 특성 자료' 요구 충족을 분석하고 해석 보고서로 확인한다.",
+      "criteria": "열제어계는 장비별 질량, 무게중심, 관성모멘트 자료를 본체에 제공해야 하며 실측 질량은 제공값 대비 ±2% 이내여야 한다.",
+      "parents": [
+        "ICD-TCS-002"
+      ],
+      "methods": [
+        "I",
+        "A"
+      ],
+      "level": "통합",
+      "test_case": null,
+      "section": "4.1 검증 항목 목록",
+      "page": 13
+    },
+    {
+      "id": "VER-TCS-023",
+      "doc_id": "GKX-VP-TCS-001",
+      "type": "검증항목",
+      "title": "전원 공급 인터페이스 검증",
+      "statement": "통합 수준 시험에서 '전원 공급 인터페이스' 항목을 계측 장비로 측정하여 요구값 충족 여부를 확인한다.",
+      "criteria": "본체 전력분배장치(PDU)는 열제어계 열제어 전자장치(TCE) 및 히터에 정격 8 A의 LCL 보호 채널 8개를 통해 100 V 조정 전원을 공급해야 한다.",
+      "parents": [
+        "ICD-TCS-003"
+      ],
+      "methods": [
+        "T"
+      ],
+      "level": "통합",
+      "test_case": "TC-TCS-006",
+      "section": "4.1 검증 항목 목록",
+      "page": 13
+    },
+    {
+      "id": "VER-TCS-024",
+      "doc_id": "GKX-VP-TCS-001",
+      "type": "검증항목",
+      "title": "돌입 전류 검증",
+      "statement": "통합 수준 시험에서 '돌입 전류' 항목을 계측 장비로 측정하여 요구값 충족 여부를 확인한다.",
+      "criteria": "열제어계 장비의 전원 인가 시 돌입 전류는 정격 전류의 1.2배, 2 ms 이내로 제한되어야 한다.",
+      "parents": [
+        "ICD-TCS-004"
+      ],
+      "methods": [
+        "T"
+      ],
+      "level": "통합",
+      "test_case": "TC-TCS-006",
+      "section": "4.1 검증 항목 목록",
+      "page": 14
+    },
+    {
+      "id": "VER-TCS-025",
+      "doc_id": "GKX-VP-TCS-001",
+      "type": "검증항목",
+      "title": "전원 커넥터 검증",
+      "statement": "설계 도면, 부품 목록 및 실물 검사를 통해 요구 반영 여부를 확인한다.",
+      "criteria": "열제어계 전원 커넥터는 MIL-DTL-38999 시리즈 III를 사용해야 하며 핀 배열은 부록 B에 따른다.",
+      "parents": [
+        "ICD-TCS-005"
+      ],
+      "methods": [
+        "I"
+      ],
+      "level": "통합",
+      "test_case": null,
+      "section": "4.1 검증 항목 목록",
+      "page": 14
+    },
+    {
+      "id": "VER-TCS-026",
+      "doc_id": "GKX-VP-TCS-001",
+      "type": "검증항목",
+      "title": "데이터 버스 주소 검증",
+      "statement": "통합 수준 시험에서 '데이터 버스 주소' 항목을 계측 장비로 측정하여 요구값 충족 여부를 확인한다. 설계 도면, 부품 목록 및 실물 검사를 통해 요구 반영 여부를 확인한다.",
+      "criteria": "열제어계 열제어 전자장치(TCE) 및 히터는 MIL-STD-1553B 원격단말(RT) 주소 9번으로 본체 OBC와 통신해야 한다.",
+      "parents": [
+        "ICD-TCS-006"
+      ],
+      "methods": [
+        "T",
+        "I"
+      ],
+      "level": "통합",
+      "test_case": "TC-TCS-006",
+      "section": "4.1 검증 항목 목록",
+      "page": 14
+    },
+    {
+      "id": "VER-TCS-027",
+      "doc_id": "GKX-VP-TCS-001",
+      "type": "검증항목",
+      "title": "원격측정 패킷 검증",
+      "statement": "통합 수준 시험에서 '원격측정 패킷' 항목을 계측 장비로 측정하여 요구값 충족 여부를 확인한다.",
+      "criteria": "열제어계는 APID 0x140의 원격측정 패킷을 1 Hz 주기로 본체 OBC에 제공해야 한다.",
+      "parents": [
+        "ICD-TCS-007"
+      ],
+      "methods": [
+        "T"
+      ],
+      "level": "통합",
+      "test_case": "TC-TCS-007",
+      "section": "4.1 검증 항목 목록",
+      "page": 15
+    },
+    {
+      "id": "VER-TCS-028",
+      "doc_id": "GKX-VP-TCS-001",
+      "type": "검증항목",
+      "title": "명령 인터페이스 검증",
+      "statement": "통합 수준 시험에서 '명령 인터페이스' 항목을 계측 장비로 측정하여 요구값 충족 여부를 확인한다.",
+      "criteria": "열제어계는 본체 OBC로부터 320종 이상의 명령을 수신해야 하며 명령 응답 시간은 50 ms 이하여야 한다.",
+      "parents": [
+        "ICD-TCS-008"
+      ],
+      "methods": [
+        "T"
+      ],
+      "level": "통합",
+      "test_case": "TC-TCS-007",
+      "section": "4.1 검증 항목 목록",
+      "page": 15
+    },
+    {
+      "id": "VER-TCS-029",
+      "doc_id": "GKX-VP-TCS-001",
+      "type": "검증항목",
+      "title": "시각 동기 검증",
+      "statement": "통합 수준 시험에서 '시각 동기' 항목을 계측 장비로 측정하여 요구값 충족 여부를 확인한다.",
+      "criteria": "열제어계는 본체 OBC의 1PPS 신호를 수신하여 100 µs 이내로 시각을 동기해야 한다.",
+      "parents": [
+        "ICD-TCS-009"
+      ],
+      "methods": [
+        "T"
+      ],
+      "level": "통합",
+      "test_case": "TC-TCS-007",
+      "section": "4.1 검증 항목 목록",
+      "page": 15
+    },
+    {
+      "id": "VER-TCS-030",
+      "doc_id": "GKX-VP-TCS-001",
+      "type": "검증항목",
+      "title": "열 인터페이스 검증",
+      "statement": "해석 모델 및 계산을 통해 '열 인터페이스' 요구 충족을 분석하고 해석 보고서로 확인한다. 통합 수준 시험에서 '열 인터페이스' 항목을 계측 장비로 측정하여 요구값 충족 여부를 확인한다.",
+      "criteria": "본체는 열제어계 장비 장착면 온도를 -20°C ~ +50°C 범위로 유지해야 하며 장착면 열유속은 500 W/m² 이하여야 한다.",
+      "parents": [
+        "ICD-TCS-010"
+      ],
+      "methods": [
+        "A",
+        "T"
+      ],
+      "level": "통합",
+      "test_case": "TC-TCS-008",
+      "section": "4.1 검증 항목 목록",
+      "page": 16
+    },
+    {
+      "id": "VER-TCS-031",
+      "doc_id": "GKX-VP-TCS-001",
+      "type": "검증항목",
+      "title": "접지 및 본딩 검증",
+      "statement": "통합 수준 시험에서 '접지 및 본딩' 항목을 계측 장비로 측정하여 요구값 충족 여부를 확인한다.",
+      "criteria": "열제어계 장비 케이스와 본체 구조 간 본딩 저항은 2.5 mΩ 이하여야 한다.",
+      "parents": [
+        "ICD-TCS-011"
+      ],
+      "methods": [
+        "T"
+      ],
+      "level": "통합",
+      "test_case": "TC-TCS-008",
+      "section": "4.1 검증 항목 목록",
+      "page": 16
+    },
+    {
+      "id": "VER-TCS-032",
+      "doc_id": "GKX-VP-TCS-001",
+      "type": "검증항목",
+      "title": "EMC 방출 한계 검증",
+      "statement": "통합 수준 시험에서 'EMC 방출 한계' 항목을 계측 장비로 측정하여 요구값 충족 여부를 확인한다.",
+      "criteria": "열제어계 장비는 본체 EMC 한계(CE102, RE102)를 만족해야 한다.",
+      "parents": [
+        "ICD-TCS-012"
+      ],
+      "methods": [
+        "T"
+      ],
+      "level": "통합",
+      "test_case": "TC-TCS-008",
+      "section": "4.1 검증 항목 목록",
+      "page": 16
+    }
+  ]
+}

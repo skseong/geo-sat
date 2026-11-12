@@ -1,0 +1,263 @@
+{
+  "document": {
+    "doc_no": "GKX-MRD-001",
+    "title": "미션요구서",
+    "rev": "B",
+    "date": "2026-01-15",
+    "pages": 11,
+    "file": "01_MRD/GKX-MRD-001.pdf",
+    "item_count": 15
+  },
+  "items": [
+    {
+      "id": "MRD-001",
+      "doc_id": "GKX-MRD-001",
+      "type": "요구사항",
+      "title": "궤도 위치",
+      "statement": "위성은 동경 128.2° ± 0.05°의 정지궤도에서 운용되어야 한다.",
+      "rationale": "국가에 할당된 정지궤도 슬롯 활용",
+      "parents": [],
+      "methods": [
+        "A",
+        "D"
+      ],
+      "priority": "필수",
+      "status": "확정",
+      "section": "3.1 임무 요구사항",
+      "page": 6
+    },
+    {
+      "id": "MRD-002",
+      "doc_id": "GKX-MRD-001",
+      "type": "요구사항",
+      "title": "임무 수명",
+      "statement": "위성은 궤도상 시험(IOT) 완료 후 15년 이상 임무를 수행해야 한다.",
+      "rationale": "후속기 개발 주기 및 운용 연속성 확보",
+      "parents": [],
+      "methods": [
+        "A"
+      ],
+      "priority": "필수",
+      "status": "확정",
+      "section": "3.1 임무 요구사항",
+      "page": 6
+    },
+    {
+      "id": "MRD-003",
+      "doc_id": "GKX-MRD-001",
+      "type": "요구사항",
+      "title": "기상관측 영역",
+      "statement": "위성은 동아시아 및 서태평양 지역을 포함한 전구 디스크(Full Disk)를 관측해야 한다.",
+      "rationale": "수치예보 및 태풍 감시 수요",
+      "parents": [],
+      "methods": [
+        "A",
+        "D"
+      ],
+      "priority": "필수",
+      "status": "확정",
+      "section": "3.1 임무 요구사항",
+      "page": 6
+    },
+    {
+      "id": "MRD-004",
+      "doc_id": "GKX-MRD-001",
+      "type": "요구사항",
+      "title": "관측 주기",
+      "statement": "위성은 전구 디스크 관측을 10분 이내의 주기로 수행해야 한다.",
+      "rationale": "위험기상 조기탐지",
+      "parents": [],
+      "methods": [
+        "A",
+        "T"
+      ],
+      "priority": "필수",
+      "status": "확정",
+      "section": "3.1 임무 요구사항",
+      "page": 7
+    },
+    {
+      "id": "MRD-005",
+      "doc_id": "GKX-MRD-001",
+      "type": "요구사항",
+      "title": "관측 채널",
+      "statement": "위성은 가시, 근적외, 적외 영역에서 16개 이상의 분광 채널을 제공해야 한다.",
+      "rationale": "WMO 차세대 정지기상위성 권고",
+      "parents": [],
+      "methods": [
+        "T"
+      ],
+      "priority": "필수",
+      "status": "확정",
+      "section": "3.1 임무 요구사항",
+      "page": 7
+    },
+    {
+      "id": "MRD-006",
+      "doc_id": "GKX-MRD-001",
+      "type": "요구사항",
+      "title": "공간해상도",
+      "statement": "위성의 가시 채널 공간해상도는 직하점 기준 0.5 km 이하여야 한다.",
+      "rationale": "국지성 대류 관측",
+      "parents": [],
+      "methods": [
+        "T"
+      ],
+      "priority": "필수",
+      "status": "확정",
+      "section": "3.1 임무 요구사항",
+      "page": 7
+    },
+    {
+      "id": "MRD-007",
+      "doc_id": "GKX-MRD-001",
+      "type": "요구사항",
+      "title": "통신 서비스",
+      "statement": "위성은 Ka 대역 통신 중계 서비스를 한반도 전역에 제공해야 한다.",
+      "rationale": "공공 재난통신망 백업",
+      "parents": [],
+      "methods": [
+        "A",
+        "T"
+      ],
+      "priority": "권장",
+      "status": "확정",
+      "section": "3.1 임무 요구사항",
+      "page": 8
+    },
+    {
+      "id": "MRD-008",
+      "doc_id": "GKX-MRD-001",
+      "type": "요구사항",
+      "title": "통신 가용도",
+      "statement": "위성의 통신 서비스 가용도는 연간 99.5% 이상이어야 한다.",
+      "rationale": "공공 통신 서비스 수준 협약(SLA)",
+      "parents": [],
+      "methods": [
+        "A"
+      ],
+      "priority": "필수",
+      "status": "TBR",
+      "section": "3.1 임무 요구사항",
+      "page": 8
+    },
+    {
+      "id": "MRD-009",
+      "doc_id": "GKX-MRD-001",
+      "type": "요구사항",
+      "title": "발사체 호환",
+      "statement": "위성은 발사 질량 3,600 kg 이하로 지정 발사체와 호환되어야 한다.",
+      "rationale": "발사체 GTO 투입 능력",
+      "parents": [],
+      "methods": [
+        "A",
+        "I"
+      ],
+      "priority": "필수",
+      "status": "확정",
+      "section": "3.1 임무 요구사항",
+      "page": 8
+    },
+    {
+      "id": "MRD-010",
+      "doc_id": "GKX-MRD-001",
+      "type": "요구사항",
+      "title": "지상국 연계",
+      "statement": "위성은 주 지상국 및 부 지상국과 원격측정·명령 연계가 가능해야 한다.",
+      "rationale": "지상국 이중화 운용",
+      "parents": [],
+      "methods": [
+        "T",
+        "D"
+      ],
+      "priority": "필수",
+      "status": "확정",
+      "section": "3.1 임무 요구사항",
+      "page": 9
+    },
+    {
+      "id": "MRD-011",
+      "doc_id": "GKX-MRD-001",
+      "type": "요구사항",
+      "title": "자율 운용",
+      "statement": "위성은 지상 개입 없이 72시간 이상 안전하게 운용될 수 있어야 한다.",
+      "rationale": "지상국 장애 대비",
+      "parents": [],
+      "methods": [
+        "A",
+        "D"
+      ],
+      "priority": "필수",
+      "status": "확정",
+      "section": "3.1 임무 요구사항",
+      "page": 9
+    },
+    {
+      "id": "MRD-012",
+      "doc_id": "GKX-MRD-001",
+      "type": "요구사항",
+      "title": "자료 전송 지연",
+      "statement": "위성은 관측 원시자료를 관측 후 5분 이내에 지상국으로 전송해야 한다.",
+      "rationale": "초단기 예보 활용",
+      "parents": [],
+      "methods": [
+        "A",
+        "T"
+      ],
+      "priority": "필수",
+      "status": "확정",
+      "section": "3.1 임무 요구사항",
+      "page": 9
+    },
+    {
+      "id": "MRD-013",
+      "doc_id": "GKX-MRD-001",
+      "type": "요구사항",
+      "title": "궤도 폐기",
+      "statement": "위성은 임무 종료 시 정지궤도 상공 300 km 이상의 폐기궤도로 이동해야 한다.",
+      "rationale": "IADC 우주잔해 경감 지침",
+      "parents": [],
+      "methods": [
+        "A"
+      ],
+      "priority": "필수",
+      "status": "확정",
+      "section": "3.1 임무 요구사항",
+      "page": 10
+    },
+    {
+      "id": "MRD-014",
+      "doc_id": "GKX-MRD-001",
+      "type": "요구사항",
+      "title": "우주환경 내성",
+      "statement": "위성은 15년간 정지궤도 방사선 및 대전 환경에서 임무 성능을 유지해야 한다.",
+      "rationale": "정지궤도 우주환경 특성",
+      "parents": [],
+      "methods": [
+        "A",
+        "T"
+      ],
+      "priority": "권장",
+      "status": "확정",
+      "section": "3.1 임무 요구사항",
+      "page": 10
+    },
+    {
+      "id": "MRD-015",
+      "doc_id": "GKX-MRD-001",
+      "type": "요구사항",
+      "title": "명령 보안",
+      "statement": "위성의 원격명령 링크는 인증 및 암호화를 적용해야 한다.",
+      "rationale": "국가 위성 보안 지침",
+      "parents": [],
+      "methods": [
+        "T",
+        "I"
+      ],
+      "priority": "필수",
+      "status": "확정",
+      "section": "3.1 임무 요구사항",
+      "page": 10
+    }
+  ]
+}
