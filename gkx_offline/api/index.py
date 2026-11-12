@@ -2,6 +2,7 @@
 
 import io
 import json
+import os
 import re
 import sqlite3
 import sys
@@ -51,8 +52,8 @@ def run_handler(request, path, body, db_path):
     handler.rfile = io.BytesIO(body)
     handler.wfile = io.BytesIO()
     handler.db_path = db_path
-    handler.ai_provider = "gateway"
-    handler.ai_model = "openai/gpt-6-luna"
+    handler.ai_provider = "openai" if os.environ.get("OPENAI_API_KEY") else "gateway"
+    handler.ai_model = "gpt-6-luna" if handler.ai_provider == "openai" else "openai/gpt-6-luna"
     handler.ai_token = request.headers.get("x-vercel-oidc-token")
     handler.cloud_demo = True
     handler.status_code = 200

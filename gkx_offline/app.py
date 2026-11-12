@@ -484,7 +484,7 @@ def ollama_answer(db, question, model, opener=None, provider="ollama", token=Non
         result = ai_json(system, json.dumps({"question": question, "evidence": evidence}, ensure_ascii=False),
                          model, provider, opener, token)
     except ValueError as exc:
-        if provider != "gateway":
+        if provider == "ollama":
             raise
         first = evidence[0]
         return {"answer": f"AI 답변을 생성할 수 없어 검색된 근거를 표시합니다. {first['item_id']}: {first['statement']}",

@@ -40,7 +40,7 @@ GKX_AI_PROVIDER=openai GKX_AI_MODEL=gpt-6-luna OPENAI_API_KEY=... python3 server
 
 Vercel 프로젝트의 Root Directory는 `gkx_offline`입니다. `public/`은 정적 화면, `api/index.py`는 FastAPI 함수입니다. 배포판에는 `demo_sample/`의 가상 PDF 37개와 후보 914건이 포함됩니다. PDF 업로드와 다시 추출은 배포판에서 비활성화합니다. 선택·수정·저장·검토 기록은 브라우저별 세션 ID를 기준으로 비공개 Vercel Blob에 SQLite 스냅샷으로 저장합니다. 시연 세션의 쿠키가 사라지면 이전 기록에 접근할 수 없습니다.
 
-AI 요청은 Vercel AI Gateway의 OpenAI 모델을 사용하며 함수 요청의 OIDC 토큰으로 인증합니다. 질문과 검색 근거의 텍스트가 외부 모델로 전달됩니다. 로컬 Ollama 요청에는 계속 `think: false`를 적용합니다.
+Vercel 프로젝트의 서버 환경변수 `OPENAI_API_KEY`를 설정하면 OpenAI Responses API의 `gpt-6-luna`를 사용합니다. 키는 브라우저에 전달되지 않으며 `store: false`를 적용합니다. 키가 없으면 Vercel AI Gateway의 OpenAI 모델과 함수 요청의 OIDC 토큰을 사용합니다. 이 팀의 Gateway는 결제 카드 등록 전 요청을 거부합니다. AI 호출이 실패해도 전체 등록 문서에서 찾은 근거와 원문 페이지를 표시합니다. AI 호출이 성공하면 질문과 검색 근거의 텍스트가 외부 모델로 전달됩니다. 로컬 Ollama 요청에는 계속 `think: false`를 적용합니다.
 
 ## 검증
 
