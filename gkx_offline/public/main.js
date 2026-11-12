@@ -67,6 +67,7 @@ function renderDocuments() {
 }
 
 async function openDocument(docNo) {
+  if (state.current !== docNo) $("traceSearch").value = "";
   state.current = docNo;
   const doc = state.documents.find(x => x.document === docNo);
   $("currentDocType").textContent = doc.source;
@@ -125,8 +126,12 @@ async function refreshCandidates() {
 }
 
 async function refreshTrace() {
+  if (!state.current) return;
+  const docNo = state.current;
   const query = $("traceSearch").value.trim();
-  state.trace = await api(`/api/trace?query=${encodeURIComponent(query)}`);
+  const entries = await api(`/api/trace?document=${encodeURIComponent(docNo)}&query=${encodeURIComponent(query)}`);
+  if (state.current !== docNo) return;
+  state.trace = entries;
   const fragment=document.createDocumentFragment();
   for (const entry of state.trace) {
     const row=el("tr","clickable");row.tabIndex=0;
@@ -136,7 +141,7 @@ async function refreshTrace() {
     row.addEventListener("keydown",event=>{if(event.key==="Enter")perform(()=>showTrace(entry));});
     fragment.append(row);
   }
-  if (!state.trace.length) {const row=el("tr"),cell=el("td","empty","저장된 항목이 없습니다.");cell.colSpan=5;row.append(cell);fragment.append(row);}
+  if (!state.trace.length) {const row=el("tr"),cell=el("td","empty","이 문서에 저장된 항목이 없습니다.");cell.colSpan=5;row.append(cell);fragment.append(row);}
   $("traceRows").replaceChildren(fragment);
 }
 

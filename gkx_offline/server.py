@@ -74,7 +74,8 @@ class Handler(BaseHTTPRequestHandler):
                                           (doc_no,)).fetchall()
                         result = [app.candidate_view(db, r) for r in rows]
                     elif path == "/api/trace":
-                        result = app.search(db, params.get("query", [""])[0], 1000)
+                        result = app.search(db, params.get("query", [""])[0], 1000,
+                                            params.get("document", [None])[0])
                     elif path == "/api/ai-queue":
                         rows = db.execute("""SELECT a.*, t.doc_no, t.item_id, t.title,
                             (SELECT h.decision FROM human_reviews h WHERE h.trace_id=t.trace_id

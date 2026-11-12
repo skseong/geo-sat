@@ -289,16 +289,20 @@ def save_selected(db, doc_no, operation_id=None):
     return result
 
 
-def search(db, query, limit=50):
+def search(db, query, limit=50, doc_no=None):
     query = query.strip()
-    if not query:
-        rows = db.execute("SELECT * FROM trace_items ORDER BY trace_id LIMIT ?", (limit,)).fetchall()
-    else:
+    conditions = []
+    values = []
+    if doc_no is not None:
+        conditions.append("t.doc_no=?")
+        values.append(doc_no)
+    if query:
         phrase = '"' + query.replace('"', '""') + '"'
-        rows = db.execute("""SELECT t.* FROM trace_items t
-          WHERE t.trace_id IN (SELECT rowid FROM trace_fts WHERE trace_fts MATCH ?)
-             OR t.item_id LIKE ? ORDER BY t.trace_id LIMIT ?""",
-          (phrase, f"%{query}%", limit)).fetchall()
+        conditions.append("(t.trace_id IN (SELECT rowid FROM trace_fts WHERE trace_fts MATCH ?) OR t.item_id LIKE ?)")
+        values.extend((phrase, f"%{query}%"))
+    where = " WHERE " + " AND ".join(conditions) if conditions else ""
+    rows = db.execute(f"SELECT t.* FROM trace_items t{where} ORDER BY t.trace_id LIMIT ?",
+                      (*values, limit)).fetchall()
     return [{"document": row["doc_no"], "revision": row["rev"],
              "item": json.loads(row["item_json"]), "saved_at": row["saved_at"]} for row in rows]
 

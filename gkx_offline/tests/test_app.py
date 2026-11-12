@@ -57,6 +57,19 @@ class OfflineWorkflowTest(unittest.TestCase):
         review = app.review(self.db, doc, item, "담당자", "채택", "원문 대조 완료")
         self.assertEqual(review["decision"], "채택")
 
+    def test_document_trace_filter_keeps_global_search_available(self):
+        documents = ("GKX-MRD-001", "GKX-SSS-PL-001")
+        for doc_no in documents:
+            row = self.db.execute("SELECT candidate_id FROM candidates WHERE doc_no=? ORDER BY candidate_id LIMIT 1",
+                                  (doc_no,)).fetchone()
+            self.db.execute("UPDATE candidates SET selected=1 WHERE candidate_id=?", (row["candidate_id"],))
+            self.db.commit()
+            self.assertEqual(app.save_selected(self.db, doc_no)["saved_count"], 1)
+        self.assertEqual(len(app.search(self.db, "")), 2)
+        self.assertEqual([item["document"] for item in app.search(self.db, "", doc_no=documents[1])],
+                         [documents[1]])
+        self.assertEqual(app.search(self.db, "MRD-001", doc_no=documents[1]), [])
+
     def test_invalid_edit_is_not_saved(self):
         doc, item = "GKX-MRD-001", "MRD-002"
         row = app.get_candidate(self.db, doc, item)
