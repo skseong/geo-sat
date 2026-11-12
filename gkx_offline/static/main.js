@@ -47,6 +47,7 @@ async function refreshSummary() {
 async function refreshDocuments() {
   state.documents = await api("/api/documents");
   $("documentCount").textContent = `${state.documents.length}개`;
+  $("clearLibrary").disabled = !state.documents.length || !!state.cloudDemo;
   const current=state.documents.find(x=>x.document===state.current);
   if(current)$("currentMeta").textContent=`Rev ${current.revision} · ${current.pages}쪽 · 후보 ${current.candidates}건 · 저장 ${current.saved}건`;
   renderDocuments();
@@ -76,12 +77,25 @@ async function openDocument(docNo) {
   $("pdfButton").disabled = false;
   $("extractButton").disabled = !!state.cloudDemo;
   $("saveButton").disabled = false;
+  $("deleteButton").disabled = !!state.cloudDemo;
   $("selectAll").disabled = false;
   $("clearAll").disabled = false;
   renderDocuments();
   await refreshCandidates();
   if (state.view === "trace") await refreshTrace();
   notice(`${doc.document}의 후보를 불러왔습니다.`);
+}
+
+function resetDocumentView() {
+  state.current=null;state.candidates=[];state.trace=[];
+  $("currentDocType").textContent="문서 선택";
+  $("currentDoc").textContent="문서함이 비었습니다";
+  $("currentMeta").textContent="";
+  for(const id of ["pdfButton","extractButton","saveButton","deleteButton","selectAll","clearAll"])
+    $(id).disabled=true;
+  $("candidateSummary").textContent="후보 0건";
+  $("candidateRows").replaceChildren();$("traceRows").replaceChildren();
+  setView("candidates");renderDocuments();
 }
 
 async function refreshCandidates() {
@@ -335,6 +349,31 @@ $("pdfUpload").addEventListener("change",event=>{
   xhr.send(file);event.target.value="";
 });
 $("saveButton").addEventListener("click",save);
+$("deleteButton").addEventListener("click",()=>perform(async()=>{
+  const docNo=state.current;if(!docNo)return;
+  if(!confirm(`${docNo} 문서와 후보·저장 항목·검토 기록을 모두 삭제합니다. 되돌릴 수 없습니다.\n\n이 문서를 삭제할까요?`))return;
+  const button=$("deleteButton");busy(button,true);
+  try{
+    const result=await api("/api/delete-document",{document:docNo,confirm:docNo});
+    if(state.detail)closeDetail();
+    state.current=null;
+    await refreshSummary();await refreshDocuments();
+    if(state.documents.length)await openDocument(state.documents[0].document);
+    else resetDocumentView();
+    notice(`${docNo} 삭제 완료 · 후보 ${result.deleted_candidates}건 · 저장 항목 ${result.deleted_saved}건${result.pdf_cleanup_errors ? ` · PDF 원본 ${result.pdf_cleanup_errors}개 정리 실패` : ""}`, !!result.pdf_cleanup_errors);
+  }finally{busy(button,false);button.disabled=!state.current||!!state.cloudDemo;}
+}));
+$("clearLibrary").addEventListener("click",()=>perform(async()=>{
+  const answer=prompt("문서함의 모든 문서·후보·저장·검토 기록을 삭제합니다. 되돌릴 수 없습니다. 계속하려면 '전체삭제'를 입력하세요.");
+  if(answer!=="전체삭제")return;
+  const button=$("clearLibrary");busy(button,true);
+  try{
+    const result=await api("/api/delete-all",{confirm:"전체삭제"});
+    if(state.detail)closeDetail();
+    await refreshSummary();await refreshDocuments();resetDocumentView();
+    notice(`문서함을 비웠습니다. 문서 ${result.deleted_documents}개 · 저장 항목 ${result.deleted_saved}건 삭제${result.pdf_cleanup_errors ? ` · PDF 원본 ${result.pdf_cleanup_errors}개 정리 실패` : ""}`, !!result.pdf_cleanup_errors);
+  }finally{busy(button,false);button.disabled=!state.documents.length||!!state.cloudDemo;}
+}));
 $("selectAll").addEventListener("click",()=>perform(async()=>{
   const result=await api("/api/select-bulk",{document:state.current,selected:true});
   await refreshCandidates();await refreshSummary();await refreshDocuments();notice(`정상 후보 ${result.updated}건을 선택했습니다.`);
@@ -367,6 +406,8 @@ perform(async()=>{
   if(state.cloudDemo){
     document.querySelector(".upload-control")?.remove();
     $("extractButton").style.display="none";
+    $("deleteButton").style.display="none";
+    $("clearLibrary").style.display="none";
     document.querySelector(".intro .eyebrow").textContent="CLOUD DEMO";
     document.querySelector(".intro p:not(.eyebrow)").textContent="준비된 가상 PDF 37개의 후보를 검토하세요. 선택·수정·검토 기록은 이 브라우저의 시연 세션에 저장됩니다.";
   }

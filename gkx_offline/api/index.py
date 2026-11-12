@@ -77,7 +77,7 @@ async def api_request(request: Request, route: str = ""):
     if not re.fullmatch(r"[a-z-]+", route):
         return Response(content=b'{"error":"Invalid route"}', status_code=404,
                         media_type="application/json")
-    if request.method == "POST" and route in {"upload", "extract"}:
+    if request.method == "POST" and route in {"upload", "extract", "delete-document", "delete-all"}:
         return Response(content=json.dumps({"error": "클라우드 시연에서는 가상자료만 사용합니다."},
                                            ensure_ascii=False).encode(),
                         status_code=403, media_type="application/json")

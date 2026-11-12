@@ -109,6 +109,48 @@ def init_sample(db, sample):
     return {"documents": len(files), "candidates": total, "selected": 0, "saved": 0}
 
 
+def delete_documents(db, doc_no=None, uploads_dir=None):
+    """문서와 종속 기록을 삭제하고 직접 업로드한 원본 PDF만 정리한다."""
+    if doc_no is None:
+        documents = db.execute("SELECT doc_no, pdf_path FROM documents").fetchall()
+        condition, params = "1=1", ()
+    else:
+        documents = db.execute("SELECT doc_no, pdf_path FROM documents WHERE doc_no=?", (doc_no,)).fetchall()
+        if not documents:
+            raise ValueError("문서를 찾을 수 없습니다.")
+        condition, params = "doc_no=?", (doc_no,)
+    counts = {
+        "deleted_documents": len(documents),
+        "deleted_candidates": db.execute(f"SELECT COUNT(*) FROM candidates WHERE {condition}", params).fetchone()[0],
+        "deleted_saved": db.execute(f"SELECT COUNT(*) FROM trace_items WHERE {condition}", params).fetchone()[0],
+        "deleted_reviews": db.execute(f"""SELECT COUNT(*) FROM human_reviews WHERE trace_id IN
+            (SELECT trace_id FROM trace_items WHERE {condition})""", params).fetchone()[0],
+        "deleted_ai_reviews": db.execute(f"""SELECT COUNT(*) FROM ai_reviews WHERE trace_id IN
+            (SELECT trace_id FROM trace_items WHERE {condition})""", params).fetchone()[0],
+    }
+    with db:
+        for table in ("human_reviews", "ai_reviews"):
+            db.execute(f"""DELETE FROM {table} WHERE trace_id IN
+                (SELECT trace_id FROM trace_items WHERE {condition})""", params)
+        for table in ("save_batches", "trace_items", "candidates", "documents"):
+            db.execute(f"DELETE FROM {table} WHERE {condition}", params)
+        db.execute("INSERT INTO trace_fts(trace_fts) VALUES ('rebuild')")
+    removed = errors = 0
+    if uploads_dir is not None:
+        upload_root = Path(uploads_dir).resolve()
+        for document in documents:
+            pdf = Path(document["pdf_path"])
+            if pdf.resolve().parent != upload_root or not re.fullmatch(r"[0-9a-f]{32}\.pdf", pdf.name):
+                continue
+            try:
+                if pdf.exists():
+                    pdf.unlink()
+                    removed += 1
+            except OSError:
+                errors += 1
+    return {**counts, "deleted_uploaded_pdfs": removed, "pdf_cleanup_errors": errors}
+
+
 def extract_document(db, doc_no):
     """기존 PDF를 다시 읽되 사용자 수정·선택·저장 내역은 보존한다."""
     from pdf_extract import extract

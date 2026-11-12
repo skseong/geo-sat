@@ -26,11 +26,12 @@
         <div id="uploadProgress" class="muted" role="status" aria-live="polite"></div>
         <label class="search-label">문서 검색<input id="docSearch" type="search" placeholder="문서번호 또는 이름"></label>
         <div id="documents" class="document-list"></div>
+        <button id="clearLibrary" class="secondary danger library-action" type="button" disabled>문서함 전체 비우기</button>
       </aside>
       <section class="workspace panel">
         <div class="section-head heading-row">
           <div><p class="eyebrow" id="currentDocType">문서 선택</p><h2 id="currentDoc">왼쪽에서 문서를 선택하세요</h2><p id="currentMeta" class="muted"></p></div>
-          <div class="head-actions"><button id="pdfButton" class="secondary" disabled>PDF 원문</button><button id="extractButton" class="secondary" disabled>PDF 다시 추출</button><button id="saveButton" class="primary" disabled>선택 항목 저장</button></div>
+          <div class="head-actions"><button id="pdfButton" class="secondary" disabled>PDF 원문</button><button id="extractButton" class="secondary" disabled>PDF 다시 추출</button><button id="saveButton" class="primary" disabled>선택 항목 저장</button><button id="deleteButton" class="secondary danger" type="button" disabled>현재 문서 삭제</button></div>
         </div>
         <nav class="tabs" aria-label="작업 영역"><button id="candidatesTab" class="active" aria-current="page">파싱 후보</button><button id="traceTab">저장 항목·검토</button></nav>
         <div id="notice" class="notice" role="status" aria-live="polite"></div>

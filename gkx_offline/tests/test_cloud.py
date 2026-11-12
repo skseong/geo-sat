@@ -11,6 +11,16 @@ sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
 
 @unittest.skipIf(sys.version_info < (3, 12), "Vercel Python 3.12 환경에서 실행")
 class CloudSelectionTest(unittest.TestCase):
+    def test_cloud_demo_rejects_deletion(self):
+        from fastapi.testclient import TestClient
+        from api import index
+
+        client = TestClient(index.app, base_url="https://testserver")
+        self.assertEqual(client.post("/api/index?path=delete-document",
+                                     json={"document": "GKX-MRD-001", "confirm": "GKX-MRD-001"}).status_code, 403)
+        self.assertEqual(client.post("/api/index?path=delete-all",
+                                     json={"confirm": "전체삭제"}).status_code, 403)
+
     def test_bulk_selection_reads_the_new_snapshot(self):
         from fastapi.testclient import TestClient
         from api import index

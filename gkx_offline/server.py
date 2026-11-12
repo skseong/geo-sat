@@ -207,6 +207,14 @@ class Handler(BaseHTTPRequestHandler):
                     result = {"updated": count}
                 elif path == "/api/save":
                     result = app.save_selected(db, doc_no, data.get("operation_id"))
+                elif path == "/api/delete-document":
+                    if not doc_no or data.get("confirm") != doc_no:
+                        raise ValueError("삭제할 문서번호를 확인하세요.")
+                    result = app.delete_documents(db, doc_no, self.db_path.parent / "uploads")
+                elif path == "/api/delete-all":
+                    if data.get("confirm") != "전체삭제":
+                        raise ValueError("전체 삭제 확인 문구가 올바르지 않습니다.")
+                    result = app.delete_documents(db, uploads_dir=self.db_path.parent / "uploads")
                 elif path == "/api/extract":
                     result = app.extract_document(db, doc_no)
                 elif path == "/api/review":

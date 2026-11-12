@@ -70,6 +70,38 @@ class OfflineWorkflowTest(unittest.TestCase):
                          [documents[1]])
         self.assertEqual(app.search(self.db, "MRD-001", doc_no=documents[1]), [])
 
+    def test_delete_document_removes_related_records_and_only_uploaded_pdf(self):
+        doc_no = "GKX-MRD-001"
+        row = app.get_candidate(self.db, doc_no, "MRD-001")
+        self.db.execute("UPDATE candidates SET selected=1 WHERE candidate_id=?", (row["candidate_id"],))
+        self.db.commit()
+        app.save_selected(self.db, doc_no)
+        app.review(self.db, doc_no, "MRD-001", "담당자", "채택", "시험 검토")
+        trace_id = self.db.execute("SELECT trace_id FROM trace_items WHERE doc_no=?", (doc_no,)).fetchone()[0]
+        self.db.execute("""INSERT INTO ai_reviews(trace_id,provider,model,review_json,created_at)
+                           VALUES (?,?,?,?,?)""", (trace_id, "ollama", "test", "{}", app.now()))
+        uploads = Path(self.tmp.name) / "uploads"
+        uploads.mkdir()
+        uploaded = uploads / ("a" * 32 + ".pdf")
+        uploaded.write_bytes(b"%PDF-test")
+        self.db.execute("UPDATE documents SET pdf_path=? WHERE doc_no=?", (str(uploaded), doc_no))
+        self.db.commit()
+        result = app.delete_documents(self.db, doc_no, uploads)
+        self.assertEqual((result["deleted_documents"], result["deleted_candidates"],
+                          result["deleted_saved"], result["deleted_reviews"],
+                          result["deleted_ai_reviews"], result["deleted_uploaded_pdfs"]),
+                         (1, 15, 1, 1, 1, 1))
+        self.assertFalse(uploaded.exists())
+        self.assertTrue((SAMPLE / "01_MRD" / "GKX-MRD-001.pdf").exists())
+        self.assertEqual(app.search(self.db, "MRD-001"), [])
+        self.assertEqual(app.summary(self.db)["documents"], 36)
+
+    def test_clear_library_then_reinitialize_sample(self):
+        result = app.delete_documents(self.db, uploads_dir=Path(self.tmp.name) / "uploads")
+        self.assertEqual((result["deleted_documents"], result["deleted_candidates"]), (37, 914))
+        self.assertEqual(app.summary(self.db)["documents"], 0)
+        self.assertEqual(app.init_sample(self.db, SAMPLE)["documents"], 37)
+
     def test_invalid_edit_is_not_saved(self):
         doc, item = "GKX-MRD-001", "MRD-002"
         row = app.get_candidate(self.db, doc, item)
