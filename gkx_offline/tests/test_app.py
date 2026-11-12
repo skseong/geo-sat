@@ -149,6 +149,7 @@ class OfflineWorkflowTest(unittest.TestCase):
                 payload = json.loads(request.data)
                 self.assertIs(payload["store"], False)
                 self.assertEqual(payload["text"]["format"]["type"], "json_object")
+                self.assertIn("JSON", payload["input"][0]["content"])
                 return io.BytesIO(json.dumps({"output": [{"type": "message", "content": [
                     {"type": "output_text", "text": '{"ok": true}'}]}]}).encode())
             self.assertEqual(app.ai_json("JSON으로 답하세요.", "질문", "gpt-4.1-mini", "openai", fake_opener),

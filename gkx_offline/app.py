@@ -326,7 +326,7 @@ def ai_json(system, content, model, provider="ollama", opener=None, token=None):
         if not api_key:
             raise ValueError("AI Gateway 인증 토큰이 없습니다." if provider == "gateway" else "OPENAI_API_KEY 환경변수가 필요합니다.")
         payload = {"model": model, "store": False, "instructions": system,
-                   "input": [{"role": "user", "content": content}],
+                   "input": [{"role": "user", "content": "JSON 형식으로만 답하세요.\n" + content}],
                    "text": {"format": {"type": "json_object"}}}
         if model in ("gpt-6-luna", "openai/gpt-6-luna"):
             payload["reasoning"] = {"effort": "none"}

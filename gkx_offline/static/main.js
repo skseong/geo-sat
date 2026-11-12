@@ -361,7 +361,7 @@ perform(async()=>{
   state.cloudDemo=!!config.cloud_demo;
   if(state.cloudDemo){
     document.querySelector(".upload-control")?.remove();
-    $("extractButton").remove();
+    $("extractButton").style.display="none";
     document.querySelector(".intro .eyebrow").textContent="CLOUD DEMO";
     document.querySelector(".intro p:not(.eyebrow)").textContent="준비된 가상 PDF 37개의 후보를 검토하세요. 선택·수정·검토 기록은 이 브라우저의 시연 세션에 저장됩니다.";
   }
