@@ -348,6 +348,15 @@ def ai_json(system, content, model, provider="ollama", opener=None, token=None):
     try:
         with send(req, timeout=120) as response:
             raw = json.loads(response.read(1_000_000))
+    except urlerror.HTTPError as exc:
+        try:
+            problem = json.loads(exc.read(4096))
+            detail = problem.get("error", problem)
+            if isinstance(detail, dict):
+                detail = detail.get("message") or detail.get("code") or exc.reason
+        except (ValueError, UnicodeDecodeError):
+            detail = exc.reason
+        raise ValueError(f"{provider} 오류 ({exc.code}): {str(detail)[:300]}") from exc
     except (urlerror.URLError, TimeoutError) as exc:
         raise ValueError(f"{provider} 연결에 실패했습니다: {getattr(exc, 'reason', exc)}") from exc
     try:
@@ -471,8 +480,16 @@ def ollama_answer(db, question, model, opener=None, provider="ollama", token=Non
     system = ("제공된 등록 문서의 항목만으로 한국어로 답하세요. 후보 상태의 항목은 검토 전 자료임을 밝혀 주세요. 답을 뒷받침하지 못하면 확인 필요라고 쓰세요. "
               "JSON 객체만 반환하세요: answer(문자열), status(answered|insufficient_evidence), "
               "citations(배열: document_id, revision, item_id, page). 제공되지 않은 인용은 만들지 마세요.")
-    result = ai_json(system, json.dumps({"question": question, "evidence": evidence}, ensure_ascii=False),
-                     model, provider, opener, token)
+    try:
+        result = ai_json(system, json.dumps({"question": question, "evidence": evidence}, ensure_ascii=False),
+                         model, provider, opener, token)
+    except ValueError as exc:
+        if provider != "gateway":
+            raise
+        first = evidence[0]
+        return {"answer": f"AI 답변을 생성할 수 없어 검색된 근거를 표시합니다. {first['item_id']}: {first['statement']}",
+                "status": "source_only", "citations": [], "evidence": evidence,
+                "model": model, "ai_error": str(exc)}
     if not isinstance(result, dict) or result.get("status") not in {"answered", "insufficient_evidence"}:
         raise ValueError("Ollama 답변 형식이 유효하지 않습니다.")
     if not isinstance(result.get("answer"), str) or not result["answer"].strip():

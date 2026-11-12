@@ -27,7 +27,7 @@ async function qa(){
     const status=$("answerStatus");status.classList.remove("error");status.textContent="전체 문서 검색과 AI 답변을 진행 중입니다.";
     try{
       const result=await api("/api/ask",{question:$("questionInput").value});
-      status.textContent=`${result.model} · ${result.status==="answered"?"답변 초안":"근거 부족"} · 인용 ${result.citations.length}건`;
+      status.textContent=`${result.model} · ${result.status==="answered"?"답변 초안":result.status==="source_only"?"AI 연결 불가 · 검색 근거 표시":"근거 부족"} · 인용 ${result.citations.length}건`;
       $("answerText").textContent=result.answer;
       const list=$("answerEvidence");
       if(!result.evidence.length){list.replaceChildren(empty("관련 문서·규격 항목을 찾지 못했습니다."));return;}
